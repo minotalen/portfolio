@@ -1,16 +1,12 @@
-body {
-    margin: 0;
-    font-family: 'Oswald', sans-serif;
-    font-size: 3.5rem;
-    font-weight: 700;
-    text-align: center;
-}
 
 .highlight {
     background-color: yellow;
 }
 
 #quoteshow {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+
   white-space: pre;
   padding: 5px 30px;
   font-size: 2rem;
@@ -20,6 +16,9 @@ body {
 }
 
 #source {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+
   padding: 0 30px;
   font-size: 2rem;
   font-weight: 300;
@@ -28,9 +27,12 @@ body {
 
 #schaltkreis {
   display: grid;
-  /* grid-template-columns: 5; */
   grid-template-columns: 1fr min-content 1fr min-content 1fr;
   grid-template-rows: 9;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 .schaltWord {
@@ -148,7 +150,7 @@ body {
   animation: blinker 2s linear infinite;
 }
 
-@keyframes blinker {  
+@keyframes blinker {
   50% { opacity: 0.4; }
 }
 
