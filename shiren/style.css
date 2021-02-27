@@ -7,7 +7,6 @@
     --hlfont-color: #040404;
     --bg-color: #161625;
     --heading-color: #818cab;
-    --font-size:100%;
     --summary-color: #818cab25;
     --details-color: #818cab11;
 }
@@ -17,8 +16,8 @@
     --secondary-color: #abedee;
     --cursed-color: #fb9c95;
     --blessed-color: #d2ff65;
-    --font-color: #424242;
-    --hlfont-color: #040404;
+    --font-color: #040404;
+    --hlfont-color: #131313;
     --bg-color: #fefbfe;
     --heading-color: #292922;
     --summary-color: #373fff25;
@@ -120,7 +119,7 @@ html {
   background: var(--bg-color);
   color: var(--font-color);
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 0.85em;
+  font-size: 14px;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
    -khtml-user-select: none; /* Konqueror HTML */
@@ -383,7 +382,7 @@ button.toggled {
 
   * { box-sizing: border-box; }
   body {
-    font: 16px Arial;
+    font-size: 14px;
   }
   .autocomplete {
     /*the container must be positioned relative:*/
