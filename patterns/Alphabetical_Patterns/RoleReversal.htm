@@ -1,0 +1,53 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Role Reversal</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Role Reversal">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Role Reversal</H2>
+<I>The shift between two different roles which are each others opposite.</I>
+<P CLASS="text">Many games force players to change game play radically after completing certain goals or after certain events have taken place in the game world. When the change makes the players' roles, at some level, change with their opponents this is called <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Hide &amp; Seek</I> can be seen as having two distinct modes of play for each of the activities of hiding and seeking. In this case, one is only allowed to hide oneself once, before the seek phase begins, but games can allow hiding continuously or when certain events take place, e. g. re-hiding a game element after it has been found.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>when <I>Pac-Man</I> eats a power-pill he can start chasing the ghosts without risk, in effect causing a role reversal between the hunter and the hunted.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">Designing the potential for <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A> events consists of defining a goal with <A CLASS="pattern" HREF="DynamicGoalCharacteristics.htm" TARGET="frame_pattern">Dynamic Goal Characteristics</A> that uses a game event to switch between two or more <A CLASS="pattern" HREF="AsymmetricGoals.htm" TARGET="frame_pattern">Asymmetric Goals</A> sets. The main goal can be constructed so that it can be achieved in all roles, e. g. by being able to gain <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A> points at all times but through different means, or that only one of the role can complete the goal and that the other roles are a form of <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalty</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The switch event is usually another goal which is beneficial, or perceived as being beneficial, to the player who has it. If players have the knowledge that the fulfillment of the goal causes the <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A>, they may be able to make <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A> choices that set them in a disadvantageous situation before the reversal but at an advantageous situation after. An example of this would be to let as many ghosts as possible get close to <I>Pac-Man</I> before eating a power-pill.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The <A CLASS="pattern" HREF="AsymmetricGoals.htm" TARGET="frame_pattern">Asymmetric Goals</A> sets can be constructed by choosing a goal for one of the sets and then creating a <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goal</A> from that goal and adding the new goal to another set. For example, <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> can be a goal for one set and <A CLASS="pattern" HREF="Evade.htm" TARGET="frame_pattern">Evade</A> be the <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goal</A> that is added to the other set. Constructing the sets without <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goals</A> is possible but risks not making the change between the roles perceived as a reversal. If possible, having both goals as subgoals or <A CLASS="pattern" HREF="SupportingGoals.htm" TARGET="frame_pattern">Supporting Goals</A> of the main goal links the roles tighter to the main goal.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The <A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A> goal is example of a goal built around <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A>. The main goal in this case is usually achieved by increase in a player's <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A> as long as that player is fulfilling a <A CLASS="pattern" HREF="ContinuousGoals.htm" TARGET="frame_pattern">Continuous Goal</A>, typically <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A> of a location. However, this goal is an <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goal</A> and the interruption by another player is the switching event that creates the <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Games with <A CLASS="pattern" HREF="DynamicAlliances.htm" TARGET="frame_pattern">Dynamic Alliances</A>, especially when <A CLASS="pattern" HREF="Betrayal.htm" TARGET="frame_pattern">Betrayal</A> is possible, automatically give rise to <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A> events each time a player joins or leaves the alliances as the goals of the alliance is typically the reverse of those not part of the alliance. <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A> where players can interfere through certain actions in other players' turns can be seen as having <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A> from being the acting player to being the interfering player.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A> events are significant changes in gameplay where players usually receive <A CLASS="pattern" HREF="NewAbilities.htm" TARGET="frame_pattern">New Abilities</A> and have <A CLASS="pattern" HREF="AbilityLosses.htm" TARGET="frame_pattern">Ability Losses</A>. When this gives players powers beyond those of other players, the <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A> provides <A CLASS="pattern" HREF="Empowerment.htm" TARGET="frame_pattern">Empowerment</A> and can affect <A CLASS="pattern" HREF="PlayerBalance.htm" TARGET="frame_pattern">Player Balance</A>. The reversals give <A CLASS="pattern" HREF="VariedGameplay.htm" TARGET="frame_pattern">Varied Gameplay</A> since players get to perform different actions and have different goals for each role. If the <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversals</A> can occur several times or automatically change back the pattern supports <A CLASS="pattern" HREF="Reversability.htm" TARGET="frame_pattern">Reversability</A> in the game, and can be the source of <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A> if several players can initiate the change of roles.</P>
+<P CLASS="text"></P>
+<P CLASS="text">When used as parts of <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A>, <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A> gives the narrative the <A CLASS="pattern" HREF="RightLevelofComplexity.htm" TARGET="frame_pattern">Right Level of Complexity</A> and can provide <A CLASS="pattern" HREF="Surprises.htm" TARGET="frame_pattern">Surprises</A>, especially when combined with <A CLASS="pattern" HREF="Betrayal.htm" TARGET="frame_pattern">Betrayal</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A>, <A CLASS="pattern" HREF="Surprises.htm" TARGET="frame_pattern">Surprises</A>, <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A>, <A CLASS="pattern" HREF="DynamicGoalCharacteristics.htm" TARGET="frame_pattern">Dynamic Goal Characteristics</A>, <A CLASS="pattern" HREF="AsymmetricGoals.htm" TARGET="frame_pattern">Asymmetric Goals</A>, <A CLASS="pattern" HREF="Reversability.htm" TARGET="frame_pattern">Reversability</A>, <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A>, <A CLASS="pattern" HREF="NewAbilities.htm" TARGET="frame_pattern">New Abilities</A>, <A CLASS="pattern" HREF="AbilityLosses.htm" TARGET="frame_pattern">Ability Losses</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="PlayerBalance.htm" TARGET="frame_pattern">Player Balance</A>, <A CLASS="pattern" HREF="Empowerment.htm" TARGET="frame_pattern">Empowerment</A>, <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A>, <A CLASS="pattern" HREF="RightLevelofComplexity.htm" TARGET="frame_pattern">Right Level of Complexity</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A>, <A CLASS="pattern" HREF="DynamicAlliances.htm" TARGET="frame_pattern">Dynamic Alliances</A>, <A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A>, <A CLASS="pattern" HREF="Betrayal.htm" TARGET="frame_pattern">Betrayal</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

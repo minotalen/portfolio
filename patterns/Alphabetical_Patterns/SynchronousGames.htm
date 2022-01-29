@@ -1,0 +1,43 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Synchronous Games</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Synchronous Games">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Synchronous Games</H2>
+<I>Games in which the players' game and play sessions must overlap in time.</I>
+<P CLASS="text">The most common scenario in <A CLASS="pattern" HREF="SynchronousGames.htm" TARGET="frame_pattern">Synchronous Games</A> is that the players' game sessions last as long as the game instance itself, and that the play sessions and the game sessions are one and the same, as is the case with many board and card games. Simply put, the players must play the game at the same time, from start to finish. However, a game can be synchronous and have pauses in the gameplay as long as all players take pauses at the same time.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>In <I>Monopoly</I>, the players start their game session when the game instance is started, and their play sessions usually also coincide in such way that the players are playing the game together from start to finish. It is not unusual for individual players to end the game at different times, however, dropping out of gameplay as they lose. Some games offer opportunities for players who have already lost to continue participating and influence the play as a non-player.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="SynchronousGames.htm" TARGET="frame_pattern">Synchronous Games</A> are, by definition, also <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A>, and the synchronization of the game state can be done by either <A CLASS="pattern" HREF="DedicatedGameFacilitators.htm" TARGET="frame_pattern">Dedicated Game Facilitators</A> or by the players themselves in <A CLASS="pattern" HREF="Self-FacilitatedGames.htm" TARGET="frame_pattern">Self-Facilitated Games</A>. The real-time nature of sharing the play sessions means that <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A> and <A CLASS="pattern" HREF="Tick-BasedGames.htm" TARGET="frame_pattern">Tick-Based Games</A> are more suitable further characteristics of <A CLASS="pattern" HREF="SynchronousGames.htm" TARGET="frame_pattern">Synchronous Games.</A> <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A> are often played in face-to-face situations, making them in those cases <A CLASS="pattern" HREF="SynchronousGames.htm" TARGET="frame_pattern">Synchronous Games</A> with the associated effects of <A CLASS="pattern" HREF="TurnTaking.htm" TARGET="frame_pattern">Turn Taking</A> on <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="SynchronousGames.htm" TARGET="frame_pattern">Synchronous Games</A> with <A CLASS="pattern" HREF="TurnTaking.htm" TARGET="frame_pattern">Turn Taking</A> often have <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A> for the players who are not taking their turn. It is possible, however, to reduce the negative effects of <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A> by minimizing the duration of <A CLASS="pattern" HREF="TurnTaking.htm" TARGET="frame_pattern">Turn Taking</A>, by making the active player's actions interesting for the observing players, or in some cases allowing the players in <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A> to perform some actions that affect the game state.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="SynchronousGames.htm" TARGET="frame_pattern">Synchronous Games</A> are often played in a social situation: the real-time nature of playing the game together, especially in face to face situations, naturally causes <A CLASS="pattern" HREF="SocialInteraction.htm" TARGET="frame_pattern">Social Interaction</A> between the players. If the situation is mediated, it is important to provide the players <A CLASS="pattern" HREF="CommunicationChannels.htm" TARGET="frame_pattern">Communication Channels</A> that have proper characteristics to match the pace of the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="SocialInteraction.htm" TARGET="frame_pattern">Social Interaction</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Self-FacilitatedGames.htm" TARGET="frame_pattern">Self-Facilitated Games</A>, <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Tick-BasedGames.htm" TARGET="frame_pattern">Tick-Based Games</A>, <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A>, <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>, <A CLASS="pattern" HREF="CommunicationChannels.htm" TARGET="frame_pattern">Communication Channels</A>, <A CLASS="pattern" HREF="DedicatedGameFacilitators.htm" TARGET="frame_pattern">Dedicated Game Facilitators</A>, <A CLASS="pattern" HREF="TurnTaking.htm" TARGET="frame_pattern">Turn Taking</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

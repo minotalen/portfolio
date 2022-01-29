@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Consumers</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Consumers">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Consumers</H2>
+<I>A game element, usually some kind of a resource, is consumed as a consequence of a player action, certain game element configuration, or other type of a game event.</I>
+<P CLASS="text">The consumption of the game element means that the element is out of the game totally or that the status of the game element changes radically, as for example blocks in <I>Tetris</I> having a fixed position after being placed. The latter category, of course, takes the consumption metaphorically, but in some cases it is a useful level of analysis.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Tetris</I> has (at least) two levels of <A CLASS="pattern" HREF="Consumers.htm" TARGET="frame_pattern">Consumer</A> governing the behavior of the blocks. The first one, when the falling block stops, "consumes" the block metaphorically by changing the state from being dynamic and under player control to static. The next consumption level happens when the full horizontally aligned rows are removed from the screen.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>in <I>Pac-Man</I> the pills are consumed by <I>Pac-Man</I> and ghosts can consume <I>Pac-Man</I> when he is not under the effect of the power-pill.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>the units in <I>Civilization</I> are consumed, that is, removed from the game, when they lose battles against other units or cities.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>in fantasy roleplaying games the hit points of the character are consumed when the character is hurt, for example, in a melee combat.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">From the players' point of view there are two distinct variants: <A CLASS="pattern" HREF="Consumers.htm" TARGET="frame_pattern">Consumer</A> as a threat or as an opportunity. The first variant, <A CLASS="pattern" HREF="Consumers.htm" TARGET="frame_pattern">Consumer</A> as a threat, is more concrete. The <A CLASS="pattern" HREF="Consumers.htm" TARGET="frame_pattern">Consumer</A> in this case is simply something that tries to forcefully take over or destroy the players' <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A>. For example, in <I>Chess</I> the <A CLASS="pattern" HREF="Consumers.htm" TARGET="frame_pattern">Consumer</A> pattern dictates that the other player can capture the players' pieces and in <I>Civilization</I> the units can be eliminated in combat against hostile units. The <A CLASS="pattern" HREF="Damage.htm" TARGET="frame_pattern">Damage</A> pattern can be used to modulate the <A CLASS="pattern" HREF="Consumers.htm" TARGET="frame_pattern">Consumer</A> so that the <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> are not immediately destroyed by the consumption. The players' <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> can also be automatically depleted according to the game time, to create a <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limit</A> and to raise <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A>. Another way to create this kind of <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> is to have a <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limit</A> before automatic consumption of the <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> and giving the players a possibility to control the <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> before consumption. For example, the <I>Tetris</I> block is a <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resource</A> for the player, and there is a <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limit</A> before the block is consumed by touching other blocks. The player is able to move and rotate the block within that <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limit</A>. Using <A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A> with Consumer also naturally limits the lifetime of a game instance.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The second variant, <A CLASS="pattern" HREF="Consumers.htm" TARGET="frame_pattern">Consumer</A> as an opportunity, is most often used in games based on explicit <A CLASS="pattern" HREF="ResourceManagement.htm" TARGET="frame_pattern">Resource Management</A>. In these cases the players have certain <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A>, for example <A CLASS="pattern" HREF="Cards.htm" TARGET="frame_pattern">Cards</A>, which they have to use in order to reach their goals. The <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> are consumed by the players' actions and the players have to choose which <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> to use and when, forcing players to do <A CLASS="pattern" HREF="Tradeoffs.htm" TARGET="frame_pattern">Tradeoff</A> choices. These <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> are also often used as <A CLASS="pattern" HREF="Investments.htm" TARGET="frame_pattern">Investments</A> and sometimes in complex chains of <A CLASS="pattern" HREF="Producer-Consumer.htm" TARGET="frame_pattern">Producer-Consumers</A>. Another way to accomplish this is to have the players <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> certain game elements. For example, in <I>Pac-Man</I> the goal is to eat all the pills in the level, that is, to <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> the pills by <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A> with <I>Pac-Man</I>. Another, slightly more complex, example is the consumption of available space in <I>Qix</I>. To do this the player encloses the area by drawing with the marker.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">Similar to <A CLASS="pattern" HREF="Producers.htm" TARGET="frame_pattern">Producer</A>, <A CLASS="pattern" HREF="Consumers.htm" TARGET="frame_pattern">Consumer</A> is almost always an integral part of the <A CLASS="pattern" HREF="Producer-Consumer.htm" TARGET="frame_pattern">Producer-Consumer</A> pattern and is usually tightly connected to the <A CLASS="pattern" HREF="Producers.htm" TARGET="frame_pattern">Producer</A> part. <A CLASS="pattern" HREF="Consumers.htm" TARGET="frame_pattern">Consumer</A> is an abstract pattern but with very concrete effects on the flow of the game. The existence of non-player controlled, and often hostile, <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A> that can consume players' <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> are a threat for the player and sometimes also to a motivation for the struggle in the game. For example, without the ghosts being able to consume the <I>Pac-Man</I> there would not be much of a game left. The <A CLASS="pattern" HREF="Consumers.htm" TARGET="frame_pattern">Consumer</A>, however, can also be the opposite of a threat, a sort of opportunity, for the player. For example, the consumption of full rows in <I>Tetris</I> is rewarding to the player in two ways: first, the player's <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A> increases and second, there is more room for the player to move the blocks around.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Producer-Consumer.htm" TARGET="frame_pattern">Producer-Consumer</A>, <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A>, <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A>, <A CLASS="pattern" HREF="Investments.htm" TARGET="frame_pattern">Investments</A>, <A CLASS="pattern" HREF="Tradeoffs.htm" TARGET="frame_pattern">Tradeoffs</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="DeadlyTraps.htm" TARGET="frame_pattern">Deadly Traps</A>, <A CLASS="pattern" HREF="Cards.htm" TARGET="frame_pattern">Cards</A>, <A CLASS="pattern" HREF="ResourceManagement.htm" TARGET="frame_pattern">Resource Management</A>, <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A>, <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A>, <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Damage.htm" TARGET="frame_pattern">Damage</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

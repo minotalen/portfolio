@@ -1,0 +1,55 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Reversability</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Reversability">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Reversability</H2>
+<I>The possibility of returning to a previous game state of the whole or just parts of the game.</I>
+<P CLASS="text">The <A CLASS="pattern" HREF="Reversability.htm" TARGET="frame_pattern">Reversability</A> can be part of the gameplay itself, as is the case with <I>Tag</I>, or that the players can control the reverting back to a previous game state by saving and loading the game states.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>the quick save feature of many first-person shooters is a version of <A CLASS="pattern" HREF="Reversability.htm" TARGET="frame_pattern">Reversability</A>, which can be in some cases used to "cheat" in the game. Before every encounter with the enemy, or even before every action, the players can save the game and if the action or the encounter is not satisfactory they can just quickly load the saved situation and try again.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Final Fantasy VII</I> has specific points in the game world where the players can save their game state; in case of failures they can return to these game states. This is a common feature in many other computer and console games with story progression.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>in <I>Tag</I> the player who is "it" can revert to being chased by the new "it" when the player catches another player.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Reversability.htm" TARGET="frame_pattern">Reversability</A> of the whole game state is achieved with <A CLASS="pattern" HREF="Save-LoadCycles.htm" TARGET="frame_pattern">Save-Load Cycles</A> where the whole game state is saved for later loading, either automatically or under player control. These player actions are also <A CLASS="pattern" HREF="Extra-GameActions.htm" TARGET="frame_pattern">Extra-Game Actions</A> even in games where the saving and loading is concealed in the <A CLASS="pattern" HREF="ConsistentRealityLogic.htm" TARGET="frame_pattern">Consistent Reality Logic</A> of the game. <A CLASS="pattern" HREF="Reversability.htm" TARGET="frame_pattern">Reversability</A> can always be done in <A CLASS="pattern" HREF="Self-FacilitatedGames.htm" TARGET="frame_pattern">Self-Facilitated Games</A> and can be used to give novice players a form of <A CLASS="pattern" HREF="Handicaps.htm" TARGET="frame_pattern">Handicap</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Buttons.htm" TARGET="frame_pattern">Buttons</A> can have simple <A CLASS="pattern" HREF="Reversability.htm" TARGET="frame_pattern">Reversability</A> of parts of the game state when the <A CLASS="pattern" HREF="Buttons.htm" TARGET="frame_pattern">Buttons</A> themselves have states, which can be switched back by the players or the game system. The simplest such <A CLASS="pattern" HREF="Buttons.htm" TARGET="frame_pattern">Button</A> is an on/off switch, which the players can toggle. <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A> with <A CLASS="pattern" HREF="Reversability.htm" TARGET="frame_pattern">Reversability</A> has usually slightly more effects on the game state than the buttons as theychange the players modes of play, players' goal structures, and their available actions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Reversability.htm" TARGET="frame_pattern">Reversability</A> makes <A CLASS="pattern" HREF="PuzzleSolving.htm" TARGET="frame_pattern">Puzzle Solving</A> easier as players can do <A CLASS="pattern" HREF="Experimenting.htm" TARGET="frame_pattern">Experimenting</A> with the game elements instead of abstractly trying to find solutions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">Player controlled <A CLASS="pattern" HREF="Reversability.htm" TARGET="frame_pattern">Reversability</A> in games gives the players the possibility to do <A CLASS="pattern" HREF="Experimenting.htm" TARGET="frame_pattern">Experimenting</A> without the fear of losing the game progress totally, and allows <A CLASS="pattern" HREF="Replayability.htm" TARGET="frame_pattern">Replayability</A> within play sessions<I>.</I> This also expands at least the perceived <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A> for the players, but may have a negative effect on <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> as the players do not necessarily risk anything more than their time in actions or action sequences with otherwise high <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A>. Games with <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A> sometimes use this pattern to allow the players to try out different paths through the game narrative. These games have a strong sense of cumulative progress for the players and in many cases the players might have invested considerable time to reach a certain point in the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Reversability.htm" TARGET="frame_pattern">Reversability</A> through <A CLASS="pattern" HREF="Save-LoadCycles.htm" TARGET="frame_pattern">Save-Load Cycles</A> saves the players from losing the whole effort invested in a game because of a single mistake. <A CLASS="pattern" HREF="PersistentGameWorlds.htm" TARGET="frame_pattern">Persistent Game Worlds</A>, however, do not lend themselves well into this type of <A CLASS="pattern" HREF="Reversability.htm" TARGET="frame_pattern">Reversability</A> as even one player reverting parts of the game state might cause problems with the consistency of the entire game state.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="ClosedEconomies.htm" TARGET="frame_pattern">Closed Economies</A> must by definition have <A CLASS="pattern" HREF="Reversability.htm" TARGET="frame_pattern">Reversability</A> or else it would be a terminating system, although with feedback loops. This means that the part of the game state which defines a <A CLASS="pattern" HREF="ClosedEconomies.htm" TARGET="frame_pattern">Closed Economy</A> must be able to be reconstructed later in gameplay but imposes no requirement that other parts of the game state need have the earlier values.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Generally, <A CLASS="pattern" HREF="Reversability.htm" TARGET="frame_pattern">Reversability</A> is more common in <A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A> than <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A> since no <A CLASS="pattern" HREF="Negotiation.htm" TARGET="frame_pattern">Negotiation</A> need be done to revert to earlier play sessions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Experimenting.htm" TARGET="frame_pattern">Experimenting</A>, <A CLASS="pattern" HREF="Handicaps.htm" TARGET="frame_pattern">Handicaps</A>, <A CLASS="pattern" HREF="Replayability.htm" TARGET="frame_pattern">Replayability</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Buttons.htm" TARGET="frame_pattern">Buttons</A>, <A CLASS="pattern" HREF="PuzzleSolving.htm" TARGET="frame_pattern">Puzzle Solving</A>, <A CLASS="pattern" HREF="Ultra-PowerfulEvents.htm" TARGET="frame_pattern">Ultra-Powerful Events</A>, <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A>, <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A>, <A CLASS="pattern" HREF="Extra-GameActions.htm" TARGET="frame_pattern">Extra-Game Actions</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Self-FacilitatedGames.htm" TARGET="frame_pattern">Self-Facilitated Games</A>, <A CLASS="pattern" HREF="ClosedEconomies.htm" TARGET="frame_pattern">Closed Economies</A>, <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A>, <A CLASS="pattern" HREF="Save-LoadCycles.htm" TARGET="frame_pattern">Save-Load Cycles</A>, <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="PersistentGameWorlds.htm" TARGET="frame_pattern">Persistent Game Worlds</A>, <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A></P>
+
+
+</html>
+

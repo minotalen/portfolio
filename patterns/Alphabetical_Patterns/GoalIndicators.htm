@@ -1,0 +1,57 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Goal Indicators</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Goal Indicators">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Goal Indicators</H2>
+<I>Players are given information about his current goals in the game.</I>
+<P CLASS="text">There are two basic types of <A CLASS="pattern" HREF="GoalIndicators.htm" TARGET="frame_pattern">Goal Indicators</A>. The first, the goal statement, is concerned with how players get information about goals in the first place, and the second type of indicators is used to guide or focus players' actions in game play. The difference is, perhaps, most evident in adventure games, such as the <I>Zelda</I> -series, where players are first given the goal, for example "find the Magic Sword", and then the position of the goal object is shown on the overview map to guide players.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Some games are almost completely unplayable without proper <A CLASS="pattern" HREF="GoalIndicators.htm" TARGET="frame_pattern">Goal Indicators</A>. For example, in some of the missions in <I>Grand Theft Auto 3,</I> where the goal object is moving, and the task of the players is to hunt it down, players would be quite certainly lost without the help of indicators in the overhead map.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>in <I>Grand Theft Auto 3</I> the subgoals in the game are indicated with floating arrows which point out where the goal objects are located. These goals are always connected to a specific game element, for example, to go to a specific place, kill a certain character and so on. The nature of these goals is usually revealed to the player in cut scenes, which are also used to carry the story forward in the game. Players can also check their current goals from a specific goal list.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Chess, Backgammon</I> and other classical board games state the goals of players directly in the rules (check-mate the opponent's king, move all the pieces off the board). The position of the opponent's king in <I>Chess</I> and the location of the home base in <I>Backgammon</I> are <A CLASS="pattern" HREF="GoalIndicators.htm" TARGET="frame_pattern">Goal Indicators</A>, which guide players' actions during the game play.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="GoalIndicators.htm" TARGET="frame_pattern">Goal Indicators</A> have many of the same effects on game play as <A CLASS="pattern" HREF="Clues.htm" TARGET="frame_pattern">Clues</A> and both may in many cases be used for the same reasons. In addition, the options available in one pattern are often available in the other. Therefore, the use of <A CLASS="pattern" HREF="GoalIndicators.htm" TARGET="frame_pattern">Goal Indicators</A> is best done by considering the options of both patterns.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="GoalIndicators.htm" TARGET="frame_pattern">Goal Indicators</A> are primarily necessary when goals are difficult to remember, or when other parts of the game may be too attention grabbing. In both cases <A CLASS="pattern" HREF="GoalIndicators.htm" TARGET="frame_pattern">Goal Indicators</A> can be used in two different ways: either to provide <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A>, by presenting the goals in a view separated from the main view of the game, or by augmenting the appearance of parts of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>. The latter case is most common with game elements linked to goals, <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Points</A> and the objectives of <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A> goals.</P>
+<P CLASS="text"></P>
+<P CLASS="text">A prerequisite for the game to have <A CLASS="pattern" HREF="GoalIndicators.htm" TARGET="frame_pattern">Goal Indicators</A> is that there are goals that can be explicitly stated, as it is practically impossible to have indicators for vague or non-existent goals. This is obvious in games which do not have explicit goals, such as <I>SimCity</I>, where the <A CLASS="pattern" HREF="PlayerDefinedGoals.htm" TARGET="frame_pattern">Player Defined Goals</A> are more or less defined by players during the game play without explicitly stating them in the game system. The goals, however, do not have to be <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A>. In most of the cases of <A CLASS="pattern" HREF="DynamicGoalCharacteristics.htm" TARGET="frame_pattern">Dynamic Goal Characteristics</A> it is beneficial to have clear <A CLASS="pattern" HREF="GoalIndicators.htm" TARGET="frame_pattern">Goal Indicators</A> of both types. There are, as usual, exceptions as some games base their game play on hiding the available goals from the players and how the <A CLASS="pattern" HREF="GoalIndicators.htm" TARGET="frame_pattern">Goal Indicators</A> are used should reflect this design choice.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The nature of the first type of indicators, the goal statement, depends very much on the nature of the game. Games of more abstract nature, such as most board and card games, have the goal statement explicit in the game rules or introduction. This is also made easier as these games usually have very explicit higher level goals. Story driven games almost have to embed the goal statements in the story progression in some forms of <A CLASS="pattern" HREF="CutScenes.htm" TARGET="frame_pattern">Cut Scenes</A> or in dialogues with non-player characters. In this way goals become a natural part of the whole <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structure</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The guiding indicators are slightly trickier to implement in the design. The first and foremost question for the designer is to determine if players should end up wandering around aimlessly without explicit guides. Also, if the gameplay itself is based on <A CLASS="pattern" HREF="Exploration.htm" TARGET="frame_pattern">Exploration</A> or trying to achieve some other kind of sense of discovery for the player, the use of guiding indicators has to be carefully thought out, as too explicit guiding could destroy the challenge. The <A CLASS="pattern" HREF="GoalIndicators.htm" TARGET="frame_pattern">Goal Indicator</A> can, and in many cases should, indicate the <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limit</A>, if any, of reaching the goal.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Games that have several <A CLASS="pattern" HREF="OptionalGoals.htm" TARGET="frame_pattern">Optional Goals</A> players can pursue, and where the goal selection is at least potentially dynamic, benefit from having explicit lists of the players' current goals available. This can be implemented in adventure and roleplaying games as "adventure journals", which automatically keep track of the current status of goals. Examples of games with these types of <A CLASS="pattern" HREF="GoalIndicators.htm" TARGET="frame_pattern">Goal Indicators</A> are <I>Fallout</I>, <I>Baldur's Gate</I>, and <I>Morrowind</I>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">The obvious consequence of using <A CLASS="pattern" HREF="GoalIndicators.htm" TARGET="frame_pattern">Goal Indicators</A> is that the players have a clear, or at least clearer, view on what they should do in the game, especially if the indicator uses <A CLASS="pattern" HREF="DirectInformation.htm" TARGET="frame_pattern">Direct Information</A>. <A CLASS="pattern" HREF="GoalIndicators.htm" TARGET="frame_pattern">Goal Indicators</A> provide foci for the players to support <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="GoalIndicators.htm" TARGET="frame_pattern">Goal Indicators</A> can also be used to provide <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A> with <A CLASS="pattern" HREF="PublicInformation.htm" TARGET="frame_pattern">Public Information</A> about the games, letting them guess what tactics and strategies different players have based on the information and the actions the players perform.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: </P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A>, <A CLASS="pattern" HREF="PublicInformation.htm" TARGET="frame_pattern">Public Information</A>, <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Points</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="DirectInformation.htm" TARGET="frame_pattern">Direct Information</A>, <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A>, <A CLASS="pattern" HREF="CutScenes.htm" TARGET="frame_pattern">Cut Scenes</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="UncertaintyofInformation.htm" TARGET="frame_pattern">Uncertainty of Information</A>, <A CLASS="pattern" HREF="PlayerDefinedGoals.htm" TARGET="frame_pattern">Player Defined Goals</A></P>
+
+
+</html>
+

@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Collecting</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Collecting">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Collecting</H2>
+<I>The action of collecting game elements from the game world.</I>
+<P CLASS="text"><A CLASS="pattern" HREF="Collecting.htm" TARGET="frame_pattern">Collecting</A> is one of the most common activities in games. The collecting may be concrete by moving game elements around the game world and picking up game elements found or may be abstract by receiving game elements directly through actions or completing goals.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The game play is <I>Super Mario 64</I> and <I>Super Mario Sunshine</I> is based around the collections of stars which unlock new levels and drive the story forward.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The main actions performed in <I>Pac-Man</I> is moving and collecting pills.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Collecting.htm" TARGET="frame_pattern">Collecting</A> concrete game elements requires the presence of <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> and the placement of them together with the <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> goals which motivate the activities that are closely intertwined with the design of <A CLASS="pattern" HREF="Collecting.htm" TARGET="frame_pattern">Collecting</A> actions. Common reasons to perform <A CLASS="pattern" HREF="Collecting.htm" TARGET="frame_pattern">Collecting</A> activities include gaining <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A>, finding <A CLASS="pattern" HREF="Tools.htm" TARGET="frame_pattern">Tools</A> or <A CLASS="pattern" HREF="Power-Ups.htm" TARGET="frame_pattern">Power-Ups</A> that give <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A>, or gathering <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> that give <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> which can then be regarded as <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resources</A> from the players' perspectives<I>.</I></P>
+<P CLASS="text"></P>
+<P CLASS="text">The <A CLASS="pattern" HREF="Collecting.htm" TARGET="frame_pattern">Collecting</A> of abstract game elements is typically part of a <A CLASS="pattern" HREF="HierarchyofGoals.htm" TARGET="frame_pattern">Hierarchy of Goals</A> with a <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> goal as the main goal and the subgoals providing the game elements to be collected as <A CLASS="pattern" HREF="Rewards.htm" TARGET="frame_pattern">Rewards</A>. <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A> and experience points to measure <A CLASS="pattern" HREF="CharacterDevelopment.htm" TARGET="frame_pattern">Character Development</A> are examples of abstract <A CLASS="pattern" HREF="Collecting.htm" TARGET="frame_pattern">Collecting</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Collecting.htm" TARGET="frame_pattern">Collecting</A> of specific types of <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> or <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> can be further encouraged by adjusting how the collected game elements can be used. For example, <A CLASS="pattern" HREF="GeometricRewardsforInvestments.htm" TARGET="frame_pattern">Geometric Rewards for Investments</A> encourage specializing of what is collecting as well as encouraging hoarding.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">The act of <A CLASS="pattern" HREF="Collecting.htm" TARGET="frame_pattern">Collecting</A> is the <A CLASS="pattern" HREF="TransferofControl.htm" TARGET="frame_pattern">Transfer of Control</A> of a game element to a player. <A CLASS="pattern" HREF="Collecting.htm" TARGET="frame_pattern">Collecting</A> can be used to instantiate <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> goals of concrete game elements in the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>. When doing so, they make <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> or <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A> necessary (unless the game elements can be collected through <A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A> goals) and may create <A CLASS="pattern" HREF="PlayerDefinedGoals.htm" TARGET="frame_pattern">Player Defined Goals</A> of <A CLASS="pattern" HREF="Exploration.htm" TARGET="frame_pattern">Exploration</A> if the locations of the game elements are not known. <A CLASS="pattern" HREF="Collecting.htm" TARGET="frame_pattern">Collecting</A> can also be done of game elements not found in the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>. In these cases, the actions are typically part trying to complete <I>Hierarchies of Goals</I>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Collecting.htm" TARGET="frame_pattern">Collecting</A> is usually part of <A CLASS="pattern" HREF="ConstructivePlay.htm" TARGET="frame_pattern">Constructive Play</A> although the reason for doing the collecting or the reasons why the collection can be done do not need to be so.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="HierarchyofGoals.htm" TARGET="frame_pattern">Hierarchy of Goals</A>, <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A>, <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A>, <A CLASS="pattern" HREF="PlayerDefinedGoals.htm" TARGET="frame_pattern">Player Defined Goals</A>, <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="CharacterDevelopment.htm" TARGET="frame_pattern">Character Development</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A>, <A CLASS="pattern" HREF="TransferofControl.htm" TARGET="frame_pattern">Transfer of Control</A>, <A CLASS="pattern" HREF="Rewards.htm" TARGET="frame_pattern">Rewards</A>, <A CLASS="pattern" HREF="Power-Ups.htm" TARGET="frame_pattern">Power-Ups</A>, <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A>, <A CLASS="pattern" HREF="Tools.htm" TARGET="frame_pattern">Tools</A>, <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A>, <A CLASS="pattern" HREF="GeometricRewardsforInvestments.htm" TARGET="frame_pattern">Geometric Rewards for Investments</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

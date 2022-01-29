@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Limited Foresight</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Limited Foresight">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Limited Foresight</H2>
+<I>Players have little knowledge of the next events in a game, or that they do not know what consequences they will have.</I>
+<P CLASS="text">Games have undetermined outcomes when players start to play them, and often parts of gameplay likewise have outcomes that are not known beforehand by players. This <A CLASS="pattern" HREF="LimitedForesight.htm" TARGET="frame_pattern">Limited Foresight</A> makes players have to perform actions without completely knowing the full consequences of them and lets them experience <A CLASS="pattern" HREF="Surprises.htm" TARGET="frame_pattern">Surprises</A> due to actions and events done by the game system or other players.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>in <I>Tetris</I> players only know which the next piece will be and all future pieces are unknown, one piece being revealed at a time as players place the ones they have.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>in <I>Diplomacy</I> concrete planning beyond the next move is difficult to do as the actions of all the other players are uncertain.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The two main ways of creating <A CLASS="pattern" HREF="LimitedForesight.htm" TARGET="frame_pattern">Limited Foresight</A> for players is by limiting the game elements and information available through <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A> or by making the game have less <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A> of future actions or events. Both of these can be achieve through <A CLASS="pattern" HREF="GameMasters.htm" TARGET="frame_pattern">Game Masters</A> but several other ways exist to achieve one or the other.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Giving <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A> about game elements can either be done through <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Points</A> or through lack of <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A>. In the first case, players cannot gain access to the additional information until the gameplay as progressed beyond a certain threshold, for example by partitioning the game into <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Levels</A>. As players do not have to understand or use all information and possible actions in games constructed in this way, these games can have <A CLASS="pattern" HREF="SmoothLearningCurves.htm" TARGET="frame_pattern">Smooth Learning Curves</A> where the complexity of the game is increased in a structured fashion. In the second case, players may have potential access to all information at once, but have to do actions such as <A CLASS="pattern" HREF="Exploration.htm" TARGET="frame_pattern">Exploration</A> or <A CLASS="pattern" HREF="AttentionSwapping.htm" TARGET="frame_pattern">Attention Swapping</A> to get that information.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Ways of decreasing the <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A> in a game design include adding <A CLASS="pattern" HREF="Randomness.htm" TARGET="frame_pattern">Randomness</A> or setting the <A CLASS="pattern" HREF="RightLevelofComplexity.htm" TARGET="frame_pattern">Right Level of Complexity</A> high enough that not all future game states can be regarded, the latter creating the need for <A CLASS="pattern" HREF="PuzzleSolving.htm" TARGET="frame_pattern">Puzzle Solving</A>. Another way is to make players have direct influence over the evaluation functions, for example by <A CLASS="pattern" HREF="PlayerDecidedResults.htm" TARGET="frame_pattern">Player Decided Results</A> or <I>Player-Defined Distribution of Rewards &amp; Penalties.</I></P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="LimitedForesight.htm" TARGET="frame_pattern">Limited Foresight</A> is required for <A CLASS="pattern" HREF="IllusionofInfluence.htm" TARGET="frame_pattern">Illusion of Influences</A> to exist as players have no influence in a game where there exists one optimal strategy or set of actions. Not being able to foresee events and effects gives players <A CLASS="pattern" HREF="LimitedPlanningAbility.htm" TARGET="frame_pattern">Limited Planning Ability</A> but does not necessarily undermine <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A> as it may be possible to plan strategically or a few moves ahead. <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A> is incompatible with <A CLASS="pattern" HREF="LimitedForesight.htm" TARGET="frame_pattern">Limited Foresight</A> as the latter can bound <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A> so that the former cannot arise.</P>
+<P CLASS="text"></P>
+<P CLASS="text">If players have <A CLASS="pattern" HREF="LimitedForesight.htm" TARGET="frame_pattern">Limited Foresight</A> but can get more extensive foresight through getting information, the pattern guarantees the presence of <A CLASS="pattern" HREF="GainInformation.htm" TARGET="frame_pattern">Gain Information</A> goals. These goals are especially valuable if the <A CLASS="pattern" HREF="LimitedForesight.htm" TARGET="frame_pattern">Limited Foresight</A> regards information that has to do with <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A> choices.</P>
+<P CLASS="text"></P>
+<P CLASS="text">For <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A> to contain <A CLASS="pattern" HREF="Surprises.htm" TARGET="frame_pattern">Surprises</A> they need players to have <A CLASS="pattern" HREF="LimitedForesight.htm" TARGET="frame_pattern">Limited Foresight</A> regarding the story.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Surprises.htm" TARGET="frame_pattern">Surprises</A>, <A CLASS="pattern" HREF="LimitedPlanningAbility.htm" TARGET="frame_pattern">Limited Planning Ability</A>, <A CLASS="pattern" HREF="SmoothLearningCurves.htm" TARGET="frame_pattern">Smooth Learning Curves</A>, <A CLASS="pattern" HREF="GainInformation.htm" TARGET="frame_pattern">Gain Information</A>, <A CLASS="pattern" HREF="Exploration.htm" TARGET="frame_pattern">Exploration</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A>, <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A>, <A CLASS="pattern" HREF="PuzzleSolving.htm" TARGET="frame_pattern">Puzzle Solving</A>, <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A>, <A CLASS="pattern" HREF="IllusionofInfluence.htm" TARGET="frame_pattern">Illusion of Influence</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Randomness.htm" TARGET="frame_pattern">Randomness</A>, <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A>, <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Points</A>, <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Levels</A>, <A CLASS="pattern" HREF="GameMasters.htm" TARGET="frame_pattern">Game Masters</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="AttentionSwapping.htm" TARGET="frame_pattern">Attention Swapping</A>, <A CLASS="pattern" HREF="RightLevelofComplexity.htm" TARGET="frame_pattern">Right Level of Complexity</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A>, <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A></P>
+
+
+</html>
+

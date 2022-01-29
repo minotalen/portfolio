@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Predefined Goals</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Predefined Goals">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Predefined Goals</H2>
+<I>Predefined Goals are preset by the game designer, usually arranged in a rigid hierarchy, which can only be adaptable by players' choices or interpretations if the design allows it.</I>
+<P CLASS="text">To make goals unambiguous, <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A> are described using the components of the game and have <A CLASS="pattern" HREF="Rewards.htm" TARGET="frame_pattern">Rewards</A> described and implemented through the game system. All winnable games, i. e., games where there exists a game state that defines one or several winners, have the predefined primary goal that can be stated as: win the game. This is so common that the existence of such a goal is sometimes used to define what a game is, but examples such as the <I>Sims</I>, <I>Tetris</I>, and <I>Pac-Man</I> show the existence of games that at least question if these definitions are inclusive of all games.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Chess</I> has the <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A> for each player to checkmate the other player's king.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Monopoly</I> has the <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goal</A> of eliminating all other players by driving them into bankruptcy.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A> require that explicit boundaries be set by the game design to what game states are considered successes and how players can reach those game states. However, within these boundaries the player can have some freedom, which can be instantiated by a <I>Selectable Set of Goals</I> or by not specifically defining what actions need to be performed to achieve the main goals, nor in which order the actions need to be performed. This is the case in <A CLASS="pattern" HREF="PlannedCharacterDevelopment.htm" TARGET="frame_pattern">Planned Character Development</A> where players must be able to have some <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A> to be able to plan but at the same time need some freedom for the plans to be theirs and not the game designers.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Although goals may be predefined, the information about what goals exist (the first time a game is played) or what goals players (which might include oneself) are trying to achieve may be unknown. The combination of <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A> with <A CLASS="pattern" HREF="PerfectInformation.htm" TARGET="frame_pattern">Perfect Information</A> and <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A> allows players to form more complex strategies allowing <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A> to be developed, especially in the situation where subgoals are also known to the players. However, this may lead to the <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A> situation if the game allows too complex strategies to emerge.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The use of <A CLASS="pattern" HREF="AsymmetricInformation.htm" TARGET="frame_pattern">Asymmetric Information</A> with <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A> leads to situations where players try to guess or otherwise get information about the other players' goals in order to formulate their own strategies. The way the goal information is obtained can, of course, vary from game to game, especially if the game allows <A CLASS="pattern" HREF="SocialInteraction.htm" TARGET="frame_pattern">Social Interaction</A> between players.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A> are a powerful way for game designers to direct players' intentions, both for promoting certain forms of activities of the players and for setting up basic relationships between the players. As such, <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A> are common in all games to ensure that all players have a common understanding of the motivations for actions in the game. The simplest case, using <I>Perfect</I> <I>Information</I> and <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A>, can be found in almost all traditional board games. As players can learn the strategies for completing <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A> by playing the game repeatedly, the forms of goals support the development of <A CLASS="pattern" HREF="GameMastery.htm" TARGET="frame_pattern">Game Mastery</A>. <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A> are by their nature incompatible with <A CLASS="pattern" HREF="EphemeralGoals.htm" TARGET="frame_pattern">Ephemeral Goals</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Although <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A> may be <A CLASS="pattern" HREF="UnknownGoals.htm" TARGET="frame_pattern">Unknown Goals</A> the first time a game is played, they will not be so in following game instances, making the patterns difficult to combine in games that aim to have <A CLASS="pattern" HREF="Replayability.htm" TARGET="frame_pattern">Replayability</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The direction of action that <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A> support can, however, limit players' <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A>, especially if applied to lower level goals or goals that are easy to complete. Imagine a point-based variant of <I>Chess</I> where checkmate gives 20 points; capturing a rook, knight, or other second row piece gives 5 points; and capturing a pawn gives 1 point but only before any second row pieces have been taken. Although game sessions of this variant would be contained within what is possible in a normal <I>Chess</I> game, these games would probably more often contain captures exchanged and would discourage crowded checkmate situations, which would limit the strategies and tactics normally used in <I>Chess</I>. Therefore, <I>Chess</I> and other games without many <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Points</A> usually do not have many <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A> either. Typically, only the main goals are predefined, while players can choose the low-level goals themselves from a <I>Selectable Set of Goals</I> whose rewards are not explicitly linked to the main goal.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="HierarchyofGoals.htm" TARGET="frame_pattern">Hierarchy of Goals</A>, <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A>, <A CLASS="pattern" HREF="SelectableSetsofGoals.htm" TARGET="frame_pattern">Selectable Sets of Goals</A>, <A CLASS="pattern" HREF="GameMastery.htm" TARGET="frame_pattern">Game Mastery</A>, <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="PlannedCharacterDevelopment.htm" TARGET="frame_pattern">Planned Character Development</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="PerfectInformation.htm" TARGET="frame_pattern">Perfect Information</A>, <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A>, <A CLASS="pattern" HREF="AsymmetricInformation.htm" TARGET="frame_pattern">Asymmetric Information</A>, <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="EphemeralGoals.htm" TARGET="frame_pattern">Ephemeral Goals</A>, <A CLASS="pattern" HREF="UnknownGoals.htm" TARGET="frame_pattern">Unknown Goals</A></P>
+
+
+</html>
+

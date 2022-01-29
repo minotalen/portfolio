@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Turn-Based Games</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Turn-Based Games">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Turn-Based Games</H2>
+<I>The players take turns to make their actions to change the game state, and the progress of game time is not tied to the real time.</I>
+<P CLASS="text">The progress of game time in <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A> is not directly linked to real time, and it may be up to the players to pace the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>In <I>Chess</I>, the players take turns to move their pieces on the board. In the basic variant, there is no strict time limit for the players to execute their turns apart from social pressure exerted by the other player.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Laser Squad Nemesis</I> and the <I>Combat Mission</I> serie offer the players modes for hot-seating, switching the player whose turn it is, and sending the turn information via e-mail to the other player.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A> may be easily changed to <A CLASS="pattern" HREF="Tick-BasedGames.htm" TARGET="frame_pattern">Tick-Based Games</A> by simply introducing <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A> to the players' <A CLASS="pattern" HREF="TurnTaking.htm" TARGET="frame_pattern">Turn Taking</A>. <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A> can be supported by <A CLASS="pattern" HREF="DedicatedGameFacilitators.htm" TARGET="frame_pattern">Dedicated Game Facilitators</A>, especially when the turn is resolved simultaneously, but they are also at least partly <A CLASS="pattern" HREF="Self-FacilitatedGames.htm" TARGET="frame_pattern">Self-Facilitated Games</A>, as completing the turn requires effort from the players, distinct from the actual gameplay.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Combat.htm" TARGET="frame_pattern">Combat</A> and <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> in <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A> compared to <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A> requires more of players cognitive skills, as they have more time to think, and the <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A> of actions in <A CLASS="pattern" HREF="Combat.htm" TARGET="frame_pattern">Combat</A> and <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> require more <A CLASS="pattern" HREF="PuzzleSolving.htm" TARGET="frame_pattern">Puzzle Solving</A> skills than skills in <A CLASS="pattern" HREF="Dexterity-BasedActions.htm" TARGET="frame_pattern">Dexterity-Based Actions</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Some <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A> allow players to pass their turn without making any actions, in principle, making one big <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Op</A> action. The actions available to the players during their turn can vary from simple pre-specified actions (such as roll a die and move) to complex action sequences with <A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A>. An interesting alternative is to have <A CLASS="pattern" HREF="AsymmetricAbilities.htm" TARGET="frame_pattern">Asymmetric Abilities</A> that rotate out of sync with the turns. Also in some games, these action sequences can have characteristics of <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A> such as <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A>, although these have otherwise contradictory characteristics.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A> almost always have <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A> when the other players have to wait for the active player's turn to terminate during the <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A> for <A CLASS="pattern" HREF="TurnTaking.htm" TARGET="frame_pattern">Turn Taking</A>, especially in <A CLASS="pattern" HREF="SynchronousGames.htm" TARGET="frame_pattern">Synchronous Games</A>. This effect of <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A> in <A CLASS="pattern" HREF="AsynchronousGames.htm" TARGET="frame_pattern">Asynchronous Games</A> is often less drastic, as the players have a possibility of some action other than waiting for the other players to complete their turns. It is possible, however, to limit the effects of this <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A> by having the players plan and execute their actions at the same time, and the actions are resolved simultaneously when the players have submitted their actions. If the <A CLASS="pattern" HREF="TurnTaking.htm" TARGET="frame_pattern">Turn Taking</A> is sequential, there are <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversals</A> when the players change their modes of play from active to passive.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A>, <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Combat.htm" TARGET="frame_pattern">Combat</A>, <A CLASS="pattern" HREF="Tick-BasedGames.htm" TARGET="frame_pattern">Tick-Based Games</A>, <A CLASS="pattern" HREF="SynchronousGames.htm" TARGET="frame_pattern">Synchronous Games</A>, <A CLASS="pattern" HREF="AsynchronousGames.htm" TARGET="frame_pattern">Asynchronous Games</A>, <A CLASS="pattern" HREF="AsymmetricAbilities.htm" TARGET="frame_pattern">Asymmetric Abilities</A>, <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="TurnTaking.htm" TARGET="frame_pattern">Turn Taking</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Self-FacilitatedGames.htm" TARGET="frame_pattern">Self-Facilitated Games</A>, <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Ops</A>, <A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A>, <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A>, <A CLASS="pattern" HREF="PuzzleSolving.htm" TARGET="frame_pattern">Puzzle Solving</A>, <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>, <A CLASS="pattern" HREF="DedicatedGameFacilitators.htm" TARGET="frame_pattern">Dedicated Game Facilitators</A>, <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A>, <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A></P>
+
+
+</html>
+

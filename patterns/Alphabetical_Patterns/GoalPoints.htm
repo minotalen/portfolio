@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Goal Points</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Goal Points">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Goal Points</H2>
+<I>Goal Points are locations in the game world which the players can enter in order to complete a goal.</I>
+<P CLASS="text">In some cases, for example, racing games, it is sufficient to reach the goal by simply entering the <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Point</A> while other games require certain other conditions, such as carrying a particular object, for the goal to be fulfilled.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>All racing games, such as the <I>Midtown Madness</I> and <I>Super Monkey Ball</I> series, make use of <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Points</A> by having goal lines for completing the race. Reaching the <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Point</A> in <I>Super Monkey Ball</I> is the goal for finishing each of the levels.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Capture-the-Flag variants of multiplayer first-person shooters, such as in some variants of Quake and Unreal Tournament, have certain areas where the enemy flag has to be delivered for the team to score.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The choice of using <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Points</A> in a game depends strongly on the particular context for the goals (typically <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A>, <A CLASS="pattern" HREF="Delivery.htm" TARGET="frame_pattern">Delivery</A> or <A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A>) it supports. Defining the location of a <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Point</A> in relation to where the pursuit of the goal started is one of the main ways to ensure the <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A> for that goal. However, these goals do not have to have static locations as <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Points</A>, and instead of only one <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Point</A> there may be several.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The location of a <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Point</A> can be placed in an <A CLASS="pattern" HREF="InaccessibleAreas.htm" TARGET="frame_pattern">Inaccessible Areas</A> to make the completion more difficult as it either requires the completion of subgoals before the goal can be reached or the use of <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A> of <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> (or <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A> in multiplayer games with teams).</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Points</A> create explicit areas to move towards in <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game Worlds</A> and thereby make players do <A CLASS="pattern" HREF="GameWorldNavigation.htm" TARGET="frame_pattern">Game World Navigation</A>. They create an explicit end condition to strive towards in <A CLASS="pattern" HREF="Exploration.htm" TARGET="frame_pattern">Exploration</A>, <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A>, <A CLASS="pattern" HREF="Delivery.htm" TARGET="frame_pattern">Delivery</A>, and <A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A> goals. Both the success and the failure of reaching a goal with a<A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Point</A> has strong closures, and the easy measure of the level of failure through the spatial distance to the <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Point</A> creates a <A CLASS="pattern" HREF="NearMissIndicators.htm" TARGET="frame_pattern">Near Miss Indicator</A> through being an intuitive <A CLASS="pattern" HREF="ProgressIndicators.htm" TARGET="frame_pattern">Progress Indicator</A> in the first place.</P>
+<P CLASS="text"></P>
+<P CLASS="text">When combine with <A CLASS="pattern" HREF="AreaControl.htm" TARGET="frame_pattern">Area Control</A> to define <A CLASS="pattern" HREF="ContinuousGoals.htm" TARGET="frame_pattern">Continuous Goals</A>, <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Points</A> limit player's <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A> as they have to be in a certain area as long as the <A CLASS="pattern" HREF="ContinuousGoals.htm" TARGET="frame_pattern">Continuous Goal</A> has to be maintained. This, however, makes the <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Point</A> a <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Location</A> and the objective for <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A> goals. When several <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Points</A> simultaneously have to be held this requires players to do <A CLASS="pattern" HREF="CollaborativeActions.htm" TARGET="frame_pattern">Collaborative Actions</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Points</A> can be combined with <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Havens</A> to let player release <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> after reaching a closure.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="GameWorldNavigation.htm" TARGET="frame_pattern">Game World Navigation</A>, <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A>, <A CLASS="pattern" HREF="CollaborativeActions.htm" TARGET="frame_pattern">Collaborative Actions</A>, <A CLASS="pattern" HREF="AreaControl.htm" TARGET="frame_pattern">Area Control</A>, <A CLASS="pattern" HREF="GoalIndicators.htm" TARGET="frame_pattern">Goal Indicators</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="ContinuousGoals.htm" TARGET="frame_pattern">Continuous Goals</A>, <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A>, <A CLASS="pattern" HREF="Rescue.htm" TARGET="frame_pattern">Rescue</A>, <A CLASS="pattern" HREF="Exploration.htm" TARGET="frame_pattern">Exploration</A>, <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A>, <A CLASS="pattern" HREF="Delivery.htm" TARGET="frame_pattern">Delivery</A>, <A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Havens</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

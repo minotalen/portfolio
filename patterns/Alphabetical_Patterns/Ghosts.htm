@@ -1,0 +1,41 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Ghosts</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Ghosts">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Ghosts</H2>
+<I>Ghosts are the overlay of elements and actions from previous game sessions in a current game session so that players can compare their current progress with that of the previous attempts.</I>
+<P CLASS="text"><B>Example: </B>racing games such as <I>Gran Turismo 3</I> make use of <A CLASS="pattern" HREF="Ghosts.htm" TARGET="frame_pattern">Ghosts</A> to let players compare their current play session with earlier ones, or to practice against the optimal path.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Ghosts.htm" TARGET="frame_pattern">Ghosts</A> are mainly used in <A CLASS="pattern" HREF="Race.htm" TARGET="frame_pattern">Races</A> or other games where the player has a limited overview of the whole game world and where there is little outside influence on players' performance.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The main design choice affecting player influence on the game's use of <A CLASS="pattern" HREF="Ghosts.htm" TARGET="frame_pattern">Ghosts</A> is whether players should be allowed to select which game sessions are saved and used as <A CLASS="pattern" HREF="Ghosts.htm" TARGET="frame_pattern">Ghosts</A> or if this is determined by the game mechanically, i. e. by <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A>. Further, the use of <A CLASS="pattern" HREF="Ghosts.htm" TARGET="frame_pattern">Ghosts</A> can be chosen to only be possible within the same save file, i. e. defining a closed game world, or be shared to other save files as <A CLASS="pattern" HREF="Trans-GameInformation.htm" TARGET="frame_pattern">Trans-Game Information</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Ghosts.htm" TARGET="frame_pattern">Ghosts</A> can be seen as a form of <I>Highscore List</I> that contains the whole game sessions instead of only the <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A>. As such, <A CLASS="pattern" HREF="Ghosts.htm" TARGET="frame_pattern">Ghosts</A> can be used to make a <A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Game</A> into a form of mixture between an <A CLASS="pattern" HREF="AsynchronousGames.htm" TARGET="frame_pattern">Asynchronous Game</A> and <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A> where the whole play sessions are played before comparing results. <A CLASS="pattern" HREF="Ghosts.htm" TARGET="frame_pattern">Ghosts</A> naturally create <A CLASS="pattern" HREF="Competition.htm" TARGET="frame_pattern">Competition</A> even though the players are not playing at the same time.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Competition.htm" TARGET="frame_pattern">Competition</A>, <A CLASS="pattern" HREF="Trans-GameInformation.htm" TARGET="frame_pattern">Trans-Game Information</A>, <A CLASS="pattern" HREF="AsynchronousGames.htm" TARGET="frame_pattern">Asynchronous Games</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A>, <A CLASS="pattern" HREF="Race.htm" TARGET="frame_pattern">Race</A>, <A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: </P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

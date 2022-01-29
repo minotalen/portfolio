@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Single-Player Games</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Single-Player Games">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Single-Player Games</H2>
+<I>Games where there is only one player in a game instance.</I>
+<P CLASS="text">The player in <A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A> is in a conflict situation with the game system. It is possible, and sometimes even desirable, to analyze these games in such a way that conflict with the game system is framed as a conflict situation in <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A>. This personification of the game system often helps to clear the goal structures and the motivations for the conflict situation.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The vast majority of computer games are <A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A> where the player is competing against or in conflict with the game system.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Puzzles of any kind can be classified as <A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A> although they are a borderline case between games and game-like activities, because they do not typically have the conflict situations common to games in general.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The amount of the possible <A CLASS="pattern" HREF="SocialInteraction.htm" TARGET="frame_pattern">Social Interaction</A> can be increased by using, for example, <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A> to measure the performance of the player. This allows players to compare their performances to one other and to use <I>Highscore Lists</I> to create simple <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Games</A> with multiple players. A more refined method is to have <A CLASS="pattern" HREF="Ghosts.htm" TARGET="frame_pattern">Ghosts</A> in the game where players can directly compare their performance between each other during the play.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The goals and conflicts, as previously noted, can even in <A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A> be structured in similar fashion as in <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A>. For example, by analyzing <I>Pac-Man</I> as a game between the Pac-Man and the ghosts reveals somewhat surprising similarities with <I>Tag</I>, including the <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversals</A>. Even <I>Tetris</I> can be thought of as a conflict between the (computer controlled) player who is trying to fill the screen and the player who is trying to keep the screen clear. The <A CLASS="pattern" HREF="Rewards.htm" TARGET="frame_pattern">Rewards</A> and <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A> in <A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A> are best crafted as <A CLASS="pattern" HREF="IndividualRewards.htm" TARGET="frame_pattern">Individual Rewards</A> and <A CLASS="pattern" HREF="IndividualPenalties.htm" TARGET="frame_pattern">Individual Penalties</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A> are free to have player specific modulations of game time, such as <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A> and <A CLASS="pattern" HREF="CutScenes.htm" TARGET="frame_pattern">Cut Scenes</A>. Other game state manipulations, which are outside the game itself, are trivially possible in <A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A>. <A CLASS="pattern" HREF="Reversability.htm" TARGET="frame_pattern">Reversability</A> with <A CLASS="pattern" HREF="Save-LoadCycles.htm" TARGET="frame_pattern">Save-Load Cycles</A> is simple, as all that is required is to store the game state for later use.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The ways to modulate <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A> can be done somewhat differently in <A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A> compared to <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A>. First, by having players complete <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Levels</A>, the game designers can control what sort of challenges the players should meet. Second, it is easier to control what information the player has that can be used to give a player <A CLASS="pattern" HREF="LimitedPlanningAbility.htm" TARGET="frame_pattern">Limited Planning Ability</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A> cannot have <A CLASS="pattern" HREF="SocialInteraction.htm" TARGET="frame_pattern">Social Interaction</A> between the players of the same game instance, but if the game is played in a social situation, such as an arcade machine in a pub, there is a possibility for spontaneous <A CLASS="pattern" HREF="SocialInteraction.htm" TARGET="frame_pattern">Social Interaction</A> with the player and the <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A>. Even though the potential players are not sharing the game instance, they do share the <A CLASS="pattern" HREF="AlternativeReality.htm" TARGET="frame_pattern">Alternative Reality</A> provided by the game, and this can, in games with <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A> and applications of <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A>, especially <A CLASS="pattern" HREF="EasterEggs.htm" TARGET="frame_pattern">Easter Eggs</A> and <A CLASS="pattern" HREF="Exploration.htm" TARGET="frame_pattern">Exploration</A>, lead to another kind of <A CLASS="pattern" HREF="SocialInteraction.htm" TARGET="frame_pattern">Social Interaction</A> around the game where the players share their experiences and sometimes help each other solve difficult problems and progress in the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="IndividualPenalties.htm" TARGET="frame_pattern">Individual Penalties</A>, <A CLASS="pattern" HREF="IndividualRewards.htm" TARGET="frame_pattern">Individual Rewards</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="HighScoreLists.htm" TARGET="frame_pattern">High Score Lists</A>, <A CLASS="pattern" HREF="Reversability.htm" TARGET="frame_pattern">Reversability</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Games</A>, <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A>, <A CLASS="pattern" HREF="Exploration.htm" TARGET="frame_pattern">Exploration</A>, <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A>, <A CLASS="pattern" HREF="DedicatedGameFacilitators.htm" TARGET="frame_pattern">Dedicated Game Facilitators</A>, <A CLASS="pattern" HREF="Ghosts.htm" TARGET="frame_pattern">Ghosts</A>, <A CLASS="pattern" HREF="Save-LoadCycles.htm" TARGET="frame_pattern">Save-Load Cycles</A>, <A CLASS="pattern" HREF="EasterEggs.htm" TARGET="frame_pattern">Easter Eggs</A>, <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A>, <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A>, <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A>, <A CLASS="pattern" HREF="CutScenes.htm" TARGET="frame_pattern">Cut Scenes</A>, <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A>, <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A>, <A CLASS="pattern" HREF="LimitedPlanningAbility.htm" TARGET="frame_pattern">Limited Planning Ability</A>, <A CLASS="pattern" HREF="AsymmetricResourceDistribution.htm" TARGET="frame_pattern">Asymmetric Resource Distribution</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="SocialInteraction.htm" TARGET="frame_pattern">Social Interaction</A></P>
+
+
+</html>
+

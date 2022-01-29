@@ -1,0 +1,41 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Parallel Lives</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Parallel Lives">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Parallel Lives</H2>
+<I>Parallel Lives are used in games where the player controls or protects several game elements which each can be considered to have a life of its own.</I>
+<P CLASS="text">The loss of one of these elements may limit the players' possible actions or opportunities but does not have as severe consequences as the loss of a life of a player character, which typically signifies the end of a game session or forces the players to restart at an earlier point in the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Missile Command</I> is an archetypical example of <A CLASS="pattern" HREF="ParallelLives.htm" TARGET="frame_pattern">Parallel Lives</A>: the player has six cities that all can be destroyed and the player can continue playing as long as at least one city is intact.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The design choices associated with <A CLASS="pattern" HREF="ParallelLives.htm" TARGET="frame_pattern">Parallel Lives</A> are similar to those of <A CLASS="pattern" HREF="Lives.htm" TARGET="frame_pattern">Lives</A> but the <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A> of losing a parallel life is usually small, typically only the loss of the actions the <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> provided. However, not all <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> need to be valued the same in order to create a hierarchy of importance; the lose of some may allow continued gameplay while others must be kept alive, at least until certain events have taken place,. The consequences of losing all <A CLASS="pattern" HREF="ParallelLives.htm" TARGET="frame_pattern">Parallel Lives</A> are typically the same as losing all <A CLASS="pattern" HREF="Lives.htm" TARGET="frame_pattern">Lives</A> in an <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatar</A> -based game of <A CLASS="pattern" HREF="PlayerElimination.htm" TARGET="frame_pattern">Player Elimination</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="ParallelLives.htm" TARGET="frame_pattern">Parallel Lives</A> require players to make Risk/Reward calculations on which game elements to protect and which to risk. The pattern often requires the players to perform <A CLASS="pattern" HREF="AttentionSwapping.htm" TARGET="frame_pattern">Attention Swapping</A>, especially in games where players do not have a complete overview of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>. The use of <A CLASS="pattern" HREF="ParallelLives.htm" TARGET="frame_pattern">Parallel Lives</A> is problematic to combine with that of <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="AttentionSwapping.htm" TARGET="frame_pattern">Attention Swapping</A>, <A CLASS="pattern" HREF="Lives.htm" TARGET="frame_pattern">Lives</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A>, <A CLASS="pattern" HREF="PlayerElimination.htm" TARGET="frame_pattern">Player Elimination</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A></P>
+
+
+</html>
+

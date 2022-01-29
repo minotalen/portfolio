@@ -1,0 +1,55 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Eliminate</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Eliminate">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Eliminate</H2>
+<I>Eliminate is the goal to remove a game element from its location in the game space.</I>
+<P CLASS="text">Games may offer the removal of game elements for several reasons: the game elements may hinder actions, may pose a threat to the player goals, or their removal may simply be a goal in itself that is rewarded. The removal of game elements is not necessarily permanent; the board game <I>Ludo</I> lets players reinsert taken pieces, and many multiplayer first-person shooters let people spawn again after being killed, both as ways to allow the same number of <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A> or game elements in the game for as long as the game continues.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>In <I>Backgammon</I>, a single opponent's piece is removed from play when taken, but the piece can be brought back to the game later.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Counter-Strike</I> differs from many first-person shooters in that players who are killed are eliminated for the remainder of the match.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The single-player puzzle game <I>Peg Solitaire</I> consists of eliminating all game elements from the game board save one.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The main consideration when employing <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> is choosing what game element can be eliminated. The goal object is usually, but not necessarily, a game element that is controlled by another player or the game system, making <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> become a subpattern of <A CLASS="pattern" HREF="Overcome.htm" TARGET="frame_pattern">Overcome</A>. Common <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> goals are to destroy <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generators</A> or to defeat <A CLASS="pattern" HREF="BossMonsters.htm" TARGET="frame_pattern">Boss Monsters</A> in order to advance to the next <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Level</A>. The goal to <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> can easily be made into a <A CLASS="pattern" HREF="HierarchyofGoals.htm" TARGET="frame_pattern">Hierarchy of Goals</A> by using <A CLASS="pattern" HREF="Damage.htm" TARGET="frame_pattern">Damage</A> so that several successful actions must be performed before the goal is completed.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> typically uses another pattern to describe the exact method of elimination. <A CLASS="pattern" HREF="Combat.htm" TARGET="frame_pattern">Combat</A>, through melee or <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A> actions, is the most common means to achieving <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> goals. Luring opponents into <A CLASS="pattern" HREF="DeadlyTraps.htm" TARGET="frame_pattern">Deadly Traps</A> is another possibility but typically requires more indirect actions. <I>Backgammon</I> uses a <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A> pattern to define how to do the actual elimination, but there are many other possibilities. However, elimination can occur through the non-action of the players controlling the game element, e. g., folding in <I>Poker</I> or other games containing <A CLASS="pattern" HREF="Bidding.htm" TARGET="frame_pattern">Bidding</A>. <A CLASS="pattern" HREF="Tournaments.htm" TARGET="frame_pattern">Tournaments</A> also typically contain the <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> pattern as players strive to eliminate each other through <A CLASS="pattern" HREF="PlayerElimination.htm" TARGET="frame_pattern">Player Elimination</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The game elements removed by the fulfillment of the goal do not have to be removed permanently. However, even if elimination only is temporary, it usually involves some sort of <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalty</A> for the player who controlled the eliminated game element. This typically takes the form of the game element being transferred back to a <A CLASS="pattern" HREF="SpawnPoints.htm" TARGET="frame_pattern">Spawn Point</A> or having the game element out of play for a certain amount of time, possibly leading to <A CLASS="pattern" HREF="LimitedSetofActions.htm" TARGET="frame_pattern">Limited Set of Actions</A> or forcing players to perform <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Ops</A>. The effect of <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> can of course be expanded to remove players from game sessions as well through <A CLASS="pattern" HREF="PlayerElimination.htm" TARGET="frame_pattern">Player Elimination</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Strategy games that have cities or other types of <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generators</A> use <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> in order to get rid of the produced <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A>. The gameplay in those games is usually about maintaining a steady growth of available <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> to overwhelm the opponent.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> requires the disappearance of some game element from gameplay, and the player fulfilling such a goal is therefore a form of <A CLASS="pattern" HREF="Consumers.htm" TARGET="frame_pattern">Consumer</A>. If the game elements to be eliminated are controlled by another player, this player can be considered an <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemy</A> and usually has the <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goals</A> of <A CLASS="pattern" HREF="Survive.htm" TARGET="frame_pattern">Survive</A> or <A CLASS="pattern" HREF="Evade.htm" TARGET="frame_pattern">Evade</A>. <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> easily creates <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> and may cause <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A> between players, especially if the <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> concerns game elements that are the effect of other players' <A CLASS="pattern" HREF="Construction.htm" TARGET="frame_pattern">Construction</A> actions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> can also be used to speed up and simplify gameplay in the end phase of a game by successively removing game elements during the early gameplay so that only a few remain at the end of the game. As the pieces that remain have increased values in this context, this use of <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> supports <A CLASS="pattern" HREF="Higher-LevelClosuresasGameplayProgresses.htm" TARGET="frame_pattern">Higher-Level Closures as Gameplay Progresses</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> does not necessarily have to be destructive towards players; the <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> of <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> and <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> in <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A> that destroy and change game values are examples of how the <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> goal is a part of the <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converter</A> effect of completing <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A> goal.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim & Shoot</A>, <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A>, <A CLASS="pattern" HREF="Combat.htm" TARGET="frame_pattern">Combat</A>, <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A>, <A CLASS="pattern" HREF="LastManStanding.htm" TARGET="frame_pattern">Last Man Standing</A>, <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A>, <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goals</A>, <A CLASS="pattern" HREF="Higher-LevelClosuresasGameplayProgresses.htm" TARGET="frame_pattern">Higher-Level Closures as Gameplay Progresses</A>, <A CLASS="pattern" HREF="BossMonsters.htm" TARGET="frame_pattern">Boss Monsters</A>, <A CLASS="pattern" HREF="PlayerElimination.htm" TARGET="frame_pattern">Player Elimination</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generators</A>, <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A>, <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Consumers.htm" TARGET="frame_pattern">Consumers</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Damage.htm" TARGET="frame_pattern">Damage</A>, <A CLASS="pattern" HREF="DeadlyTraps.htm" TARGET="frame_pattern">Deadly Traps</A>, <A CLASS="pattern" HREF="Bidding.htm" TARGET="frame_pattern">Bidding</A>, <A CLASS="pattern" HREF="Consumers.htm" TARGET="frame_pattern">Consumers</A>, <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A>, <A CLASS="pattern" HREF="Survive.htm" TARGET="frame_pattern">Survive</A>, <A CLASS="pattern" HREF="Evade.htm" TARGET="frame_pattern">Evade</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

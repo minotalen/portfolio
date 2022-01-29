@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Closure Points</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Closure Points">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Closure Points</H2>
+<I>Closure Points are events in gameplay where the game state is, or can be, reduced in size.</I>
+<P CLASS="text">Many games have points where most of the information about game elements and actions performed become irrelevant and are discarded. This is typically the case after important end or evaluation functions have been done, and as such can be called <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Points</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Completing a level in <I>Quake</I> discards all the information about where monsters and other game elements are on the level. The only information maintained in the game state from the level are the attributes of the player's character and general stats such as difficulty level.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">Common forms of <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Points</A> include <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Levels,</A> where typically only the information regarding game elements moved between the <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Levels</A> is maintained, and <A CLASS="pattern" HREF="Tournaments.htm" TARGET="frame_pattern">Tournaments</A>, where only the outcome of individual games is maintained. Additional common types of <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Points</A> include those when <A CLASS="pattern" HREF="TransferofControl.htm" TARGET="frame_pattern">Transfer of Control</A> occurs. <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Points</A> makenatural <A CLASS="pattern" HREF="SavePoints.htm" TARGET="frame_pattern">Save Points</A> for players since the planning of tactics is often bounded by the closure of the associated pattern.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The goals leading to <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Points</A> can be made <A CLASS="pattern" HREF="CommittedGoals.htm" TARGET="frame_pattern">Committed Goals</A> to ensure their occurrence, either to maintain the <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structure</A> or ensure <A CLASS="pattern" HREF="Higher-LevelClosuresasGameplayProgresses.htm" TARGET="frame_pattern">Higher-Level Closures as Gameplay Progresses</A>. <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Points</A> can also easily be created by using <A CLASS="pattern" HREF="ExcludingGoals.htm" TARGET="frame_pattern">Excluding Goals</A>, since the completion of one of these goals can make parts of the game state irrelevant.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Points</A> can be difficult to combine with <A CLASS="pattern" HREF="NeverEndingStories.htm" TARGET="frame_pattern">Never Ending Stories</A>; either because the stories are created by players and thereby outside the control of the game design or because higher-level closures cannot be infinitely achieved, and the closures risk becoming repetitious.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Points</A> are natural points of importance in <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A> and typically have some form of <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A>, often <A CLASS="pattern" HREF="CutScenes.htm" TARGET="frame_pattern">Cut Scenes</A>, in conjunction with the <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Points</A> to let players experience the emotions attached to the <A CLASS="pattern" HREF="Rewards.htm" TARGET="frame_pattern">Rewards</A> or <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A> associated with the closure. Since <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Points</A> can affect what is described by the game state, they can be used to ensure <A CLASS="pattern" HREF="Higher-LevelClosuresasGameplayProgresses.htm" TARGET="frame_pattern">Higher-Level Closures as Gameplay Progresses</A>. Games without many <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A>, e. g., <I>Chess</I>, have few <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Points</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Although players may have <A CLASS="pattern" HREF="LimitedForesight.htm" TARGET="frame_pattern">Limited Foresight</A> as to what may happen after a <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Point</A>, as well as what leads to the <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Point</A>, the knowledge that the <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Point</A> must occur gives players some <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A> of gameplay in games with <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Points</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="LimitedForesight.htm" TARGET="frame_pattern">Limited Foresight</A>, <A CLASS="pattern" HREF="Higher-LevelClosuresasGameplayProgresses.htm" TARGET="frame_pattern">Higher-Level Closures as Gameplay Progresses</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A>, <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="SavePoints.htm" TARGET="frame_pattern">Save Points</A>, <A CLASS="pattern" HREF="Tournaments.htm" TARGET="frame_pattern">Tournaments</A>, <A CLASS="pattern" HREF="TransferofControl.htm" TARGET="frame_pattern">Transfer of Control</A>, <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Levels</A>, <A CLASS="pattern" HREF="ExcludingGoals.htm" TARGET="frame_pattern">Excluding Goals</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A>, <A CLASS="pattern" HREF="CommittedGoals.htm" TARGET="frame_pattern">Committed Goals</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="NeverEndingStories.htm" TARGET="frame_pattern">Never Ending Stories</A></P>
+
+
+</html>
+

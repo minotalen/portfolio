@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Alignment</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Alignment">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Alignment</H2>
+<I>This goal consists of forming a linear alignment of game elements.</I>
+<P CLASS="text">Many games make use of the spatial relationship of game elements to cause effects in the game state. When the pieces have to form a line (typically defined by three game elements) for an effect to occur, this can be described as giving players the goal of<A CLASS="pattern" HREF="Alignment.htm" TARGET="frame_pattern">Alignment</A>. The goal usually requires the aligned elements to be next to each other. There are, however, games where this is not required but the <A CLASS="pattern" HREF="Alignment.htm" TARGET="frame_pattern">Alignment</A> can also be determined by the movement paths of game elements such as leaping in <I>Droughts</I>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>A well known, and perhaps the simplest, game of <A CLASS="pattern" HREF="Alignment.htm" TARGET="frame_pattern">Alignment</A> is <I>Tic-Tac-Toe</I> where the winner is the first to have three markers in horizontal, vertical or diagonal <A CLASS="pattern" HREF="Alignment.htm" TARGET="frame_pattern">Alignment</A> in a three by three board.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Tetris</I> uses the horizontal <A CLASS="pattern" HREF="Alignment.htm" TARGET="frame_pattern">Alignment</A> of blocks to remove them from the screen and increase the player's score.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Bejeweled</I> lets players swap game elements which are neighbors, removing them and rewarding the player with points if three or more game elements become aligned.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The requirements for using <A CLASS="pattern" HREF="Alignment.htm" TARGET="frame_pattern">Alignment</A> are to have a <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> that allows spatial arrangements and to have a <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A> for players of the whole area which is to be used. The prime challenges that can be designed for <A CLASS="pattern" HREF="Alignment.htm" TARGET="frame_pattern">Alignment</A> goals consist of how players can move the necessary game elements into the correct position and how game elements can be removed in order to hinder the completion of the <A CLASS="pattern" HREF="Alignment.htm" TARGET="frame_pattern">Alignment</A>. The difficulty of the goal can easily be increased by making the game elements move on their own or making them moveable by other players and introducing <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goals</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Alignment.htm" TARGET="frame_pattern">Alignment</A> is used in many ways in board games to create <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A>, with approach and withdrawal as two specific cases [Parlett, p.232-233]. In approach the piece is captured by moving towards it in a straight line and stopping right next to it. Withdrawal is, obviously, the reverse of approach: the piece is captured by moving an adjacent piece away from it in a straight line. Intervention and custodianship are other methods of <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> listed by Parlett, also using <A CLASS="pattern" HREF="Alignment.htm" TARGET="frame_pattern">Alignment</A> as the base pattern. Intervention involves capturing enemy pieces by moving a piece between them to form a line. The captured piece in custodianship is flanked by friendly pieces in such a way that the pieces form a line, as for example is the case in Hnefatafl or Othello where several pieces can be captured by flanking.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Alignment.htm" TARGET="frame_pattern">Alignment</A> is a form of <A CLASS="pattern" HREF="https://tecfa.unige.ch/tecfa/maltt/VIP/Ressources/Articles/Game%20Design%20Patterns/collection/Alphabetical_Patterns/Configuration.htm" TARGET="frame_pattern">Configuration</A>, and offers one of the strongest possibilities for <A CLASS="pattern" HREF="HoveringClosures.htm" TARGET="frame_pattern">Hovering Closures</A> by offering players clear visual <A CLASS="pattern" HREF="ProgressIndicators.htm" TARGET="frame_pattern">Progress Indicators</A> using the gestalt law of connectivity. <A CLASS="pattern" HREF="Alignment.htm" TARGET="frame_pattern">Alignment</A> can be a case of <A CLASS="pattern" HREF="Connection.htm" TARGET="frame_pattern">Connection</A>, but does not have to be so, since the game elements involved in the <A CLASS="pattern" HREF="Alignment.htm" TARGET="frame_pattern">Alignment</A> do not necessarily need to have <A CLASS="pattern" HREF="Connection.htm" TARGET="frame_pattern">Connection</A> between each other.</P>
+<P CLASS="text"></P>
+<P CLASS="text">In games where shots move instantaneously to the target, or the target is stationary, the action of <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A> has <A CLASS="pattern" HREF="Alignment.htm" TARGET="frame_pattern">Alignment</A> as a goal.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="https://tecfa.unige.ch/tecfa/maltt/VIP/Ressources/Articles/Game%20Design%20Patterns/collection/Alphabetical_Patterns/Configuration.htm" TARGET="frame_pattern">Configuration</A>, <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim & Shoot</A>, <A CLASS="pattern" HREF="HoveringClosures.htm" TARGET="frame_pattern">Hovering Closures</A>, <A CLASS="pattern" HREF="ProgressIndicators.htm" TARGET="frame_pattern">Progress Indicators</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A>, <A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Connection.htm" TARGET="frame_pattern">Connection</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

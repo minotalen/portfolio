@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Collection</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Collection">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Collection</H2>
+<I>The completion of several goals that together form a coherent unit.</I>
+<P CLASS="text"><A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> is a high-level goal requiring completion of several subgoals. <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> are common in games to give players a better sense of what goals they will have to fulfill, how they have succeeded so far, and how the goals they presently are trying to complete fit in the overall play of the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>WarioWare, Inc.</I> is a <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> of small and quick games that have to be completed in sequence.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>In <I>Decathlon</I>, players have 10 events to complete.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Pac-Man</I> has to gobble up all the pills to finish a level. While eating each pill is a very low-level goal, the goal for each level is the <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> of all pills.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>In <I>Lotto</I>, the <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> is completed by getting matching numbers during the draw.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The simplest case is to use the <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> as the end condition of the whole game, that is, to finish the <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> is to finish the game. Other possibilities are to have the completion of a <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> as part of a <A CLASS="pattern" HREF="HierarchyofGoals.htm" TARGET="frame_pattern">Hierarchy of Goals</A> or give <A CLASS="pattern" HREF="Rewards.htm" TARGET="frame_pattern">Rewards</A> that give <A CLASS="pattern" HREF="NewAbilities.htm" TARGET="frame_pattern">New Abilities</A> or increase a player's <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Of course, the nature and characteristics of the subgoals have to be defined when designing a <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A>. These goals can be of the same nature, for example <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A> goals to have <A CLASS="pattern" HREF="Ownership.htm" TARGET="frame_pattern">Ownership</A> over several identical <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> or <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> goals in deathmatch games or <I>Magic: The Gathering</I>, but can also be of totally different nature as in <I>WarioWare, Inc.</I> and <I>Decathlon</I>. Adventure games often use <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> with different types of subgoals for progressing in the game. The player first has to travel to a castle, find the key to a treasure chest, get the magic sword from the chest, and finally kill the dragon. In these games, the sequence in which the goals are achieved is significant to ensure <A CLASS="pattern" HREF="Higher-LevelClosuresasGameplayProgresses.htm" TARGET="frame_pattern">Higher-Level Closures as Gameplay Progresses</A>, and usually the last goal in the sequence is an encounter with a <A CLASS="pattern" HREF="BossMonsters.htm" TARGET="frame_pattern">Boss Monster</A>. However, games using a <I>Selectable Set of Goals</I> to define a <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> offer players <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A> and a variety of tactics. Often after finishing one <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A>, another one is offered to the player, which can be seen as an application of <A CLASS="pattern" HREF="DynamicGoalCharacteristics.htm" TARGET="frame_pattern">Dynamic Goal Characteristics</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Common instances of <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> include <A CLASS="pattern" HREF="LastManStanding.htm" TARGET="frame_pattern">Last Man Standing</A> and <A CLASS="pattern" HREF="https://tecfa.unige.ch/tecfa/maltt/VIP/Ressources/Articles/Game%20Design%20Patterns/collection/Alphabetical_Patterns/Configuration.htm" TARGET="frame_pattern">Configuration</A>. Games using <A CLASS="pattern" HREF="LastManStanding.htm" TARGET="frame_pattern">Last Man Standing</A>, such as <I>Magic: The Gathering</I> and deathmatch games without <A CLASS="pattern" HREF="Spawning.htm" TARGET="frame_pattern">Spawning</A>, use <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> to achieve <A CLASS="pattern" HREF="TeamElimination.htm" TARGET="frame_pattern">Team Elimination</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">Achieving a <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> is done by performing <A CLASS="pattern" HREF="Collecting.htm" TARGET="frame_pattern">Collecting</A> actions so that players are the beneficiaries of <A CLASS="pattern" HREF="TransferofControl.htm" TARGET="frame_pattern">Transfer of Control</A> actions. A <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> is the easiest possible <A CLASS="pattern" HREF="HierarchyofGoals.htm" TARGET="frame_pattern">Hierarchy of Goals</A>, a number of goals with an overarching goal. As <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collections</A> are <I>Hierarchies of Goals</I>, they allow the game progression to be structured into smaller sections and can be used to modulate <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> in <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A>. <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> can be recursive so a <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> can be a subgoal of another <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> in order to create complex structures and hierarchies. The presence of a <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> makes the completion of all its subgoals into natural <A CLASS="pattern" HREF="SavePoints.htm" TARGET="frame_pattern">Save Points</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="TransferofControl.htm" TARGET="frame_pattern">Transfer of Control</A>, <A CLASS="pattern" HREF="TeamElimination.htm" TARGET="frame_pattern">Team Elimination</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="LastManStanding.htm" TARGET="frame_pattern">Last Man Standing</A>, <A CLASS="pattern" HREF="https://tecfa.unige.ch/tecfa/maltt/VIP/Ressources/Articles/Game%20Design%20Patterns/collection/Alphabetical_Patterns/Configuration.htm" TARGET="frame_pattern">Configuration</A>, <A CLASS="pattern" HREF="Collecting.htm" TARGET="frame_pattern">Collecting</A>, <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="SavePoints.htm" TARGET="frame_pattern">Save Points</A>, <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A>, <A CLASS="pattern" HREF="Ownership.htm" TARGET="frame_pattern">Ownership</A>, <A CLASS="pattern" HREF="DynamicGoalCharacteristics.htm" TARGET="frame_pattern">Dynamic Goal Characteristics</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

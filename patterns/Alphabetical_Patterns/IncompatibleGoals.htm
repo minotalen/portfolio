@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Incompatible Goals</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Incompatible Goals">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Incompatible Goals</H2>
+<I>Two or more goals that cannot be fulfilled simultaneously due to having end conditions that are mutually exclusive</I>
+<P CLASS="text">Making goals for a game in such a way that they cannot simultaneously be fulfilled is an easy and common way to create competition or complexity in games. They also help synchronize the tempo of players' experiences, because if players are near completing a goal it is not only likely to excite them but also those players with <A CLASS="pattern" HREF="IncompatibleGoals.htm" TARGET="frame_pattern">Incompatible Goals</A>, albeit for other reasons. However, a set of <A CLASS="pattern" HREF="IncompatibleGoals.htm" TARGET="frame_pattern">Incompatible Goals</A> do not have to be divided between different players, one player can have several goals that are incompatible with each other, and gameplay can focus upon selecting which of the goals to pursuit.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>In the board game <I>Time Agent</I>, six different species try to manipulate the past so that events promoting their species occur and events bad for them disappear out of history. Most of these events have at least one species wanting them to exist and at least one species that wants to erase them.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Tag</I>, where the goal of the chaser to catch the other players, the chaser's goal of tagging cannot be fulfilled at the same time as other players' goals of not being caught.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="IncompatibleGoals.htm" TARGET="frame_pattern">Incompatible Goals</A> are easy to create by basing them on Boolean expressions; one goal may require a game state condition to be true, while the other may require the same condition to be false, thereby making it impossible to complete both at the same time. Or, they may have one and only one state out of a number of states (a tile may be green, blue, red, or yellow, thus benefiting player A, B, C, or D). Another way to make <A CLASS="pattern" HREF="IncompatibleGoals.htm" TARGET="frame_pattern">Incompatible Goals</A> is to use <A CLASS="pattern" HREF="ExcludingGoals.htm" TARGET="frame_pattern">Excluding Goals</A> or <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goals</A>. Note that with <A CLASS="pattern" HREF="ExcludingGoals.htm" TARGET="frame_pattern">Excluding Goals</A>, the completion of one goal in a set of <A CLASS="pattern" HREF="IncompatibleGoals.htm" TARGET="frame_pattern">Incompatible Goals</A> does not have to make the others impossible to complete later, just that both goals cannot be fulfilled at the same time. A simple example of this is having two <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A> goals with different <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Points</A>; both cannot be fulfilled at the same time if the player cannot be in two locations simultaneously, but one can be completed first and the other later. These goals can of course, as can many other <A CLASS="pattern" HREF="IncompatibleGoals.htm" TARGET="frame_pattern">Incompatible Goals</A>, be completed simultaneously by <A CLASS="pattern" HREF="CollaborativeActions.htm" TARGET="frame_pattern">Collaborative Actions</A> if they are not specific to individual players.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The <A CLASS="pattern" HREF="IncompatibleGoals.htm" TARGET="frame_pattern">Incompatible Goals</A> between which the player must choose can be constructed to serve several different purposes. First, they can force the player to make <A CLASS="pattern" HREF="Tradeoffs.htm" TARGET="frame_pattern">Tradeoffs</A> between the different rewards offered. Second, they can force the player to make decisions between the <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A> of the different goals. And, they can be used for <A CLASS="pattern" HREF="PlannedCharacterDevelopment.htm" TARGET="frame_pattern">Planned Character Development</A> and limit the openness of a <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structure</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">If different players have <A CLASS="pattern" HREF="IncompatibleGoals.htm" TARGET="frame_pattern">Incompatible Goals</A>, it can create <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A> or <A CLASS="pattern" HREF="Competition.htm" TARGET="frame_pattern">Competition</A>, and thus <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A>, and the goals can naturally not be <A CLASS="pattern" HREF="MutualGoals.htm" TARGET="frame_pattern">Mutual Goals</A>. If players have several <A CLASS="pattern" HREF="IncompatibleGoals.htm" TARGET="frame_pattern">Incompatible Goals</A>, the players are required to do <A CLASS="pattern" HREF="Tradeoffs.htm" TARGET="frame_pattern">Tradeoffs</A> from <A CLASS="pattern" HREF="SelectableSetsofGoals.htm" TARGET="frame_pattern">Selectable Sets of Goals</A>, which can also be used to ensure <A CLASS="pattern" HREF="VariedGameplay.htm" TARGET="frame_pattern">Varied Gameplay</A>, given that the players can strive for different goals in different game instances. That players can only succeed with one of the <A CLASS="pattern" HREF="IncompatibleGoals.htm" TARGET="frame_pattern">Incompatible Goals</A> at any given time lets them focus their attention on that goal, thereby limiting the need for <A CLASS="pattern" HREF="AttentionSwapping.htm" TARGET="frame_pattern">Attention Swapping</A> between different goals and modulating the <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A> in a game.</P>
+<P CLASS="text"></P>
+<P CLASS="text">If a game has a player switching between different roles, and these roles have <A CLASS="pattern" HREF="IncompatibleGoals.htm" TARGET="frame_pattern">Incompatible Goals</A> in relation to each other, this can increase the <A CLASS="pattern" HREF="RightLevelofComplexity.htm" TARGET="frame_pattern">Right Level of Complexity</A> in gameplay as players have to switch between the goals they are striving for when they change role.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A>, <A CLASS="pattern" HREF="CollaborativeActions.htm" TARGET="frame_pattern">Collaborative Actions</A>, <A CLASS="pattern" HREF="Competition.htm" TARGET="frame_pattern">Competition</A>, <A CLASS="pattern" HREF="VariedGameplay.htm" TARGET="frame_pattern">Varied Gameplay</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="AttentionSwapping.htm" TARGET="frame_pattern">Attention Swapping</A>, <A CLASS="pattern" HREF="PlannedCharacterDevelopment.htm" TARGET="frame_pattern">Planned Character Development</A>, <A CLASS="pattern" HREF="SelectableSetsofGoals.htm" TARGET="frame_pattern">Selectable Sets of Goals</A>, <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A>, <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goals</A>, <A CLASS="pattern" HREF="ExcludingGoals.htm" TARGET="frame_pattern">Excluding Goals</A></P>
+
+<P CLASS="italic">Modulated by: </P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="MutualGoals.htm" TARGET="frame_pattern">Mutual Goals</A></P>
+
+
+</html>
+

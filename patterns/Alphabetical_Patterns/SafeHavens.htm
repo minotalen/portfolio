@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Safe Havens</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Safe Havens">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Safe Havens</H2>
+<I>Save Havens are locations in the game world where game elements under the players' control are safe from the actions of other players or the game events.</I>
+<P CLASS="text"><B>Example: </B><I>Super Mario</I> 64 has <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Havens</A> between the worlds since the player is safe from the threats and has time to think what to do next.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>many first-person shooters have <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Havens</A>, some that are temporary and some that cannot be entered after being left. These <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Havens</A> are used to avoid the possibility of spawn killing, i. e. the player being killed immediately after having been being brought back into the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">There are two requirements for a place to be a <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Haven</A>: first, there should be no environmental elements, such as <A CLASS="pattern" HREF="DeadlyTraps.htm" TARGET="frame_pattern">Deadly Traps</A>, that can negatively affect players. Second, no hostile <A CLASS="pattern" HREF="Agents.htm" TARGET="frame_pattern">Agents</A> or players should be able to affect the area. However, the <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Haven</A> does not have to be permanent, for example it can either be safe under a certain <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limit</A> or until the players in the <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Haven</A> perform certain actions. Some <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Havens</A> also make it impossible for players to have negative consequences of their own actions. These forms of <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Havens</A> support <A CLASS="pattern" HREF="Experimenting.htm" TARGET="frame_pattern">Experimenting</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">One variant to hinder hostile activities within a <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Haven</A> is to allow hostile <A CLASS="pattern" HREF="Agents.htm" TARGET="frame_pattern">Agents</A> or players in the area but make hostile actions impossible within the <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Haven</A>. Sometimes these kinds of <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Havens</A> are safe only for the lower ranking players. For example, the home cities in <I>Dark Age of Camelot</I> are safe only for low level characters. By making the <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Haven</A> a neutral area, players can be offered the possibility for <A CLASS="pattern" HREF="Negotiation.htm" TARGET="frame_pattern">Negotiation</A> and forming <A CLASS="pattern" HREF="DynamicAlliances.htm" TARGET="frame_pattern">Dynamic Alliances</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Havens</A> are often combined with <A CLASS="pattern" HREF="SpawnPoints.htm" TARGET="frame_pattern">Spawn Points</A> to ensure that the <A CLASS="pattern" HREF="Spawning.htm" TARGET="frame_pattern">Spawning</A> of <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A> or <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> cannot immediately be followed by attacks by other players. In games with <A CLASS="pattern" HREF="TeamPlay.htm" TARGET="frame_pattern">Team Play</A> this allows the teams to at least have a minimal area they always control. Placing <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generators</A> inside such <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Havens</A> will further enhance the <A CLASS="pattern" HREF="BalancingEffects.htm" TARGET="frame_pattern">Balancing Effect</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">One kind of <I>Save Haven</I> can be constructed by making <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A> and <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> indestructible for a short period of time after spawning. This approach is typically used in multiplayer games with no teams and games where the <I>Save Haven</I> is publicly accessible to all players.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Havens</A> naturally create <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Points</A> for <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A> goalsand thereby also <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A>. As the players can pause and reconsider their next moves there, this also promotes <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A> and can be used to lessen <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> or to modulate the gameplay to shift between stressful periods and calmer periods.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A>, <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="SavePoints.htm" TARGET="frame_pattern">Save Points</A>, <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Points</A>, <A CLASS="pattern" HREF="Stealth.htm" TARGET="frame_pattern">Stealth</A>, <A CLASS="pattern" HREF="Rescue.htm" TARGET="frame_pattern">Rescue</A>, <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A>, <A CLASS="pattern" HREF="InaccessibleAreas.htm" TARGET="frame_pattern">Inaccessible Areas</A>, <A CLASS="pattern" HREF="SpawnPoints.htm" TARGET="frame_pattern">Spawn Points</A>, <A CLASS="pattern" HREF="Negotiation.htm" TARGET="frame_pattern">Negotiation</A>, <A CLASS="pattern" HREF="DynamicAlliances.htm" TARGET="frame_pattern">Dynamic Alliances</A>, <A CLASS="pattern" HREF="Experimenting.htm" TARGET="frame_pattern">Experimenting</A>, <A CLASS="pattern" HREF="Spawning.htm" TARGET="frame_pattern">Spawning</A>, <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: </P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A>, <A CLASS="pattern" HREF="DeadlyTraps.htm" TARGET="frame_pattern">Deadly Traps</A></P>
+
+
+</html>
+

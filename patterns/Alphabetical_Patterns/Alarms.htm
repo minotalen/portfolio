@@ -1,0 +1,43 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Alarms</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Alarms">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Alarms</H2>
+<I>Alarms are abstract game elements that provide information about particular game state changes.</I>
+<P CLASS="text"><A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarms</A> are turned on and off either by manipulating explicit game elements or by inherent actions of the game elements. <A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarms</A> can, for instance, show if a forbidden area has been entered or if a certain game elements have been manipulated.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Some team-based first-person shooters, such as <I>Return to Castle Wolfenstein: Enemy Territory</I>, include <A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarms</A> to inform the players about events that are relevant on a team level, e. g., that a particular goal has been completed or that a certain activity has been initiated by the other team.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The main design choices for <A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarms</A> are how they are tripped and what <A CLASS="pattern" HREF="OutstandingFeatures.htm" TARGET="frame_pattern">Outstanding Features</A> they set off. Further when designing <A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarms</A>, the designer may choose either explicit <A CLASS="pattern" HREF="Tools.htm" TARGET="frame_pattern">Tools</A> or <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A> to manipulate the <A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarms</A> or to have the manipulation of the <A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarms</A> as <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A> for certain types of <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A> or <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A>. Using <A CLASS="pattern" HREF="Tools.htm" TARGET="frame_pattern">Tools</A> or <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A> increases the complexity of the game by allowing such possibilities as deactivating the <A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarm</A> when it should not be deactivated, <A CLASS="pattern" HREF="Bluffing.htm" TARGET="frame_pattern">Bluffing</A> by raising erroneous <A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarms</A>, and preventing the raising of <A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarms</A> by destroying the means to activate them. All these actions increase the player's <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A> but may make it more difficult to guarantee the coherent <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structure</A> of the game. Having <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A> or <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> with <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A> to raise <A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarms</A> may avoid this problem but may break the <A CLASS="pattern" HREF="ConsistentRealityLogic.htm" TARGET="frame_pattern">Consistent Reality Logic</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The activation of the <A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarm</A> can signify the failure of a <A CLASS="pattern" HREF="Stealth.htm" TARGET="frame_pattern">Stealth</A> or <A CLASS="pattern" HREF="Reconnaissance.htm" TARGET="frame_pattern">Reconnaissance</A> goal but can also make the completion of it more difficult by imposing a <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalty</A>. This <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalty</A> is often a <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limit</A>, the introduction of new <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A>, or directing existing <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A> to the area where the <A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarm</A> was raised.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarms</A> are ways to pass information about activities and states within a game, and as such provide a <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A>. When activated by players, an <A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarm</A> notifies the players that they have been detected, and this can explain changes in the behavior of <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A> or the introduction of new <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A> within the <A CLASS="pattern" HREF="ConsistentRealityLogic.htm" TARGET="frame_pattern">Consistent Reality Logic</A> of the game. When activated by others, <A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarms</A> can notify players of <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A> activities. In both cases, raised <A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarms</A> cause <A CLASS="pattern" HREF="DisruptionofFocusedAttention.htm" TARGET="frame_pattern">Disruption of Focused Attention</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="DisruptionofFocusedAttention.htm" TARGET="frame_pattern">Disruption of Focused Attention</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Rescue.htm" TARGET="frame_pattern">Rescue</A>, <A CLASS="pattern" HREF="Reconnaissance.htm" TARGET="frame_pattern">Reconnaissance</A>, <A CLASS="pattern" HREF="Stealth.htm" TARGET="frame_pattern">Stealth</A>, <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A>, <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="OutstandingFeatures.htm" TARGET="frame_pattern">Outstanding Features</A>, <A CLASS="pattern" HREF="Bluffing.htm" TARGET="frame_pattern">Bluffing</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

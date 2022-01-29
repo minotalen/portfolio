@@ -1,0 +1,55 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Limited Set of Actions</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Limited Set of Actions">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Limited Set of Actions</H2>
+<I>Players can only have a few actions to choose from.</I>
+<P CLASS="text">The actions that players can perform in a game are usually restricted, either because the focus of the game is centered on a limited topic or to make the game easy to play (although not necessarily to master).</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Bidding in <I>Poker</I> only lets players choose from folding, matching, or raising a bet.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Russian Roulette</I> has only one possible action for a player, to pull the trigger.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Players in real-time strategy games typically have very <I>Limited Sets of Actions</I> for each <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Unit</A>, and if the number of <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> decreases, they have few actions overall to choose from.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">Limiting the possible actions available to players can be done either on an overall level or on a <A CLASS="pattern" HREF="FocusLoci.htm" TARGET="frame_pattern">Focus Loci</A> level. When done on a <A CLASS="pattern" HREF="FocusLoci.htm" TARGET="frame_pattern">Focus Loci</A> level by having limited amount of actions available to <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A> or <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A>, the player may have many actions available in total but only have a few available at a time, which can create different play modes. Connecting actions to <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> make it easy to further restrict the <A CLASS="pattern" HREF="LimitedSetofActions.htm" TARGET="frame_pattern">Limited Set of Actions</A> as a <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalty</A> for losing the <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Unit</A>, not only because the total number of possible actions shrinks but potentially because the loss of <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A> of the <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Unit</A> leads to <A CLASS="pattern" HREF="AbilityLosses.htm" TARGET="frame_pattern">Ability Losses</A> for the player. An example of this can be seen in <I>Chess</I>, where the loss of each piece reduces the total amount of actions players can choose from but may also cause the loss of specific types of actions such as diagonal moves or the knight's move.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Although <A CLASS="pattern" HREF="LimitedSetofActions.htm" TARGET="frame_pattern">Limited Set of Actions</A> promotes <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A>, this can be restricted in different ways. If the actions do not have <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A>, this promotes <A CLASS="pattern" HREF="LimitedPlanningAbility.htm" TARGET="frame_pattern">Limited Planning Ability</A>. If the actions do have <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A> but few <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Points</A>, this may also cause <A CLASS="pattern" HREF="LimitedPlanningAbility.htm" TARGET="frame_pattern">Limited Planning Ability</A> due to the size of possible game states but can maintain the risk of <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A> as players try to overview all possible game states.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="LimitedSetofActions.htm" TARGET="frame_pattern">Limited Set of Actions</A> can be used to restrict the possible game states so that <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A> can be maintained and <A CLASS="pattern" HREF="Higher-LevelClosuresasGameplayProgresses.htm" TARGET="frame_pattern">Higher-Level Closures as Gameplay Progresses</A> are guaranteed, although this often clearly limits players' <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">Not having many choices can negatively affect <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A> at any given time in the game. However, this may only be on a local level as if the game has few <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Points</A>, such as in <I>Chess</I> or death matches in first-person shooters, the <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A> to what long term goals or where to move are considerably freer.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="LimitedSetofActions.htm" TARGET="frame_pattern">Limited Set of Actions</A> typically promotes <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A> as the possible series of future actions is bounded, but this can in turn cause <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A>. If the possible actions are very limited and the outcome is associated with high <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A> or <A CLASS="pattern" HREF="Investments.htm" TARGET="frame_pattern">Investments</A>, the choice of action can cause anxiety and thereby heighten the <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Games where the <A CLASS="pattern" HREF="LimitedSetofActions.htm" TARGET="frame_pattern">Limited Set of Actions</A> can be expanded by gaining <A CLASS="pattern" HREF="NewAbilities.htm" TARGET="frame_pattern">New Abilities</A> offer <A CLASS="pattern" HREF="GainCompetence.htm" TARGET="frame_pattern">Gain Competence</A> goals, which can among other things enhance players' <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A>, make previously <A CLASS="pattern" HREF="InaccessibleAreas.htm" TARGET="frame_pattern">Inaccessible Areas</A> accessible through <A CLASS="pattern" HREF="PrivilegedMovement.htm" TARGET="frame_pattern">Privileged Movement</A>, or progress the <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structure</A> as they indicate a form of <A CLASS="pattern" HREF="CharacterDevelopment.htm" TARGET="frame_pattern">Character Development</A>. Conversely, reduction to an already <A CLASS="pattern" HREF="LimitedSetofActions.htm" TARGET="frame_pattern">Limited Set of Actions</A> during gameplay is nearly always a <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalty</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Games using a <A CLASS="pattern" HREF="GameMasters.htm" TARGET="frame_pattern">Game Master</A> let game designers have little influence on when players have <I>Limited Sets of Actions</I> to choose from, as the <A CLASS="pattern" HREF="GameMasters.htm" TARGET="frame_pattern">Game Master</A> can in most cases decide what actions are possible on the spur of the moment. However, <A CLASS="pattern" HREF="GameMasters.htm" TARGET="frame_pattern">Game Masters</A> and other <A CLASS="pattern" HREF="DedicatedGameFacilitators.htm" TARGET="frame_pattern">Dedicated Game Facilitators</A> make it unnecessary for players <A CLASS="pattern" HREF="Memorizing.htm" TARGET="frame_pattern">Memorizing</A> all rules and effects of a game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A>, <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A>, <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A>, <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="LimitedPlanningAbility.htm" TARGET="frame_pattern">Limited Planning Ability</A>, <A CLASS="pattern" HREF="GainCompetence.htm" TARGET="frame_pattern">Gain Competence</A>, <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A>, <A CLASS="pattern" HREF="Higher-LevelClosuresasGameplayProgresses.htm" TARGET="frame_pattern">Higher-Level Closures as Gameplay Progresses</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A>, <A CLASS="pattern" HREF="AbilityLosses.htm" TARGET="frame_pattern">Ability Losses</A></P>
+
+<P CLASS="italic">Modulated by: </P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A>, <A CLASS="pattern" HREF="Memorizing.htm" TARGET="frame_pattern">Memorizing</A>, <A CLASS="pattern" HREF="GameMasters.htm" TARGET="frame_pattern">Game Masters</A></P>
+
+
+</html>
+

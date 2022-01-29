@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Privileged Movement</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Privileged Movement">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Privileged Movement</H2>
+<I>Being able to do a form of movement that other game elements cannot.</I>
+<P CLASS="text">Few games that have movement of game elements have the same form of movement for all of them. By providing game elements with different types of movement, some or in rare cases, all game elements have <A CLASS="pattern" HREF="PrivilegedMovement.htm" TARGET="frame_pattern">Privileged Movement</A> that gives them additional value.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>taking control of vehicles in <I>Battlefield 1942</I> or <I>Battlefield Vietnam</I> give players other forms of movement that when on foot, with planes and helicopters allowing the most different type of movement.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>knights in <I>Chess</I> have a privileged form of movement since they do not require line-of-sight to the square that they move to.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>the game of <I>Draughts</I> (or <I>Checkers</I>) requires that players promote at least one singleton to a doubleton in order to get the required <A CLASS="pattern" HREF="PrivilegedMovement.htm" TARGET="frame_pattern">Privileged Movement</A> that is necessary to win.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="PrivilegedMovement.htm" TARGET="frame_pattern">Privileged Movement</A> can be used to let game elements move in ways impossible to other game elements or may make the <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> have effects which other game elements do not have. Examples of ways which <A CLASS="pattern" HREF="PrivilegedMovement.htm" TARGET="frame_pattern">Privileged Movement</A> can affect the movement itself includes ignoring <A CLASS="pattern" HREF="Obstacles.htm" TARGET="frame_pattern">Obstacles</A> or entering <A CLASS="pattern" HREF="InaccessibleAreas.htm" TARGET="frame_pattern">Inaccessible Areas</A>. When the <A CLASS="pattern" HREF="PrivilegedMovement.htm" TARGET="frame_pattern">Privileged Movement</A> allows better <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A> than otherwise possible, it helps <A CLASS="pattern" HREF="GameWorldNavigation.htm" TARGET="frame_pattern">Game World Navigation</A>. Examples of forms of <A CLASS="pattern" HREF="PrivilegedMovement.htm" TARGET="frame_pattern">Privileged Movement</A> can be that the game elements repulse or attract other game elements in their wake or that the game elements leaves <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A> that can have beneficial or negative consequences to those that enter the <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A>, or that the <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A> simply give information.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The effects <A CLASS="pattern" HREF="PrivilegedMovement.htm" TARGET="frame_pattern">Privileged Movement</A> allows can depend on the type of locomotion the <A CLASS="pattern" HREF="PrivilegedMovement.htm" TARGET="frame_pattern">Privileged Movement</A> uses. Flying allows better <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A> and thereby promotes <A CLASS="pattern" HREF="GameWorldNavigation.htm" TARGET="frame_pattern">Game World Navigation</A> and lets players avoid <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A> that cannot fly and do not have ranged weapons. Climbing may allow vertical movement by usually depends on the material of what is climbed. Swinging requires players to perform <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A> actions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="PrivilegedMovement.htm" TARGET="frame_pattern">Privileged Movement</A> is a form of <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A> regarding <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> and can be used to create <A CLASS="pattern" HREF="OrthogonalUnitDifferentiation.htm" TARGET="frame_pattern">Orthogonal Unit Differentiation</A>. Like other <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A>, the use of <A CLASS="pattern" HREF="PrivilegedMovement.htm" TARGET="frame_pattern">Privileged Movement</A> can potentially disrupt <A CLASS="pattern" HREF="PlayerBalance.htm" TARGET="frame_pattern">Player Balance</A>. <A CLASS="pattern" HREF="PrivilegedMovement.htm" TARGET="frame_pattern">Privileged Movement</A> can be used to make <A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A> or <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A> goals easier for certain game elements and may be used to maintain a <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structure</A> by only making certain <A CLASS="pattern" HREF="InaccessibleAreas.htm" TARGET="frame_pattern">Inaccessible Areas</A> accessible at the right time.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim & Shoot</A>, <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A>, <A CLASS="pattern" HREF="OrthogonalUnitDifferentiation.htm" TARGET="frame_pattern">Orthogonal Unit Differentiation</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="GameWorldNavigation.htm" TARGET="frame_pattern">Game World Navigation</A>, <A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A>, <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A>, <A CLASS="pattern" HREF="InaccessibleAreas.htm" TARGET="frame_pattern">Inaccessible Areas</A>, <A CLASS="pattern" HREF="Obstacles.htm" TARGET="frame_pattern">Obstacles</A>, <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A>, <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A>, <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="PlayerBalance.htm" TARGET="frame_pattern">Player Balance</A></P>
+
+
+</html>
+

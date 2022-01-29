@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Delayed Effects</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Delayed Effects">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Delayed Effects</H2>
+<I>The effects of actions and events in games do not occur directly after the actions or events have started.</I>
+<P CLASS="text"><A CLASS="pattern" HREF="DelayedEffects.htm" TARGET="frame_pattern">Delayed Effects</A> are those effects of actions and events that are explicitly dictated by the rules in the game; effects that are the results of combined actions or are unexpected or unplanned do not qualify as <A CLASS="pattern" HREF="DelayedEffects.htm" TARGET="frame_pattern">Delayed Effects</A>, even if the effects take place after some actions or events have taken place.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The effect of placing bets in <I>Poker</I> does not become apparent until a player folds or players show their card hands.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The activation of the most powerful weapons in first-person shooters usually takes some time from activation to the time it fires, usually to balance them somewhat against the other weapons in the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The primary design choices for <A CLASS="pattern" HREF="DelayedEffects.htm" TARGET="frame_pattern">Delayed Effects</A> are if players should be aware of when the effects will occur and how the period of delay is determined. Showing when the effects will take place is usually done through <A CLASS="pattern" HREF="ProgressIndicators.htm" TARGET="frame_pattern">Progress Indicators</A> and allows players to perform actions requiring <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A>. Not providing information about when <A CLASS="pattern" HREF="DelayedEffects.htm" TARGET="frame_pattern">Delayed Effects</A> are about to occur increases the sense of <A CLASS="pattern" HREF="Randomness.htm" TARGET="frame_pattern">Randomness</A> in a game, even if the period of delay is not random. <A CLASS="pattern" HREF="DelayedEffects.htm" TARGET="frame_pattern">Delayed Effects</A> that are unknown to players lessen the functionality of savingas they may make it difficult to know when to save to be able to avoid <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Fixed periods of delay give players the chance to use <A CLASS="pattern" HREF="Memorizing.htm" TARGET="frame_pattern">Memorizing</A> to have a form of <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A>. If the periods of delay are random, or if players do not have knowledge of the periods of delay, this can turn the use of other actions into <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A> choices, if their success depends on the <A CLASS="pattern" HREF="DelayedEffects.htm" TARGET="frame_pattern">Delayed Effects</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Making some actions have <A CLASS="pattern" HREF="DelayedEffects.htm" TARGET="frame_pattern">Delayed Effects</A> is a way of creating <A CLASS="pattern" HREF="BalancingEffects.htm" TARGET="frame_pattern">Balancing Effects</A> between different actions when the more powerful actions take a longer time to perform.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="DelayedEffects.htm" TARGET="frame_pattern">Delayed Effects</A> impose a <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limit</A> on actions so that players must wait until the effects occur and can therefore affect <A CLASS="pattern" HREF="Tradeoffs.htm" TARGET="frame_pattern">Tradeoffs</A> between different effects. When the <A CLASS="pattern" HREF="DelayedEffects.htm" TARGET="frame_pattern">Delayed Effects</A> of an action are known, it gives <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A> to the game, which provides <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A>. When combined with the absence of <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A>, it instead provides players the possibility to start feeling <A CLASS="pattern" HREF="Luck.htm" TARGET="frame_pattern">Luck</A> before the outcome is shown, regardless of if they feel <A CLASS="pattern" HREF="Luck.htm" TARGET="frame_pattern">Luck</A> after the outcome is presented. This is used often in <A CLASS="pattern" HREF="QuickGames.htm" TARGET="frame_pattern">Quick Games</A> with single actions to heighten the <A CLASS="pattern" HREF="Anticipation.htm" TARGET="frame_pattern">Anticipation</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The wait for the effects to take place is a form of <A CLASS="pattern" HREF="HoveringClosures.htm" TARGET="frame_pattern">Hovering Closures</A> once the events or actions that cause the <A CLASS="pattern" HREF="DelayedEffects.htm" TARGET="frame_pattern">Delayed Effects</A> have been done, and waiting for them can create <A CLASS="pattern" HREF="Anticipation.htm" TARGET="frame_pattern">Anticipation</A> or <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A>, especially when combined with <A CLASS="pattern" HREF="UncertaintyofInformation.htm" TARGET="frame_pattern">Uncertainty of Information</A>. When the <A CLASS="pattern" HREF="DelayedEffects.htm" TARGET="frame_pattern">Delayed Effects</A> are also the cause of <A CLASS="pattern" HREF="ExtendedActions.htm" TARGET="frame_pattern">Extended Actions</A>, it allows players to detect and try to stop them if they are <A CLASS="pattern" HREF="InterruptibleActions.htm" TARGET="frame_pattern">Interruptible Actions</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Examples of <A CLASS="pattern" HREF="DelayedEffects.htm" TARGET="frame_pattern">Delayed Effects</A> are <A CLASS="pattern" HREF="DelayedReciprocity.htm" TARGET="frame_pattern">Delayed Reciprocity</A>, <A CLASS="pattern" HREF="Betting.htm" TARGET="frame_pattern">Betting</A>, <A CLASS="pattern" HREF="Ultra-PowerfulEvents.htm" TARGET="frame_pattern">Ultra-Powerful Events</A>, and <A CLASS="pattern" HREF="Investments.htm" TARGET="frame_pattern">Investments</A>. The two first are caused by other players and can cause friction between them and those experiencing the <A CLASS="pattern" HREF="DelayedEffects.htm" TARGET="frame_pattern">Delayed Effects</A>, while the last two are determined by the game system and can have more <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A>. <A CLASS="pattern" HREF="DelayedEffects.htm" TARGET="frame_pattern">Delayed Effects</A> cause increased <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> in the two first cases when they can result in <A CLASS="pattern" HREF="Betrayal.htm" TARGET="frame_pattern">Betrayals</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A>, <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A>, <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A>, <A CLASS="pattern" HREF="Anticipation.htm" TARGET="frame_pattern">Anticipation</A>, <A CLASS="pattern" HREF="Memorizing.htm" TARGET="frame_pattern">Memorizing</A>, <A CLASS="pattern" HREF="BalancingEffects.htm" TARGET="frame_pattern">Balancing Effects</A>, <A CLASS="pattern" HREF="Tradeoffs.htm" TARGET="frame_pattern">Tradeoffs</A>, <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A>, <A CLASS="pattern" HREF="HoveringClosures.htm" TARGET="frame_pattern">Hovering Closures</A>, <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="QuickGames.htm" TARGET="frame_pattern">Quick Games</A>, <A CLASS="pattern" HREF="Betrayal.htm" TARGET="frame_pattern">Betrayal</A>, <A CLASS="pattern" HREF="InterruptibleActions.htm" TARGET="frame_pattern">Interruptible Actions</A>, <A CLASS="pattern" HREF="Luck.htm" TARGET="frame_pattern">Luck</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="ExtendedActions.htm" TARGET="frame_pattern">Extended Actions</A>, <A CLASS="pattern" HREF="Investments.htm" TARGET="frame_pattern">Investments</A>, <A CLASS="pattern" HREF="Ultra-PowerfulEvents.htm" TARGET="frame_pattern">Ultra-Powerful Events</A>, <A CLASS="pattern" HREF="DelayedReciprocity.htm" TARGET="frame_pattern">Delayed Reciprocity</A>, <A CLASS="pattern" HREF="Betting.htm" TARGET="frame_pattern">Betting</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="ProgressIndicators.htm" TARGET="frame_pattern">Progress Indicators</A>, <A CLASS="pattern" HREF="UncertaintyofInformation.htm" TARGET="frame_pattern">Uncertainty of Information</A>, <A CLASS="pattern" HREF="Randomness.htm" TARGET="frame_pattern">Randomness</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

@@ -1,0 +1,45 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>First-Person Views</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of First-Person Views">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>First-Person Views</H2>
+<I>Players are shown the game world as if they were inside it</I>
+<P CLASS="text">Games where players control individual game elements and move them in the game environment often present that environment to the players as the game element would "see" the environment. This <A CLASS="pattern" HREF="First-PersonViews.htm" TARGET="frame_pattern">First-Person View</A> then lets players receive natural feedback to movement in the environment in a way that corresponds to the feedback one receives when doing the same movement in the real world.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>As the name indicates, all first-person shooters make use of <A CLASS="pattern" HREF="First-PersonViews.htm" TARGET="frame_pattern">First-Person Views</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="First-PersonViews.htm" TARGET="frame_pattern">First-Person Views</A> give players a view of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> from within it, and the primary design choices for game designers involve choosing how players can control what they are viewing and if the presentation players are given uses human-like vision capabilities or augmented capabilities, such as infrared, radar, or night vision.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Since <A CLASS="pattern" HREF="First-PersonViews.htm" TARGET="frame_pattern">First-Person Views</A> do not provide <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overviews</A> in the way <A CLASS="pattern" HREF="Third-PersonViews.htm" TARGET="frame_pattern">Third-Person Views</A> or <A CLASS="pattern" HREF="GodViews.htm" TARGET="frame_pattern">God Views</A> do, they are sometimes augmented with different forms of indicators, primarily <A CLASS="pattern" HREF="StatusIndicators.htm" TARGET="frame_pattern">Status Indicators</A>, to compensate. Another way to provide more information for players is to have wider field of view than humans have by using fisheye views, up to the point of giving 360 degree view. In any case, <A CLASS="pattern" HREF="First-PersonViews.htm" TARGET="frame_pattern">First-Person Views</A> provide <A CLASS="pattern" HREF="FogofWar.htm" TARGET="frame_pattern">Fog of War</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="First-PersonViews.htm" TARGET="frame_pattern">First-Person Views</A> can also be used to provide <A CLASS="pattern" HREF="PublicInformation.htm" TARGET="frame_pattern">Public Information</A> which is focused upon a specific part of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> and can also by used to give <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A> a sense of <A CLASS="pattern" HREF="SpatialImmersion.htm" TARGET="frame_pattern">Spatial Immersion</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">Since <A CLASS="pattern" HREF="First-PersonViews.htm" TARGET="frame_pattern">First-Person Views</A> provide players with feedback similar to that receive when performing movement in the real world, these views support <A CLASS="pattern" HREF="SpatialImmersion.htm" TARGET="frame_pattern">Spatial Immersion</A> and <A CLASS="pattern" HREF="Dexterity-BasedActions.htm" TARGET="frame_pattern">Dexterity-Based Actions</A> such as <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A> and <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A> in the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World.</A></P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="SpatialImmersion.htm" TARGET="frame_pattern">Spatial Immersion</A>, <A CLASS="pattern" HREF="FogofWar.htm" TARGET="frame_pattern">Fog of War</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim & Shoot</A>, <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A>, <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A>, <A CLASS="pattern" HREF="Dexterity-BasedActions.htm" TARGET="frame_pattern">Dexterity-Based Actions</A>, <A CLASS="pattern" HREF="PublicInformation.htm" TARGET="frame_pattern">Public Information</A>, <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="StatusIndicators.htm" TARGET="frame_pattern">Status Indicators</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="GodViews.htm" TARGET="frame_pattern">God Views</A>, <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A></P>
+
+
+</html>
+

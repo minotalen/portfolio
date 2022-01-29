@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Tied Results</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Tied Results">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Tied Results</H2>
+<I>Two results can be regarded as even in the game and the effects of the results can be divided.</I>
+<P CLASS="text"><A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A> occur when the outcome of results depends on numerical values and the game design allows the game play regarding that result to end when players have the same values. If the shared values are used to determine winner in the game players may simply share the position, while when the results are part of the continued game play the rewards and penalties may be shared between the players.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Chess</I> allows game play to end in a stalemate, effectively a <A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A> even though one player may have an overwhelming amount of game pieces left comparing to the other player.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>many fighting games such as the <I>Tekken</I> series or racing games such as <I>Monkey Race 2</I> in <I>Super Monkey Ball 2</I> do allow the fights and races to end as draws although this rarely happens.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">Explicitly making <A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A> possible requires that the values that are compared can have the same values, and that the time for comparison makes it possible for the values to be the same at that time. Allowing values that are exactly the same for several different measures can easily be possible by changing the values in the same increments and not allowing them to affect each other. Examples of such measurements are the time of different participants in <A CLASS="pattern" HREF="Race.htm" TARGET="frame_pattern">Races</A>, especially if the participants cannot affect each others positions or movement, or values that are compared between game sessions as in <A CLASS="pattern" HREF="Tournaments.htm" TARGET="frame_pattern">Tournaments</A> or <I>Highscore Lists</I>. <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A> values can also easily have the same values if the points given are of the same values. For the comparisons to occur when the values are the same, the end conditions cannot depend on directly on one value reaching a certain threshold. Instead the times for comparison of the results between players are decided by <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A>, or the depletion of some other <A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The existence of <A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A> can be used to create both <A CLASS="pattern" HREF="SharedPenalties.htm" TARGET="frame_pattern">Shared Penalties</A> and <A CLASS="pattern" HREF="SharedRewards.htm" TARGET="frame_pattern">Shared Rewards</A>, and this can encourage <A CLASS="pattern" HREF="UncommittedAlliances.htm" TARGET="frame_pattern">Uncommitted Alliances</A>, especially if the <A CLASS="pattern" HREF="Rewards.htm" TARGET="frame_pattern">Rewards</A> are increased and the <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A> are decreased proportionally with the number of players having the <A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A> are the effect of results without <A CLASS="pattern" HREF="PerceivableMargins.htm" TARGET="frame_pattern">Perceivable Margins</A> where different actions or events are compared against each other. For players to perceive the results as tied the results must be tied with someone, so <A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A> occur in <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A> or games with <A CLASS="pattern" HREF="Agents.htm" TARGET="frame_pattern">Agents</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">If players can notice that <A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A> are about to happen they can form <A CLASS="pattern" HREF="UncommittedAlliances.htm" TARGET="frame_pattern">Uncommitted Alliances</A> if they are satisfied with having <A CLASS="pattern" HREF="SharedRewards.htm" TARGET="frame_pattern">Shared Reward</A> and <A CLASS="pattern" HREF="SharedPenalties.htm" TARGET="frame_pattern">Shared Penalties</A> if this is possible. This is a form of <I>Player-Decided Distribution of Rewards and Penalties</I>, and <A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A> may encourage the <A CLASS="pattern" HREF="UncommittedAlliances.htm" TARGET="frame_pattern">Uncommitted Alliances</A> by making the explicit <A CLASS="pattern" HREF="Rewards.htm" TARGET="frame_pattern">Rewards</A> and <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A> into true <I>Player-Decided Distribution of Rewards and Penalties</I>. However, these alliances are brittle and put players in <A CLASS="pattern" HREF="SocialDilemmas.htm" TARGET="frame_pattern">Social Dilemmas</A> as they can be tempted to commit <A CLASS="pattern" HREF="Betrayal.htm" TARGET="frame_pattern">Betrayal</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A> are not possible between players that have <A CLASS="pattern" HREF="ExcludingGoals.htm" TARGET="frame_pattern">Excluding Goals</A> and are of course incompatible with <A CLASS="pattern" HREF="Tiebreakers.htm" TARGET="frame_pattern">Tiebreakers</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="SharedPenalties.htm" TARGET="frame_pattern">Shared Penalties</A>, <A CLASS="pattern" HREF="Player-DecidedDistributionofRewards&amp;Penalties.htm" TARGET="frame_pattern">Player-Decided Distribution of Rewards & Penalties</A>, <A CLASS="pattern" HREF="UncommittedAlliances.htm" TARGET="frame_pattern">Uncommitted Alliances</A>, <A CLASS="pattern" HREF="SharedRewards.htm" TARGET="frame_pattern">Shared Rewards</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A>, <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A>, <A CLASS="pattern" HREF="Race.htm" TARGET="frame_pattern">Race</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="HighScoreLists.htm" TARGET="frame_pattern">High Score Lists</A>, <A CLASS="pattern" HREF="Tournaments.htm" TARGET="frame_pattern">Tournaments</A>, <A CLASS="pattern" HREF="Agents.htm" TARGET="frame_pattern">Agents</A>, <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A>, <A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="SocialDilemmas.htm" TARGET="frame_pattern">Social Dilemmas</A>, <A CLASS="pattern" HREF="Player-DecidedDistributionofRewards&amp;Penalties.htm" TARGET="frame_pattern">Player-Decided Distribution of Rewards & Penalties</A>, <A CLASS="pattern" HREF="Betrayal.htm" TARGET="frame_pattern">Betrayal</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="PerceivableMargins.htm" TARGET="frame_pattern">Perceivable Margins</A>, <A CLASS="pattern" HREF="ExcludingGoals.htm" TARGET="frame_pattern">Excluding Goals</A>, <A CLASS="pattern" HREF="Tiebreakers.htm" TARGET="frame_pattern">Tiebreakers</A></P>
+
+
+</html>
+

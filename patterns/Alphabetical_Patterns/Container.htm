@@ -1,0 +1,53 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Container</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Container">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Container</H2>
+<I>Container is a game element that can store other game elements.</I>
+<P CLASS="text">The simplest <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A> is a stockpile, which can only store game elements of one kind. The <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Containers</A> can, however, be more complex and allow different kinds of game elements, even other <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Containers</A>, to be stored. The <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A> can either be abstract or represented as elements in the game world, such as crates containing ammunition and health packs in first-person shooters.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>the amount of money the player owns in <I>Monopoly</I> is a simple abstract accumulator <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A>. The same applies to a character's hit points in roleplaying games and health and supply points in some strategy games.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>in <I>Civilization</I> the cities are <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Containers</A> that can store several kinds of different game elements ranging from food to military units.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>the player's inventory in most computer roleplaying games is a <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A> that can store different kinds of game elements, even other <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Containers</A> such as backpacks and purses.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The most important things in using the <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A> is deciding which kinds of <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> the <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A> can store and what the limit of storage is, if any, of a single <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A>. The <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A> can be an abstract element, such as the bank balance in <I>Monopoly</I> or <A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hands</A> and <A CLASS="pattern" HREF="DrawingStacks.htm" TARGET="frame_pattern">Drawing Stacks</A> in card games, or it can be associated with a specific game element, for example, <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A> such as cities and factories, or concrete <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Containers</A> such as bags, barrels, and treasures chests in roleplaying and adventure games.</P>
+<P CLASS="text"></P>
+<P CLASS="text">When specifying the limits of the <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Containers</A> in games where the production of <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> is continuous, especially when using <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converters</A> in <A CLASS="pattern" HREF="Producer-Consumer.htm" TARGET="frame_pattern">Producer-Consumer</A> chains, it has to be taken into account what happens to the <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> when the storage limit of the <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A> is reached. Is the player informed about the overflow and how? Are the <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> just wasted or temporarily stockpiled somewhere else? For example, if the <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Unit</A> stockpile of a tank factory in a World War II strategy game is full, the factory may simply stop working.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Using the limit in cases where the player has to store <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> in the <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A> by a direct action is much simpler: the player is just informed that the <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A> is full and the store action fails. For example, if the player's inventory in a computer roleplaying game is full, the character is not able to carry more items. Other issues regarding the storage limits of the <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A> are: How is the player informed about the limits of the <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A>? Can the <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A> limits be upgraded? Can the <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A> store several kinds of elements? If so, how the limit specified, by space or mass of units or by some other measure?</P>
+<P CLASS="text"></P>
+<P CLASS="text">Another important point is to define which of the players have access and in which way to the <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A>, and in which way, that is, how the players can store and withdraw things from the <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Containers</A> can be used to regulate the flow of the game, especially if they appear as parts of <A CLASS="pattern" HREF="Producer-Consumer.htm" TARGET="frame_pattern">Producer-Consumer</A> chains with associated <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converters</A>. They allow players an additional <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A> regarding how to use <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> and promote <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A> by offering additional opportunities for planning the use of <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A>. They provide a form of <A CLASS="pattern" HREF="LimitedResources.htm" TARGET="frame_pattern">Limited Resources</A> by limiting the amount of <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> players can store. The role of the <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A> in the regulation, however, is not necessarily as strong as the <A CLASS="pattern" HREF="Producers.htm" TARGET="frame_pattern">Producer</A> and <A CLASS="pattern" HREF="Consumers.htm" TARGET="frame_pattern">Consumer</A> parts of the chain, even though in some cases the control of the <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Containers</A> is the key to the efficient <A CLASS="pattern" HREF="ResourceManagement.htm" TARGET="frame_pattern">Resource Management</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Non-player controlled <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Containers</A> storing <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resource</A>, such as barrels and crates in first-person shooters, can be used to achieve partial reinforcement and thus more player involvement in the game. For example, the crates sometimes have ammunition or health packs and sometimes they do not and this creates a situation that the player usually opens all the crates available.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A>, <A CLASS="pattern" HREF="LimitedResources.htm" TARGET="frame_pattern">Limited Resources</A>, <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="ResourceManagement.htm" TARGET="frame_pattern">Resource Management</A>, <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converters</A>, <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A>, <A CLASS="pattern" HREF="Producer-Consumer.htm" TARGET="frame_pattern">Producer-Consumer</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hands</A>, <A CLASS="pattern" HREF="DrawingStacks.htm" TARGET="frame_pattern">Drawing Stacks</A></P>
+
+<P CLASS="italic">Modulated by: </P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

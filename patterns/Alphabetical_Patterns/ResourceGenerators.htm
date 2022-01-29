@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Resource Generators</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Resource Generators">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Resource Generators</H2>
+<I>Resource Generators are specific places or game elements producing resources, in effect tying the production of resources in the game to a particular place in the game world.</I>
+<P CLASS="text">Games that have resources appear during gameplay usually have specific areas where these resources appear or specific game elements that produce the resources. Both the areas and the producing game elements are <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generators</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The place where the bonus items appear in <I>Pac-Man.</I></P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>WarCraft,</I> as well asmany other real-time strategy games, have specific locations, such as cities, which generate resources for the player controlling the location.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generator</A> is an instantiating pattern of the <A CLASS="pattern" HREF="Producers.htm" TARGET="frame_pattern">Producer</A> pattern and as such the concerns which have to be taken into account when instantiating a <A CLASS="pattern" HREF="Producers.htm" TARGET="frame_pattern">Producer</A> are valid also for the <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generator</A>. Many variables need to be decided on when creating a <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generator</A>: What resources are produced? If several are produced, what is the distribution and is it under the player's control? When are the resources produced, and are there any indications when this will occur and can the player modify the production? Are the produced resources <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A>? Is the <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generator</A> a physical object, and is it moveable or destroyable? If it is not a physical object, is it an <A CLASS="pattern" HREF="OutstandingFeatures.htm" TARGET="frame_pattern">Outstanding Feature</A> in the environment so that it can be observed? Is the resource a <A CLASS="pattern" HREF="LimitedResources.htm" TARGET="frame_pattern">Limited Resource</A>, i. e. is a limited amount produced during the game or are the resources available at the start of the game the only resources in the game? Does the generator need other <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> to produce? Is the generator a <A CLASS="pattern" HREF="Chargers.htm" TARGET="frame_pattern">Charger</A> that produces <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> that are not represented in the game world and only produces them when a player is activating the generator?</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generators</A> do not have to generate passive game elements. Many games make use of <A CLASS="pattern" HREF="SpawnPoints.htm" TARGET="frame_pattern">Spawn Points</A> to create <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A>, which can be seen as <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> to the players. Another example is generators that generate <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A>. The players can often destroy these generators in order to prevent them from swarming the game area continuously with <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">A <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converter</A> is an example of <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generators</A> that need other resources to produce their resource and which can be used to set up complex chains of refinement. A <A CLASS="pattern" HREF="Mule.htm" TARGET="frame_pattern">Mule</A> is a special form of <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converter</A> set up by the player by dedicating a character to perform monotonous actions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generators</A> are ways to provide <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resources</A> in <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game Worlds</A>. <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generators</A> can become <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A> in <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Levels</A> depending on the importance of the resource being generated. They are typically the objectives for <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A>, <A CLASS="pattern" HREF="Exploration.htm" TARGET="frame_pattern">Exploration,</A> or <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> goals. <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generators</A> are variants of <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A> when they are physical game elements. If they are not physical game elements, or <A CLASS="pattern" HREF="OutstandingFeatures.htm" TARGET="frame_pattern">Outstanding Features</A> in the game environment, knowledge of their location can become more valuable <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A> than other <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A>, and the production generated from them create <A CLASS="pattern" HREF="Surprises.htm" TARGET="frame_pattern">Surprises</A> to the players.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The production from a <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generator</A> typically spawns <A CLASS="pattern" HREF="EphemeralGoals.htm" TARGET="frame_pattern">Ephemeral Goals</A> as soon as they appear or make a goal have a <A CLASS="pattern" HREF="DynamicGoalCharacteristics.htm" TARGET="frame_pattern">Dynamic Goal Characteristics</A>. <A CLASS="pattern" HREF="Trading.htm" TARGET="frame_pattern">Trading</A> is a natural option for actions in games where different players are access to different <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generators</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Exploration.htm" TARGET="frame_pattern">Exploration</A>, <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A>, <A CLASS="pattern" HREF="EphemeralGoals.htm" TARGET="frame_pattern">Ephemeral Goals</A>, <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resources</A>, <A CLASS="pattern" HREF="Trading.htm" TARGET="frame_pattern">Trading</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A>, <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Levels</A>, <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A>, <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>, <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="DynamicGoalCharacteristics.htm" TARGET="frame_pattern">Dynamic Goal Characteristics</A>, <A CLASS="pattern" HREF="SpawnPoints.htm" TARGET="frame_pattern">Spawn Points</A>, <A CLASS="pattern" HREF="Chargers.htm" TARGET="frame_pattern">Chargers</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Mule.htm" TARGET="frame_pattern">Mule</A>, <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A>, <A CLASS="pattern" HREF="LimitedResources.htm" TARGET="frame_pattern">Limited Resources</A>, <A CLASS="pattern" HREF="OutstandingFeatures.htm" TARGET="frame_pattern">Outstanding Features</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

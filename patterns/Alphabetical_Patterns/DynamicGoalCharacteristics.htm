@@ -1,0 +1,53 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Dynamic Goal Characteristics</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Dynamic Goal Characteristics">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Dynamic Goal Characteristics</H2>
+<I>Certain characteristics of the goals, usually the information available to the players, change during gameplay.</I>
+<P CLASS="text">Many games have goals whose requirements change from the players' perspective during gameplay. There are two kinds of changes through which this can occur: either the players gain more information about the requirements or the requirements change. The first case is common in adventure and roleplaying games. In this case, the player may first know only the final goal, e. g., defeat the evil overlord without knowing how this is possible, and the subgoals that make the goal possible are gradually revealed to the player during gameplay. A common way to change the requirements of goals is to define the goals using variables of the game state. Winning most ball sports can be defined as having a higher score than the other team, making the goal definition depend on the other team's score.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The use of <A CLASS="pattern" HREF="DynamicGoalCharacteristics.htm" TARGET="frame_pattern">Dynamic Goal Characteristics</A> to describe a goal can in many games also be done by defining a static high-level goal, which starts with one subgoal and whenever that subgoal is completed, generates a new subgoal that has the same general structure as the previous subgoal. Which in the better description depends on the level of detail needed and on the purpose of the description: the former may for example be simpler to use when explaining the rules to someone that is going to play a game, while the latter may be easier to implement in program code.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>In the roleplaying game <I>Neverwinter Nights</I>, part of the overall goal at the start is to perform a complicated ritual with several non-player characters. When the ritual is finally performed, it turns out that one of the characters doing the ritual is a traitor, and then another goal is revealed to the player: defeat the traitor.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Many children's games, such as <I>Tag</I> and <A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A>, can either be described as using <A CLASS="pattern" HREF="DynamicGoalCharacteristics.htm" TARGET="frame_pattern">Dynamic Goal Characteristics</A> or having a static high-level goal with subgoals that switch from avoiding one person to avoiding another person (or being the hunter) in <I>Tag</I> and from defense to offense in <A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The card game Fluxx has the current winning goal represented by a played card. Although the game can be said to have the static goal of fulfilling the goal card criteria, the specific winning goal changes as soon as a player plays a new goal card.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The main design choice for using <A CLASS="pattern" HREF="DynamicGoalCharacteristics.htm" TARGET="frame_pattern">Dynamic Goal Characteristics</A> is, of course, to choose what characteristics of the goal are going to be dynamic. As mentioned previously, changing the information related to a goal is often used in adventure games and that <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A> is perhaps one of the most common ways to instantiate <A CLASS="pattern" HREF="DynamicGoalCharacteristics.htm" TARGET="frame_pattern">Dynamic Goal Characteristics</A>. Another common way is to have an <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> goal related to a certain kind of a game element but having a <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generator</A> that generates the actual element.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The goal definition can be conditionally dynamic as is the case in, for example, <I>Squash</I>. The first goal is to get nine points, but if the player does not have a two-point lead, the goal becomes dynamic in regard to the amount of points required for winning the game. This automatically guarantees that there is a <I>Perceivable margin</I> for the winner. The obvious way of describing the goal is to change the definition from absolute (e. g., nine points are needed) to relative (e. g., at least nine points are needed and two points more than the other player).</P>
+<P CLASS="text"></P>
+<P CLASS="text">Another way to create <A CLASS="pattern" HREF="DynamicGoalCharacteristics.htm" TARGET="frame_pattern">Dynamic Goal Characteristics</A> with changing requirements is to use a <A CLASS="pattern" HREF="PlayerDefinedGoals.htm" TARGET="frame_pattern">Player Defined Goal</A> but allow players to change the definition during gameplay according to certain rules. <A CLASS="pattern" HREF="PlannedCharacterDevelopment.htm" TARGET="frame_pattern">Planned Character Development</A> is an example of how <A CLASS="pattern" HREF="PlayerDefinedGoals.htm" TARGET="frame_pattern">Player Defined Goals</A> can be combined with <A CLASS="pattern" HREF="DynamicGoalCharacteristics.htm" TARGET="frame_pattern">Dynamic Goal Characteristics</A>: players make plans for their <A CLASS="pattern" HREF="Characters.htm" TARGET="frame_pattern">Characters</A> based upon their wishes and the current game state but as the <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structure</A> unfolds, the game state may change so that the ways to reach the <A CLASS="pattern" HREF="PlannedCharacterDevelopment.htm" TARGET="frame_pattern">Planned Character Development</A> change as well, and may also make the player choose different goals altogether for the development of the <A CLASS="pattern" HREF="Characters.htm" TARGET="frame_pattern">Character</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">The use of <A CLASS="pattern" HREF="DynamicGoalCharacteristics.htm" TARGET="frame_pattern">Dynamic Goal Characteristics</A> to reveal information about a <A CLASS="pattern" HREF="HierarchyofGoals.htm" TARGET="frame_pattern">Hierarchy of Goals</A> in stages lets the goals of a player be strongly linked to revealing the <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structure</A> of the game. This use, common in many adventure games, allows the game to be complex and also increases the play time without confusing the player, especially if used to hide goal that no longer can be fulfilled due to <A CLASS="pattern" HREF="ExcludingGoals.htm" TARGET="frame_pattern">Excluding Goals</A>. This kind of use of <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A> also leads to more possibilities of dramatic narrative turns in the game. Goals may effectively be <A CLASS="pattern" HREF="UnknownGoals.htm" TARGET="frame_pattern">Unknown Goals</A> if the number of variants allowed by the <A CLASS="pattern" HREF="DynamicGoalCharacteristics.htm" TARGET="frame_pattern">Dynamic Goal Characteristics</A> is large enough.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Having the requirements of a goal change during gameplay can be used to ensure that there is a <I>Perceivable margin</I> between the winner and other players, e. g., requiring that the winner has two more points than the other player in some ball games.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="PerceivableMargins.htm" TARGET="frame_pattern">Perceivable Margins</A>, <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generators</A>, <A CLASS="pattern" HREF="UnknownGoals.htm" TARGET="frame_pattern">Unknown Goals</A>, <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="HierarchyofGoals.htm" TARGET="frame_pattern">Hierarchy of Goals</A>, <A CLASS="pattern" HREF="PlannedCharacterDevelopment.htm" TARGET="frame_pattern">Planned Character Development</A>, <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A>, <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A>, <A CLASS="pattern" HREF="ExcludingGoals.htm" TARGET="frame_pattern">Excluding Goals</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A></P>
+
+<P CLASS="italic">Modulated by: </P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

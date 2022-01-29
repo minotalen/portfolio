@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Combos</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Combos">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Combos</H2>
+<I>Sets of actions that trigger additional effects than those that occur due to the individual actions.</I>
+<P CLASS="text"><A CLASS="pattern" HREF="Combos.htm" TARGET="frame_pattern">Combos</A> are a sequence of actions that due to the order or configuration they are performed in trigger additional effects. The sequence of actions perform to create the effect can be seen as an action in itself, although more complex than ordinary actions and possibly interruptible even when the actions it consists of are not.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Fighting games such as the <I>Tekken</I> or <I>Dead or Alive</I> series have only a few basic actions but by heavy use of <A CLASS="pattern" HREF="Combos.htm" TARGET="frame_pattern">Combos</A> each character in the game can have the number of possible actions increased by an order of magnitude.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The height of jumps in game such as <I>Mario 64</I> or <I>Super Mario Sunshine</I> can be extended considerably by pressing the jump button again at the right moment after starting a jump.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The design of <A CLASS="pattern" HREF="Combos.htm" TARGET="frame_pattern">Combos</A> includes deciding if they should provide additional effects or simply modify the already existing effects, how complex they should be to perform and if their execution can be affected by others. <A CLASS="pattern" HREF="Combos.htm" TARGET="frame_pattern">Combos</A> can simply modify the original <A CLASS="pattern" HREF="Rewards.htm" TARGET="frame_pattern">Rewards</A> and <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A> or introduce new <A CLASS="pattern" HREF="Rewards.htm" TARGET="frame_pattern">Rewards</A> and <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A>. <A CLASS="pattern" HREF="Combos.htm" TARGET="frame_pattern">Combos</A> are often used to provide <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A>, either as an additional <A CLASS="pattern" HREF="Rewards.htm" TARGET="frame_pattern">Reward</A> or as a way to provide <A CLASS="pattern" HREF="OrthogonalUnitDifferentiation.htm" TARGET="frame_pattern">Orthogonal Unit Differentiation</A>, and are especially common in <A CLASS="pattern" HREF="Combat.htm" TARGET="frame_pattern">Combat</A> activities in <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>. The complexity of performing <A CLASS="pattern" HREF="Combos.htm" TARGET="frame_pattern">Combos</A> can be used to set the <A CLASS="pattern" HREF="RightLevelofComplexity.htm" TARGET="frame_pattern">Right Level of Complexity</A>, for example by requiring <A CLASS="pattern" HREF="Rhythm-BasedActions.htm" TARGET="frame_pattern">Rhythm-Based Actions</A>, in the game and can provide a <A CLASS="pattern" HREF="SmoothLearningCurves.htm" TARGET="frame_pattern">Smooth Learning Curves</A> as players can have the possibility to choose between performing simple actions or more difficult <A CLASS="pattern" HREF="Combos.htm" TARGET="frame_pattern">Combos</A>. As with any <A CLASS="pattern" HREF="ExtendedActions.htm" TARGET="frame_pattern">Extended Actions</A>, <A CLASS="pattern" HREF="Combos.htm" TARGET="frame_pattern">Combos</A> offer the possibility of being <A CLASS="pattern" HREF="InterruptibleActions.htm" TARGET="frame_pattern">Interruptible Actions</A> independently of whether the actions they consists of are interruptible. In the case of <A CLASS="pattern" HREF="Combos.htm" TARGET="frame_pattern">Combos</A> that are complex or interruptible, motivation for performing them can be given by providing <A CLASS="pattern" HREF="GeometricRewardsforInvestments.htm" TARGET="frame_pattern">Geometric Rewards for Investments</A> in addition to any <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">In games with complex <A CLASS="pattern" HREF="Combos.htm" TARGET="frame_pattern">Combos</A>, or games where players are encouraged to find the <A CLASS="pattern" HREF="Combos.htm" TARGET="frame_pattern">Combos</A> by <A CLASS="pattern" HREF="Experimenting.htm" TARGET="frame_pattern">Experimenting</A>, it is common to indicate when a player has started to perform a combo and provide additional feedback for each of the individual actions that has been performed. This can be done by <A CLASS="pattern" HREF="IllusionaryRewards.htm" TARGET="frame_pattern">Illusionary Rewards</A> within the game world or by <A CLASS="pattern" HREF="ProgressIndicators.htm" TARGET="frame_pattern">Progress Indicators</A> providing <A CLASS="pattern" HREF="Extra-GameInformation.htm" TARGET="frame_pattern">Extra-Game Information</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">All forms of <A CLASS="pattern" HREF="CollaborativeActions.htm" TARGET="frame_pattern">Collaborative Actions</A> are forms of <A CLASS="pattern" HREF="Combos.htm" TARGET="frame_pattern">Combos</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Combos.htm" TARGET="frame_pattern">Combos</A> are <A CLASS="pattern" HREF="ExtendedActions.htm" TARGET="frame_pattern">Extended Actions</A> that require <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A> to be successfully executed. Being able to perform a <A CLASS="pattern" HREF="Combos.htm" TARGET="frame_pattern">Combo</A> can be a goal in itself as it is a <A CLASS="pattern" HREF="https://tecfa.unige.ch/tecfa/maltt/VIP/Ressources/Articles/Game%20Design%20Patterns/collection/Alphabetical_Patterns/Configuration.htm" TARGET="frame_pattern">Configuration</A> of actions. Games where players know that <A CLASS="pattern" HREF="Combos.htm" TARGET="frame_pattern">Combos</A> exist but are not provided with instructions on how to do them encourage players to do <A CLASS="pattern" HREF="Experimenting.htm" TARGET="frame_pattern">Experimenting</A>. In these games, knowing how to perform the <A CLASS="pattern" HREF="Combos.htm" TARGET="frame_pattern">Combos</A> is <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A> and can be shared as <A CLASS="pattern" HREF="Extra-GameActions.htm" TARGET="frame_pattern">Extra-Game Actions</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="ExtendedActions.htm" TARGET="frame_pattern">Extended Actions</A>, <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A>, <A CLASS="pattern" HREF="Rhythm-BasedActions.htm" TARGET="frame_pattern">Rhythm-Based Actions</A>, <A CLASS="pattern" HREF="SmoothLearningCurves.htm" TARGET="frame_pattern">Smooth Learning Curves</A>, <A CLASS="pattern" HREF="Experimenting.htm" TARGET="frame_pattern">Experimenting</A>, <A CLASS="pattern" HREF="https://tecfa.unige.ch/tecfa/maltt/VIP/Ressources/Articles/Game%20Design%20Patterns/collection/Alphabetical_Patterns/Configuration.htm" TARGET="frame_pattern">Configuration</A>, <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A>, <A CLASS="pattern" HREF="Extra-GameInformation.htm" TARGET="frame_pattern">Extra-Game Information</A>, <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A>, <A CLASS="pattern" HREF="Extra-GameActions.htm" TARGET="frame_pattern">Extra-Game Actions</A>, <A CLASS="pattern" HREF="OrthogonalUnitDifferentiation.htm" TARGET="frame_pattern">Orthogonal Unit Differentiation</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Combat.htm" TARGET="frame_pattern">Combat</A>, <A CLASS="pattern" HREF="RightLevelofComplexity.htm" TARGET="frame_pattern">Right Level of Complexity</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="CollaborativeActions.htm" TARGET="frame_pattern">Collaborative Actions</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A>, <A CLASS="pattern" HREF="InterruptibleActions.htm" TARGET="frame_pattern">Interruptible Actions</A>, <A CLASS="pattern" HREF="IllusionaryRewards.htm" TARGET="frame_pattern">Illusionary Rewards</A>, <A CLASS="pattern" HREF="Rewards.htm" TARGET="frame_pattern">Rewards</A>, <A CLASS="pattern" HREF="ProgressIndicators.htm" TARGET="frame_pattern">Progress Indicators</A>, <A CLASS="pattern" HREF="GeometricRewardsforInvestments.htm" TARGET="frame_pattern">Geometric Rewards for Investments</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

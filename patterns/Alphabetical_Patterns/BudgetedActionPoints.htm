@@ -1,0 +1,53 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Budgeted Action Points</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Budgeted Action Points">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Budgeted Action Points</H2>
+<I>Points that are used by players to do actions during their turns.</I>
+<P CLASS="text"><A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A> are a way to let players decide from turn to turn which actions they want to perform. Usually they not only let players have alternatives to choose from but also allow them to perform the same actions several times if wished but at the expense of not then being able to do other actions.</P>
+<P CLASS="text"></P>
+<P CLASS="text">A form of <A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A> is used to control how often certain actions can be performed in real-time games. In this case the actions costs a certain amount of points from some value and this value slowly increases until it has reached a maximum point. This means that the amount of uses of the action during a certain amount of time is limited but players can save up points in order to use the actions several times quickly after one another.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>the board game <I>Space Hulk</I> has a limited set of action points for each unit in the game. For the player controlling genestealers these action points are used for moving, turning, and attacking in close combat while the player controlling the space marines can use them for these activities and additionally to shoot and reload weapons.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>play-by-mail games and other tick-based games let players record what actions they want to do and send them to the game facilitator. In order to make games manageable and not grow exponentially in complexity the number of actions each player can use is set to a certain limit.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>calling air strikes, producing ammunition boxes, or handing out health packs in <I>Return to Castle Wolfenstein: Enemy Territory</I> all requires resources from the players doing the actions. These resources are limited by are regained over time, letting players choose between continuously doing the actions at regular intervals or saving up to do several of them in a short time span.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The selection of possible actions which can be paid by the <A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A> can be any kind of action that is part of the overall game play, but <A CLASS="pattern" HREF="VariedGameplay.htm" TARGET="frame_pattern">Varied Gameplay</A> and <A CLASS="pattern" HREF="Tradeoffs.htm" TARGET="frame_pattern">Tradeoffs</A> can be encouraged by having heterogeneous groups. <A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A> can be used to give players <A CLASS="pattern" HREF="LimitedResources.htm" TARGET="frame_pattern">Limited Resources</A> for performing actions both before and during gameplay. Before gameplay, this is most often used to give players ways to select <A CLASS="pattern" HREF="Skills.htm" TARGET="frame_pattern">Skill</A> levels or sets of advantages and disadvantages for <A CLASS="pattern" HREF="Characters.htm" TARGET="frame_pattern">Characters</A>. For <A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A> that are used during gameplay, common possible actions include: <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> with different costsfor different terrain and <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Unit</A> types to create <A CLASS="pattern" HREF="MovementLimitations.htm" TARGET="frame_pattern">Movement Limitations</A>; different forms of actions related to <A CLASS="pattern" HREF="Combat.htm" TARGET="frame_pattern">Combat</A>; and, actions that refill <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resources</A> such as healing or repairing.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A> can have <A CLASS="pattern" HREF="BalancingEffects.htm" TARGET="frame_pattern">Balancing Effects</A> on powerful abilities since these may cost more points and not be usable so often. Further, the impact of <A CLASS="pattern" HREF="NewAbilities.htm" TARGET="frame_pattern">New Abilities</A> or <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A> is lessened when used together with <A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A> as using them requires players to not use other actions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A> are <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> which gives players a <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A> within a <A CLASS="pattern" HREF="LimitedSetofActions.htm" TARGET="frame_pattern">Limited Set of Actions</A>. The points are a form of <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resources</A> which requires players to continuously do <A CLASS="pattern" HREF="ResourceManagement.htm" TARGET="frame_pattern">Resource Management</A> and <A CLASS="pattern" HREF="Tradeoffs.htm" TARGET="frame_pattern">Tradeoffs</A> between the different possible actions available.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A> and <A CLASS="pattern" HREF="Tick-BasedGames.htm" TARGET="frame_pattern">Tick-Based Games</A> can have <A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A> on two levels. On the strategic level, <A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A> are used to do <A CLASS="pattern" HREF="Investments.htm" TARGET="frame_pattern">Investment</A> either in technology to give new <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> with <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A> or in production to create new <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A>,<A CLASS="pattern" HREF="Producers.htm" TARGET="frame_pattern">Producers</A>, or <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converters</A>. On a tactical level, <A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A> are given to each <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Unit</A> at the start of the turn and most <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> usually have a basic common set of actions with special <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> have additional choices. The presence of <A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A> in <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A> typically causes <A CLASS="pattern" HREF="CognitiveImmersion.htm" TARGET="frame_pattern">Cognitive Immersion</A> and <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A> in <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A> are usually optional and are shown as through a <A CLASS="pattern" HREF="StatusIndicators.htm" TARGET="frame_pattern">Status Indicator</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="CognitiveImmersion.htm" TARGET="frame_pattern">Cognitive Immersion</A>, <A CLASS="pattern" HREF="MovementLimitations.htm" TARGET="frame_pattern">Movement Limitations</A>, <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A>, <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resources</A>, <A CLASS="pattern" HREF="Tradeoffs.htm" TARGET="frame_pattern">Tradeoffs</A>, <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A>, <A CLASS="pattern" HREF="VariedGameplay.htm" TARGET="frame_pattern">Varied Gameplay</A>, <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A>, <A CLASS="pattern" HREF="BalancingEffects.htm" TARGET="frame_pattern">Balancing Effects</A>, <A CLASS="pattern" HREF="LimitedResources.htm" TARGET="frame_pattern">Limited Resources</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Tick-BasedGames.htm" TARGET="frame_pattern">Tick-Based Games</A>, <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A>, <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>, <A CLASS="pattern" HREF="NewAbilities.htm" TARGET="frame_pattern">New Abilities</A>, <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A>, <A CLASS="pattern" HREF="Characters.htm" TARGET="frame_pattern">Characters</A>, <A CLASS="pattern" HREF="Skills.htm" TARGET="frame_pattern">Skills</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Combat.htm" TARGET="frame_pattern">Combat</A>, <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A>, <A CLASS="pattern" HREF="Investments.htm" TARGET="frame_pattern">Investments</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="StatusIndicators.htm" TARGET="frame_pattern">Status Indicators</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Persistent Game Worlds</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Persistent Game Worlds">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Persistent Game Worlds</H2>
+<I>The storage of the game state of a single game instance in Persistent Game Worlds is independent from the players' game and play sessions.</I>
+<P CLASS="text"><A CLASS="pattern" HREF="PersistentGameWorlds.htm" TARGET="frame_pattern">Persistent Game Worlds</A> have game elements that stay in the world even though players start and finish their game sessions. The life time of a game instance is usually counted in months or even decades.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>all MMORPGs have complex and dynamic <A CLASS="pattern" HREF="PersistentGameWorlds.htm" TARGET="frame_pattern">Persistent Game Worlds</A> where the players' game sessions with a single character can last for years and the life time of a game instance is determined by how popular the game is. These <A CLASS="pattern" HREF="PersistentGameWorlds.htm" TARGET="frame_pattern">Persistent Game Worlds</A> can even survive different software generations.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>the game worlds in tabletop roleplaying games can survive changes in the player composition, even when the game master has been changed.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="PersistentGameWorlds.htm" TARGET="frame_pattern">Persistent Game Worlds</A> almost always rely on <A CLASS="pattern" HREF="DedicatedGameFacilitators.htm" TARGET="frame_pattern">Dedicated Game Facilitators</A> to maintain the game state independently of the players, although in some cases, especially in tabletop and live-action roleplaying games, this task might be shared between the <A CLASS="pattern" HREF="GameMasters.htm" TARGET="frame_pattern">Game Master</A> and the players.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The game elements of <A CLASS="pattern" HREF="PersistentGameWorlds.htm" TARGET="frame_pattern">Persistent Game Worlds</A> can have a long life time enhancing the sense of <A CLASS="pattern" HREF="Ownership.htm" TARGET="frame_pattern">Ownership</A>. Many current MMORPGs have recognized this fact and afford players the opportunity to own and modify even buildings and areas in the game. The sense of <A CLASS="pattern" HREF="Ownership.htm" TARGET="frame_pattern">Ownership</A> is heightened even more by allowing the players to personalize their own items, <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A>, and locations in the game thus giving them <A CLASS="pattern" HREF="CreativeControl.htm" TARGET="frame_pattern">Creative Control</A> over their personal game elements. Even permitting players choose their own <A CLASS="pattern" HREF="Handles.htm" TARGET="frame_pattern">Handles</A> in the game increases the player commitment. More complex <A CLASS="pattern" HREF="Construction.htm" TARGET="frame_pattern">Construction</A> activities can lead to <A CLASS="pattern" HREF="PlayerConstructedWorlds.htm" TARGET="frame_pattern">Player Constructed Worlds</A>, which is one of the strongest features of text-based MUDs.</P>
+<P CLASS="text"></P>
+<P CLASS="text">One way to achieve <A CLASS="pattern" HREF="Identification.htm" TARGET="frame_pattern">Identification</A> and the sense of <A CLASS="pattern" HREF="Ownership.htm" TARGET="frame_pattern">Ownership</A> is to provide the players with <A CLASS="pattern" HREF="Characters.htm" TARGET="frame_pattern">Characters</A> represented by <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A> and base the gameplay on <A CLASS="pattern" HREF="CharacterDevelopment.htm" TARGET="frame_pattern">Character Development</A>. The effort the players put into developing their <A CLASS="pattern" HREF="Characters.htm" TARGET="frame_pattern">Characters</A> deepens the <A CLASS="pattern" HREF="Identification.htm" TARGET="frame_pattern">Identification</A> and the sense of <A CLASS="pattern" HREF="Ownership.htm" TARGET="frame_pattern">Ownership</A>. The <A CLASS="pattern" HREF="Characters.htm" TARGET="frame_pattern">Characters</A> can, in the end, feel more like a part of the players' personality than just game elements.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The persistent nature of game elements that are shared by many players makes it almost impossible to have <A CLASS="pattern" HREF="Reversability.htm" TARGET="frame_pattern">Reversability</A> within players' game and play sessions, which usually do not even overlap, making the game an <A CLASS="pattern" HREF="AsynchronousGames.htm" TARGET="frame_pattern">Asynchronous Game</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="PersistentGameWorlds.htm" TARGET="frame_pattern">Persistent Game Worlds</A> by their definition give rise to <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A> where several, sometimes even thousands, of players share the same <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>, which itself has an existence  independent of the players themselves. The high level of <A CLASS="pattern" HREF="SocialInteraction.htm" TARGET="frame_pattern">Social Interaction</A> that occurs in these games can over time give rise to both <A CLASS="pattern" HREF="SocialStatuses.htm" TARGET="frame_pattern">Social Statuses</A> among the players and <A CLASS="pattern" HREF="SocialOrganizations.htm" TARGET="frame_pattern">Social Organizations</A> given some support through the game design.</P>
+<P CLASS="text"></P>
+<P CLASS="text">These games offer players the possibility to enter another world, and when these shared fantasies are constructed with care the <A CLASS="pattern" HREF="EmotionalImmersion.htm" TARGET="frame_pattern">Emotional Immersion</A> and commitment from the players can be significant. Tabletop roleplaying games create these shared fantasies through <A CLASS="pattern" HREF="Storytelling.htm" TARGET="frame_pattern">Storytelling</A> by the players and the <A CLASS="pattern" HREF="GameMasters.htm" TARGET="frame_pattern">Game Masters</A>. The games usually have loose <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A> with no definite ends, making the tales told by the players and to the players <A CLASS="pattern" HREF="NeverEndingStories.htm" TARGET="frame_pattern">Never Ending Stories.</A> This kind of <A CLASS="pattern" HREF="Storytelling.htm" TARGET="frame_pattern">Storytelling</A> is usually based on the players doing <A CLASS="pattern" HREF="Roleplaying.htm" TARGET="frame_pattern">Roleplaying</A> with their <A CLASS="pattern" HREF="Characters.htm" TARGET="frame_pattern">Characters</A>. As much of the <A CLASS="pattern" HREF="Storytelling.htm" TARGET="frame_pattern">Storytelling</A> does not have an immediate effect on the state of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game Worlds</A>, these worlds typically generate significant <A CLASS="pattern" HREF="Extra-GameActions.htm" TARGET="frame_pattern">Extra-Game Actions</A> and <A CLASS="pattern" HREF="Extra-GameConsequences.htm" TARGET="frame_pattern">Extra-Game Consequences</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="EmotionalImmersion.htm" TARGET="frame_pattern">Emotional Immersion</A>, <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A>, <A CLASS="pattern" HREF="Extra-GameConsequences.htm" TARGET="frame_pattern">Extra-Game Consequences</A>, <A CLASS="pattern" HREF="Extra-GameActions.htm" TARGET="frame_pattern">Extra-Game Actions</A>, <A CLASS="pattern" HREF="SocialInteraction.htm" TARGET="frame_pattern">Social Interaction</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="SocialStatuses.htm" TARGET="frame_pattern">Social Statuses</A>, <A CLASS="pattern" HREF="Identification.htm" TARGET="frame_pattern">Identification</A>, <A CLASS="pattern" HREF="Characters.htm" TARGET="frame_pattern">Characters</A>, <A CLASS="pattern" HREF="PlayerConstructedWorlds.htm" TARGET="frame_pattern">Player Constructed Worlds</A>, <A CLASS="pattern" HREF="SocialOrganizations.htm" TARGET="frame_pattern">Social Organizations</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="DedicatedGameFacilitators.htm" TARGET="frame_pattern">Dedicated Game Facilitators</A>, <A CLASS="pattern" HREF="GameMasters.htm" TARGET="frame_pattern">Game Masters</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A>, <A CLASS="pattern" HREF="CharacterDevelopment.htm" TARGET="frame_pattern">Character Development</A>, <A CLASS="pattern" HREF="Construction.htm" TARGET="frame_pattern">Construction</A>, <A CLASS="pattern" HREF="NeverEndingStories.htm" TARGET="frame_pattern">Never Ending Stories</A>, <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A>, <A CLASS="pattern" HREF="CreativeControl.htm" TARGET="frame_pattern">Creative Control</A>, <A CLASS="pattern" HREF="Storytelling.htm" TARGET="frame_pattern">Storytelling</A>, <A CLASS="pattern" HREF="AsynchronousGames.htm" TARGET="frame_pattern">Asynchronous Games</A>, <A CLASS="pattern" HREF="Handles.htm" TARGET="frame_pattern">Handles</A>, <A CLASS="pattern" HREF="Ownership.htm" TARGET="frame_pattern">Ownership</A>, <A CLASS="pattern" HREF="Roleplaying.htm" TARGET="frame_pattern">Roleplaying</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="Reversability.htm" TARGET="frame_pattern">Reversability</A></P>
+
+
+</html>
+

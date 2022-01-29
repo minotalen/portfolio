@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Indirect Control</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Indirect Control">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Indirect Control</H2>
+<I>Game elements whose actions players can affect through other game elements.</I>
+<P CLASS="text">Some game elements in game that perform actions cannot be directly controlled by players but the players may be able to influence their actions through other game elements. In these cases players have a form of control over the game elements' actions since they have <A CLASS="pattern" HREF="IndirectControl.htm" TARGET="frame_pattern">Indirect Control</A> through intermediate game elements.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>A player cannot directly affect the movement of any ball in billiards except the cue ball. However by hitting the cue ball so that it hits other ball, players can indirectly control the movement of any ball.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Important goals in <I>Carolus Magnus</I> are having control over areas in the game. However, players cannot have control over areas directly. Rather, various factions have influence on the areas and the players compete with each other for control over the factions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">Players have <A CLASS="pattern" HREF="IndirectControl.htm" TARGET="frame_pattern">Indirect Control</A> of the game elements whose actions can be affected by the players' <A CLASS="pattern" HREF="FocusLoci.htm" TARGET="frame_pattern">Focus Loci</A>. The design of <A CLASS="pattern" HREF="IndirectControl.htm" TARGET="frame_pattern">Indirect Control</A> thereby relies mainly on choosing what actions players' <A CLASS="pattern" HREF="FocusLoci.htm" TARGET="frame_pattern">Focus Loci</A> have and how influential these are on the game elements in question. <A CLASS="pattern" HREF="IndirectControl.htm" TARGET="frame_pattern">Indirect Control</A> affects <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A> of actions negatively when the influence depends upon <A CLASS="pattern" HREF="Randomness.htm" TARGET="frame_pattern">Randomness</A> or parts of the game state unknown to players.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Game elements under <A CLASS="pattern" HREF="IndirectControl.htm" TARGET="frame_pattern">Indirect Control</A> of players can be seen as <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> that provide actions. If more than one player can indirectly control a game element, this can cause <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A> and create <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A> goals that are <A CLASS="pattern" HREF="ContinuousGoals.htm" TARGET="frame_pattern">Continuous Goals</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="IndirectControl.htm" TARGET="frame_pattern">Indirect Control</A> is one way to limit the effectiveness of how actions can be used and can modulate the<A CLASS="pattern" HREF="RightLevelofComplexity.htm" TARGET="frame_pattern">Right Level of Complexity</A> of a game, especially <A CLASS="pattern" HREF="Dexterity-BasedActions.htm" TARGET="frame_pattern">Dexterity-Based Actions</A>. <A CLASS="pattern" HREF="AbilityLosses.htm" TARGET="frame_pattern">Ability Loss</A> from a game element under <A CLASS="pattern" HREF="IndirectControl.htm" TARGET="frame_pattern">Indirect Control</A> is less of a <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalty</A> than otherwise as the ownership of the game element under <A CLASS="pattern" HREF="IndirectControl.htm" TARGET="frame_pattern">Indirect Control</A> is less fixed.</P>
+<P CLASS="text"></P>
+<P CLASS="text">When the number of game elements with a type of <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A> is a limited, <A CLASS="pattern" HREF="IndirectControl.htm" TARGET="frame_pattern">Indirect Control</A> of them can be used to allow <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A> with <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> goals without removing the <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A> from game play. Rather, the game elements that influence the game element with the <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A> can be the target of <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> goals and all parts of the <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A> may actually have a <A CLASS="pattern" HREF="Survive.htm" TARGET="frame_pattern">Survive</A> goal for the game element with the <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="IndirectControl.htm" TARGET="frame_pattern">Indirect Control</A> lets the goal of <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A> be transformed into one of <A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="ContinuousGoals.htm" TARGET="frame_pattern">Continuous Goals</A>, <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A>, <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="AbilityLosses.htm" TARGET="frame_pattern">Ability Losses</A>, <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A>, <A CLASS="pattern" HREF="RightLevelofComplexity.htm" TARGET="frame_pattern">Right Level of Complexity</A>, <A CLASS="pattern" HREF="Dexterity-BasedActions.htm" TARGET="frame_pattern">Dexterity-Based Actions</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A>, <A CLASS="pattern" HREF="FocusLoci.htm" TARGET="frame_pattern">Focus Loci</A></P>
+
+<P CLASS="italic">Modulated by: </P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A></P>
+
+
+</html>
+

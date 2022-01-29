@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>The Show Must Go On</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of The Show Must Go On">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>The Show Must Go On</H2>
+<I>The game state can change without any player actions.</I>
+<P CLASS="text"><A CLASS="pattern" HREF="TheShowMustGoOn.htm" TARGET="frame_pattern">The Show Must Go On</A> is found in games where there are at least some real-time elements in the gameplay that occur even if players do nothing.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>In <I>Tetris</I>, the blocks fall down the screen regardless of the player's actions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The balls in pinball after they have been shot to the table move on their own, requiring constant attention from the player or specific actions from the player in order to immobilize the balls.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>In real-time strategy games, there is always something happening in the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>, and the players have to switch their attention constantly from one place to another to keep in pace with the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The real-time nature of some actions, such as <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A> and <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A>, make them more suitable for games with <A CLASS="pattern" HREF="TheShowMustGoOn.htm" TARGET="frame_pattern">The Show Must Go On</A> than to other types of games. These characteristics of <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A> are the basis for games with <A CLASS="pattern" HREF="TheShowMustGoOn.htm" TARGET="frame_pattern">The Show Must Go On.</A> <A CLASS="pattern" HREF="Ultra-PowerfulEvents.htm" TARGET="frame_pattern">Ultra-Powerful Events</A> where the players can merely observe the unfolding of the event are a good example of how to modulate <A CLASS="pattern" HREF="Anticipation.htm" TARGET="frame_pattern">Anticipation</A> with <A CLASS="pattern" HREF="TheShowMustGoOn.htm" TARGET="frame_pattern">The Show Must Go On</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">A game state that is dynamic independent of player activity leads to the situation that the players have an inherent possibility for doing <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Ops</A>, even without their intent. This also means that there has to be a <A CLASS="pattern" HREF="DedicatedGameFacilitators.htm" TARGET="frame_pattern">Dedicated Game Facilitator</A> to take care of the game state changes when the players are not performing any actions. <A CLASS="pattern" HREF="TurnTaking.htm" TARGET="frame_pattern">Turn Taking</A> in general requires player action and is therefore not possible to use in combination with <A CLASS="pattern" HREF="TheShowMustGoOn.htm" TARGET="frame_pattern">The Show Must Go On</A> in the same modes of play.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="TheShowMustGoOn.htm" TARGET="frame_pattern">The Show Must Go On</A> creates events with <A CLASS="pattern" HREF="HoveringClosures.htm" TARGET="frame_pattern">Hovering Closures</A> in <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A> that can force players to have <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A> and makes time a player <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resource</A>. This in turn gives <A CLASS="pattern" HREF="LimitedPlanningAbility.htm" TARGET="frame_pattern">Limited Planning Abilities</A> and can give players both <A CLASS="pattern" HREF="Anticipation.htm" TARGET="frame_pattern">Anticipation</A> and <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> if the there is no possibility for player-initiated <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Games with <A CLASS="pattern" HREF="TheShowMustGoOn.htm" TARGET="frame_pattern">The Show Must Go On</A> require that the players pay constant attention to the happenings in the game. Some games of this type build the internal threat or struggle for the players on the requirement that the players to do <A CLASS="pattern" HREF="Rhythm-BasedActions.htm" TARGET="frame_pattern">Rhythm-Based Actions</A> or perform <A CLASS="pattern" HREF="AttentionSwapping.htm" TARGET="frame_pattern">Attention Swapping</A> between different parts of a <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>. This can increase <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> in the game; at least in cases where the pace of the game increases during gameplay or there is <A CLASS="pattern" HREF="ShrinkingGameWorld.htm" TARGET="frame_pattern">Shrinking Game World</A> to create pressure.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A>, <A CLASS="pattern" HREF="Rhythm-BasedActions.htm" TARGET="frame_pattern">Rhythm-Based Actions</A>, <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A>, <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A>, <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A>, <A CLASS="pattern" HREF="HoveringClosures.htm" TARGET="frame_pattern">Hovering Closures</A>, <A CLASS="pattern" HREF="LimitedPlanningAbility.htm" TARGET="frame_pattern">Limited Planning Ability</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="AttentionSwapping.htm" TARGET="frame_pattern">Attention Swapping</A>, <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim & Shoot</A>, <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>, <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Ops</A>, <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>, <A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A>, <A CLASS="pattern" HREF="Ultra-PowerfulEvents.htm" TARGET="frame_pattern">Ultra-Powerful Events</A>, <A CLASS="pattern" HREF="DedicatedGameFacilitators.htm" TARGET="frame_pattern">Dedicated Game Facilitators</A>, <A CLASS="pattern" HREF="ShrinkingGameWorld.htm" TARGET="frame_pattern">Shrinking Game World</A></P>
+
+<P CLASS="italic">Modulated by: </P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="TurnTaking.htm" TARGET="frame_pattern">Turn Taking</A>, <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A></P>
+
+
+</html>
+

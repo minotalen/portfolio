@@ -1,0 +1,55 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Conceal</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Conceal">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Conceal</H2>
+<I>Conceal is the goal of trying to hinder other players ability to gain information.</I>
+<P CLASS="text">Having as much information as possible about the game state is usually advantageous, and <A CLASS="pattern" HREF="Conceal.htm" TARGET="frame_pattern">Conceal</A> is the goal of trying to prevent other players from gaining information about part of the game state.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Conceal.htm" TARGET="frame_pattern">Conceal</A> is not only about preventing or hindering other players from finding out the location of the goal object; the aim of <A CLASS="pattern" HREF="Conceal.htm" TARGET="frame_pattern">Conceal</A> may be to keep certain information associated with a game element from the other players.</P>
+<P CLASS="text"></P>
+<P CLASS="text">For example, in some strategy games, the player can use special actions to hide the actual strength of the unit, but not its location or existence. The exact location can also be partially hidden: the Elven cloak in a roleplaying game may hide the wearer in 80\% of the cases, and cloaking devices in space games may show small bits of intergalactic fighters every now and then.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The children's game <I>Hide &amp; Seek</I> is the archetypical example of using <A CLASS="pattern" HREF="Conceal.htm" TARGET="frame_pattern">Conceal</A> where all children except one try to <A CLASS="pattern" HREF="Conceal.htm" TARGET="frame_pattern">Conceal</A> their locations.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The game <I>Zendo</I> allows the master to secretly make a rule for how differently colored pyramids should be arranged to have Buddha nature, and the goal of the students is to try and extrapolate the rule from experiments.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The information in <A CLASS="pattern" HREF="Conceal.htm" TARGET="frame_pattern">Conceal</A> goals can either be provided to the player or set up by the player, by either following rules or arranging game elements. The possibility to choose or create the information to be hidden allows the pattern to promote <A CLASS="pattern" HREF="Replayability.htm" TARGET="frame_pattern">Replayability</A> and to support <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A> and <A CLASS="pattern" HREF="CreativeControl.htm" TARGET="frame_pattern">Creative Control</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Using the <A CLASS="pattern" HREF="Conceal.htm" TARGET="frame_pattern">Conceal</A> pattern involves choosing what is hidden, where it can be hidden, and when the action of hiding can be performed. Optionally, the support of producing <A CLASS="pattern" HREF="RedHerrings.htm" TARGET="frame_pattern">Red Herrings</A> can be introduced in order to let players generate <A CLASS="pattern" HREF="AsymmetricInformation.htm" TARGET="frame_pattern">Asymmetric Information</A> for other players.</P>
+<P CLASS="text"></P>
+<P CLASS="text">A common use of the <A CLASS="pattern" HREF="Conceal.htm" TARGET="frame_pattern">Conceal</A> pattern is to hide a game element, i. e., its location, but an attribute of a game element can also be hidden. When players have to hide <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A> or <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A>, this may give those players <I>Limited Sets of Actions</I> as they may only be able to do <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Op</A> actions. Further, it may create <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> or force players to make <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A> choices between using the game elements and giving other players information. As an example, the board game <I>Stratego</I> has the position of all pieces as public information, but a player does not initially know the rank of the other player's pieces. Each turn a player must move a piece, which provides <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A> about which piece it is since many pieces have overlapping movement abilities.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Conceal.htm" TARGET="frame_pattern">Conceal</A> is a <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goal</A> to <A CLASS="pattern" HREF="GainInformation.htm" TARGET="frame_pattern">Gain Information</A> but can also be an <A CLASS="pattern" HREF="UnknownGoals.htm" TARGET="frame_pattern">Unknown Goal</A> since other players may not know who has the information. As a <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goal</A>, it is also a <A CLASS="pattern" HREF="ContinuousGoals.htm" TARGET="frame_pattern">Continuous Goal</A>, but as the information hidden may be context dependent, the player with the goal may choose to abandon the goal as a <A CLASS="pattern" HREF="Tradeoffs.htm" TARGET="frame_pattern">Tradeoff</A> towards completing other goals. An example of this can be to choose to reveal ones position in an ambush when the enemy is sufficiently close to make an attack likely to succeed.</P>
+<P CLASS="text"></P>
+<P CLASS="text">When the failure of <A CLASS="pattern" HREF="Conceal.htm" TARGET="frame_pattern">Conceal</A> can lead to the loss of <A CLASS="pattern" HREF="Lives.htm" TARGET="frame_pattern">Lives</A>, the goal can be seen as a <A CLASS="pattern" HREF="SupportingGoals.htm" TARGET="frame_pattern">Supporting Goal</A> to <A CLASS="pattern" HREF="Survive.htm" TARGET="frame_pattern">Survive</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">When the information to be concealed can be concealed by a player through <A CLASS="pattern" HREF="RedHerrings.htm" TARGET="frame_pattern">Red Herrings</A> and suboptimal actions, this offers a form of <A CLASS="pattern" HREF="CreativeControl.htm" TARGET="frame_pattern">Creative Control</A> to that player. Games with secret tactics naturally have the goal to <A CLASS="pattern" HREF="Conceal.htm" TARGET="frame_pattern">Conceal</A> these from other players. In these cases, players may have to do <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A> judgments between the benefit of making the most optimal action against the risk of revealing what goals and <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> they own. This presence of this form of <A CLASS="pattern" HREF="CreativeControl.htm" TARGET="frame_pattern">Creative Control</A> may be to create <A CLASS="pattern" HREF="Surprises.htm" TARGET="frame_pattern">Surprises</A> when the information is revealed.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="ContinuousGoals.htm" TARGET="frame_pattern">Continuous Goals</A>, <A CLASS="pattern" HREF="UnknownGoals.htm" TARGET="frame_pattern">Unknown Goals</A>, <A CLASS="pattern" HREF="Replayability.htm" TARGET="frame_pattern">Replayability</A>, <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goals</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Survive.htm" TARGET="frame_pattern">Survive</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A>, <A CLASS="pattern" HREF="AsymmetricInformation.htm" TARGET="frame_pattern">Asymmetric Information</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="RedHerrings.htm" TARGET="frame_pattern">Red Herrings</A>, <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A>, <A CLASS="pattern" HREF="CreativeControl.htm" TARGET="frame_pattern">Creative Control</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

@@ -1,0 +1,45 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Delivery</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Delivery">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Delivery</H2>
+<I>Delivery consists of moving a certain game element to another specified game element or place within the game space.</I>
+<P CLASS="text">Games which have goals consisting of moving one game element from one place to another may be complicated by only letting players be able to move the game element through the effect of other game elements. In these cases, the goals may be seen as making a <A CLASS="pattern" HREF="Delivery.htm" TARGET="frame_pattern">Delivery</A> of a game element by using other game elements.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Football</I> can be described as the task of delivering the ball into the other team's goal.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>capture the flag variants of first-person shooters have the goal of gaining access of the other team's flag and carrying it to one's own capture point.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Delivery.htm" TARGET="frame_pattern">Delivery</A> is the goal <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A> with the additional requirement that a certain game element must be brought to the <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Point</A>. The game element can be moved in several different ways: <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> allow players to concentrate on their own <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> by carrying the game element; making the game element move by performing actions on it allows for <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A> actions; or that they cannot be moved directly and required players to <A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A> it through using other game elements. <A CLASS="pattern" HREF="Delivery.htm" TARGET="frame_pattern">Delivery</A> can be used as a subgoal in <A CLASS="pattern" HREF="Trading.htm" TARGET="frame_pattern">Trading.</A></P>
+<P CLASS="text"></P>
+<P CLASS="text">Game elements that are <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> give <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A> goals, but also allow the <A CLASS="pattern" HREF="Delivery.htm" TARGET="frame_pattern">Delivery</A> to be divided between different <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A>, possibly as different subgoals. This lets players use different <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> for different areas in the game space depending on which <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A> they have and which obstacles are encountered. It also allows <A CLASS="pattern" HREF="Delivery.htm" TARGET="frame_pattern">Delivery</A> to be done by group of players where it is not important who delivers the game element as long as it is delivered, as for example in <I>Football</I>. This allows for <A CLASS="pattern" HREF="SharedRewards.htm" TARGET="frame_pattern">Shared Rewards</A> in <A CLASS="pattern" HREF="TeamPlay.htm" TARGET="frame_pattern">Team Play</A> or <A CLASS="pattern" HREF="DynamicAlliances.htm" TARGET="frame_pattern">Dynamic Alliances</A> but also that the <A CLASS="pattern" HREF="Delivery.htm" TARGET="frame_pattern">Delivery</A> goal of one player can be combined the <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A> goal of another player to create <A CLASS="pattern" HREF="Cooperation.htm" TARGET="frame_pattern">Cooperation</A>. By introducing players with opposing <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A> goals as <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goals</A>, game designers can introduce <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A> and <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> into the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Delivery.htm" TARGET="frame_pattern">Delivery</A> can be used to steer players' <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> within the game space and is a classic way of steering a player's progress along a <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structure</A>. Depending on the obstacles and resistances in completing the goal, <A CLASS="pattern" HREF="Delivery.htm" TARGET="frame_pattern">Delivery</A> can contain subgoals of <A CLASS="pattern" HREF="Evade.htm" TARGET="frame_pattern">Evade</A>, <A CLASS="pattern" HREF="Stealth.htm" TARGET="frame_pattern">Stealth,</A> or <A CLASS="pattern" HREF="Overcome.htm" TARGET="frame_pattern">Overcome</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A>, <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Points</A>, <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A>, <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A>, <A CLASS="pattern" HREF="Trading.htm" TARGET="frame_pattern">Trading</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Stealth.htm" TARGET="frame_pattern">Stealth</A>, <A CLASS="pattern" HREF="Overcome.htm" TARGET="frame_pattern">Overcome</A>, <A CLASS="pattern" HREF="Evade.htm" TARGET="frame_pattern">Evade</A>, <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A>, <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim & Shoot</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

@@ -1,0 +1,41 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Agents</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Agents">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Agents</H2>
+<I>Entities in games that take the roles of players but are controlled by the game system.</I>
+<P CLASS="text">Sometimes one cannot find enough players to make a game playable or enjoyable. To make gameplay possible in these situations, the game design may provide means of simulating players. These simulated players, or <A CLASS="pattern" HREF="Agents.htm" TARGET="frame_pattern">Agents</A>, can also be used to flesh out team-based games so that the teams are of equal size or simply let players train without having to play against other people.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Bots in first-person shooters or real-time strategy games let players simulate multiplayer variants of the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">Creating <A CLASS="pattern" HREF="Agents.htm" TARGET="frame_pattern">Agents</A> requires that <A CLASS="pattern" HREF="DedicatedGameFacilitators.htm" TARGET="frame_pattern">Dedicated Game Facilitators</A> can sufficiently simulate the actions and plans of players, which in many cases requires significant computer power and AI programming. However, the skill of these <A CLASS="pattern" HREF="Agents.htm" TARGET="frame_pattern">Agents</A> can easily be downgraded once they have been created and this can be used to create <A CLASS="pattern" HREF="Handicaps.htm" TARGET="frame_pattern">Handicaps</A> for players.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Agents.htm" TARGET="frame_pattern">Agents</A> provide the possibility to play <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A> when not enough players are available by providing <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A> controlled by the game system. This allows for <A CLASS="pattern" HREF="Competition.htm" TARGET="frame_pattern">Competition</A>, <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A>, and <A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A>, and even <A CLASS="pattern" HREF="SocialInteraction.htm" TARGET="frame_pattern">Social Interaction</A> to be present, or at least simulated, in situations where they would otherwise be impossible.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A>, <A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A>, <A CLASS="pattern" HREF="Competition.htm" TARGET="frame_pattern">Competition</A>, <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A>, <A CLASS="pattern" HREF="Handicaps.htm" TARGET="frame_pattern">Handicaps</A>, <A CLASS="pattern" HREF="SocialInteraction.htm" TARGET="frame_pattern">Social Interaction</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="DedicatedGameFacilitators.htm" TARGET="frame_pattern">Dedicated Game Facilitators</A></P>
+
+<P CLASS="italic">Modulated by: </P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

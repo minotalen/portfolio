@@ -1,0 +1,45 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Player Killing</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Player Killing">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Player Killing</H2>
+<I>Allows players to intentionally or unintentionally remove players from the game for at least some time.</I>
+<P CLASS="text">Games in which the players control only one <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatar</A> each make the death of these very influential for players' experiences and success in the game. As players easily identify with their <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A>, killing them is usually referred to as <A CLASS="pattern" HREF="PlayerKilling.htm" TARGET="frame_pattern">Player Killing</A> even though it is actually <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatar</A> killing.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Early <I>Ultima Online</I> was notorious for more experienced players killing other players' characters for looting their items or just for fun. The players who were killed lost the items they were carrying unless they were able to come back to the spot before the player killers looted them.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Deathmatch first-person shooters, such as <I>Quake III</I>, have <A CLASS="pattern" HREF="PlayerKilling.htm" TARGET="frame_pattern">Player Killing</A> as one of the main goals for the game. The more other players the player manages to take out, the more points or frags he is rewarded. The players who are killed usually lose their gained special items and abilities and are transferred back to a spawn point.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">Having or not having <A CLASS="pattern" HREF="PlayerKilling.htm" TARGET="frame_pattern">Player Killing</A> is always an explicit design choice. <A CLASS="pattern" HREF="PlayerKilling.htm" TARGET="frame_pattern">Player Killing</A> is, in effect, <A CLASS="pattern" HREF="PlayerElimination.htm" TARGET="frame_pattern">Player Elimination</A> with the <A CLASS="pattern" HREF="Spawning.htm" TARGET="frame_pattern">Spawning</A> of the players' <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A> allowed. Designing <A CLASS="pattern" HREF="PlayerKilling.htm" TARGET="frame_pattern">Player Killing</A> in the game obviously involves deciding the details of <A CLASS="pattern" HREF="Spawning.htm" TARGET="frame_pattern">Spawning</A> and <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A> involved for being killed. Usually they are mainly <A CLASS="pattern" HREF="IndividualPenalties.htm" TARGET="frame_pattern">Individual Penalties</A> even in games with <A CLASS="pattern" HREF="TeamPlay.htm" TARGET="frame_pattern">Team Play</A>, and players receive <A CLASS="pattern" HREF="DecreasedAbilities.htm" TARGET="frame_pattern">Decreased Abilities</A>, <A CLASS="pattern" HREF="AbilityLosses.htm" TARGET="frame_pattern">Ability Losses</A>, and they might lose <A CLASS="pattern" HREF="Ownership.htm" TARGET="frame_pattern">Ownership</A> of <A CLASS="pattern" HREF="Tools.htm" TARGET="frame_pattern">Tools</A> and other items they possess at the time of killing. Other possibilities include forced <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A> or limitations to the number of times a player can respawn due to the use of <A CLASS="pattern" HREF="Lives.htm" TARGET="frame_pattern">Lives</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="PlayerKilling.htm" TARGET="frame_pattern">Player Killing</A> can be used as a method of keeping <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A> in both games with <A CLASS="pattern" HREF="TeamPlay.htm" TARGET="frame_pattern">Team Play</A>, as in games with <A CLASS="pattern" HREF="TeamElimination.htm" TARGET="frame_pattern">Team Elimination</A>, and without <A CLASS="pattern" HREF="TeamPlay.htm" TARGET="frame_pattern">Team Play</A>. Games with <A CLASS="pattern" HREF="TeamPlay.htm" TARGET="frame_pattern">Team Play</A> sometimes allow the players to <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> their team members, and this can be called unintentional <A CLASS="pattern" HREF="PlayerKilling.htm" TARGET="frame_pattern">Player Killing</A>. On the other hand, some team-oriented games break <A CLASS="pattern" HREF="ConsistentRealityLogic.htm" TARGET="frame_pattern">Consistent Reality Logic</A> by not having the possibility of <A CLASS="pattern" HREF="PlayerKilling.htm" TARGET="frame_pattern">Player Killing</A> within the same team in order to avoid internal fighting and possibilities for saboteurs.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="PlayerKilling.htm" TARGET="frame_pattern">Player Killing</A> naturally has an effect on <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> involved, depending on the actual <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A> and <A CLASS="pattern" HREF="Rewards.htm" TARGET="frame_pattern">Rewards</A> for <A CLASS="pattern" HREF="PlayerKilling.htm" TARGET="frame_pattern">Player Killing</A>. The <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> involved is usually not as drastic as in games with <A CLASS="pattern" HREF="PlayerElimination.htm" TARGET="frame_pattern">Player Elimination</A> without <A CLASS="pattern" HREF="Spawning.htm" TARGET="frame_pattern">Spawning</A> but is modulated in both cases by how much <A CLASS="pattern" HREF="Identification.htm" TARGET="frame_pattern">Identification</A> the player has with the controlled <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatar</A>. As the early versions of <I>Ultima Online</I> demonstrated, if the players are rewarded for <A CLASS="pattern" HREF="PlayerKilling.htm" TARGET="frame_pattern">Player Killing</A>, that is what is going to happen no matter what the social rules of conduct are within the game itself. More recent MMORPGs have solved the <A CLASS="pattern" HREF="PlayerKilling.htm" TARGET="frame_pattern">Player Killing</A> problem either by removing the possibility of <A CLASS="pattern" HREF="PlayerKilling.htm" TARGET="frame_pattern">Player Killing</A>, having special places in the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> where <A CLASS="pattern" HREF="PlayerKilling.htm" TARGET="frame_pattern">Player Killing</A> is allowed, or designing <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A> also for player killers, for example, by changing their explicit <A CLASS="pattern" HREF="SocialStatuses.htm" TARGET="frame_pattern">Social Status</A> to outlaws and not allowing them to enter cities. Depending on the solution, <A CLASS="pattern" HREF="PlayerKilling.htm" TARGET="frame_pattern">Player Killing</A> can significantly modify <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A> choices for both attackers and potential victims.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A>, <A CLASS="pattern" HREF="TeamElimination.htm" TARGET="frame_pattern">Team Elimination</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="TeamPlay.htm" TARGET="frame_pattern">Team Play</A>, <A CLASS="pattern" HREF="PlayerElimination.htm" TARGET="frame_pattern">Player Elimination</A>, <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A>, <A CLASS="pattern" HREF="TeamBalance.htm" TARGET="frame_pattern">Team Balance</A>, <A CLASS="pattern" HREF="Ownership.htm" TARGET="frame_pattern">Ownership</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Lives.htm" TARGET="frame_pattern">Lives</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="SocialStatuses.htm" TARGET="frame_pattern">Social Statuses</A>, <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A>, <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A>, <A CLASS="pattern" HREF="DecreasedAbilities.htm" TARGET="frame_pattern">Decreased Abilities</A>, <A CLASS="pattern" HREF="Identification.htm" TARGET="frame_pattern">Identification</A>, <A CLASS="pattern" HREF="Rewards.htm" TARGET="frame_pattern">Rewards</A>, <A CLASS="pattern" HREF="AbilityLosses.htm" TARGET="frame_pattern">Ability Losses</A>, <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A>, <A CLASS="pattern" HREF="Spawning.htm" TARGET="frame_pattern">Spawning</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

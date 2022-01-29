@@ -1,0 +1,45 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Early Elimination</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Early Elimination">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Early Elimination</H2>
+<I>There is a possibility that a player's game session may finish before the other players.</I>
+<P CLASS="text"><A CLASS="pattern" HREF="EarlyElimination.htm" TARGET="frame_pattern">Early Elimination</A> is usually considered to be an unwanted feature in multiplayer games with long play time, especially in the case of face to face board or card games, as the eliminated player remains outside the play for the rest of the game instance.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>it is possible, although quite rare, to eliminate one of the players in <I>Magic: The Gathering</I> in the early phases of the game instance.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>in <I>Counter-Strike</I> the players can be killed in very early phases of the game round and they remain outside the play for the rest of the round. Some configurations of <I>Counter-Strike,</I> however, allow the eliminated players to observe what is happening during the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="EarlyElimination.htm" TARGET="frame_pattern">Early Elimination</A> requires that there is <A CLASS="pattern" HREF="PlayerElimination.htm" TARGET="frame_pattern">Player Elimination</A> in the first place. An easy way to introduce <A CLASS="pattern" HREF="EarlyElimination.htm" TARGET="frame_pattern">Early Elimination</A> is to make the possibilities to complete <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> goals present from the beginning of gameplay. For example, in <I>Counter-Strike</I> one well-placed shot from the enemy is all it takes to <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> a player. The available actions do not have to instantly <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> players. The same can be achieved if the effects of harmful actions can be stacked or accumulated in a short time in such way that the player is taken out of the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="EarlyElimination.htm" TARGET="frame_pattern">Early Elimination</A>, however, does not require that the fulfillment of <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> goal can take place in the early phases of the game. For example, <I>Monopoly</I> has <A CLASS="pattern" HREF="EarlyElimination.htm" TARGET="frame_pattern">Early Elimination</A> because it is possible to <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> players while there is still potentially hours of remaining play time although more than an hour can already have passed. In case of <I>Monopoly</I> this amount of possible <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A> in social play is often far too long. The length of the possible <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A> is ultimately what matters and has different consequences depending on if the game is played in face to face situation with friends or anonymously over the net. Some of the downsides of <A CLASS="pattern" HREF="EarlyElimination.htm" TARGET="frame_pattern">Early Elimination</A> can be avoided by setting known <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A> for the game instances and letting the players modify this <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limit</A> according to their needs. Another way is to let the <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminated</A> players participate in the game in some manner, for example, as <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A> or as neutral <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A> for the rest of the players.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="EarlyElimination.htm" TARGET="frame_pattern">Early Elimination</A> is, in one sense, just a more drastic version of <A CLASS="pattern" HREF="PlayerElimination.htm" TARGET="frame_pattern">Player Elimination</A>. <A CLASS="pattern" HREF="EarlyElimination.htm" TARGET="frame_pattern">Early Elimination</A> has a similar effect on <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> during the play, but in the end the concrete consequences of <A CLASS="pattern" HREF="EarlyElimination.htm" TARGET="frame_pattern">Early Elimination</A>, that the player is outside the play for the rest of the game instance, in most cases reduced the heightened <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A>. This effect, of course, is dependent on the average play time of each game instance. Short game instances with <A CLASS="pattern" HREF="EarlyElimination.htm" TARGET="frame_pattern">Early Elimination</A> are quite similar to games with <A CLASS="pattern" HREF="Spawning.htm" TARGET="frame_pattern">Spawning</A>, but if the resulting <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A> for the players can be long it is worthwhile to consider carefully whether to introduce <A CLASS="pattern" HREF="EarlyElimination.htm" TARGET="frame_pattern">Early Elimination</A> to the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A>, <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="PlayerElimination.htm" TARGET="frame_pattern">Player Elimination</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A>, <A CLASS="pattern" HREF="Spawning.htm" TARGET="frame_pattern">Spawning</A>, <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="Spawning.htm" TARGET="frame_pattern">Spawning</A></P>
+
+
+</html>
+

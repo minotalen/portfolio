@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Asymmetric Goals</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Asymmetric Goals">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Asymmetric Goals</H2>
+<I>Players have structurally different goals requiring different tactics and actions.</I>
+<P CLASS="text">Some games have goals that belong to the same categories, for example winning conditions, but differ from each other by requiring players to have fundamentally different tactics and strategies in regard to what actions should be taken. These goals can be described as asymmetric and cannot be transformed into each other without changing the structure of the goal definitions. Thus, <A CLASS="pattern" HREF="AsymmetricGoals.htm" TARGET="frame_pattern">Asymmetric Goals</A> cannot simply be expressed as different goals, for example "gather all blue stones" and "gather all red stones," but require goal states defined by using different categories of actions and components.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>In the children's game <I>Tag</I>, the chaser has the goal of catching another player, while the other players try to avoid the chaser, making the goals asymmetric.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The collectable card game <I>Illuminati: New World Order</I> does have <A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goals</A> that all players have, but the game also allows individual players to have secret goal cards, which promote radically different goals, creating an additional set of <A CLASS="pattern" HREF="AsymmetricGoals.htm" TARGET="frame_pattern">Asymmetric Goals</A> between the players.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The board game <I>Space Hulk</I> provides players with many low-level <A CLASS="pattern" HREF="AsymmetricGoals.htm" TARGET="frame_pattern">Asymmetric Goals</A> by matching slow-moving space marines, which have ranged weapons, against fast-moving aliens, which can only fight in close combat.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="AsymmetricGoals.htm" TARGET="frame_pattern">Asymmetric Goals</A> can be difficult to balance due to the lack of a simple symmetry; this can be mitigated by using <A CLASS="pattern" HREF="Paper-Rock-Scissors.htm" TARGET="frame_pattern">Paper-Rock-Scissor</A> relations between the goals or by implementing <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A> to exchange the goals between players as soon as one of the <A CLASS="pattern" HREF="AsymmetricGoals.htm" TARGET="frame_pattern">Asymmetric Goals</A> has been reached. However, goals can also be qualitatively different and be supported by giving players <A CLASS="pattern" HREF="AsymmetricAbilities.htm" TARGET="frame_pattern">Asymmetric Abilities</A> that are suited for the goals they have.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="AsymmetricGoals.htm" TARGET="frame_pattern">Asymmetric Goals</A> can be used to encourage players to form <A CLASS="pattern" HREF="DynamicAlliances.htm" TARGET="frame_pattern">Dynamic Alliances</A> if these goals cannot be completed without the help of the other players, for example by giving <A CLASS="pattern" HREF="AsymmetricAbilities.htm" TARGET="frame_pattern">Asymmetric Abilities</A> that do not fit the goals. <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goals</A> can be used to easily create <A CLASS="pattern" HREF="AsymmetricGoals.htm" TARGET="frame_pattern">Asymmetric Goals</A> between players, for example by letting one player have the goal to <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A> of a game element and letting another player have the goal to <A CLASS="pattern" HREF="Guard.htm" TARGET="frame_pattern">Guard</A> the same game element.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="AsymmetricGoals.htm" TARGET="frame_pattern">Asymmetric Goals</A> promote <A CLASS="pattern" HREF="Replayability.htm" TARGET="frame_pattern">Replayability</A> since players can have different goals for different game instances, requiring different strategies, skills, and actions. Further, if the <A CLASS="pattern" HREF="AsymmetricGoals.htm" TARGET="frame_pattern">Asymmetric Goals</A> are part of <A CLASS="pattern" HREF="SelectableSetsofGoals.htm" TARGET="frame_pattern">Selectable Sets of Goals</A> about which the other players have <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A>, they also allow players to bluffabout their goals and tactics.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="AsymmetricGoals.htm" TARGET="frame_pattern">Asymmetric Goals</A> naturally occur in games that have a large <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A> for players even if the main goals are <A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goals</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Replayability.htm" TARGET="frame_pattern">Replayability</A>, <A CLASS="pattern" HREF="VariedGameplay.htm" TARGET="frame_pattern">Varied Gameplay</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Competition.htm" TARGET="frame_pattern">Competition</A>, <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A>, <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goals</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="AsymmetricAbilities.htm" TARGET="frame_pattern">Asymmetric Abilities</A>, <A CLASS="pattern" HREF="Paper-Rock-Scissors.htm" TARGET="frame_pattern">Paper-Rock-Scissors</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="PlayerBalance.htm" TARGET="frame_pattern">Player Balance</A>, <A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goals</A></P>
+
+
+</html>
+

@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Spectators</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Spectators">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Spectators</H2>
+<I>People, possibly former, current, or future players, who observe the actions that players do in a game without being able to affect the game themselves.</I>
+<P CLASS="text">Not all people who can observe the development of a game played are players. Those who cannot directly affect the game as a player are <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A>. While these do not experience gameplay directly, they can gain an experience from watching the game and can learn or prepare to play the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>players whose avatars are killed in <I>Counterstrike</I> have to wait until the next game begins before being able to play. Depending on the server, they may be able to watch as <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A> while they are waiting or can only view a scoreboard.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>most tournaments have spectators to the individual games that are played. This allows people participating in the tournament but not in the individual game to follow the gameplay as well as letting other interested people follow the whole tournament.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A> can either be people who will not be players at all in a game session at all or be used to give players information about the game while not playing or being able to act within it. In either case, they need to be provided with <A CLASS="pattern" HREF="PublicInformation.htm" TARGET="frame_pattern">Public Information</A> in order to be considered <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A> as they otherwise have no information about the game state. Players currently in the game can temporarily become <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A> by <A CLASS="pattern" HREF="Ultra-PowerfulEvents.htm" TARGET="frame_pattern">Ultra-Powerful Events</A> or <A CLASS="pattern" HREF="TurnTaking.htm" TARGET="frame_pattern">Turn Taking</A> and <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectator</A> can be used to instantiate <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A> as a form of <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalty</A>. Late arriving players can be given a <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A> by being <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A> for a short period of time before joining the game while games which have <A CLASS="pattern" HREF="PlayerElimination.htm" TARGET="frame_pattern">Player Elimination</A> and especially <A CLASS="pattern" HREF="EarlyElimination.htm" TARGET="frame_pattern">Early Elimination</A> can use <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A> to allow the eliminated players to continue to follow the gameplay.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A> that never become players in a game instance can still affect the outcome of the game. The most common form is by encouraging or discouraging specific players or teams, but some games such as <I>Who wants to be a Millionaire?</I> let <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A> give players advice.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">The use of <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A> in games allows players to show their <A CLASS="pattern" HREF="GameMastery.htm" TARGET="frame_pattern">Game Mastery</A> and from this display gain <A CLASS="pattern" HREF="SocialStatuses.htm" TARGET="frame_pattern">Social Status</A>. Allowing people to be <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A>, as for example is common in <A CLASS="pattern" HREF="Tournaments.htm" TARGET="frame_pattern">Tournaments</A>, make it possible for these players to gain <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A> about the game and make perform mentorshipthrough showing how to perform actions possible. The use of <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A> allows people that are not players in one game to be players in <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Games</A> based upon the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A> allow <A CLASS="pattern" HREF="SocialInteraction.htm" TARGET="frame_pattern">Social Interaction</A> for players of games, even if the games are <A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="SocialStatuses.htm" TARGET="frame_pattern">Social Statuses</A>, <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A>, <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A>, <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="EarlyElimination.htm" TARGET="frame_pattern">Early Elimination</A>, <A CLASS="pattern" HREF="Tournaments.htm" TARGET="frame_pattern">Tournaments</A>, <A CLASS="pattern" HREF="GameMastery.htm" TARGET="frame_pattern">Game Mastery</A>, <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A>, <A CLASS="pattern" HREF="PlayerElimination.htm" TARGET="frame_pattern">Player Elimination</A>, <A CLASS="pattern" HREF="Extra-GameActions.htm" TARGET="frame_pattern">Extra-Game Actions</A>, <A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Ultra-PowerfulEvents.htm" TARGET="frame_pattern">Ultra-Powerful Events</A>, <A CLASS="pattern" HREF="TurnTaking.htm" TARGET="frame_pattern">Turn Taking</A>, <A CLASS="pattern" HREF="PublicInformation.htm" TARGET="frame_pattern">Public Information</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Games</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

@@ -1,0 +1,45 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Mule</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Mule">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Mule</H2>
+<I>A Mule is a player character that is set, typically by using scripts, to perform long, monotonous and specialized sets of actions.</I>
+<P CLASS="text">Mules provide means of automating actions, typically actions that generate resources, which other game elements under the player's control benefit from using. <A CLASS="pattern" HREF="Mule.htm" TARGET="frame_pattern">Mule</A> is, in effect, an automated player character, which is used to boost up the character under direct player control in Massively Multiplayer Online Games.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>the player can set the villagers in <I>Age of Empires</I> to gather resources until the resources run out or the player gives them different tasks.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">Several features of components other than the character need to be considered when making a <A CLASS="pattern" HREF="Mule.htm" TARGET="frame_pattern">Mule</A> possible. First, players must be able to define scripts or sequences of actions for game elements (although the game clients may be hacked to perform such functions). Second, monotonous actions must be possible, i. e. an action must be possible to repeat many times with a chance of gaining a positive outcome each time. Third, the actions of a <A CLASS="pattern" HREF="Mule.htm" TARGET="frame_pattern">Mule</A> usually require the presence of some resource that is refined into another resource, in practice making the <A CLASS="pattern" HREF="Mule.htm" TARGET="frame_pattern">Mule</A> a <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converter</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The use of a <A CLASS="pattern" HREF="Mule.htm" TARGET="frame_pattern">Mule</A> can become a <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A> tradeoff if there is a chance of having critical failures of the actions being performed, typically leading to the destruction of <A CLASS="pattern" HREF="Tools.htm" TARGET="frame_pattern">Tools</A> or attacks by <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A>, or if the game permits, <A CLASS="pattern" HREF="PlayerElimination.htm" TARGET="frame_pattern">Player Elimination</A> from attacks by the other players or the game elements under the game systems control. These challenges may be simple to deal with if the player is monitoring the character, but when the character is set to do actions without supervision this may leave the character incapable of responding appropriately to these failure situations.</P>
+<P CLASS="text"></P>
+<P CLASS="text">To modulate the efficiency of using a <A CLASS="pattern" HREF="Mule.htm" TARGET="frame_pattern">Mule</A>, the resource generated may have <A CLASS="pattern" HREF="DiminishingReturns.htm" TARGET="frame_pattern">Diminishing Returns</A>, require skills, or require the presence of <A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A> or <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resources</A> with a lower replenishment rate than the rate of consumption set for the <A CLASS="pattern" HREF="Mule.htm" TARGET="frame_pattern">Mule</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">Permitting players to set up <A CLASS="pattern" HREF="Mule.htm" TARGET="frame_pattern">Mule</A> characters allows them to create a form of a <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generator</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generators</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="DiminishingReturns.htm" TARGET="frame_pattern">Diminishing Returns</A>, <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

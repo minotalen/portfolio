@@ -1,0 +1,45 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Helpers</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Helpers">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Helpers</H2>
+<I>Helpers are game elements that support the players in completing goals by giving advice or by performing actions which the players are not able to perform. They are not under any players' control, and typically do not move around in the game world.</I>
+<P CLASS="text"><B>Example: </B>the rumor spreading non-player characters in <I>Ultima</I> series are sometimes directly and sometimes indirectly giving the player advice on how to progress in the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>each of the games in <I>The Legend of Zelda</I> series contains several helpers from helpful grandmothers to talking boats.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The <A CLASS="pattern" HREF="Helpers.htm" TARGET="frame_pattern">Helpers</A> pattern is a direct subpattern of <A CLASS="pattern" HREF="Clues.htm" TARGET="frame_pattern">Clues</A>, and as such the design choices relevant to <A CLASS="pattern" HREF="Clues.htm" TARGET="frame_pattern">Clues</A> are relevant to <A CLASS="pattern" HREF="Helpers.htm" TARGET="frame_pattern">Helpers</A>. However, as <A CLASS="pattern" HREF="Helpers.htm" TARGET="frame_pattern">Helpers</A> typically are represented as living creatures, they may provide different <A CLASS="pattern" HREF="IndirectInformation.htm" TARGET="frame_pattern">Indirect Information</A> when interacted with several times. This may range from simply rotating through a couple of answers to provide variation to providing new pieces of information when the previous goals have been completed. Further, game designer have to determine if the players can modify the reaction of <A CLASS="pattern" HREF="Helpers.htm" TARGET="frame_pattern">Helpers</A> by their actions, e. g. gifts, bribes, threats, or direct attacks. Sometimes <A CLASS="pattern" HREF="Helpers.htm" TARGET="frame_pattern">Helpers</A> can also act as <A CLASS="pattern" HREF="Tools.htm" TARGET="frame_pattern">Tools</A>, for example, the Lion Boat in <I>The Legend of Zelda: Wind Waker</I> is also the player's main means of transportation. Helpers can be used to create <A CLASS="pattern" HREF="RedHerrings.htm" TARGET="frame_pattern">Red Herrings</A> for the players as the information they provide is rarely <A CLASS="pattern" HREF="DirectInformation.htm" TARGET="frame_pattern">Direct Information</A> about the game state.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Game elements can change roles between being <A CLASS="pattern" HREF="Helpers.htm" TARGET="frame_pattern">Helpers</A> and <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> due to the actions of the player, and this can be used to create new subgoals for the player. For example, in <I>Baldur's Gate</I> the player can talk to many non-player characters in the game, but some these characters can also be invited to the player's adventuring party, effectively changing their status from being a <A CLASS="pattern" HREF="Helpers.htm" TARGET="frame_pattern">Helper</A> to being a <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Unit</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Helpers.htm" TARGET="frame_pattern">Helpers</A> are game elements in <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Levels</A> or <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game Worlds</A> that provide players with <A CLASS="pattern" HREF="Clues.htm" TARGET="frame_pattern">Clues</A>. They can also be used to unfold the <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structure</A> by providing background stories or letting the <A CLASS="pattern" HREF="Helpers.htm" TARGET="frame_pattern">Helpers</A> change their advice as gameplay progresses.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Like <A CLASS="pattern" HREF="Clues.htm" TARGET="frame_pattern">Clues</A>, <A CLASS="pattern" HREF="Helpers.htm" TARGET="frame_pattern">Helpers</A> can support <A CLASS="pattern" HREF="SmoothLearningCurves.htm" TARGET="frame_pattern">Smooth Learning Curves</A> while only giving <A CLASS="pattern" HREF="IllusionaryRewards.htm" TARGET="frame_pattern">Illusionary Rewards</A> since players may not follow or understand the help or advice they are given.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="IndirectInformation.htm" TARGET="frame_pattern">Indirect Information</A>, <A CLASS="pattern" HREF="SmoothLearningCurves.htm" TARGET="frame_pattern">Smooth Learning Curves</A>, <A CLASS="pattern" HREF="IllusionaryRewards.htm" TARGET="frame_pattern">Illusionary Rewards</A>, <A CLASS="pattern" HREF="Clues.htm" TARGET="frame_pattern">Clues</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="RedHerrings.htm" TARGET="frame_pattern">Red Herrings</A>, <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>, <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Levels</A>, <A CLASS="pattern" HREF="Tools.htm" TARGET="frame_pattern">Tools</A>, <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="DirectInformation.htm" TARGET="frame_pattern">Direct Information</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="RedHerrings.htm" TARGET="frame_pattern">Red Herrings</A></P>
+
+
+</html>
+

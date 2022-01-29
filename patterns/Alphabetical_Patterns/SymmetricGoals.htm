@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Symmetric Goals</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Symmetric Goals">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Symmetric Goals</H2>
+<I>The players have goals with the same definition, for example, to be the first one to reach a certain area or amount of points, solve a problem, find an item, or overcome the opponent.</I>
+<P CLASS="text"><A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goals</A> are goals that several different players have that can be generalized to fit the same definition without changing the structure of the individual goal definitions. For example, <I>Chess</I> has the goals "capture the white king" and "capture the black king," which although not exactly the same, can be generalized as "capture the other player's king," which has the same basic structure and clarifies what actions are necessary to complete the goal.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>An archetypical <A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goal</A> is that of a simple race: to be the first player to reach a goal.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>A typical example of a <A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goal</A> is to surround the highest number of empty spaces in Japanese versions of <I>Go</I>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">If the relevant information is available, <A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goals</A> can allow players to anticipate other players' strategies, so setting the <A CLASS="pattern" HREF="RightLevelofComplexity.htm" TARGET="frame_pattern">Right Level of Complexity</A> in a game with <A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goals</A> depends on how information is presented. Allowing <A CLASS="pattern" HREF="PerfectInformation.htm" TARGET="frame_pattern">Perfect Information</A> may allow <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A> but also <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A> so that a <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limit</A> might be necessary. <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A> or <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A> may support <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A> to a certain extent but without ending up with <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A>. Combining <A CLASS="pattern" HREF="UnknownGoals.htm" TARGET="frame_pattern">Unknown Goals</A> with <A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goals</A> is difficult, since players may infer other players' goals from the similarity in actions between them.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Further, some <A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goals</A> are <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goals</A>, e. g., <A CLASS="pattern" HREF="LastManStanding.htm" TARGET="frame_pattern">Last Man Standing</A> and <A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A>, while others can either be totally under player's control or not, e. g., <A CLASS="pattern" HREF="Race.htm" TARGET="frame_pattern">Race</A>. The choice of whether to use <A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goals</A> that are also <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goals</A> depends on the game designer's choice of having a presence of <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A>, <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A>, or <A CLASS="pattern" HREF="Competition.htm" TARGET="frame_pattern">Competition</A> in the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Goals where players engage in direct competition against each other, for example <A CLASS="pattern" HREF="Overcome.htm" TARGET="frame_pattern">Overcome</A>, are by their nature <A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goals</A>. In contrast, if the <A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goal</A> is defined without reference to individual players or their elements, the goal can be a <I>Mutual Goal.</I></P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goals</A> provide one form of <A CLASS="pattern" HREF="Symmetry.htm" TARGET="frame_pattern">Symmetry</A> in games, and in traditional games, together with <A CLASS="pattern" HREF="SymmetricResourceDistribution.htm" TARGET="frame_pattern">Symmetric Resource Distribution</A> and <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A>, it been a common technique in ensuring <A CLASS="pattern" HREF="PlayerBalance.htm" TARGET="frame_pattern">Player Balance</A>. However, to provide a <A CLASS="pattern" HREF="RightLevelofComplexity.htm" TARGET="frame_pattern">Right Level of Complexity</A>, these games usually provide a large possible set of game states with few <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Points</A> and many game states that match the goal states. This usually leads players to developing different strategies and quickly achieving different positions in the game, making the players have <A CLASS="pattern" HREF="AsymmetricGoals.htm" TARGET="frame_pattern">Asymmetric Goals</A> as subgoals towards each other even though the main goals in a game instance remain symmetric.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="MutualGoals.htm" TARGET="frame_pattern">Mutual Goals</A> between players are always <A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goals</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: </P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A>, <A CLASS="pattern" HREF="Competition.htm" TARGET="frame_pattern">Competition</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="LastManStanding.htm" TARGET="frame_pattern">Last Man Standing</A>, <A CLASS="pattern" HREF="Overcome.htm" TARGET="frame_pattern">Overcome</A>, <A CLASS="pattern" HREF="MutualGoals.htm" TARGET="frame_pattern">Mutual Goals</A>, <A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A>, <A CLASS="pattern" HREF="Race.htm" TARGET="frame_pattern">Race</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goals</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="UnknownGoals.htm" TARGET="frame_pattern">Unknown Goals</A>, <A CLASS="pattern" HREF="AsymmetricGoals.htm" TARGET="frame_pattern">Asymmetric Goals</A></P>
+
+
+</html>
+

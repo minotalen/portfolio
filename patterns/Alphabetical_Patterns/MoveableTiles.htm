@@ -1,0 +1,43 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Moveable Tiles</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Moveable Tiles">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Moveable Tiles</H2>
+<I>These are Tiles that can move during gameplay either as the effect of player actions or game events.</I>
+<P CLASS="text"><A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A> are very common in platform games from <I>Super Mario Bros.</I> to <I>Crash Bandicoot</I> to <I>Super Monkey Ball</I>. In these games, the <A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A> mainly consist of constantly moving platforms the player has to use to reach certain places in the game. The main challenge for the player in such cases is to time and coordinate his movements according to the movement of the tiles. Another common use of <A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A> is to allow the player to push, pull, or otherwise move the tiles around the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>, usually to block enemies or to reach otherwise inaccessible areas.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>One of the levels in <I>Super Monkey</I> <I>Ball</I> consists almost exclusively of moving tiles, where each tile contains bananas for bonus scores. The tiles move in a very predictable pattern by first contracting to the center of the level and then again spreading out.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">Besides the considerations that need to be made for other <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A>, the design of <A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A> requires decisions regarding the movement patterns, such as how the movement is activated and how the movement can be stopped, if necessary. Movement patterns can either be predetermined, decided on the fly using <A CLASS="pattern" HREF="Randomness.htm" TARGET="frame_pattern">Randomness</A>, or determined by the actions made either by game elements on the tile or through <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A>. The activation of the movement may be due to certain events or actions (maybe requiring some form of <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A>), or the movement may be constant so that activation is not required, and the movement may continue only for a limited amount of time. The movement of the tile may also end or change direction when blocked by an <A CLASS="pattern" HREF="Obstacles.htm" TARGET="frame_pattern">Obstacle</A>. When the movement is caused by player actions, this provides a form of <A CLASS="pattern" HREF="ReconfigurableGameWorld.htm" TARGET="frame_pattern">Reconfigurable Game World</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Another decision to be made when using <A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A> is whether the game elements on the <A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A> need to move in order to stay on the tile or if they are automatically carried by the tile when it is moving. For example, in almost all cases of lifts in platform games, the player's character is automatically carried on the lift tile. On the other hand, to stay on the <A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A> in <I>Super Monkey Ball</I>, the player has to explicitly move the ball.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A> are a typical use of <A CLASS="pattern" HREF="TheShowMustGoOn.htm" TARGET="frame_pattern">The Show Must Go On</A>, as the players usually cannot affect the movement of the tiles once set in motion. These types of <A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A> are also examples of such <A CLASS="pattern" HREF="Ultra-PowerfulEvents.htm" TARGET="frame_pattern">Ultra-Powerful Events</A> that do not make the players lose control over their game elements; rather, the <A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A> in this casebring in more complexity and variation to the game system. <A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A> that are not under players' control can be used to create <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A> challenges that require <A CLASS="pattern" HREF="Rhythm-BasedActions.htm" TARGET="frame_pattern">Rhythm-Based Actions</A> as well as <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A> when the player actions have to be coordinated according to the movement of several <A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A>.<A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A> also make <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A> actions more difficult, as the movement of the tiles need to be considered.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A>, <A CLASS="pattern" HREF="Rhythm-BasedActions.htm" TARGET="frame_pattern">Rhythm-Based Actions</A>, <A CLASS="pattern" HREF="TheShowMustGoOn.htm" TARGET="frame_pattern">The Show Must Go On</A>, <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A>, <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim & Shoot</A>, <A CLASS="pattern" HREF="ReconfigurableGameWorld.htm" TARGET="frame_pattern">Reconfigurable Game World</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

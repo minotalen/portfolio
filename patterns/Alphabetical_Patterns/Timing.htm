@@ -1,0 +1,43 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Timing</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Timing">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Timing</H2>
+<I>The effect on gameplay that actions have to be performed at certain points in game time to be performed at all or that the direct effect of actions varies greatly depending on when they are performed.</I>
+<P CLASS="text">The effects of actions in games often differ depending on when they are performed. This can occur because actions that always have the exact same direct effect have additional effects due to the game state or because the evaluation function for the effect depends on the current game state. In either case, the differences in effect make it possible for players to try and have <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A> when they perform actions, so that they take maximum advantage of the possible actions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Platform games such as <I>Super Mario Sunshine</I> allow special variants of actions to be performed if the <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A> between two presses of the same button on the game controllers is correct.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Fighting games such as <I>Soul Calibur</I> or the <I>Tekken</I> series put heavy emphasis on <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A>: it is required to successfully attack opponents before they parry and it is also required to parry incoming attacks. Further, special actions are triggered by the right <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A> of what would otherwise be normal actions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The advantage of <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A> is present in both <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A> and<A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>. For <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A>, the question of <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A> is usually linked to making best use of <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A> and <A CLASS="pattern" HREF="DelayedEffects.htm" TARGET="frame_pattern">Delayed Effects</A>, as well as efficiently using <A CLASS="pattern" HREF="GeometricRewardsforInvestments.htm" TARGET="frame_pattern">Geometric Rewards for Investments</A>. <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A> offer more variety in the ways of requiring <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A>: <A CLASS="pattern" HREF="Combat.htm" TARGET="frame_pattern">Combat</A> usually requires <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A> through <A CLASS="pattern" HREF="Combos.htm" TARGET="frame_pattern">Combos</A> or <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A> to succeed with <A CLASS="pattern" HREF="Overcome.htm" TARGET="frame_pattern">Overcome</A> goals; <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> and <A CLASS="pattern" HREF="https://tecfa.unige.ch/tecfa/maltt/VIP/Ressources/Articles/Game%20Design%20Patterns/collection/Alphabetical_Patterns/Configuration.htm" TARGET="frame_pattern">Configuration</A> can require <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Ops</A> and <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A>; and successful navigation to <A CLASS="pattern" HREF="DeadlyTraps.htm" TARGET="frame_pattern">Deadly Traps</A>, <A CLASS="pattern" HREF="Obstacles.htm" TARGET="frame_pattern">Obstacles</A>, and use <A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A> requires <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A>. In <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>, the requirement of <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A> several times concurrently with fixed intervals between gives rise to <A CLASS="pattern" HREF="Rhythm-BasedActions.htm" TARGET="frame_pattern">Rhythm-Based Actions</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">Actions that can be executed with <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A> allow for <A CLASS="pattern" HREF="GameMastery.htm" TARGET="frame_pattern">Game Mastery</A>. In <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A>, the <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A> is achieved by <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning,</A> often concerning how to use game elements together for <A CLASS="pattern" HREF="CollaborativeActions.htm" TARGET="frame_pattern">Collaborative Actions</A>. In <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>, the <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A> is achieved by performing <A CLASS="pattern" HREF="Dexterity-BasedActions.htm" TARGET="frame_pattern">Dexterity-Based Actions</A> skillfully.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Rhythm-BasedActions.htm" TARGET="frame_pattern">Rhythm-Based Actions</A>, <A CLASS="pattern" HREF="GameMastery.htm" TARGET="frame_pattern">Game Mastery</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A>, <A CLASS="pattern" HREF="Overcome.htm" TARGET="frame_pattern">Overcome</A>, <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>, <A CLASS="pattern" HREF="https://tecfa.unige.ch/tecfa/maltt/VIP/Ressources/Articles/Game%20Design%20Patterns/collection/Alphabetical_Patterns/Configuration.htm" TARGET="frame_pattern">Configuration</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim & Shoot</A>, <A CLASS="pattern" HREF="Combat.htm" TARGET="frame_pattern">Combat</A>, <A CLASS="pattern" HREF="CollaborativeActions.htm" TARGET="frame_pattern">Collaborative Actions</A>, <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A>, <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A>, <A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A>, <A CLASS="pattern" HREF="GeometricRewardsforInvestments.htm" TARGET="frame_pattern">Geometric Rewards for Investments</A>, <A CLASS="pattern" HREF="DeadlyTraps.htm" TARGET="frame_pattern">Deadly Traps</A>, <A CLASS="pattern" HREF="Obstacles.htm" TARGET="frame_pattern">Obstacles</A>, <A CLASS="pattern" HREF="DelayedEffects.htm" TARGET="frame_pattern">Delayed Effects</A>, <A CLASS="pattern" HREF="Combos.htm" TARGET="frame_pattern">Combos</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Ops</A>, <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A>, <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

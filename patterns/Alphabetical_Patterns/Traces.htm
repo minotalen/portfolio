@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Traces</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Traces">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Traces</H2>
+<I>Traces are game elements, or distinct parts of the game world, that are created when game elements are moved through the environment. Traces can also show what has happened before the gameplay began.</I>
+<P CLASS="text"><B>Example: </B>A common example of traces is footsteps left by avatars in first-person shooters when the avatars have passed through water or acid. Other examples include skid tracks in racing games or blood drops in adventure games.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The appearance of <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A> is usually determined by the nature of what or where the <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Trace</A> was generated, e. g. combat can generate <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A> of blood while cars generate skid tracks. Common uses of <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A> are to show the <A CLASS="pattern" HREF="PrivilegedMovement.htm" TARGET="frame_pattern">Privileged Movement</A> of others, help <A CLASS="pattern" HREF="GameWorldNavigation.htm" TARGET="frame_pattern">Game World Navigation</A>, or give indications of <A CLASS="pattern" HREF="Achilles'Heels.htm" TARGET="frame_pattern">Achilles' Heels</A>. However, <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A> may also work as <A CLASS="pattern" HREF="RedHerrings.htm" TARGET="frame_pattern">Red Herrings</A> that lead to dead ends, either within the <A CLASS="pattern" HREF="ConsistentRealityLogic.htm" TARGET="frame_pattern">Consistent Reality Logic</A> of the game or for the completion of the goals in the game. In the latter case the appearance of the <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A> can be more varied.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The functional nature of <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A> in a game can be separated into two general classes: those that cannot be manipulated by the players and those that can. The first class solely provides the players with information about what previous actions have happened before and during the gameplay. Those generated before the gameplay typically provide information about <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A> or <I>Puzzles</I> while those generated during the gameplay can also be <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A> of other players and often disappear after a certain <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limit</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A> which consist of game elements that can be manipulated by the players create additional tactics in games. Players may be able to move the elements to set-up false <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A>, i. e. <A CLASS="pattern" HREF="RedHerrings.htm" TARGET="frame_pattern">Red Herrings</A> that may led to <A CLASS="pattern" HREF="DeadlyTraps.htm" TARGET="frame_pattern">Deadly Traps</A>, or make <A CLASS="pattern" HREF="Tradeoffs.htm" TARGET="frame_pattern">Tradeoff</A> decision whether to spend time hiding their own <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A> or not.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A> can also occur through the lack of game elements, e. g.<A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> or <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A>. In these cases the configuration of game elementscan be seen as negative <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A>, i. e. the <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A> can only be detected because something is lacking or has been changed due to the actions of the players or game events.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A> are <A CLASS="pattern" HREF="OutstandingFeatures.htm" TARGET="frame_pattern">Outstanding Features</A> that can direct the players towards points of interest while hinting at the danger or the reward that can be found there. Thus, <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A> can be used as <A CLASS="pattern" HREF="Clues.htm" TARGET="frame_pattern">Clues</A> to indicate the presence and location of <A CLASS="pattern" HREF="ResourceLocations.htm" TARGET="frame_pattern">Resource Locations</A>, <A CLASS="pattern" HREF="DeadlyTraps.htm" TARGET="frame_pattern">Deadly Traps</A> or <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A> but can also be used to create <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A>. As finding <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A> do not actually have to help players, they can be regarded as a form of <A CLASS="pattern" HREF="IllusionaryRewards.htm" TARGET="frame_pattern">Illusionary Reward</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A> can provide information about how to accomplish <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A> and<A CLASS="pattern" HREF="Exploration.htm" TARGET="frame_pattern">Exploration</A> goals and thereby set the <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A>. In <A CLASS="pattern" HREF="Reconnaissance.htm" TARGET="frame_pattern">Reconnaissance</A> goals, the detection of <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A> can be the primary subgoal.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="IllusionaryRewards.htm" TARGET="frame_pattern">Illusionary Rewards</A>, <A CLASS="pattern" HREF="OutstandingFeatures.htm" TARGET="frame_pattern">Outstanding Features</A>, <A CLASS="pattern" HREF="PuzzleSolving.htm" TARGET="frame_pattern">Puzzle Solving</A>, <A CLASS="pattern" HREF="Clues.htm" TARGET="frame_pattern">Clues</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="GameWorldNavigation.htm" TARGET="frame_pattern">Game World Navigation</A>, <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A>, <A CLASS="pattern" HREF="Exploration.htm" TARGET="frame_pattern">Exploration</A>, <A CLASS="pattern" HREF="Achilles'Heels.htm" TARGET="frame_pattern">Achilles' Heels</A>, <A CLASS="pattern" HREF="RedHerrings.htm" TARGET="frame_pattern">Red Herrings</A>, <A CLASS="pattern" HREF="Reconnaissance.htm" TARGET="frame_pattern">Reconnaissance</A>, <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A>, <A CLASS="pattern" HREF="PrivilegedMovement.htm" TARGET="frame_pattern">Privileged Movement</A>, <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A>, <A CLASS="pattern" HREF="ResourceLocations.htm" TARGET="frame_pattern">Resource Locations</A>, <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: </P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="Surprises.htm" TARGET="frame_pattern">Surprises</A>, <A CLASS="pattern" HREF="RedHerrings.htm" TARGET="frame_pattern">Red Herrings</A></P>
+
+
+</html>
+

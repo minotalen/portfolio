@@ -1,0 +1,45 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Tick-Based Games</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Tick-Based Games">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Tick-Based Games</H2>
+<I>The game time progresses according to real time, but in discrete steps.</I>
+<P CLASS="text">The real time delay between the processing points, the ticks, in game time can vary wildly from game to game. In one sense, it can even be argued that every computer game is a <A CLASS="pattern" HREF="Tick-BasedGames.htm" TARGET="frame_pattern">Tick-Based Game</A> because there are discrete points in time when the game state is refreshed, but for this discussion we will limit the definition to games where the game state changes during the ticks are perceivable to the players.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>many play-by-mail and play-by-email games have deadlines for the game state synchronizations. The players' commands should be sent to the game masters before the deadline. The players' actions are processed at the same time and results are sent back to the players. The tick interval, or the turn length, depends a lot on the complexity of the game and whether the medium is snail mail or email and varies from hours to weeks.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>the combat system in <I>Final Fantasy VII</I> is basically a hybrid between tick-based and real-time where the player and the enemies have certain time slots for deciding their actions, which are carried out when the time slot ends.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Tick-BasedGames.htm" TARGET="frame_pattern">Tick-Based Games</A> require that there are <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A> for the players participating in <A CLASS="pattern" HREF="TurnTaking.htm" TARGET="frame_pattern">Turn Taking</A> or that the players take their turns simultaneously, that is, they can plan and submit their actions to the game system, often a <A CLASS="pattern" HREF="DedicatedGameFacilitators.htm" TARGET="frame_pattern">Dedicated Game Facilitator</A>, within the same time frame as the other players and that the actions are processed at the same time. The length of the <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limit</A> depends a lot on the complexity of the game. <A CLASS="pattern" HREF="Tick-BasedGames.htm" TARGET="frame_pattern">Tick-Based Games</A> can also be seen as <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A> with <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A> and where player actions are resolved for the turn simultaneously.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Some games use a form of <A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A> for avoiding the players' frustration for possible missed turns or unintentional <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Ops</A>. In these cases the players accrue certain amounts of action points during each tick and the players can use the actions whenever they want, making the game state changes in these games hybrids between <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A> and <A CLASS="pattern" HREF="Tick-BasedGames.htm" TARGET="frame_pattern">Tick-Based Games</A> and at the same time <A CLASS="pattern" HREF="AsynchronousGames.htm" TARGET="frame_pattern">Asynchronous Games</A>. For example, in a strategy game each player gets an action point per hour up to the maximum of 24 action points. The players can move their armies in real time by spending two action points per army movement. This makes it possible for the player to make twelve army movements within one day.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Tick-BasedGames.htm" TARGET="frame_pattern">Tick-Based Games</A>, especially when using <A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A>, are well suited for <A CLASS="pattern" HREF="AsynchronousGames.htm" TARGET="frame_pattern">Asynchronous Games</A> depending, however, on the tick interval and the players' time schedules for playing the game. By modifying the tick interval it is possible to change the nature of the game from <A CLASS="pattern" HREF="SynchronousGames.htm" TARGET="frame_pattern">Synchronous Game</A> to <A CLASS="pattern" HREF="AsynchronousGames.htm" TARGET="frame_pattern">Asynchronous Game</A>. For example, changing the tick interval in <I>Final Fantasy VII</I> combat to two days makes it much more suitable for <A CLASS="pattern" HREF="AsynchronousGames.htm" TARGET="frame_pattern">Asynchronous Game</A>. The tick interval can also be used to overcome the problems with lags in the medium, for example computer networks or mail systems, used in the game, while still retaining at least some characteristics of <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>. The combat system in <I>Final Fantasy VII</I> would tolerate lags of at least couple of seconds without the players noticing anything. Too long tick intervals may result in unintentional <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A> and <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A> for the players.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Ops</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="AsynchronousGames.htm" TARGET="frame_pattern">Asynchronous Games</A>, <A CLASS="pattern" HREF="SynchronousGames.htm" TARGET="frame_pattern">Synchronous Games</A>, <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A>, <A CLASS="pattern" HREF="TurnTaking.htm" TARGET="frame_pattern">Turn Taking</A>, <A CLASS="pattern" HREF="DedicatedGameFacilitators.htm" TARGET="frame_pattern">Dedicated Game Facilitators</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>, <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A>, <A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A>, <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

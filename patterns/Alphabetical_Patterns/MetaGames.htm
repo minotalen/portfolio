@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Meta Games</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Meta Games">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Meta Games</H2>
+<I>A game based on the effects and outcomes of other games.</I>
+<P CLASS="text">Some games are constructed around what happens in other games. These "indirect" games are <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Games</A>, and as such, they usually put totally different demands on the participants than do the underlying games. In some cases, for example in betting on horse or dogs races, the underlying game may not be a proper game (and the participants may not be aware that they are participating in a game), but the participants of the <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Game</A> treat the activity as a game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><A CLASS="pattern" HREF="Tournaments.htm" TARGET="frame_pattern">Tournaments</A> are a common form of <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Game</A> where individual results of games are used as input to the <A CLASS="pattern" HREF="Tournaments.htm" TARGET="frame_pattern">Tournament</A>. For some sports, for example <I>Soccer</I>, <I>Hockey</I>, and <I>Basketball</I>, playing the game in <A CLASS="pattern" HREF="Tournaments.htm" TARGET="frame_pattern">Tournament</A> form is the normal way of organized games.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Betting on the outcome of games is a classic form of <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Game</A>. In these <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Games</A>, the skill required by players ranges from having the actual actions used in the games to having knowledge about the current condition and tactics of the participants in the game being bet upon.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Games</A> can either be designed to be part of the underlying game or be designed independently of the underlying game.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Design elements in games that support <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Games</A> are usually based around <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A> or <A CLASS="pattern" HREF="Handicaps.htm" TARGET="frame_pattern">Handicap</A> systems. The actual <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Games</A> are, in these cases, created by passing these as <A CLASS="pattern" HREF="Trans-GameInformation.htm" TARGET="frame_pattern">Trans-Game Information</A> to other games, for example by <A CLASS="pattern" HREF="HighScoreLists.htm" TARGET="frame_pattern">High Score Lists,</A> explicitly supporting <A CLASS="pattern" HREF="Tournaments.htm" TARGET="frame_pattern">Tournaments</A>, or letting the inner games of <A CLASS="pattern" HREF="GameswithinGames.htm" TARGET="frame_pattern">Games within Games</A> affect the outer games. Games that have <A CLASS="pattern" HREF="OptionalGoals.htm" TARGET="frame_pattern">Optional Goals</A>, for example <A CLASS="pattern" HREF="EasterEggs.htm" TARGET="frame_pattern">Easter Eggs</A>, can be completed in several different ways. In these games, players can have a <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Game</A> that consists of trying to complete as many <A CLASS="pattern" HREF="OptionalGoals.htm" TARGET="frame_pattern">Optional Goals</A> as possible, and the number of <A CLASS="pattern" HREF="OptionalGoals.htm" TARGET="frame_pattern">Optional Goals</A> completed may, in turn, form a kind of <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">One of the main reasons for independent <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Games</A> is based around guessing the outcome of the underlying games before the game session has ended or, in some cases, even begun. This makes the skill of playing the <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Game</A> into a kind of <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A>, whatever the skill of playing the underlying game is. A common way to create an independent <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Game</A> is to have <A CLASS="pattern" HREF="Betting.htm" TARGET="frame_pattern">Betting</A> on the outcome of a game affect <A CLASS="pattern" HREF="Ownership.htm" TARGET="frame_pattern">Ownership</A> of real-world objects, creating <A CLASS="pattern" HREF="Extra-GameActions.htm" TARGET="frame_pattern">Extra-Game Actions</A> and <A CLASS="pattern" HREF="PlayerDefinedGoals.htm" TARGET="frame_pattern">Player Defined Goals</A> if done by the participants themselves.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The other main reasons for independent <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Games</A> is to create <A CLASS="pattern" HREF="PerceivableMargins.htm" TARGET="frame_pattern">Perceivable Margins</A> or minimize the effect of <A CLASS="pattern" HREF="Luck.htm" TARGET="frame_pattern">Luck</A>. This is usually done by creating <A CLASS="pattern" HREF="Tournaments.htm" TARGET="frame_pattern">Tournaments</A> where the goal is to win a certain number of individual games. One of the simplest forms of <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Game</A> based upon this format is a <A CLASS="pattern" HREF="Tournaments.htm" TARGET="frame_pattern">Tournament</A> of <A CLASS="pattern" HREF="QuickGames.htm" TARGET="frame_pattern">Quick Games,</A> such as a best-of-three game of <A CLASS="pattern" HREF="Paper-Rock-Scissors.htm" TARGET="frame_pattern">Paper-Rock-Scissors</A>. <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Games</A> are also a way to change <A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A> to <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A> by allowing players to compare results of separate game instances or in other ways have an effect on other players' game instances.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Games</A> make the underlying games have <A CLASS="pattern" HREF="Extra-GameConsequences.htm" TARGET="frame_pattern">Extra-Game Consequences</A> that affect the <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Games</A> through <A CLASS="pattern" HREF="Trans-GameInformation.htm" TARGET="frame_pattern">Trans-Game Information</A>. It can modify players' <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A> choices in the underlying game and allow <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A> of one game to be players in another game.</P>
+<P CLASS="text"></P>
+<P CLASS="text">As people can create <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Games</A> based on any game design, outside the game designer's influence, these forms of games are examples of how players can create <A CLASS="pattern" HREF="PlayerDefinedGoals.htm" TARGET="frame_pattern">Player Defined Goals</A>. Game that allow for <A CLASS="pattern" HREF="TeamDevelopment.htm" TARGET="frame_pattern">Team Development</A> can for example easily create <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Games</A> around planning and trying to develop the team's skills.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A>, <A CLASS="pattern" HREF="PerceivableMargins.htm" TARGET="frame_pattern">Perceivable Margins</A>, <A CLASS="pattern" HREF="Trans-GameInformation.htm" TARGET="frame_pattern">Trans-Game Information</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A>, <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A>, <A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A>, <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="HighScoreLists.htm" TARGET="frame_pattern">High Score Lists</A>, <A CLASS="pattern" HREF="OptionalGoals.htm" TARGET="frame_pattern">Optional Goals</A>, <A CLASS="pattern" HREF="Tournaments.htm" TARGET="frame_pattern">Tournaments</A>, <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A>, <A CLASS="pattern" HREF="Betting.htm" TARGET="frame_pattern">Betting</A>, <A CLASS="pattern" HREF="Paper-Rock-Scissors.htm" TARGET="frame_pattern">Paper-Rock-Scissors</A>, <A CLASS="pattern" HREF="Handicaps.htm" TARGET="frame_pattern">Handicaps</A>, <A CLASS="pattern" HREF="Extra-GameActions.htm" TARGET="frame_pattern">Extra-Game Actions</A>, <A CLASS="pattern" HREF="Extra-GameConsequences.htm" TARGET="frame_pattern">Extra-Game Consequences</A>, <A CLASS="pattern" HREF="GameswithinGames.htm" TARGET="frame_pattern">Games within Games</A>, <A CLASS="pattern" HREF="TeamDevelopment.htm" TARGET="frame_pattern">Team Development</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="QuickGames.htm" TARGET="frame_pattern">Quick Games</A>, <A CLASS="pattern" HREF="Ownership.htm" TARGET="frame_pattern">Ownership</A>, <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="Luck.htm" TARGET="frame_pattern">Luck</A></P>
+
+
+</html>
+

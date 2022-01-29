@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Cards</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Cards">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Cards</H2>
+<I>Cards are physical game elements used to distribute tokens, often with different characteristics, to players without necessarily revealing the distribution.</I>
+<P CLASS="text">Cards are common game elements in traditional games. They provide an easy way to randomize distribution and keep that distribution secret from players. The information can either be secret to all players, as for example when the game uses a stack from which cards are drawn, or known only to one player, as is the case in card games where each player has a card hand. The use of cards also allow game designers to choose the exact distribution, not only guaranteeing the overall chance for a value specified by a card to be drawn but also guaranteeing that certain values will appear during gameplay.</P>
+<P CLASS="text"></P>
+<P CLASS="text">See The Penguin Encyclopedia of Card Games by Parlett for numerous examples of card games.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The common set of cards, used for example in <I>Blackjack</I> or <I>Poker</I>, consists of 52 cards split between four suits of 13 cards each, where the 13 cards are numbered from 2 to 10 and include a knight, queen, king and ace.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>alternative card designs include the "card sets" of collectable card games such as <I>Magic: the Gathering</I> or <I>Illuminati: New World Order</I>. In both of these several different categories of cards are mixed and are required to be used in order to win, some enabling actions, some acting as resources generators. <I>Illuminati: New World Order</I> also uses spatial relationships of the <A CLASS="pattern" HREF="Cards.htm" TARGET="frame_pattern">Cards</A> as a meaningful element of the gameplay.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>the board game <I>Talisman</I> uses <A CLASS="pattern" HREF="Cards.htm" TARGET="frame_pattern">Cards</A> to randomize the contents of areas on the game board, and the <A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hands</A> players possess are public inventories of items found.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The most well-known card games use the common card pack with 52 cards in four suits. However, there are many other types of card packs and many games use game specific card sets to provide either additional or different information or to have different distributions of the cards.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Games where players have control over the cards, i. e. by using <A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hands</A>, the <A CLASS="pattern" HREF="Cards.htm" TARGET="frame_pattern">Cards</A> are given to players either by distributing all cards before the gameplay begins or by using a <A CLASS="pattern" HREF="DrawingStacks.htm" TARGET="frame_pattern">Drawing Stack</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Cards.htm" TARGET="frame_pattern">Cards</A> usually are taken out of play after being used once, making them <A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A> and <A CLASS="pattern" HREF="FocusLoci.htm" TARGET="frame_pattern">Focus Loci</A> for the actions they represent, and the actions of playing them can be seen as an abstract form of <A CLASS="pattern" HREF="Consumers.htm" TARGET="frame_pattern">Consumers</A> or <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converters</A>. Independent of how cards are used by players, most games use <A CLASS="pattern" HREF="DiscardPiles.htm" TARGET="frame_pattern">Discard Piles</A> to separate the cards that have been used from others, except for card games which use tricks.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">Sets of <A CLASS="pattern" HREF="Cards.htm" TARGET="frame_pattern">Cards</A> allow game designers to determine exactly the distribution between different resources, events or outcomes in a game while still providing <A CLASS="pattern" HREF="Randomness.htm" TARGET="frame_pattern">Randomness</A>. Since cardsare two-sided, the information contained on the card can be distributed in various ways between the two-sides: having no information on one side (except that it is a card in the set) as is the case for traditional cards; marking functionally different cards on both sides but not the specific characteristics or placing one of several categories of information on both sides. This allows fine-tuning of the use of <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A> in the game design, including using it in <A CLASS="pattern" HREF="Book-KeepingTokens.htm" TARGET="frame_pattern">Book-Keeping Tokens</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Randomness.htm" TARGET="frame_pattern">Randomness</A>, <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A>, <A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A>, <A CLASS="pattern" HREF="Book-KeepingTokens.htm" TARGET="frame_pattern">Book-Keeping Tokens</A>, <A CLASS="pattern" HREF="FocusLoci.htm" TARGET="frame_pattern">Focus Loci</A></P>
+
+<P CLASS="italic">Modulates: </P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="DiscardPiles.htm" TARGET="frame_pattern">Discard Piles</A>, <A CLASS="pattern" HREF="DrawingStacks.htm" TARGET="frame_pattern">Drawing Stacks</A>, <A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hands</A>, <A CLASS="pattern" HREF="Consumers.htm" TARGET="frame_pattern">Consumers</A>, <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converters</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

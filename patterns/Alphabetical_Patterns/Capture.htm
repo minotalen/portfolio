@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Capture</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Capture">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Capture</H2>
+<I>Capture is the goal pattern where the end result is the elimination or change of ownership of an actively resisting goal object.</I>
+<P CLASS="text">The <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> is done directly by the actions performed by game elements under a player's control; thus, shooting an opponent in a first-person shooter is not an example of <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Go</I> allows <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> by completely enclosing an enemy group of stones.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Qix</I> allows the player to catch computer-controlled units by enclosing them in the smaller area of the two areas that are created by outlining a path in the unmarked part of the game area.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Priests in <I>Age of Empires</I> can convert pieces controlled by other players as their main offensive action.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The prime design choice regarding <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> is to decide if the aim is to <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> or <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A>, but can in both cases be seen as a struggle over <A CLASS="pattern" HREF="Ownership.htm" TARGET="frame_pattern">Ownership</A>. As <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> is most often done through the actions of a game element under a player's control, determining what game elements can be used to <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> is usually a part of defining the goal.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The game design must support some action that facilitates the <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A>. In the case of <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>, this typically is <A CLASS="pattern" HREF="Combat.htm" TARGET="frame_pattern">Combat</A>, <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A>, or <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A> promoting skills in <A CLASS="pattern" HREF="Dexterity-BasedActions.htm" TARGET="frame_pattern">Dexterity-Based Actions</A>. <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A> favor the use of <A CLASS="pattern" HREF="PuzzleSolving.htm" TARGET="frame_pattern">Puzzle Solving</A>, and thereby <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A>, but can also make use of <A CLASS="pattern" HREF="Investments.htm" TARGET="frame_pattern">Investment</A> or <A CLASS="pattern" HREF="Bidding.htm" TARGET="frame_pattern">Bidding</A>. The first type of game usually has the subgoal of <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A> (with <I>Qix</I> as an example of <A CLASS="pattern" HREF="Enclosure.htm" TARGET="frame_pattern">Enclosure</A>) while the second type of game commonly has subgoals such as <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A>, <A CLASS="pattern" HREF="Alignment.htm" TARGET="frame_pattern">Alignment</A>, <A CLASS="pattern" HREF="Enclosure.htm" TARGET="frame_pattern">Enclosure</A>, <A CLASS="pattern" HREF="https://tecfa.unige.ch/tecfa/maltt/VIP/Ressources/Articles/Game%20Design%20Patterns/collection/Alphabetical_Patterns/Configuration.htm" TARGET="frame_pattern">Configuration</A>, and <A CLASS="pattern" HREF="Connection.htm" TARGET="frame_pattern">Connection</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> goals are very often related to <A CLASS="pattern" HREF="Overcome.htm" TARGET="frame_pattern">Overcome</A> goals in the <I>Hierarchies of Goals</I>. How they are related to each other depends primarily on their individual <A CLASS="pattern" HREF="Rewards.htm" TARGET="frame_pattern">Reward</A> structures and on players' tactics. <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> is often achieved by <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> but in <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>, this depends on <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A>, while in <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A>, it more often is a form of <A CLASS="pattern" HREF="PuzzleSolving.htm" TARGET="frame_pattern">Puzzle Solving</A>, as players have to take other players or <A CLASS="pattern" HREF="Agents.htm" TARGET="frame_pattern">Agents</A> actions into consideration due to <A CLASS="pattern" HREF="TurnTaking.htm" TARGET="frame_pattern">Turn Taking</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Captures</A> combined with <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> of game elements that are <A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A> can quicken gameplay as fewer game elements remain and promote <A CLASS="pattern" HREF="Higher-LevelClosuresasGameplayProgresses.htm" TARGET="frame_pattern">Higher-Level Closures as Gameplay Progresses</A> since each element represents a greater part of players' <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A>. When <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> allows <A CLASS="pattern" HREF="TransferofControl.htm" TARGET="frame_pattern">Transfer of Control</A>, this causes <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goals</A> such as <A CLASS="pattern" HREF="Evade.htm" TARGET="frame_pattern">Evade</A> and can trigger retaliating <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> goals by an original owner to regain control. The control of a new game element through <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> can motivate <A CLASS="pattern" HREF="NewAbilities.htm" TARGET="frame_pattern">New Abilities</A>, possibly <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A>, to become available.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Combat.htm" TARGET="frame_pattern">Combat</A>, <A CLASS="pattern" HREF="Higher-LevelClosuresasGameplayProgresses.htm" TARGET="frame_pattern">Higher-Level Closures as Gameplay Progresses</A>, <A CLASS="pattern" HREF="TransferofControl.htm" TARGET="frame_pattern">Transfer of Control</A>, <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A>, <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A>, <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A>, <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goals</A></P>
+
+<P CLASS="italic">Modulates: </P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Overcome.htm" TARGET="frame_pattern">Overcome</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim & Shoot</A>, <A CLASS="pattern" HREF="Connection.htm" TARGET="frame_pattern">Connection</A>, <A CLASS="pattern" HREF="Enclosure.htm" TARGET="frame_pattern">Enclosure</A>, <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A>, <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A>, <A CLASS="pattern" HREF="Alignment.htm" TARGET="frame_pattern">Alignment</A>, <A CLASS="pattern" HREF="https://tecfa.unige.ch/tecfa/maltt/VIP/Ressources/Articles/Game%20Design%20Patterns/collection/Alphabetical_Patterns/Configuration.htm" TARGET="frame_pattern">Configuration</A>, <A CLASS="pattern" HREF="Evade.htm" TARGET="frame_pattern">Evade</A>, <A CLASS="pattern" HREF="PuzzleSolving.htm" TARGET="frame_pattern">Puzzle Solving</A>, <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>, <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A>, <A CLASS="pattern" HREF="TurnTaking.htm" TARGET="frame_pattern">Turn Taking</A>, <A CLASS="pattern" HREF="Ownership.htm" TARGET="frame_pattern">Ownership</A>, <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

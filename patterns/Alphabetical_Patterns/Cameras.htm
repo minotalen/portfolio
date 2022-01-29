@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Cameras</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Cameras">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Cameras</H2>
+<I>Camera is an abstract game element that decides what is the player's current view to the game world.</I>
+<P CLASS="text"><B>Example:</B> Real-time strategy games allow the players to move the camera across the whole game world but the position of the game elements, and in many cases not even the terrain, is typically not revealed. God games, in contrast, allow players to have a complete view of the area that is being viewed. First-person shooters, as the name implies, usually provide first-person views while racing games often let players choose between first-person views to support spatial immersion and third-person views that allow better overview of the local game world environment.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Super Mario 64</I> provides an exception to the rule that <A CLASS="pattern" HREF="Cameras.htm" TARGET="frame_pattern">Cameras</A> are abstract objects that are not explained within the game world: although not affected by events in the game world, the camera, and the cameraman, can be seen in mirrors. Another minor exception is the camera in the party game <I>Monkey Boxing</I> in <I>Super Monkey Ball 2</I>, which can be hit during the celebration scene when one of the monkeys has won the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The type of <A CLASS="pattern" HREF="Cameras.htm" TARGET="frame_pattern">Camera</A> is usually closely linked to how <A CLASS="pattern" HREF="FocusLoci.htm" TARGET="frame_pattern">Focus Loci</A> and <A CLASS="pattern" HREF="SpatialImmersion.htm" TARGET="frame_pattern">Spatial Immersion</A> are used in the game: games with <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A> use<A CLASS="pattern" HREF="First-PersonViews.htm" TARGET="frame_pattern">First-Person Views</A> or <A CLASS="pattern" HREF="Third-PersonViews.htm" TARGET="frame_pattern">Third-Person Views</A>, while games with <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> use <A CLASS="pattern" HREF="GodViews.htm" TARGET="frame_pattern">God Views</A>. While <A CLASS="pattern" HREF="First-PersonViews.htm" TARGET="frame_pattern">First-Person Views</A> and <A CLASS="pattern" HREF="Third-PersonViews.htm" TARGET="frame_pattern">Third-Person Views</A> easily support <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A> to players by limiting their control of the <A CLASS="pattern" HREF="Cameras.htm" TARGET="frame_pattern">Camera</A>, <A CLASS="pattern" HREF="GodViews.htm" TARGET="frame_pattern">God Views</A> can achieve similar effect by using <A CLASS="pattern" HREF="FogofWar.htm" TARGET="frame_pattern">Fog of War</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Games with <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A> that include fast movement often let the players choose from several different camera views based on <A CLASS="pattern" HREF="First-PersonViews.htm" TARGET="frame_pattern">First-Person View</A> or <A CLASS="pattern" HREF="Third-PersonViews.htm" TARGET="frame_pattern">Third-Person Views</A>. Examples of these are chase cameras, which do not follow the <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatar</A> but missiles or bullets shot by the <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatar</A> and fly-by cameras, which lock the camera position while tracing the movement of the <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatar</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Making the decision to allow players to control the <A CLASS="pattern" HREF="Cameras.htm" TARGET="frame_pattern">Camera</A> include making decision of what <A CLASS="pattern" HREF="Extra-GameActions.htm" TARGET="frame_pattern">Extra-Game Actions</A> related to <A CLASS="pattern" HREF="Cameras.htm" TARGET="frame_pattern">Cameras</A> should be provided: rotation, zooming and absolute movement for <A CLASS="pattern" HREF="GodViews.htm" TARGET="frame_pattern">God Views</A> and rotation and zooming movement for <A CLASS="pattern" HREF="First-PersonViews.htm" TARGET="frame_pattern">First-Person Views</A> and <A CLASS="pattern" HREF="Third-PersonViews.htm" TARGET="frame_pattern">Third-Person Views</A>. This increases players <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A> and <A CLASS="pattern" HREF="SpatialImmersion.htm" TARGET="frame_pattern">Spatial Immersion</A> (as not only the player can make the <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatar</A> or <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Unit</A> move in the world but also the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> move around these) but increases the conflict with <A CLASS="pattern" HREF="ConsistentRealityLogic.htm" TARGET="frame_pattern">Consistent Reality Logic</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Cameras.htm" TARGET="frame_pattern">Cameras</A> that can be manipulated by the players allow the players to decide what parts of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> they want to focus their attention on. In games with <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A> this is typically limited in such a way that the <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatar</A> is always in the center of the view. This maintains the symmetry between what the <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatar</A> and the player sees so that <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> and <A CLASS="pattern" HREF="Surprises.htm" TARGET="frame_pattern">Surprises</A> can be achieved and also to strengthen spatial <A CLASS="pattern" HREF="Immersion.htm" TARGET="frame_pattern">Immersion</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">In games with <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A>, the <A CLASS="pattern" HREF="Cameras.htm" TARGET="frame_pattern">Camera</A> movement may be completely free to allow the players to move between different game elements and to enforce them to make <A CLASS="pattern" HREF="Tradeoffs.htm" TARGET="frame_pattern">Tradeoffs</A> between which parts of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> to focus their attention on. The ease of the use of the <A CLASS="pattern" HREF="Cameras.htm" TARGET="frame_pattern">Camera</A>, and relevant <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A>, decides how much the game helps the players to perform <A CLASS="pattern" HREF="AttentionSwapping.htm" TARGET="frame_pattern">Attention Swapping</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="AttentionSwapping.htm" TARGET="frame_pattern">Attention Swapping</A>, <A CLASS="pattern" HREF="Extra-GameActions.htm" TARGET="frame_pattern">Extra-Game Actions</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="GodViews.htm" TARGET="frame_pattern">God Views</A>, <A CLASS="pattern" HREF="SpatialImmersion.htm" TARGET="frame_pattern">Spatial Immersion</A>, <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A>, <A CLASS="pattern" HREF="Tradeoffs.htm" TARGET="frame_pattern">Tradeoffs</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="FogofWar.htm" TARGET="frame_pattern">Fog of War</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="ConsistentRealityLogic.htm" TARGET="frame_pattern">Consistent Reality Logic</A></P>
+
+
+</html>
+

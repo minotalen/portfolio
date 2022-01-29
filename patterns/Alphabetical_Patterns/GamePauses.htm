@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Game Pauses</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Game Pauses">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Game Pauses</H2>
+<I>The progress of game time is suspended during Game Pauses</I>
+<P CLASS="text">The suspension of game time can be either player or game system controlled. The player controlled <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A> are more often found in games which require constant player attention, but are played in situations that may create distractions to play.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>fast action games on personal computers often offer the players the ability to suspend the game time. The reason for this is usually to allow the players to leave the game for some time to do something else. These <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A>, however, can occasionally be used to cheat in a game, for example, to plan better ahead in <I>Tetris</I>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><A CLASS="pattern" HREF="CutScenes.htm" TARGET="frame_pattern">Cut Scenes</A> and level changes are a form of <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A> as the progress of game time is usually suspended for a game system controlled amount of time.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The effects of both player and game system controlled <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A> are more drastic in <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A> but they also can be used in <A CLASS="pattern" HREF="Tick-BasedGames.htm" TARGET="frame_pattern">Tick-Based Games</A> and <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A> to permit the players <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A>. Player controlled <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A> are almost always related to <A CLASS="pattern" HREF="Extra-GameActions.htm" TARGET="frame_pattern">Extra-Game Actions</A>, unless the <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A> are within the <A CLASS="pattern" HREF="ConsistentRealityLogic.htm" TARGET="frame_pattern">Consistent Reality Logic</A> of the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Spawning.htm" TARGET="frame_pattern">Spawning</A>, <A CLASS="pattern" HREF="CutScenes.htm" TARGET="frame_pattern">Cut Scenes</A>, and <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A> associated with the players changing <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Levels</A> are usual forms of game system controlled <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A>. <A CLASS="pattern" HREF="Spawning.htm" TARGET="frame_pattern">Spawning</A> in many cases is also an example of using <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limit</A> with <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pause</A>; the players can come back to the game only after a certain amount of time has passed. <A CLASS="pattern" HREF="Save-LoadCycles.htm" TARGET="frame_pattern">Save-Load Cycles</A> automatically suspend the game time, due to the need to freeze the game state, sometimes even for very long times.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">Game system <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A> can be used to modify the <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> for the players. For example, <A CLASS="pattern" HREF="CutScenes.htm" TARGET="frame_pattern">Cut Scenes</A> are often used not only to allow the <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structure</A> to progress but also to give the players some time to plan ahead and relax for awhile from the stressful constant attention the game might otherwise require. <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A> in <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A> can be used to allow for more <A CLASS="pattern" HREF="SocialInteraction.htm" TARGET="frame_pattern">Social Interaction</A> between the players. However, in computer games the possibility of choosing to have <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A> is most common in <A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A> since the <A CLASS="pattern" HREF="Negotiation.htm" TARGET="frame_pattern">Negotiation</A> regarding <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A> could require more effort than the <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pause</A> is worth, especially as the reason for the pause may have passed and <A CLASS="pattern" HREF="Immersion.htm" TARGET="frame_pattern">Immersion</A> may be lost if any player can cause all players to have <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A> without the other players' consent.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Player controlled <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A> interfere with <A CLASS="pattern" HREF="TheShowMustGoOn.htm" TARGET="frame_pattern">The Show Must Go On,</A> and in games with otherwise <A CLASS="pattern" HREF="LimitedPlanningAbility.htm" TARGET="frame_pattern">Limited Planning Abilities</A> created by <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits,</A> the players can use <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A> to cheat by giving them more time to think ahead. <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A> are, in any case, almost totally useless when combined with <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A> unless there are also <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A> for the <A CLASS="pattern" HREF="GamePauses.htm" TARGET="frame_pattern">Game Pauses</A> themselves.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A>, <A CLASS="pattern" HREF="Extra-GameActions.htm" TARGET="frame_pattern">Extra-Game Actions</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Tick-BasedGames.htm" TARGET="frame_pattern">Tick-Based Games</A>, <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A>, <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>, <A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A>, <A CLASS="pattern" HREF="SocialInteraction.htm" TARGET="frame_pattern">Social Interaction</A>, <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Save-LoadCycles.htm" TARGET="frame_pattern">Save-Load Cycles</A>, <A CLASS="pattern" HREF="Spawning.htm" TARGET="frame_pattern">Spawning</A>, <A CLASS="pattern" HREF="CutScenes.htm" TARGET="frame_pattern">Cut Scenes</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A>, <A CLASS="pattern" HREF="ConsistentRealityLogic.htm" TARGET="frame_pattern">Consistent Reality Logic</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A>, <A CLASS="pattern" HREF="TheShowMustGoOn.htm" TARGET="frame_pattern">The Show Must Go On</A></P>
+
+
+</html>
+

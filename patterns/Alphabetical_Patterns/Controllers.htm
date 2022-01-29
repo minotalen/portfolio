@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Controllers</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Controllers">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Controllers</H2>
+<I>Controllers are game elements fixed in particular locations in the Game World that allow players to perform actions that would not be possible otherwise.</I>
+<P CLASS="text"><B>Example: </B>First-person shooters, such as <I>Quake</I>, often have doors that have to be opened through activating <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The cannons in <I>Super Mario 64</I> are <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A> that allow Mario to reach areas otherwise inaccessible by shooting himself from a cannon.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Abstract <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A> can be found in <I>Return to Castle Wolfenstein: Enemy Territory</I> as players can construct bridges, command centers, and towers in certain places.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A> share many design possibilities with <A CLASS="pattern" HREF="Tools.htm" TARGET="frame_pattern">Tools</A>. After choosing what <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A> the <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A> support, a game designer has to decide which <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> or <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A> can use the <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controller</A>, any specific skills that are needed, and any <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> the <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controller</A> might consume. However, <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A> differ in some respects from <A CLASS="pattern" HREF="Tools.htm" TARGET="frame_pattern">Tools</A>. First, they are public in the sense that they are stationary, and whoever is near it can activate it (unless specific skills or resources are needed). This means that any <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A> goals related to the <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A> are linked to controlling the game area. Second, they may need <A CLASS="pattern" HREF="Tools.htm" TARGET="frame_pattern">Tools</A> to be activated besides any requirements on skills and <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A>. Third, as they often are presented as part of a large machine or system, they often can affect something outside the usual reach of <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units'</A> or <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars'</A> actions without breaking the <A CLASS="pattern" HREF="ConsistentRealityLogic.htm" TARGET="frame_pattern">Consistent Reality Logic</A> of the game. The activation of <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A> can often be the completion of a goal or a <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Level</A>. Further, the actions can be both <A CLASS="pattern" HREF="ExtendedActions.htm" TARGET="frame_pattern">Extended Actions</A> (requiring the constant activation of a player) and <A CLASS="pattern" HREF="Ultra-PowerfulEvents.htm" TARGET="frame_pattern">Ultra-Powerful Events</A> (for example when activating <A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A>).</P>
+<P CLASS="text"></P>
+<P CLASS="text">The archetypical type of <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controller</A> is a <A CLASS="pattern" HREF="Buttons.htm" TARGET="frame_pattern">Button</A>. However, <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A> do not have to be tangible game elements, but they can be areas where the construction or destruction of game elements is possible. Examples of this are boxes of construction material, which can be assembled to specific game elements, such as bridges or bases in <I>Return to Castle Wolfenstein: Enemy Territory</I>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A> are natural <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A> since <A CLASS="pattern" HREF="AreaControl.htm" TARGET="frame_pattern">Area Control</A> over the location gives players or teams access to actions that otherwise may not be performed. In addition, as they are an integral part of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> and thus linked to its structure, the actions they provide, including <A CLASS="pattern" HREF="Ultra-PowerfulEvents.htm" TARGET="frame_pattern">Ultra-Powerful Events</A>, usually have greater effects than mere <A CLASS="pattern" HREF="Tools.htm" TARGET="frame_pattern">Tools</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A> that are <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generators</A> provide a way to have <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resources</A> in games and create <A CLASS="pattern" HREF="ResourceLocations.htm" TARGET="frame_pattern">Resource Locations</A> in <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game Worlds.</A> Other <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A> are simply <A CLASS="pattern" HREF="Obstacles.htm" TARGET="frame_pattern">Obstacles</A> that allow players to perform actions to remove them.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Ultra-PowerfulEvents.htm" TARGET="frame_pattern">Ultra-Powerful Events</A>, <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A>, <A CLASS="pattern" HREF="ResourceLocations.htm" TARGET="frame_pattern">Resource Locations</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resources</A>, <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A>, <A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A>, <A CLASS="pattern" HREF="AreaControl.htm" TARGET="frame_pattern">Area Control</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Buttons.htm" TARGET="frame_pattern">Buttons</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generators</A>, <A CLASS="pattern" HREF="Tools.htm" TARGET="frame_pattern">Tools</A>, <A CLASS="pattern" HREF="Helpers.htm" TARGET="frame_pattern">Helpers</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

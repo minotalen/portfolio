@@ -1,0 +1,53 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Non-Renewable Resources</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Non-Renewable Resources">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Non-Renewable Resources</H2>
+<I>The amount of resources available in the game is determined at the start of the game and these resources cannot be renewed once they are exhausted.</I>
+<P CLASS="text">Some resources in games all exist at the beginning of game sessions and are not replaced as they are used. These <A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A> thereby have a fundamentally higher value than resources that are replenished, and the use of <A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A> is a greater commitments than use of other resources.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>in <I>Chess</I> each player has sixteen pieces, which cannot be brought back to game after being captured.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>the amount of wood, food, and other basic resources in <I>Age of Empires</I> is determined at the start and is not renewed during the game. The players can, and often do, exhaust these stockpiles forcing the players to seek out new resource stockpiles during the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A> can be used in two main ways based on the <A CLASS="pattern" HREF="Ownership.htm" TARGET="frame_pattern">Ownership</A> of the <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> or <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A>. The first option is to give each of the players a certain amount of <A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A>. For example, at the start of a deathmatch in a first-person shooter each of the players only get six bullets and there is no way to get more. Modification of the amount of these <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> available to the players can be used to achieve <A CLASS="pattern" HREF="PlayerBalance.htm" TARGET="frame_pattern">Player Balance</A> through providing a <A CLASS="pattern" HREF="Handicaps.htm" TARGET="frame_pattern">Handicap</A>. The other option is to make the <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> non-renewable from the game system point of view, but give the players a possibility to replenish their resources. Modifying the first-person shooter example to this option would mean that there are some bullets in the form of <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> lying around the game arena, which are not replenished during the game. If players can pick up unused bullets from the bodies of killed players, they are <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resources</A> in a limited sense through <A CLASS="pattern" HREF="TransferofControl.htm" TARGET="frame_pattern">Transfer of Control</A> but from the overall game perspective the bullets are <I>Non-Renewable</I> <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A>. Usually this option can lead to <A CLASS="pattern" HREF="VariedGameplay.htm" TARGET="frame_pattern">Varied Gameplay</A> as the players have subgoals to gain more resources during the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The most direct way to impose a <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limit</A> on the game instance and game sessions is to make the <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> used in the players' basic actions nonrenewable and use the loss of these resources as an end condition of either the whole game instance or just the player's game session. For example, when all the <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A> in Carcassonne are used the game instance ends and the <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A> is calculated for each of the players.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The game can, of course, contain both <I>Renewable</I> and <A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A>, if they are different <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> or if the <A CLASS="pattern" HREF="Ownership.htm" TARGET="frame_pattern">Ownership</A> of the <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resource</A> has an effect on the status of the <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resource</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Cards.htm" TARGET="frame_pattern">Cards</A> are one form of <A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A> that can be use to create <A CLASS="pattern" HREF="Randomness.htm" TARGET="frame_pattern">Randomness</A> with the characteristic that each type of outcome can be guaranteed to occur a predefined number of times.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A> are a natural way to impose a <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limit</A> on game instances as the players' actions exhaust the <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A>. They also create <A CLASS="pattern" HREF="Higher-LevelClosuresasGameplayProgresses.htm" TARGET="frame_pattern">Higher-Level Closures as Gameplay Progresses</A> since the value of <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> increase with their rarity as long as the functionality they provide is at least as important in late gameplay as in earlier gameplay. <A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A> are also automatically <A CLASS="pattern" HREF="LimitedResources.htm" TARGET="frame_pattern">Limited Resources</A> and make <A CLASS="pattern" HREF="TransferofControl.htm" TARGET="frame_pattern">Transfer of Control</A> actions regarding these more valuable than other <A CLASS="pattern" HREF="TransferofControl.htm" TARGET="frame_pattern">Transfer of Control</A> actions. <A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A> that are part of <A CLASS="pattern" HREF="ClosedEconomies.htm" TARGET="frame_pattern">Closed Economies</A> may be perceived as being <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resources</A> to the players although it is actually the same <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> which are recycled.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A> that are consumed by actions make <A CLASS="pattern" HREF="Experimenting.htm" TARGET="frame_pattern">Experimenting</A> costly in games, and promote <A CLASS="pattern" HREF="PuzzleSolving.htm" TARGET="frame_pattern">Puzzle Solving</A> to be done by abstract reasoning rather than external cognition through manipulation of game elements.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The use of depletion of <A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A> as end conditions for goals or games can create <A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A> since the end conditions is not explicitly tied to a winning condition.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="ClosedEconomies.htm" TARGET="frame_pattern">Closed Economies</A>, <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A>, <A CLASS="pattern" HREF="DecreasedAbilities.htm" TARGET="frame_pattern">Decreased Abilities</A>, <A CLASS="pattern" HREF="LimitedResources.htm" TARGET="frame_pattern">Limited Resources</A>, <A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A>, <A CLASS="pattern" HREF="Higher-LevelClosuresasGameplayProgresses.htm" TARGET="frame_pattern">Higher-Level Closures as Gameplay Progresses</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A>, <A CLASS="pattern" HREF="PlayerBalance.htm" TARGET="frame_pattern">Player Balance</A>, <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A>, <A CLASS="pattern" HREF="TransferofControl.htm" TARGET="frame_pattern">Transfer of Control</A>, <A CLASS="pattern" HREF="Handicaps.htm" TARGET="frame_pattern">Handicaps</A>, <A CLASS="pattern" HREF="PuzzleSolving.htm" TARGET="frame_pattern">Puzzle Solving</A>, <A CLASS="pattern" HREF="VariedGameplay.htm" TARGET="frame_pattern">Varied Gameplay</A>, <A CLASS="pattern" HREF="Randomness.htm" TARGET="frame_pattern">Randomness</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Cards.htm" TARGET="frame_pattern">Cards</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="TransferofControl.htm" TARGET="frame_pattern">Transfer of Control</A>, <A CLASS="pattern" HREF="Ownership.htm" TARGET="frame_pattern">Ownership</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="Experimenting.htm" TARGET="frame_pattern">Experimenting</A>, <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resources</A></P>
+
+
+</html>
+

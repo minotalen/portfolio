@@ -1,0 +1,45 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Card Hands</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Card Hands">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Card Hands</H2>
+<I>A Card Hand consists of the cards, which are owned by the player, but which have not yet been put into play.</I>
+<P CLASS="text"><B>Example: </B>in <I>Poker</I> each of the players is dealt five cards, which define the <A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hand</A> for each player.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Bohnanza</I> is a card game where the order of the cards in the <A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hand</A> is important, as the players have to play the cards in a specific sequence.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The basic design question when using <A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hands</A> is determining the size of the hand; should all cards be distributed at the beginning of the game or should some cards be left in, for example, a <A CLASS="pattern" HREF="DrawingStacks.htm" TARGET="frame_pattern">Drawing Stack</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Another fundamental design question regarding <A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hands</A> is how the size and content of the hands change. Having an initial set of cards that shrinks as cards are played makes use of <A CLASS="pattern" HREF="LimitedResources.htm" TARGET="frame_pattern">Limited Resources</A> and allows the game designer to limit the length of the game. Refilling the hand continuously as cards are being played creates a <A CLASS="pattern" HREF="ClosedEconomies.htm" TARGET="frame_pattern">Closed Economy</A> and frees the game design to determine the game length by other means.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Although most often consisting of <A CLASS="pattern" HREF="Cards.htm" TARGET="frame_pattern">Cards,</A> a <A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hand</A> can also consist of <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A> in games that have <A CLASS="pattern" HREF="Tile-Laying.htm" TARGET="frame_pattern">Tile-Laying</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hands</A> are <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Containers</A> of <A CLASS="pattern" HREF="Cards.htm" TARGET="frame_pattern">Cards</A> that assign players <A CLASS="pattern" HREF="Ownership.htm" TARGET="frame_pattern">Ownership</A> to the <A CLASS="pattern" HREF="Cards.htm" TARGET="frame_pattern">Cards.</A> Typically <A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hands</A> are secret to all other players and being able to deduce the other players' hands offers a strategic advantage (i. e. a <A CLASS="pattern" HREF="GainInformation.htm" TARGET="frame_pattern">Gain Information</A> goal). However, the other players may know how many cards are in the <A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hand</A> and the cards might be marked, so the players have <A CLASS="pattern" HREF="AsymmetricInformation.htm" TARGET="frame_pattern">Asymmetric Information</A> about the <A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hands</A> in play.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="GainInformation.htm" TARGET="frame_pattern">Gain Information</A>, <A CLASS="pattern" HREF="AsymmetricInformation.htm" TARGET="frame_pattern">Asymmetric Information</A>, <A CLASS="pattern" HREF="SecretResources.htm" TARGET="frame_pattern">Secret Resources</A>, <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A>, <A CLASS="pattern" HREF="Ownership.htm" TARGET="frame_pattern">Ownership</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A>, <A CLASS="pattern" HREF="Cards.htm" TARGET="frame_pattern">Cards</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Tile-Laying.htm" TARGET="frame_pattern">Tile-Laying</A></P>
+
+<P CLASS="italic">Modulated by: </P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

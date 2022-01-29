@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Maneuvering</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Maneuvering">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Maneuvering</H2>
+<I>Controlling the movement of game elements in real-time games.</I>
+<P CLASS="text">Games in which players control vehicles or characters that move in real time often have <A CLASS="pattern" HREF="Obstacles.htm" TARGET="frame_pattern">Obstacles</A> or <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A> that have to be avoided. Doing this in real time requires <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A> of the game elements under the players' control.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Much of the skill in playing first-person shooters consists in being able to maneuver one's <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatar</A> so one avoids enemy gunfire and has good opportunities to attack enemies.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The racing game <I>F-Zero GX</I> requires player to maneuver to avoid obstacles and other vehicles while traveling at high speeds on a 3D racing track.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A> can be necessary either due to the <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> of a game element controlled by a player or by the movement of other game elements. In the first case, <A CLASS="pattern" HREF="Obstacles.htm" TARGET="frame_pattern">Obstacles</A> and <A CLASS="pattern" HREF="DeadlyTraps.htm" TARGET="frame_pattern">Deadly Traps</A> in the environment may cause emergent <A CLASS="pattern" HREF="Evade.htm" TARGET="frame_pattern">Evade</A> goals, or <A CLASS="pattern" HREF="Chargers.htm" TARGET="frame_pattern">Chargers</A> and <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> may require <A CLASS="pattern" HREF="Collecting.htm" TARGET="frame_pattern">Collecting</A> actions, both of which can be completed by <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A>. <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> of other game elements can be <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A>, or shots from them, that aim directly for the players' game elements or can be <A CLASS="pattern" HREF="Ultra-PowerfulEvents.htm" TARGET="frame_pattern">Ultra-Powerful Events</A>, e. g., raising bridges or rock falls, that have to be avoided. <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A> due to the <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> of other game elements does not only have to aid in <I>Evading</I> them but can also include <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A> actions with the intention of fulfilling <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> or <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> goals.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A> requires that players at least have a weak <A CLASS="pattern" HREF="SpatialImmersion.htm" TARGET="frame_pattern">Spatial Immersion</A> in the game and thereby requires either a <A CLASS="pattern" HREF="First-PersonViews.htm" TARGET="frame_pattern">First-Person View</A> or a <A CLASS="pattern" HREF="Third-PersonViews.htm" TARGET="frame_pattern">Third-Person View</A>. Setting the<A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A> for <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A> actions can be done either by controlling the speed game elements move in or controlling the <A CLASS="pattern" HREF="RightLevelofComplexity.htm" TARGET="frame_pattern">Right Level of Complexity</A> by the number of game elements that have to be taken into consideration at any given point. The first raises the requirements on skills in <A CLASS="pattern" HREF="Dexterity-BasedActions.htm" TARGET="frame_pattern">Dexterity-Based Actions</A> while the second requires <A CLASS="pattern" HREF="AttentionSwapping.htm" TARGET="frame_pattern">Attention Swapping</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">The need for <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A> comes either from a lack of <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A> that causes the current situation to be suboptimal or because the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> is sufficiently complex to make corrections necessary regardless of chosen path. Both these causes may be due to the <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> of other game elements, which can either be intentional movement by <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A> or instantiations of <A CLASS="pattern" HREF="TheShowMustGoOn.htm" TARGET="frame_pattern">The Show Must Go On</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A>, like other forms of <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> in <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>, can give <A CLASS="pattern" HREF="SpatialImmersion.htm" TARGET="frame_pattern">Spatial Immersion</A> and cannot be done in <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="AttentionSwapping.htm" TARGET="frame_pattern">Attention Swapping</A>, <A CLASS="pattern" HREF="SpatialImmersion.htm" TARGET="frame_pattern">Spatial Immersion</A>, <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A>, <A CLASS="pattern" HREF="Dexterity-BasedActions.htm" TARGET="frame_pattern">Dexterity-Based Actions</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A>, <A CLASS="pattern" HREF="Race.htm" TARGET="frame_pattern">Race</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>, <A CLASS="pattern" HREF="Collecting.htm" TARGET="frame_pattern">Collecting</A>, <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim & Shoot</A>, <A CLASS="pattern" HREF="TheShowMustGoOn.htm" TARGET="frame_pattern">The Show Must Go On</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="DeadlyTraps.htm" TARGET="frame_pattern">Deadly Traps</A>, <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A>, <A CLASS="pattern" HREF="Chargers.htm" TARGET="frame_pattern">Chargers</A>, <A CLASS="pattern" HREF="First-PersonViews.htm" TARGET="frame_pattern">First-Person Views</A>, <A CLASS="pattern" HREF="Third-PersonViews.htm" TARGET="frame_pattern">Third-Person Views</A>, <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A>, <A CLASS="pattern" HREF="Obstacles.htm" TARGET="frame_pattern">Obstacles</A>, <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A>, <A CLASS="pattern" HREF="Ultra-PowerfulEvents.htm" TARGET="frame_pattern">Ultra-Powerful Events</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A></P>
+
+
+</html>
+

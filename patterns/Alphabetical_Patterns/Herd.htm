@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Herd</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Herd">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Herd</H2>
+<I>Moving a game element to a location in the game without directly interacting with it.</I>
+<P CLASS="text"><A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A> is the goal of making a game element be in a certain location in the game where the movement of the game element cannot be directly control, as for example game element are when being carried.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Pool</I> is an example of herding where players only have one point of control, the cue ball.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Populous</I> allows players to place markers in the game world which make all the people under the player's control move towards the marker.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">There are three primary design choices when creating a <A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A> goal: what to <A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A>, how the herding is done, and the choice of <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Point</A>, i. e. where to <A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A> the game element that is herded.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The game element to be herded may be able to move, but may be or not be able to do so without influences from the player. The influences for the herded game element to move based on player actions are typically motivated by the <A CLASS="pattern" HREF="ConsistentRealityLogic.htm" TARGET="frame_pattern">Consistent Reality Logic</A> of the game, either as transferal of momentum from other game elements due to <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A>, physical forces such as gravity or magnetism, or as emotional reactions such as anger, attraction or fright based for game elements with simulated personalities. Game elements that also move due to other influences or goals can be used to achieve the<A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A> of the goal, and may be described as having <A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A> as a <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goal</A> to the game elements' <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A> goals.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The act of herding can be done in two ways, either by creating repulsion or attraction to the game element to be herded. The former case is typically by achieving <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A> with the game element to give it momentum, as for example when hitting a ball in <I>Pool</I> with another ball or simulations of game elements with the same magnetic polarity. Example of attractions are resources that are essential for the survival for <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A>, such as food, or deep gravity wells such as black holes. When constructing a <A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A> goal, one has the option to use <I>Privileged</I> <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> to make an asymmetrical relationship between the game elements herding and being herded. This is typically used to let the herding game element have freer <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> that the herded game element to modulate the <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A> can easily be made to promote <A CLASS="pattern" HREF="Cooperation.htm" TARGET="frame_pattern">Cooperation</A> by making it a <A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goal</A> for several players, so that the players control different game elements that all try to make a game element move into a specific area.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A> is the <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A> goal of <A CLASS="pattern" HREF="Delivery.htm" TARGET="frame_pattern">Delivery</A> with <A CLASS="pattern" HREF="IndirectControl.htm" TARGET="frame_pattern">Indirect Control</A> and is performed through a form of <A CLASS="pattern" HREF="Collecting.htm" TARGET="frame_pattern">Collecting</A> actions<I>.</I> Similar to <A CLASS="pattern" HREF="Delivery.htm" TARGET="frame_pattern">Delivery</A>, <A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A> can be used to steer players' <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> within the game space but can provide more fluid gameplay as the control of the game element changes easier between teams or within a team or group of <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A> seldom makes use of <A CLASS="pattern" HREF="Stealth.htm" TARGET="frame_pattern">Stealth</A> because of the lack of control of the game element being herding.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Points</A>, <A CLASS="pattern" HREF="Delivery.htm" TARGET="frame_pattern">Delivery</A>, <A CLASS="pattern" HREF="IndirectControl.htm" TARGET="frame_pattern">Indirect Control</A>, <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A>, <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goals</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A>, <A CLASS="pattern" HREF="Collecting.htm" TARGET="frame_pattern">Collecting</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="PrivilegedMovement.htm" TARGET="frame_pattern">Privileged Movement</A>, <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="Stealth.htm" TARGET="frame_pattern">Stealth</A></P>
+
+
+</html>
+

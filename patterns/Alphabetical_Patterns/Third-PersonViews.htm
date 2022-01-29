@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Third-Person Views</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Third-Person Views">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Third-Person Views</H2>
+<I>Players are shown the game world with a focus on a game element under the players' control</I>
+<P CLASS="text">Many games center the view of the game environment upon a game element, which the players control. These <A CLASS="pattern" HREF="Third-PersonViews.htm" TARGET="frame_pattern">Third-Person Views</A>, where players observe the game environment as seen from outside the game element they control, let them see more of the immediately surrounding environment than could be achieve by observing from within the game element.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Pac-Man</I> is shown from above in the game with the same name, giving players the possibility to see what is behind walls in the maze.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">There are a number of different types of <A CLASS="pattern" HREF="Third-PersonViews.htm" TARGET="frame_pattern">Third-Person Views</A>: isometric, which shows the game elementfrom above slightly to the side; overhead, which provides excellent relations to the surrounding but which offers little information about the game elementitself; chase-cam, which follows the game element exactly behind in the element's line of movement. These can be modified by either linking the movement of the <A CLASS="pattern" HREF="Cameras.htm" TARGET="frame_pattern">Camera</A> to the movement of the game element or locking the <A CLASS="pattern" HREF="Cameras.htm" TARGET="frame_pattern">Camera</A> to a position relative to the environment. The same trick can be used for <A CLASS="pattern" HREF="PublicInformation.htm" TARGET="frame_pattern">Public Information</A> with <A CLASS="pattern" HREF="Third-PersonViews.htm" TARGET="frame_pattern">Third-Person Views</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Third-PersonViews.htm" TARGET="frame_pattern">Third-Person Views</A> offer the design option of letting players have control over the <A CLASS="pattern" HREF="Cameras.htm" TARGET="frame_pattern">Camera</A> which creates the view. Although this may affect the <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A> and require more <A CLASS="pattern" HREF="Dexterity-BasedActions.htm" TARGET="frame_pattern">Dexterity-Based Actions</A>, it can allow players to have a complete view of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Games with <A CLASS="pattern" HREF="Third-PersonViews.htm" TARGET="frame_pattern">Third-Person Views</A> that require <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A> about the terrain of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> at a different level than the view must either use <A CLASS="pattern" HREF="FogofWar.htm" TARGET="frame_pattern">Fog of War</A> or divide the game area into sections.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Third-PersonViews.htm" TARGET="frame_pattern">Third-Person Views</A> focus the view of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> around an <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatar</A> or a <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Unit</A>. Since the entire surrounding around that game element, and specifically the area behind the game element, is visible to the player, this view provides a form of <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A>. The centering of the view around a <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Unit</A> makes <A CLASS="pattern" HREF="Third-PersonViews.htm" TARGET="frame_pattern">Third-Person Views</A> support the identification of what <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Unit</A> is controlled in moveable <A CLASS="pattern" HREF="FocusLoci.htm" TARGET="frame_pattern">Focus Loci</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The feedback from performed movements in <A CLASS="pattern" HREF="Third-PersonViews.htm" TARGET="frame_pattern">Third-Person Views</A> is not as natural as those of <A CLASS="pattern" HREF="First-PersonViews.htm" TARGET="frame_pattern">First-Person Views</A>, as it is the relation between the <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatar</A> or <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Unit</A> and the environment that changes rather than the just the environment. <A CLASS="pattern" HREF="Third-PersonViews.htm" TARGET="frame_pattern">Third-Person Views</A> can still support <A CLASS="pattern" HREF="SpatialImmersion.htm" TARGET="frame_pattern">Spatial Immersion</A>, especially in chase-cam modes, and the better <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A> may make <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A> easier in this view than in <A CLASS="pattern" HREF="First-PersonViews.htm" TARGET="frame_pattern">First-Person Views</A>. However, <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A> actions become more difficult since players have to take both the target and shooter positions and movement into account when performing the actions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="SpatialImmersion.htm" TARGET="frame_pattern">Spatial Immersion</A>, <A CLASS="pattern" HREF="FocusLoci.htm" TARGET="frame_pattern">Focus Loci</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim & Shoot</A>, <A CLASS="pattern" HREF="FogofWar.htm" TARGET="frame_pattern">Fog of War</A>, <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>, <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A>, <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A>, <A CLASS="pattern" HREF="Dexterity-BasedActions.htm" TARGET="frame_pattern">Dexterity-Based Actions</A>, <A CLASS="pattern" HREF="PublicInformation.htm" TARGET="frame_pattern">Public Information</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A>, <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="FogofWar.htm" TARGET="frame_pattern">Fog of War</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="GodViews.htm" TARGET="frame_pattern">God Views</A></P>
+
+
+</html>
+

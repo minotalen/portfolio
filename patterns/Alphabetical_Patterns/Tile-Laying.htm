@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Tile-Laying</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Tile-Laying">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Tile-Laying</H2>
+<I>The placing of tiles as actions in the game.</I>
+<P CLASS="text">Not all games use tiles as static parts of the game that define the game world from the beginning of the game. Instead, these games either use the tiles either to randomize the layout of the game world or make the construction of the game world into a player-driven activity.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Rogue</I> and <I>Angband</I>, early computer roleplaying games that used ASCII-based graphics, randomized the layout of levels for each game session. This process of constructing the levels can be seen as a form of tile laying that takes places before game play begins on that level.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>a player's turn in <I>Carcassonne</I> consists of drawing and laying a tile in connection to those already in play and then optionally placing a token.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>the board game <I>The Settlers of Catan</I> starts with a randomize play area consisting of hexagonal tiles every game session to ensure that game play varies.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Tile-Laying.htm" TARGET="frame_pattern">Tile-Laying</A> may be used either before game play begins as part of the setup phase of the game or as actions players perform. The design of the <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A> used in both cases is similar to the design of <A CLASS="pattern" HREF="Cards.htm" TARGET="frame_pattern">Cards</A>, and in the later case may make use of <A CLASS="pattern" HREF="DrawingStacks.htm" TARGET="frame_pattern">Drawing Stacks</A> and variants of <A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hands</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The <A CLASS="pattern" HREF="Randomness.htm" TARGET="frame_pattern">Randomness</A> of <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game Worlds</A> constructed through <A CLASS="pattern" HREF="Tile-Laying.htm" TARGET="frame_pattern">Tile-Laying</A> allows the information about <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A> to <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A> if the tiles are covered or placed upside down. By using a form of <A CLASS="pattern" HREF="FogofWar.htm" TARGET="frame_pattern">Fog of War</A> this makes <A CLASS="pattern" HREF="Exploration.htm" TARGET="frame_pattern">Exploration</A> goals possible.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Tile-Laying.htm" TARGET="frame_pattern">Tile-Laying</A> is a concrete way to allow <A CLASS="pattern" HREF="ReconfigurableGameWorld.htm" TARGET="frame_pattern">Reconfigurable Game Worlds</A>. By introducing <A CLASS="pattern" HREF="Randomness.htm" TARGET="frame_pattern">Randomness</A> of how the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> is constructed, and possibly <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A> about the layout of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>, it can promote <A CLASS="pattern" HREF="VariedGameplay.htm" TARGET="frame_pattern">Varied Gameplay</A>. When players control the placement of the <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A> this makes them active game elements that are <A CLASS="pattern" HREF="FocusLoci.htm" TARGET="frame_pattern">Focus Loci</A> for players and creates <A CLASS="pattern" HREF="PlayerConstructedWorlds.htm" TARGET="frame_pattern">Player Constructed Worlds</A>. This allows them to perform <A CLASS="pattern" HREF="Construction.htm" TARGET="frame_pattern">Construction</A> actions and have <A CLASS="pattern" HREF="Exploration.htm" TARGET="frame_pattern">Exploration</A> goals which may be the cause of <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> when the attributes on the <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A> are important for the players.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="ReconfigurableGameWorld.htm" TARGET="frame_pattern">Reconfigurable Game World</A>, <A CLASS="pattern" HREF="Exploration.htm" TARGET="frame_pattern">Exploration</A>, <A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hands</A>, <A CLASS="pattern" HREF="PlayerConstructedWorlds.htm" TARGET="frame_pattern">Player Constructed Worlds</A>, <A CLASS="pattern" HREF="Randomness.htm" TARGET="frame_pattern">Randomness</A>, <A CLASS="pattern" HREF="VariedGameplay.htm" TARGET="frame_pattern">Varied Gameplay</A>, <A CLASS="pattern" HREF="Construction.htm" TARGET="frame_pattern">Construction</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A>, <A CLASS="pattern" HREF="FogofWar.htm" TARGET="frame_pattern">Fog of War</A>, <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>, <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="DrawingStacks.htm" TARGET="frame_pattern">Drawing Stacks</A></P>
+
+<P CLASS="italic">Modulated by: </P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

@@ -1,0 +1,43 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Team Elimination</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Team Elimination">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Team Elimination</H2>
+<I>The elimination of the whole team in team-oriented games is an end condition and the evaluation function.</I>
+<P CLASS="text"><A CLASS="pattern" HREF="TeamElimination.htm" TARGET="frame_pattern">Team Elimination</A> can be used for the whole game instance or just with respect to specific goals or modes of play within the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>in <I>Counter-Strike</I> the other team loses automatically if all the players in that team are eliminated.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>in <I>Anarchy Online</I> and other MMORPGs the team fails in achieving a mission goal if the team members are killed during the mission.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="TeamElimination.htm" TARGET="frame_pattern">Team Elimination</A> requires that there is at least the possibility of some kind of <A CLASS="pattern" HREF="TeamPlay.htm" TARGET="frame_pattern">Team Play</A> and also that there the possibility of either <A CLASS="pattern" HREF="PlayerKilling.htm" TARGET="frame_pattern">Player Killing</A> or <A CLASS="pattern" HREF="PlayerElimination.htm" TARGET="frame_pattern">Player Elimination</A>. <A CLASS="pattern" HREF="TeamElimination.htm" TARGET="frame_pattern">Team Elimination</A> with <A CLASS="pattern" HREF="PlayerKilling.htm" TARGET="frame_pattern">Player Killing</A> means that even though there is <A CLASS="pattern" HREF="Spawning.htm" TARGET="frame_pattern">Spawning</A> for the players themselves the team fails when the members are killed. This is the case for failing missions in MMORPGs when the players are killed during the mission. <A CLASS="pattern" HREF="TeamElimination.htm" TARGET="frame_pattern">Team Elimination</A> is a completed <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> of <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> goalsof the team members and it can be used also as <A CLASS="pattern" HREF="MutualGoals.htm" TARGET="frame_pattern">Mutual Goals</A> for different teams in the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="TeamElimination.htm" TARGET="frame_pattern">Team Elimination</A> shares the same basic characteristics with <A CLASS="pattern" HREF="PlayerElimination.htm" TARGET="frame_pattern">Player Elimination</A>, including the effect on, for example, <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A>. <A CLASS="pattern" HREF="TeamElimination.htm" TARGET="frame_pattern">Team Elimination</A> is naturally a <A CLASS="pattern" HREF="SharedPenalties.htm" TARGET="frame_pattern">Shared Penalty</A> for the team members.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="SharedPenalties.htm" TARGET="frame_pattern">Shared Penalties</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="TeamPlay.htm" TARGET="frame_pattern">Team Play</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A>, <A CLASS="pattern" HREF="PlayerElimination.htm" TARGET="frame_pattern">Player Elimination</A>, <A CLASS="pattern" HREF="PlayerKilling.htm" TARGET="frame_pattern">Player Killing</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="MutualGoals.htm" TARGET="frame_pattern">Mutual Goals</A>, <A CLASS="pattern" HREF="Spawning.htm" TARGET="frame_pattern">Spawning</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

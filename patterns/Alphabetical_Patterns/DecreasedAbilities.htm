@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Decreased Abilities</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Decreased Abilities">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Decreased Abilities</H2>
+<I>Players' chance of succeeding with an action as a function within the game is decreased, or the calculated effect the action has in the game decreased.</I>
+<P CLASS="text">Many games have events that make players' future actions have less effect, or less chance of succeeding, than they originally had. These <A CLASS="pattern" HREF="DecreasedAbilities.htm" TARGET="frame_pattern">Decreased Abilities</A> can be the consequences of running out of <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> or being affected by hostile actions but require players to use the abilities more efficiently to reach the same level of effect as previously.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Each point of damage received in <I>RoboRally</I> gives the player one card less at the beginning of each turn. As these cards are used to program a robot's movement, the reduction in number of cards effectively reduces the player's ability to control the robot.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Being hit by an ice cube or polygon ball weapon in the <I>Monkey Race 2</I> party game in <I>Super Monkey Ball 2</I> significantly reduces players' top speed and ability to steer.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">Instantiating <A CLASS="pattern" HREF="DecreasedAbilities.htm" TARGET="frame_pattern">Decreased Abilities</A> can easily be done by changing the values in the game state that are part of the evaluation functions of an action. Typically, this is motivated by changes in <A CLASS="pattern" HREF="Skills.htm" TARGET="frame_pattern">Skills</A> of <A CLASS="pattern" HREF="Characters.htm" TARGET="frame_pattern">Characters</A> or <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A>. An indirect way of achieving <A CLASS="pattern" HREF="DecreasedAbilities.htm" TARGET="frame_pattern">Decreased Abilities</A> is to require use of <A CLASS="pattern" HREF="LimitedResources.htm" TARGET="frame_pattern">Limited Resources</A>, and maybe <A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A>, so that players have to make <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A> choices of whether to use the action. This limits the <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A> when the players can use the actions. Reducing the amount of <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> a player can access or store is another way to combine <A CLASS="pattern" HREF="DecreasedAbilities.htm" TARGET="frame_pattern">Decreased Abilities</A> with <A CLASS="pattern" HREF="LimitedResources.htm" TARGET="frame_pattern">Limited Resources</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="DecreasedAbilities.htm" TARGET="frame_pattern">Decreased Abilities</A> are often used as <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A> to affect <A CLASS="pattern" HREF="PlayerBalance.htm" TARGET="frame_pattern">Player Balance</A>. When the effect of this needs to be modulated, <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A> of the decrease or complementing <A CLASS="pattern" HREF="ImprovedAbilities.htm" TARGET="frame_pattern">Improved Abilities</A> in other areas can be used to achieve a <A CLASS="pattern" HREF="BalancingEffects.htm" TARGET="frame_pattern">Balancing Effect</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">A common place for <A CLASS="pattern" HREF="DecreasedAbilities.htm" TARGET="frame_pattern">Decreased Abilities</A> to occur in gameplay is as the consequences of <A CLASS="pattern" HREF="PlayerKilling.htm" TARGET="frame_pattern">Player Killing</A>, either represented through the loss of <A CLASS="pattern" HREF="Tools.htm" TARGET="frame_pattern">Tools</A> or experience.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="DecreasedAbilities.htm" TARGET="frame_pattern">Decreased Abilities</A> are <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A> that affect players' <A CLASS="pattern" HREF="PerceivedChancetoSucceed.htm" TARGET="frame_pattern">Perceived Chance to Succeed</A>. If an ability is decreased so much that the perceive chance of success to achieve a goal by using it becomes nothing, any <A CLASS="pattern" HREF="IllusionofInfluence.htm" TARGET="frame_pattern">Illusion of Influence</A> due to the action is lost. If the chance actually is nil, the <A CLASS="pattern" HREF="DecreasedAbilities.htm" TARGET="frame_pattern">Decreased Ability</A> can be seen as an <A CLASS="pattern" HREF="AbilityLosses.htm" TARGET="frame_pattern">Ability Loss</A> and is in conflict with providing players with a <A CLASS="pattern" HREF="PerceivedChancetoSucceed.htm" TARGET="frame_pattern">Perceived Chance to Succeed</A>. Unlike <A CLASS="pattern" HREF="AbilityLosses.htm" TARGET="frame_pattern">Ability Loss</A>, <A CLASS="pattern" HREF="DecreasedAbilities.htm" TARGET="frame_pattern">Decreased Abilities</A> can be used to affect the <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A> by raising it while retaining the <A CLASS="pattern" HREF="RightLevelofComplexity.htm" TARGET="frame_pattern">Right Level of Complexity</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="DecreasedAbilities.htm" TARGET="frame_pattern">Decreased Abilities</A> can be used to negatively define <A CLASS="pattern" HREF="OrthogonalUnitDifferentiation.htm" TARGET="frame_pattern">Orthogonal Unit Differentiation</A>. This kind of differentiation typical is an emergent feature due to different levels of <A CLASS="pattern" HREF="Damage.htm" TARGET="frame_pattern">Damage</A> or depletion of <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> between <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> or players in a team.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A>, <A CLASS="pattern" HREF="PlayerBalance.htm" TARGET="frame_pattern">Player Balance</A>, <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A>, <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A>, <A CLASS="pattern" HREF="PerceivedChancetoSucceed.htm" TARGET="frame_pattern">Perceived Chance to Succeed</A>, <A CLASS="pattern" HREF="Characters.htm" TARGET="frame_pattern">Characters</A>, <A CLASS="pattern" HREF="Skills.htm" TARGET="frame_pattern">Skills</A>, <A CLASS="pattern" HREF="OrthogonalUnitDifferentiation.htm" TARGET="frame_pattern">Orthogonal Unit Differentiation</A>, <A CLASS="pattern" HREF="PlayerKilling.htm" TARGET="frame_pattern">Player Killing</A>, <A CLASS="pattern" HREF="LimitedResources.htm" TARGET="frame_pattern">Limited Resources</A>, <A CLASS="pattern" HREF="RightLevelofComplexity.htm" TARGET="frame_pattern">Right Level of Complexity</A>, <A CLASS="pattern" HREF="ImprovedAbilities.htm" TARGET="frame_pattern">Improved Abilities</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A>, <A CLASS="pattern" HREF="LimitedResources.htm" TARGET="frame_pattern">Limited Resources</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A>, <A CLASS="pattern" HREF="ImprovedAbilities.htm" TARGET="frame_pattern">Improved Abilities</A>, <A CLASS="pattern" HREF="BalancingEffects.htm" TARGET="frame_pattern">Balancing Effects</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="IllusionofInfluence.htm" TARGET="frame_pattern">Illusion of Influence</A>, <A CLASS="pattern" HREF="PerceivedChancetoSucceed.htm" TARGET="frame_pattern">Perceived Chance to Succeed</A>, <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A></P>
+
+
+</html>
+

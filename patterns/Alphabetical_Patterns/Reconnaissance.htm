@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Reconnaissance</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Reconnaissance">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Reconnaissance</H2>
+<I>Patrolling a known area in the game world to detect changes.</I>
+<P CLASS="text">The goal in <A CLASS="pattern" HREF="Reconnaissance.htm" TARGET="frame_pattern">Reconnaissance</A> is to get more information about changes happening, or having happened, in a specific place or area. This forces the players to collect information of the whereabouts of the enemy by moving units in the area. Often the game provides special units for this purpose with fast movement and possibility to notices enemy units as longer distances.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Typical examples of the pattern can be found in strategy games where the units have information only about the other units near them. For instance, <I>Sid Meier's Civilization</I> require player to continue moving their units within already explored areas since the movement of enemy units are not detected unless they are near a unit or a city.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>In the board game <I>Space Hulk</I>, the player playing space marines can detect the presences and location of the enemy genestealers in the spaceship but not there exact number, which may make <A CLASS="pattern" HREF="Reconnaissance.htm" TARGET="frame_pattern">Reconnaissance</A> missions necessary to find where enemy buildups are taking place.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The possible reasons for <A CLASS="pattern" HREF="Reconnaissance.htm" TARGET="frame_pattern">Reconnaissance</A> goals are many: locating <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A> that move and are not on <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overviews</A>; finding <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resources</A> that would otherwise be <A CLASS="pattern" HREF="SecretResources.htm" TARGET="frame_pattern">Secret Resources</A> due to bad or non-existent <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overviews</A>, maintaining <A CLASS="pattern" HREF="AreaControl.htm" TARGET="frame_pattern">Area Control</A> over areas that are too large to completely watch from one positions; or to do <A CLASS="pattern" HREF="AttentionSwapping.htm" TARGET="frame_pattern">Attention Swapping</A> between different areas of gameplay.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Designing <A CLASS="pattern" HREF="Reconnaissance.htm" TARGET="frame_pattern">Reconnaissance</A> goals consists of defining the area that has to be searched, how heavy the <A CLASS="pattern" HREF="FogofWar.htm" TARGET="frame_pattern">Fog of War</A> is, what if any game elements can be detected, and the means a player has to observe them. To make the goal have the <I>Right</I> <I>Level of Difficulty</I>, the game space that is to be search is usually not too large and many times a specific route is specified, i. e. making use of the <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A> pattern. What game elements can be detected can either be predetermined or be under the control of other players. The <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A> can be modulated by making use of <A CLASS="pattern" HREF="ProgressIndicators.htm" TARGET="frame_pattern">Progress Indicators</A> thatreveal the percentage of detected game elements or by having <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overviews</A> such as maps providing <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A>. The creation of <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A> that provide good opportunities for observation can achieve similar results.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Players have to notice presences in the game area, similarly to<A CLASS="pattern" HREF="Guard.htm" TARGET="frame_pattern">Guard</A>, but to notice any previous presence can make use of the<A CLASS="pattern" HREF="Memorizing.htm" TARGET="frame_pattern">Memorizing</A> pattern. In the latter case, this can be supported by having many moveable game elements in the game space that may have been moved, by making uses of <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A>, or by letting players set <A CLASS="pattern" HREF="DeadlyTraps.htm" TARGET="frame_pattern">Deadly Traps</A> or <A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarms</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Similar to <A CLASS="pattern" HREF="Guard.htm" TARGET="frame_pattern">Guard</A>, <A CLASS="pattern" HREF="Reconnaissance.htm" TARGET="frame_pattern">Reconnaissance</A> is a goal that may never be completed if there are no enemy game elements to detect.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Reconnaissance.htm" TARGET="frame_pattern">Reconnaissance</A> is a special case of <A CLASS="pattern" HREF="GainInformation.htm" TARGET="frame_pattern">Gain Information</A> relying on the <A CLASS="pattern" HREF="UncertaintyofInformation.htm" TARGET="frame_pattern">Uncertainty of Information</A> of the location or existence of <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A>, and has <A CLASS="pattern" HREF="Stealth.htm" TARGET="frame_pattern">Stealth</A> as its <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goal</A>. <A CLASS="pattern" HREF="Reconnaissance.htm" TARGET="frame_pattern">Reconnaissance</A> requires players to regularly move game elements in order to find <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A> or the <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A> of their presence; this can be seen as a combination of the <A CLASS="pattern" HREF="Guard.htm" TARGET="frame_pattern">Guard</A> and <A CLASS="pattern" HREF="GainInformation.htm" TARGET="frame_pattern">Gain Information</A> goals. <A CLASS="pattern" HREF="Reconnaissance.htm" TARGET="frame_pattern">Reconnaissance</A> is also a <A CLASS="pattern" HREF="ContinuousGoals.htm" TARGET="frame_pattern">Continuous Goal</A> as it should be performed as long as there is a reasonable risk that enemy units have not be detected in a given area. <A CLASS="pattern" HREF="Reconnaissance.htm" TARGET="frame_pattern">Reconnaissance</A> goals of <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A> that are performed through static patterns can require players to perform <A CLASS="pattern" HREF="Rhythm-BasedActions.htm" TARGET="frame_pattern">Rhythm-Based Actions</A> to avoid detection.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="ContinuousGoals.htm" TARGET="frame_pattern">Continuous Goals</A>, <A CLASS="pattern" HREF="GainInformation.htm" TARGET="frame_pattern">Gain Information</A>, <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A>, <A CLASS="pattern" HREF="Stealth.htm" TARGET="frame_pattern">Stealth</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Rhythm-BasedActions.htm" TARGET="frame_pattern">Rhythm-Based Actions</A>, <A CLASS="pattern" HREF="SecretResources.htm" TARGET="frame_pattern">Secret Resources</A>, <A CLASS="pattern" HREF="Guard.htm" TARGET="frame_pattern">Guard</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="AttentionSwapping.htm" TARGET="frame_pattern">Attention Swapping</A>, <A CLASS="pattern" HREF="FogofWar.htm" TARGET="frame_pattern">Fog of War</A>, <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resources</A>, <A CLASS="pattern" HREF="AreaControl.htm" TARGET="frame_pattern">Area Control</A>, <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="DeadlyTraps.htm" TARGET="frame_pattern">Deadly Traps</A>, <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A>, <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A>, <A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarms</A>, <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A>, <A CLASS="pattern" HREF="SecretResources.htm" TARGET="frame_pattern">Secret Resources</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A></P>
+
+
+</html>
+

@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Asynchronous Games</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Asynchronous Games">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Asynchronous Games</H2>
+<I>Games where the players game and play sessions do not necessarily overlap in time.</I>
+<P CLASS="text">The players in these games can start playing the game regardless of the other players and also choose when they want to have their play sessions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>MMORPGs can have thousands of players in a single game instance. The players can join and leave the game whenever they want, and particular players do not have to play the game simultaneously, although there almost always are some other players playing at the same time.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The players do not often play the game at the same time in play-by-mail games, even though in many cases their game sessions are the same. Some massively multiplayer play-by-mail games, such as <I>Quest</I> from KJC Games, share the characteristics of MMORPGs in that the players' game sessions do not have to overlap.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>,<A CLASS="pattern" HREF="Tick-BasedGames.htm" TARGET="frame_pattern">Tick-Based Games</A>, and <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A> are all suitable for <A CLASS="pattern" HREF="AsynchronousGames.htm" TARGET="frame_pattern">Asynchronous Games</A>, although the play session structure has to be designed differently for each case. <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>, such as existing MMORPGs, allow the players to choose when they wish to log in to the game and have real-time play sessions. <A CLASS="pattern" HREF="Tick-BasedGames.htm" TARGET="frame_pattern">Tick-Based Games</A> place a certain time pressure on the players, as they usually have to execute their actions within a given <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limit</A> or lose their chance to influence the game state. Depending on the duration of a single tick, these games share characteristics from both <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A> and <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">One way to add some of the features of <A CLASS="pattern" HREF="AsynchronousGames.htm" TARGET="frame_pattern">Asynchronous Games</A> to <A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A> is to store a record of a single player's performance in a particular game instance, thus allowing other players to compete against the <A CLASS="pattern" HREF="Ghosts.htm" TARGET="frame_pattern">Ghosts</A> of that player's experience.</P>
+<P CLASS="text"></P>
+<P CLASS="text">All <A CLASS="pattern" HREF="AsynchronousGames.htm" TARGET="frame_pattern">Asynchronous Games</A> require some form of <A CLASS="pattern" HREF="CommunicationChannels.htm" TARGET="frame_pattern">Communication Channel</A> to make it possible for the players to affect the game state and, in some cases, communicate with one another. The use of <A CLASS="pattern" HREF="PublicInformation.htm" TARGET="frame_pattern">Public Information</A> is restricted by <A CLASS="pattern" HREF="AsynchronousGames.htm" TARGET="frame_pattern">Asynchronous Games</A>; information that can be revealed in <A CLASS="pattern" HREF="SynchronousGames.htm" TARGET="frame_pattern">Synchronous Games</A> to <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A> because players do not have sufficient time to process the information can become sensitive in <A CLASS="pattern" HREF="AsynchronousGames.htm" TARGET="frame_pattern">Asynchronous Games</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">Game instances of <A CLASS="pattern" HREF="AsynchronousGames.htm" TARGET="frame_pattern">Asynchronous Games</A> typically have quite long lifetimes. The players have, to some extent, <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A> as to when they wish to play the game and to which extent they want to influence the progress in the game. These games almost universally require the use of <A CLASS="pattern" HREF="DedicatedGameFacilitators.htm" TARGET="frame_pattern">Dedicated Game Facilitators</A> to maintain the game state within a <A CLASS="pattern" HREF="PersistentGameWorlds.htm" TARGET="frame_pattern">Persistent Game World</A>. The main exceptions are games where <A CLASS="pattern" HREF="Ghosts.htm" TARGET="frame_pattern">Ghosts</A> are used, although it can be argued that <A CLASS="pattern" HREF="Ghosts.htm" TARGET="frame_pattern">Ghosts</A> are persistent parts of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> over different players' game sessions. The players can scatter their play sessions over a long period of time, in one sense, meaning that there is <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A> between the sessions. <A CLASS="pattern" HREF="AsynchronousGames.htm" TARGET="frame_pattern">Asynchronous Games</A>, however, are constructed in such way that <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A> between the play sessions is not necessarily perceived as such by the players, as they do not have to intentionally wait for the other players to perform their actions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A>, <A CLASS="pattern" HREF="PersistentGameWorlds.htm" TARGET="frame_pattern">Persistent Game Worlds</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="DedicatedGameFacilitators.htm" TARGET="frame_pattern">Dedicated Game Facilitators</A>, <A CLASS="pattern" HREF="Ghosts.htm" TARGET="frame_pattern">Ghosts</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Tick-BasedGames.htm" TARGET="frame_pattern">Tick-Based Games</A>, <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A>, <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>, <A CLASS="pattern" HREF="CommunicationChannels.htm" TARGET="frame_pattern">Communication Channels</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="PublicInformation.htm" TARGET="frame_pattern">Public Information</A></P>
+
+
+</html>
+

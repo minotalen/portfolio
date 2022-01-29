@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Communication Channels</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Communication Channels">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Communication Channels</H2>
+<I>Communication Channels are the medium and the methods players can use to send messages to other players.</I>
+<P CLASS="text">The game itself can be a <A CLASS="pattern" HREF="CommunicationChannels.htm" TARGET="frame_pattern">Communication Channel</A>: players can send "messages" to other players by making changes to the game state. This lowest level of communication does not necessarily have interesting social interaction between the players. More interesting situations happen when there is a possibility for verbal and especially non-verbal communication in addition to just sharing the game state.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>In <I>Pictionary</I>, teams score points when members of the team guess correctly the words that one of the members tries to draw within a time limit. The player doing the drawing is not allowed to use any verbal communication. Drawing and non-verbal signs, such as gestures, are the only allowed methods of communication for that player. The players trying to guess the word are, of course, allowed to use verbal communication.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Current MMORPGs usually provide many different kinds of <A CLASS="pattern" HREF="CommunicationChannels.htm" TARGET="frame_pattern">Communication Channels</A> for the players, from chat channels to predefined gestures for the players' <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A>. Players can, of course, use <A CLASS="pattern" HREF="CommunicationChannels.htm" TARGET="frame_pattern">Communication Channels</A>, such as IRC and even telephones, which are not part of the game system itself.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">For the sake of this brief discussion, the communication methods and channels and social situations are classified in terms of three rather crude and slightly interdependent dichotomies: face to face versus mediated, synchronous versus asynchronous, and verbal versus non-verbal. All these also use a simple model of communication based on the sender sending a message through a channel to the (potential) receiver.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Face-to-face situations occur when players share the same physical location. This is the case for almost all traditional and more current games from <I>Hide &amp; Seek</I> to <I>Chess</I> to <I>Pictionary</I>. In face-to-face situations, players use natural non-verbal cues, such as gestures and facial expressions---in many cases unconsciously---as <A CLASS="pattern" HREF="IndirectInformation.htm" TARGET="frame_pattern">Indirect Information</A> to determine the current situation. <I>Poker</I> is perhaps the best example of a game where these natural social cues present only in face-to-face situations have an extremely strong impact on the game play experience. Mediated communication is the opposite: the players are not (necessarily) sharing the same physical location, and the communication between the players is mediated by, for example, semaphores, telephone lines, or computer networks, which all can be considered part of a <A CLASS="pattern" HREF="DedicatedGameFacilitators.htm" TARGET="frame_pattern">Dedicated Game Facilitator</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The communication between players can be either synchronous or asynchronous. In synchronous communication players share the situation as there is no significant delay in communication, and the situation usually requires attention from all the participants. Asynchronous communication can have time delays of hours, days, or in extreme cases, millennia between sending the message and receiving it. Asynchronous communication always has to be mediated, in contrast to face-to-face communication where there cannot be time delays between sending and receiving the message. It is possible, however, to devise a situation where there is an enforced time delay in respondingto the message in face-to-face situations using, for example, one-directional mirrors, but this area might remain marginal in commercial games.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Verbal communication is based on using a shared language for messages. The simplest case, of course, is physically talking to other players. Forms of non-verbal communication range from gestures and facial expressions in face-to-face situations to visual messages such as drawings, diagrams, and animations. As the <I>Pictionary</I> example demonstrated, it is possible to base a whole game on requiring players to communicate by using <A CLASS="pattern" HREF="AsymmetricAbilities.htm" TARGET="frame_pattern">Asymmetric Abilities</A>. Game systems, as <A CLASS="pattern" HREF="DedicatedGameFacilitators.htm" TARGET="frame_pattern">Dedicated Game Facilitators</A>, often provide and control the <A CLASS="pattern" HREF="CommunicationChannels.htm" TARGET="frame_pattern">Communication Channels</A> available to the players as in most current MMORPGs. In these cases, the game system can even manipulate the characteristics of the <A CLASS="pattern" HREF="CommunicationChannels.htm" TARGET="frame_pattern">Communication Channels</A> to cause, for example, even more <A CLASS="pattern" HREF="UncertaintyofInformation.htm" TARGET="frame_pattern">Uncertainty of Information</A> by garbling the messages. The nature of <A CLASS="pattern" HREF="CommunicationChannels.htm" TARGET="frame_pattern">Communication Channels</A> used in <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A> and <A CLASS="pattern" HREF="SynchronousGames.htm" TARGET="frame_pattern">Synchronous Games</A> depends on the pace of the game time.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">Existence and use of <A CLASS="pattern" HREF="CommunicationChannels.htm" TARGET="frame_pattern">Communication Channels</A> is a prerequisite for any <A CLASS="pattern" HREF="SocialInteraction.htm" TARGET="frame_pattern">Social Interaction</A> between players and can heavily influence how <A CLASS="pattern" HREF="SocialOrganizations.htm" TARGET="frame_pattern">Social Organizations</A> emerge or are maintained. As <A CLASS="pattern" HREF="IndirectInformation.htm" TARGET="frame_pattern">Indirect Information</A> requires that information is first translated and then transmitted to players, it also naturally requires that there are <A CLASS="pattern" HREF="CommunicationChannels.htm" TARGET="frame_pattern">Communication Channels</A> available to transmit the information. <A CLASS="pattern" HREF="CommunicationChannels.htm" TARGET="frame_pattern">Communication Channels</A> can also cause <A CLASS="pattern" HREF="UncertaintyofInformation.htm" TARGET="frame_pattern">Uncertainty of Information</A> for the receiver, if they have disturbances (called <I>noise</I> in technical contexts) or if the sender can intentionally send false messages. However, <A CLASS="pattern" HREF="CommunicationChannels.htm" TARGET="frame_pattern">Communication Channels</A> can also be used to ensure that players only get <A CLASS="pattern" HREF="DirectInformation.htm" TARGET="frame_pattern">Direct Information</A> about the game state, without any chance of information being hidden or changed.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Many cases of <A CLASS="pattern" HREF="PublicInformation.htm" TARGET="frame_pattern">Public Information</A> also require that the game state is compressed and translated and then broadcast or otherwise transmitted to the <A CLASS="pattern" HREF="Spectators.htm" TARGET="frame_pattern">Spectators</A>. Free use of <A CLASS="pattern" HREF="CommunicationChannels.htm" TARGET="frame_pattern">Communication Channels</A> can also cause social problems within the game in situations where communication is mediated. In order to alleviate this problem, many games that provide chat systems allow players to ban, mute, or otherwise ignore players who use the <A CLASS="pattern" HREF="CommunicationChannels.htm" TARGET="frame_pattern">Communication Channels</A> inappropriately.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="DirectInformation.htm" TARGET="frame_pattern">Direct Information</A>, <A CLASS="pattern" HREF="IndirectInformation.htm" TARGET="frame_pattern">Indirect Information</A>, <A CLASS="pattern" HREF="UncertaintyofInformation.htm" TARGET="frame_pattern">Uncertainty of Information</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>, <A CLASS="pattern" HREF="SocialOrganizations.htm" TARGET="frame_pattern">Social Organizations</A>, <A CLASS="pattern" HREF="AsynchronousGames.htm" TARGET="frame_pattern">Asynchronous Games</A>, <A CLASS="pattern" HREF="SynchronousGames.htm" TARGET="frame_pattern">Synchronous Games</A>, <A CLASS="pattern" HREF="PublicInformation.htm" TARGET="frame_pattern">Public Information</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="DedicatedGameFacilitators.htm" TARGET="frame_pattern">Dedicated Game Facilitators</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="AsymmetricAbilities.htm" TARGET="frame_pattern">Asymmetric Abilities</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

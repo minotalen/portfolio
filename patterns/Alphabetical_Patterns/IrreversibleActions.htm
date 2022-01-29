@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Irreversible Actions</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Irreversible Actions">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Irreversible Actions</H2>
+<I>Actions whose effect on the game state cannot be undone.</I>
+<P CLASS="text">All actions in a game affect the game state but many may be countered by another action, for example moving in one direction and then moving the same distance in the opposite direction. The actions that do not have other actions that can revert the game state back to its original state are <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The Ko (and meta Ko) rule in <I>Go</I> is used to make it impossible for the game to run into infinite loops.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Pushing a box into a corner in <I>Sokoban</I> means that the box cannot be moved from there, as the boxes can only be pushed and not pulled.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">Making actions into <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A> can be done by simply making sure that all other actions in the whole game design do not affect a specific part of the game state. Other actions may affect that part of the game state as long as all actions affect it in the same way or direction. Other ways of making <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A> are to make the actions use <A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A> or those that give players information. Designed <A CLASS="pattern" HREF="Surprises.htm" TARGET="frame_pattern">Surprises</A> are thus a form of <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A>, and since they are a form of <A CLASS="pattern" HREF="Trans-GameInformation.htm" TARGET="frame_pattern">Trans-Game Information</A>, they areeven <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A> across game sessions. Actions whose events provide <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A> are likewise <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A> since these also generate <A CLASS="pattern" HREF="Trans-GameInformation.htm" TARGET="frame_pattern">Trans-Game Information</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The possibility of <I>Saving</I> makes it impossible to have totally <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A> in a game but forces players to use <A CLASS="pattern" HREF="Save-LoadCycles.htm" TARGET="frame_pattern">Save-Load Cycles</A>. This can be countered to a certain extent by causing actions to have <A CLASS="pattern" HREF="DelayedEffects.htm" TARGET="frame_pattern">Delayed Effects</A> at the cost of <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Buttons.htm" TARGET="frame_pattern">Buttons</A> and <A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarms</A> are game elements that can be used to enforce <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A>, in the first case by not being able to be activated more than once and in the second case by not being able to be deactivated once activated. A typical example of a class of <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A> is <A CLASS="pattern" HREF="LeapsofFaith.htm" TARGET="frame_pattern">Leaps of Faith</A>. Making the <A CLASS="pattern" HREF="TransferofControl.htm" TARGET="frame_pattern">Transfer of Control</A> of <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> into <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A> is part of creating <A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">Every <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Action</A> performed is a closure, and since there is no <A CLASS="pattern" HREF="Reversability.htm" TARGET="frame_pattern">Reversability</A> to their effect, they do not promote <A CLASS="pattern" HREF="Experimenting.htm" TARGET="frame_pattern">Experimenting</A> and make <A CLASS="pattern" HREF="PuzzleSolving.htm" TARGET="frame_pattern">Puzzle Solving</A> more difficult. Rather, they promote <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A> and may cause <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A> are required to progress <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A> and can be used to provide a condensed history of gameplay in a game session without losing any events that affected the final outcome. Leaving a <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Level</A> and not being able to come back to it is an example of a <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structure</A> can be maintained by an <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Action</A>. An example of how <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A> can advance the <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structure</A> in <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A> without relying on <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Levels</A> is to move the places where <A CLASS="pattern" HREF="Spawning.htm" TARGET="frame_pattern">Spawning</A> occurs.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Not all <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A> are <A CLASS="pattern" HREF="Ultra-PowerfulEvents.htm" TARGET="frame_pattern">Ultra-Powerful Events</A>, as players may hinder the effect of the actions from taking place if the actions are <A CLASS="pattern" HREF="ExtendedActions.htm" TARGET="frame_pattern">Extended Actions</A> and <A CLASS="pattern" HREF="InterruptibleActions.htm" TARGET="frame_pattern">Interruptible Actions</A>. Likewise, the actions that caused the <A CLASS="pattern" HREF="Ultra-PowerfulEvents.htm" TARGET="frame_pattern">Ultra-Powerful Events</A> do not have to be <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A> since another action can counter the event after it is completed. An example of this is <A CLASS="pattern" HREF="ShrinkingGameWorld.htm" TARGET="frame_pattern">Shrinking Game Worlds</A>: these are usually <A CLASS="pattern" HREF="Ultra-PowerfulEvents.htm" TARGET="frame_pattern">Ultra-Powerful Events</A> that cannot be affected while they are occurring but after the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> has become smaller it may at a later stage expand again.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A>, <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A>, <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Buttons.htm" TARGET="frame_pattern">Buttons</A>, <A CLASS="pattern" HREF="Ultra-PowerfulEvents.htm" TARGET="frame_pattern">Ultra-Powerful Events</A>, <A CLASS="pattern" HREF="ShrinkingGameWorld.htm" TARGET="frame_pattern">Shrinking Game World</A>, <A CLASS="pattern" HREF="Spawning.htm" TARGET="frame_pattern">Spawning</A>, <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Levels</A>, <A CLASS="pattern" HREF="TransferofControl.htm" TARGET="frame_pattern">Transfer of Control</A>, <A CLASS="pattern" HREF="PuzzleSolving.htm" TARGET="frame_pattern">Puzzle Solving</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="ExtendedActions.htm" TARGET="frame_pattern">Extended Actions</A>, <A CLASS="pattern" HREF="Surprises.htm" TARGET="frame_pattern">Surprises</A>, <A CLASS="pattern" HREF="LeapsofFaith.htm" TARGET="frame_pattern">Leaps of Faith</A>, <A CLASS="pattern" HREF="Trans-GameInformation.htm" TARGET="frame_pattern">Trans-Game Information</A>, <A CLASS="pattern" HREF="Non-RenewableResources.htm" TARGET="frame_pattern">Non-Renewable Resources</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="InterruptibleActions.htm" TARGET="frame_pattern">Interruptible Actions</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A>, <A CLASS="pattern" HREF="Save-LoadCycles.htm" TARGET="frame_pattern">Save-Load Cycles</A>, <A CLASS="pattern" HREF="Experimenting.htm" TARGET="frame_pattern">Experimenting</A></P>
+
+
+</html>
+

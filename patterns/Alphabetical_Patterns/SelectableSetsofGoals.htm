@@ -1,0 +1,59 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Selectable Sets of Goals</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Selectable Sets of Goals">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Selectable Sets of Goals</H2>
+<I>The player can select the goals he tries to achieve in the game from a set of available goals.</I>
+<P CLASS="text">The selection of goals from which players can choose can either be handled within the game system, meaning that players have to explicitly choose the goals, or it can be left open so that players do not have to decide at any given time exactly what goals to strive for. The latter also means that the player is free to change the commitment to different goals during the gameplay.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Traversing the technology tree in the computer game <I>Civilization</I> requires players to select goals defining what kind of technology to develop. Beyond what technology to develop next, players can also implicitly select collections of technology goals to reach as goals in order to match later requirements of advanced technologies.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The different possibilities for scoring in the board game <I>Settlers of Catan</I> allow players to select from several different goals to achieve the overarching goal of reaching a certain amount of points.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The different worlds in <I>Super Mario 64</I> offer different sets of goals providing players with selectable sets of <A CLASS="pattern" HREF="SelectableSetsofGoals.htm" TARGET="frame_pattern">Selectable Sets of Goals</A>. The player is also free to move within these worlds and goals without needing to complete them in any specific order.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">If the player is forced to choose one or several <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A> from the set, these goals can be seen as <A CLASS="pattern" HREF="Investments.htm" TARGET="frame_pattern">Investments</A> or as the use of <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A> patterns depending on the varying <A CLASS="pattern" HREF="Rewards.htm" TARGET="frame_pattern">Rewards</A> and <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A> associated with the goals. An example of this is when the game allows <A CLASS="pattern" HREF="AreaControl.htm" TARGET="frame_pattern">Area Control</A> over several different areas if players complete <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A> goals to these areas. Knowledge of which goals have been chosen can be <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A> for other players while giving the possibility of not revealing these options and choices allows for players to have secret tactics. <I>Selectable Set of Goals</I> provide <A CLASS="pattern" HREF="VariedGameplay.htm" TARGET="frame_pattern">Varied Gameplay</A> if the different goals are sufficiently different, for example, by requiring different skill sets.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Using <I>Selectable Set of Goals</I> without <A CLASS="pattern" HREF="DynamicGoalCharacteristics.htm" TARGET="frame_pattern">Dynamic Goal Characteristics</A> means that the player has to select the goals at the start of the game and then stick to them. Most games, however, use this pattern with <A CLASS="pattern" HREF="DynamicGoalCharacteristics.htm" TARGET="frame_pattern">Dynamic Goal Characteristics</A> in such way that the player can modify the set, if need be, during the gameplay. The goals that can be chosen do not all have to exist at the start of the game; some may be <A CLASS="pattern" HREF="EphemeralGoals.htm" TARGET="frame_pattern">Ephemeral Goals</A>. The player is, especially in adventure games, seldom given an explicit choice of the available goals but rather has the goals of getting more information about the availability of the others goals.</P>
+<P CLASS="text"></P>
+<P CLASS="text">If the goals within the <I>Selectable Set of Goals</I> are unknown but the player somehow knows there are several different solutions, the game can promote <A CLASS="pattern" HREF="Replayability.htm" TARGET="frame_pattern">Replayability</A>, as the player is encouraged to try to find the different goals.</P>
+<P CLASS="text"></P>
+<P CLASS="text">One way to force players to select one or just a few of the possible goals in a <I>Selectable Set of Goals</I> is to define the goals as different <A CLASS="pattern" HREF="https://tecfa.unige.ch/tecfa/maltt/VIP/Ressources/Articles/Game%20Design%20Patterns/collection/Alphabetical_Patterns/Configuration.htm" TARGET="frame_pattern">Configurations,</A> which still require the use of the same game elements.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">Having a <I>Selectable Set of Goals</I> offers players a wide range of activities and thereby makes <A CLASS="pattern" HREF="VariedGameplay.htm" TARGET="frame_pattern">Varied Gameplay</A> possible. The possibility of players to choose goals according to their abilities and <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> can be a <A CLASS="pattern" HREF="BalancingEffects.htm" TARGET="frame_pattern">Balancing Effect</A> and can make them plan and work towards certain states before selecting goals.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The choice of goals can either be predetermined before the game starts, allowing the designer to have full control of the set to promote <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A> for the players, or the goals can be generated during gameplay, hindering <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A>. The selection of the goals can be used as a <A CLASS="pattern" HREF="BalancingEffects.htm" TARGET="frame_pattern">Balancing Effect</A> by setting the difficulty level of the goals according to the player position in the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="SelectableSetsofGoals.htm" TARGET="frame_pattern">Selectable Sets of Goals</A> may force players to make <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A> choices depending on how the goals relate to each other but also to select the <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A>. <A CLASS="pattern" HREF="IncompatibleGoals.htm" TARGET="frame_pattern">Incompatible Goals</A> may limit the need for <A CLASS="pattern" HREF="AttentionSwapping.htm" TARGET="frame_pattern">Attention Swapping</A>, but if the goals are <A CLASS="pattern" HREF="ExcludingGoals.htm" TARGET="frame_pattern">Excluding Goals</A>, players need to make <A CLASS="pattern" HREF="Tradeoffs.htm" TARGET="frame_pattern">Tradeoffs</A> between the difficulty of completing the different goals and the rewards they give.</P>
+<P CLASS="text"></P>
+<P CLASS="text">If the player only has to complete one or some of the goals, the other goals will in effect be <A CLASS="pattern" HREF="OptionalGoals.htm" TARGET="frame_pattern">Optional Goals</A> and offer players a <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A> within the limits the game designer chooses. If all goals have to be achieved, the set is an instance of the <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> goal pattern, but players may have the option of choosing the order in which to complete the goals, thereby making use of potential <A CLASS="pattern" HREF="SupportingGoals.htm" TARGET="frame_pattern">Supporting Goals</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">As the player can have different gameplay experiences depending on the choice of goals, having a set of goals can provide <A CLASS="pattern" HREF="Replayability.htm" TARGET="frame_pattern">Replayability</A>. In all cases, <I>Selectable Set of Goals</I> are parts of a <A CLASS="pattern" HREF="HierarchyofGoals.htm" TARGET="frame_pattern">Hierarchy of Goals</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Replayability.htm" TARGET="frame_pattern">Replayability</A>, <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A>, <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A>, <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A>, <A CLASS="pattern" HREF="VariedGameplay.htm" TARGET="frame_pattern">Varied Gameplay</A>, <A CLASS="pattern" HREF="Tradeoffs.htm" TARGET="frame_pattern">Tradeoffs</A>, <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="HierarchyofGoals.htm" TARGET="frame_pattern">Hierarchy of Goals</A>, <A CLASS="pattern" HREF="UnknownGoals.htm" TARGET="frame_pattern">Unknown Goals</A>, <A CLASS="pattern" HREF="ExcludingGoals.htm" TARGET="frame_pattern">Excluding Goals</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="https://tecfa.unige.ch/tecfa/maltt/VIP/Ressources/Articles/Game%20Design%20Patterns/collection/Alphabetical_Patterns/Configuration.htm" TARGET="frame_pattern">Configuration</A>, <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A>, <A CLASS="pattern" HREF="OptionalGoals.htm" TARGET="frame_pattern">Optional Goals</A>, <A CLASS="pattern" HREF="AreaControl.htm" TARGET="frame_pattern">Area Control</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="EphemeralGoals.htm" TARGET="frame_pattern">Ephemeral Goals</A>, <A CLASS="pattern" HREF="IncompatibleGoals.htm" TARGET="frame_pattern">Incompatible Goals</A>, <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A></P>
+
+
+</html>
+

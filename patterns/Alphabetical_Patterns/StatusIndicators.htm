@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Status Indicators</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Status Indicators">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Status Indicators</H2>
+<I>Players are given information about a certain part of the game state or other players through other means than observing a game element</I>
+<P CLASS="text">Some parts of the game state, especially abstract game elements, cannot easily be visualized within the game through game elements. To present these types of information, the game can either augment the presentation of game elements with extra information or provide areas of the interface which are dedicated for showing this information.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>health bar in first-person shooters or fighting games are common examples of <A CLASS="pattern" HREF="StatusIndicators.htm" TARGET="frame_pattern">Status Indicators</A> that are part of the interface of the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The Light Gem in the <I>Thief</I> series indicates to the players how visible they are, and thus the risk of being detected by guards.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>the jewel-shaped marker in <I>The Sims</I> is a <A CLASS="pattern" HREF="StatusIndicators.htm" TARGET="frame_pattern">Status Indicator</A> that shows which character is controlled by the player.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="StatusIndicators.htm" TARGET="frame_pattern">Status Indicators</A> are an option to <A CLASS="pattern" HREF="Book-KeepingTokens.htm" TARGET="frame_pattern">Book-Keeping Tokens</A> in games that have <A CLASS="pattern" HREF="DedicatedGameFacilitators.htm" TARGET="frame_pattern">Dedicated Game Facilitators</A>. Although they are not game elements they may be observed within <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game Worlds</A> when they are instantiated through dynamic <A CLASS="pattern" HREF="OutstandingFeatures.htm" TARGET="frame_pattern">Outstanding Features</A> in the environment.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The most common information shown by <A CLASS="pattern" HREF="StatusIndicators.htm" TARGET="frame_pattern">Status Indicators</A> are <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A> values, amount of <A CLASS="pattern" HREF="Damage.htm" TARGET="frame_pattern">Damage</A> received, remaining <A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A>, time remaining of <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A>, and the position of <A CLASS="pattern" HREF="FocusLoci.htm" TARGET="frame_pattern">Focus Loci</A>. However, <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A> values may be regarded as <A CLASS="pattern" HREF="ProgressIndicators.htm" TARGET="frame_pattern">Progress Indicators</A> in cases where one cannot lose points or when one is striving towards a fixed number. The last of these typical uses it to augment the presentation of game elements and may disturb <A CLASS="pattern" HREF="Immersion.htm" TARGET="frame_pattern">Immersion</A>, something the two others avoid by presenting information outside the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>. The other two may, depending on their importance, also cause loss of <A CLASS="pattern" HREF="Immersion.htm" TARGET="frame_pattern">Immersion</A> as they can be attention grabbingif they provide information that is important enough.</P>
+<P CLASS="text"></P>
+<P CLASS="text">In <A CLASS="pattern" HREF="Race.htm" TARGET="frame_pattern">Races</A>, <A CLASS="pattern" HREF="StatusIndicators.htm" TARGET="frame_pattern">Status Indicators</A> are usually used together with <A CLASS="pattern" HREF="ProgressIndicators.htm" TARGET="frame_pattern">Progress Indicators</A> so players can know both the relative positions between players and how close they are to finishing the <A CLASS="pattern" HREF="Race.htm" TARGET="frame_pattern">Race</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">Like most other forms of indicators, <A CLASS="pattern" HREF="StatusIndicators.htm" TARGET="frame_pattern">Status Indicators</A> provide ways for game designers to give players <A CLASS="pattern" HREF="DirectInformation.htm" TARGET="frame_pattern">Direct Information</A> about the game state. <A CLASS="pattern" HREF="StatusIndicators.htm" TARGET="frame_pattern">Status Indicators</A> are more attention grabbingthan other forms of indicators since the information they usually represent can change quicker and in more ways than with other indicators, and can thereby quickly cause <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A>. They can provide <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overviews</A> on <A CLASS="pattern" HREF="First-PersonViews.htm" TARGET="frame_pattern">First-Person Views</A> to give those views characteristics closer to those of <A CLASS="pattern" HREF="Third-PersonViews.htm" TARGET="frame_pattern">Third-Person Views</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">A special type of <A CLASS="pattern" HREF="StatusIndicators.htm" TARGET="frame_pattern">Status Indicators</A> is those that show <A CLASS="pattern" HREF="SocialStatuses.htm" TARGET="frame_pattern">Social Status</A>. These do not necessarily give information about the game state but can be important for maintaining <A CLASS="pattern" HREF="SocialOrganizations.htm" TARGET="frame_pattern">Social Organizations</A> within game sessions or based upon the games.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="SocialStatuses.htm" TARGET="frame_pattern">Social Statuses</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Damage.htm" TARGET="frame_pattern">Damage</A>, <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A>, <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A>, <A CLASS="pattern" HREF="First-PersonViews.htm" TARGET="frame_pattern">First-Person Views</A>, <A CLASS="pattern" HREF="FocusLoci.htm" TARGET="frame_pattern">Focus Loci</A>, <A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A>, <A CLASS="pattern" HREF="SocialOrganizations.htm" TARGET="frame_pattern">Social Organizations</A>, <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A>, <A CLASS="pattern" HREF="Race.htm" TARGET="frame_pattern">Race</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A>, <A CLASS="pattern" HREF="OutstandingFeatures.htm" TARGET="frame_pattern">Outstanding Features</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="DirectInformation.htm" TARGET="frame_pattern">Direct Information</A>, <A CLASS="pattern" HREF="PublicInformation.htm" TARGET="frame_pattern">Public Information</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="UncertaintyofInformation.htm" TARGET="frame_pattern">Uncertainty of Information</A>, <A CLASS="pattern" HREF="Immersion.htm" TARGET="frame_pattern">Immersion</A></P>
+
+
+</html>
+

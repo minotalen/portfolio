@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Last Man Standing</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Last Man Standing">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Last Man Standing</H2>
+<I>The goal of being the last survivor.</I>
+<P CLASS="text">Many games have the players compete against each other in gameplay where the players are one after one eliminated. As these games usually reward the last player remaining, this give the players to metaphorically be the <A CLASS="pattern" HREF="LastManStanding.htm" TARGET="frame_pattern">Last Man Standing</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Deathmatches in first-person shooters can be seen as example of un-winnable <A CLASS="pattern" HREF="LastManStanding.htm" TARGET="frame_pattern">Last Man Standing</A> goals since the eliminated opponents respawn.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Russian Roulette</I> is the archetypical <A CLASS="pattern" HREF="LastManStanding.htm" TARGET="frame_pattern">Last Man Standing</A> goal.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Poker</I> can be seen as using the pattern since players may be eliminate from a betting turn by folding and there can only be one winning hand each turn.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The live-action game <I>Killer</I> as each player given the assignment of assassinating one other player in a circular arrangement. The completion of an assignment results in one getting the eliminated players assignment and the game continues until there is only one player left.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">Designing <A CLASS="pattern" HREF="LastManStanding.htm" TARGET="frame_pattern">Last Man Standing</A> consists either of creating direct <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> goals towards other players and giving all players those goals or of designing <A CLASS="pattern" HREF="Overcome.htm" TARGET="frame_pattern">Overcome</A> goals where the <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalty</A> of losing is elimination.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The elimination of a player in <A CLASS="pattern" HREF="LastManStanding.htm" TARGET="frame_pattern">Last Man Standing</A> does not have to immediately make it impossible to complete the goal. If each player has a <A CLASS="pattern" HREF="LimitedResources.htm" TARGET="frame_pattern">Limited Resource</A>, typically <A CLASS="pattern" HREF="Lives.htm" TARGET="frame_pattern">Lives</A>, which determines if the player can continue striving towards the goal, <A CLASS="pattern" HREF="LastManStanding.htm" TARGET="frame_pattern">Last Man Standing</A> allows players to form <A CLASS="pattern" HREF="DynamicAlliances.htm" TARGET="frame_pattern">Dynamic Alliances</A> against those who have the most <A CLASS="pattern" HREF="Lives.htm" TARGET="frame_pattern">Lives</A> or resources remaining.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">The goal in <A CLASS="pattern" HREF="LastManStanding.htm" TARGET="frame_pattern">Last Man Standing</A> is to <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> all opponents, usually fellow competitors, while being able to <A CLASS="pattern" HREF="Survive.htm" TARGET="frame_pattern">Survive,</A> creating natural <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A> situations between the players. <A CLASS="pattern" HREF="LastManStanding.htm" TARGET="frame_pattern">Last Man Standing</A> can be seen as the compound goal of having a set of <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> goals as a <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A>. Depending on if the elimination is from a round in the game or from the whole game, which can be modulated through the use of <A CLASS="pattern" HREF="Lives.htm" TARGET="frame_pattern">Lives</A>, the pattern may or may not support <A CLASS="pattern" HREF="PlayerElimination.htm" TARGET="frame_pattern">Player Elimination</A>. When the different events leading to player being eliminated are, or can be viewed as, separate games or parts of gameplay, <A CLASS="pattern" HREF="LastManStanding.htm" TARGET="frame_pattern">Last Man Standing</A> can be treated as a <A CLASS="pattern" HREF="Tournaments.htm" TARGET="frame_pattern">Tournament</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="LastManStanding.htm" TARGET="frame_pattern">Last Man Standing</A> provides a <A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goal</A> with <A CLASS="pattern" HREF="Competition.htm" TARGET="frame_pattern">Competition</A> for all players, having as many closures as the number of players (or <A CLASS="pattern" HREF="Lives.htm" TARGET="frame_pattern">Lives</A> of the players) minus one. The value of these closures naturally increases as the number of players competing decrease, making the goal support <A CLASS="pattern" HREF="Higher-LevelClosuresasGameplayProgresses.htm" TARGET="frame_pattern">Higher-Level Closures as Gameplay Progresses</A>. As the elimination of one player decreases or voids that player's chance of fulfilling the goal, <A CLASS="pattern" HREF="LastManStanding.htm" TARGET="frame_pattern">Last Man Standing</A> is an <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goal</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A>, <A CLASS="pattern" HREF="Competition.htm" TARGET="frame_pattern">Competition</A>, <A CLASS="pattern" HREF="Overcome.htm" TARGET="frame_pattern">Overcome</A>, <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A>, <A CLASS="pattern" HREF="Survive.htm" TARGET="frame_pattern">Survive</A>, <A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goals</A>, <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goals</A>, <A CLASS="pattern" HREF="Higher-LevelClosuresasGameplayProgresses.htm" TARGET="frame_pattern">Higher-Level Closures as Gameplay Progresses</A>, <A CLASS="pattern" HREF="DynamicAlliances.htm" TARGET="frame_pattern">Dynamic Alliances</A>, <A CLASS="pattern" HREF="Tournaments.htm" TARGET="frame_pattern">Tournaments</A></P>
+
+<P CLASS="italic">Modulates: </P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Lives.htm" TARGET="frame_pattern">Lives</A>, <A CLASS="pattern" HREF="LimitedResources.htm" TARGET="frame_pattern">Limited Resources</A>, <A CLASS="pattern" HREF="PlayerElimination.htm" TARGET="frame_pattern">Player Elimination</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

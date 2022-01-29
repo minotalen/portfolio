@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Interruptible Actions</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Interruptible Actions">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Interruptible Actions</H2>
+<I>Actions that can be interrupted before they affect the game state.</I>
+<P CLASS="text">Just because players have performed, or started to perform, actions does not mean that they will affect the game state. Games that allow actions to be interrupted before they affect the game state, either partially or fully, have <A CLASS="pattern" HREF="InterruptibleActions.htm" TARGET="frame_pattern">Interruptible Actions</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Most fighting games allow players to block opponent's attacks, effectively making the attacks interruptible.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>In <I>RoboRally</I>, players choose how their robots should move by deciding a sequence of programming cards. These are the actions the robot will perform, but since other robots' movement may push the robot around, the intended actions are interruptible.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">In <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>, <A CLASS="pattern" HREF="InterruptibleActions.htm" TARGET="frame_pattern">Interruptible Actions</A> are either <A CLASS="pattern" HREF="ExtendedActions.htm" TARGET="frame_pattern">Extended Actions</A> with <A CLASS="pattern" HREF="DelayedEffects.htm" TARGET="frame_pattern">Delayed Effects</A>, so that other actions can be performed before the effect of the <A CLASS="pattern" HREF="InterruptibleActions.htm" TARGET="frame_pattern">Interruptible Actions</A> takes place, or that the interrupting actions can be started before the <A CLASS="pattern" HREF="InterruptibleActions.htm" TARGET="frame_pattern">Interruptible Actions</A>. In <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A>, special <A CLASS="pattern" HREF="TurnTaking.htm" TARGET="frame_pattern">Turn Taking</A> sequences may be necessary to describe in rules for how actions can be interrupted, even though these sequences are skipped in many turns.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="InterruptibleActions.htm" TARGET="frame_pattern">Interruptible Actions</A> can be used to modulate <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A> so that permanent effects on the game state cannot be initiated by one player without other players having a chance to affect this, thus providing <A CLASS="pattern" HREF="BalancingEffects.htm" TARGET="frame_pattern">Balancing Effects</A> in games. This is common in fighting games where players can block attacks or interrupt <A CLASS="pattern" HREF="Combos.htm" TARGET="frame_pattern">Combos</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">In games with <A CLASS="pattern" HREF="Negotiation.htm" TARGET="frame_pattern">Negotiation</A>, for example <A CLASS="pattern" HREF="Trading.htm" TARGET="frame_pattern">Trading</A>, having the <A CLASS="pattern" HREF="Negotiation.htm" TARGET="frame_pattern">Negotiation</A> be an <A CLASS="pattern" HREF="InterruptibleActions.htm" TARGET="frame_pattern">Interruptible Action</A> allows several parts to simultaneously engage in <A CLASS="pattern" HREF="Negotiation.htm" TARGET="frame_pattern">Negotiation</A> and lets them immediately respond to the proposals of other players.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Being able to interrupt an action can be a <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Ability</A>. This is most common in card games but can also be found in situations where judges are used to modulate <A CLASS="pattern" HREF="Negotiation.htm" TARGET="frame_pattern">Negotiation</A>. Depending on the game, it may be allowed to interrupt <A CLASS="pattern" HREF="Storytelling.htm" TARGET="frame_pattern">Storytelling</A> and this can be used to make the story into a collaborative action.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">As completing an <A CLASS="pattern" HREF="InterruptibleActions.htm" TARGET="frame_pattern">Interruptible Action</A> can be a goal in itself, all <A CLASS="pattern" HREF="InterruptibleActions.htm" TARGET="frame_pattern">Interruptible Actions</A> spawn <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goals</A>. In a case where players have multiple <A CLASS="pattern" HREF="FocusLoci.htm" TARGET="frame_pattern">Focus Loci</A>, <A CLASS="pattern" HREF="InterruptibleActions.htm" TARGET="frame_pattern">Interruptible Actions</A> that are also <A CLASS="pattern" HREF="ExtendedActions.htm" TARGET="frame_pattern">Extended Actions</A> may require players to perform <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A> choices on how much <A CLASS="pattern" HREF="AttentionSwapping.htm" TARGET="frame_pattern">Attention Swapping</A> is necessary to ensure completion of the actions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="AttentionSwapping.htm" TARGET="frame_pattern">Attention Swapping</A>, <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goals</A>, <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A>, <A CLASS="pattern" HREF="BalancingEffects.htm" TARGET="frame_pattern">Balancing Effects</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="ExtendedActions.htm" TARGET="frame_pattern">Extended Actions</A>, <A CLASS="pattern" HREF="Trading.htm" TARGET="frame_pattern">Trading</A>, <A CLASS="pattern" HREF="Storytelling.htm" TARGET="frame_pattern">Storytelling</A>, <A CLASS="pattern" HREF="Combos.htm" TARGET="frame_pattern">Combos</A>, <A CLASS="pattern" HREF="Negotiation.htm" TARGET="frame_pattern">Negotiation</A>, <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="TurnTaking.htm" TARGET="frame_pattern">Turn Taking</A>, <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="DelayedEffects.htm" TARGET="frame_pattern">Delayed Effects</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

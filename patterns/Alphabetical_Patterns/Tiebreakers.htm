@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Tiebreakers</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Tiebreakers">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Tiebreakers</H2>
+<I>A rule that distinguishes outcomes in a game from each other so that what would otherwise be a tie in the results can be treated as having quantitative differences.</I>
+<P CLASS="text">Many games have as important parts of gameplay that the actions performed are compared against each other, and players try to perform better than the others or in some cases try to at least not be the one who performed the worst. In these games, tied results can be problematic since they may remove the overall sense of game play and special rules, <A CLASS="pattern" HREF="Tiebreakers.htm" TARGET="frame_pattern">Tiebreakers</A>, are used to make it impossible to have tied results.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Highscore lists in games usually give precedence to older results when new score has the same value as older scores.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>the board game <I>Puerto Rico</I> is won by having the highest amount of victory points. In the case of two or more players having the same amount, the winner is determined by who of those players have the greatest amounts of money and goods.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Tiebreakers.htm" TARGET="frame_pattern">Tiebreakers</A> are introduced to avoid <A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A> and can be achieved in two ways. The first way is to ensure that the primary goal cannot be achieved by two or more players simultaneously and the second way is to have additional rules that are used when <A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A> happen. Examples how <A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A> can be avoided in the first place is to make sure players have <A CLASS="pattern" HREF="ExcludingGoals.htm" TARGET="frame_pattern">Excluding Goals</A>, making <A CLASS="pattern" HREF="Tournaments.htm" TARGET="frame_pattern">Tournaments</A> where the number of victories or points cannot be the same, or having <A CLASS="pattern" HREF="DynamicGoalCharacteristics.htm" TARGET="frame_pattern">Dynamic Goal Characteristics</A> so that <A CLASS="pattern" HREF="PerceivableMargins.htm" TARGET="frame_pattern">Perceivable Margins</A> are required to win.</P>
+<P CLASS="text"></P>
+<P CLASS="text">When <A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A> can exist, the additional rules introduced to create <A CLASS="pattern" HREF="Tiebreakers.htm" TARGET="frame_pattern">Tiebreakers</A> usually try to continue measuring the success or failure of the results by how efficiently the results were achieved. This is usually through how players have performed <A CLASS="pattern" HREF="ResourceManagement.htm" TARGET="frame_pattern">Resource Management</A> of the <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> that influenced the main results. So for example, in soccer tournaments winning games may give points, but if two teams have the same score one can compare goal differences to determine which team had the most overwhelming victories. When the <A CLASS="pattern" HREF="Tiebreakers.htm" TARGET="frame_pattern">Tiebreaker</A> can itself be tied, additional <A CLASS="pattern" HREF="Tiebreakers.htm" TARGET="frame_pattern">Tiebreakers</A> can be added until the likelihood of <A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A> become insignificant or impossible.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Tiebreakers.htm" TARGET="frame_pattern">Tiebreakers</A> are needed to differentiate results between players, or sometimes between players and <A CLASS="pattern" HREF="Agents.htm" TARGET="frame_pattern">Agents</A>, and therefore are often present in any game with <A CLASS="pattern" HREF="Overcome.htm" TARGET="frame_pattern">Overcome</A> goals, or <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A> with <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A> or <A CLASS="pattern" HREF="Competition.htm" TARGET="frame_pattern">Competition</A>. Their presences increase the <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> and level of <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A> in these games since they make it impossible to have <A CLASS="pattern" HREF="Negotiation.htm" TARGET="frame_pattern">Negotiation</A> to create <A CLASS="pattern" HREF="UncommittedAlliances.htm" TARGET="frame_pattern">Uncommitted Alliances</A> with the aims of achieving <A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A> with <A CLASS="pattern" HREF="SharedRewards.htm" TARGET="frame_pattern">Shared Rewards</A> or <A CLASS="pattern" HREF="SharedPenalties.htm" TARGET="frame_pattern">Shared Penalties</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Tiebreakers.htm" TARGET="frame_pattern">Tiebreakers</A> are most commonly needed when the values used to measure success or failure for different players are independent from each other, for example <A CLASS="pattern" HREF="Race.htm" TARGET="frame_pattern">Races</A> where players cannot affect each other or where the increase or decrease of one player's <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A> does not affect other players' <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A> values. In some cases, as for example <A CLASS="pattern" HREF="Tournaments.htm" TARGET="frame_pattern">Tournaments</A> and <I>Highscore Lists</I>, the values that have to be compared are not even from the same game sessions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A>, <A CLASS="pattern" HREF="ExcludingGoals.htm" TARGET="frame_pattern">Excluding Goals</A>, <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="HighScoreLists.htm" TARGET="frame_pattern">High Score Lists</A>, <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A>, <A CLASS="pattern" HREF="Competition.htm" TARGET="frame_pattern">Competition</A>, <A CLASS="pattern" HREF="Tournaments.htm" TARGET="frame_pattern">Tournaments</A>, <A CLASS="pattern" HREF="Overcome.htm" TARGET="frame_pattern">Overcome</A>, <A CLASS="pattern" HREF="MultiplayerGames.htm" TARGET="frame_pattern">Multiplayer Games</A>, <A CLASS="pattern" HREF="Race.htm" TARGET="frame_pattern">Race</A>, <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="PerceivableMargins.htm" TARGET="frame_pattern">Perceivable Margins</A>, <A CLASS="pattern" HREF="Tournaments.htm" TARGET="frame_pattern">Tournaments</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A>, <A CLASS="pattern" HREF="ResourceManagement.htm" TARGET="frame_pattern">Resource Management</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="SharedPenalties.htm" TARGET="frame_pattern">Shared Penalties</A>, <A CLASS="pattern" HREF="Negotiation.htm" TARGET="frame_pattern">Negotiation</A>, <A CLASS="pattern" HREF="SharedRewards.htm" TARGET="frame_pattern">Shared Rewards</A>, <A CLASS="pattern" HREF="UncommittedAlliances.htm" TARGET="frame_pattern">Uncommitted Alliances</A>, <A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A></P>
+
+
+</html>
+

@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Pick-Ups</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Pick-Ups">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Pick-Ups</H2>
+<I>Pick-Ups are game elements that exist in the game world and can be collected by players, usually by moving an avatar or Units in contact with the Pick-Up.</I>
+<P CLASS="text">Common examples of <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> include weapons, ammunition, and health packs in first-person shooters; money and energy in platform games; and food, wood, money, and metals in real-time strategy games.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>the ammunition packs in <I>Quake 3</I> are <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> that replenish the players' ammunition.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> are in essence <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A>, and as such, the fundamental game design choice regarding a <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Up</A> is to decide what the resource is to be used for: is it to gain advantages in possible actions against opponents, to fulfill goals such as <A CLASS="pattern" HREF="Delivery.htm" TARGET="frame_pattern">Delivery</A>, to directly increase winning possibilities or is the resource usable for several different purposes and thus requiring <I>Trade-Offs</I>? The nature of the <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Up</A> may not be completely revealed to the player who collects it until it is collected, allowing the game to change the nature of the <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Up</A> depending on players' positioning, thereby providing <A CLASS="pattern" HREF="BalancingEffects.htm" TARGET="frame_pattern">Balancing Effects</A>. These kinds of <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> can also cause disadvantages to the players.</P>
+<P CLASS="text"></P>
+<P CLASS="text">As <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resource</A> s that exist in the game world, the design of <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> is linked to the design of <A CLASS="pattern" HREF="ResourceLocations.htm" TARGET="frame_pattern">Resource Locations</A>, and the design choices available for the locations have to be considered in parallel with those of the <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A>. The production of the <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> is another design choice that has to be considered. Is the <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Up</A> only produced once (maybe at the beginning of the game) and thus providing <A CLASS="pattern" HREF="LimitedResources.htm" TARGET="frame_pattern">Limited Resources</A> on a global level, or is a type of <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Up</A> a <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resource</A> that is produced during gameplay? In the latter case, is the location of the production a known place (and thereby a <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Location</A>) or is it random? The production may be tied to a <I>Resource Generator,</I> which may be influenced or destroyed by player actions. The production of the <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> may also require actions by the players, for example, providing <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> to a <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converter</A>. In any case, the production of <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> also follows the methods outlined in the more abstract <A CLASS="pattern" HREF="Producers.htm" TARGET="frame_pattern">Producer</A> pattern.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Most <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> affect numerical characteristics of the <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatar</A> or <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Unit</A> that collected the <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Up</A>, e. g., by increasing the player's <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A> or an <I>Avatar's</I> hit points. The simplest way of implementing these is having a specific increase or decrease of one attribute of the game element each time a <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Up</A> is taken. However, one can also have cut-off limits to promote <A CLASS="pattern" HREF="PlayerBalance.htm" TARGET="frame_pattern">Player Balance</A> (e. g., not letting health packs or ammunition replenish past a certain level) or having <A CLASS="pattern" HREF="DiminishingReturns.htm" TARGET="frame_pattern">Diminishing Returns</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">A less common type of <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Up</A>, which may also affect numerical characteristics, is a <A CLASS="pattern" HREF="Tools.htm" TARGET="frame_pattern">Tool</A>. <A CLASS="pattern" HREF="Tools.htm" TARGET="frame_pattern">Tools</A> provide players with <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A> but may require resources when used.</P>
+<P CLASS="text"></P>
+<P CLASS="text">A special type of <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Up</A> is a <A CLASS="pattern" HREF="Power-Ups.htm" TARGET="frame_pattern">Power-Up</A>, which gives players a time-limited advantage often consisting of increased efficiency at an action or by providing a <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Ability</A>. Other special <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> are those whose only function is to increase a player's <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> are a very common way to provide <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resources</A> to players, and as such, they provide <A CLASS="pattern" HREF="SupportingGoals.htm" TARGET="frame_pattern">Supporting Goals</A> requiring <A CLASS="pattern" HREF="Collecting.htm" TARGET="frame_pattern">Collecting</A> and possibly <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A>. More formalized, <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A> goals can be constructed by requiring players to get all <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> before being able to advance in the game, e. g., eating all the pills in <I>Pac-Man</I> before completing the level.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Since the successful collection of <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> has a clear effect in the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>, and it is usually easy to distinguish <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A> in the game environment, they make easy goal objectives for <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A> goals. The absence of a <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Up</A> from a location is a form of <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Trace</A> that players can use to infer activities in the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="ResourceLocations.htm" TARGET="frame_pattern">Resource Locations</A>, <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A>, <A CLASS="pattern" HREF="Collecting.htm" TARGET="frame_pattern">Collecting</A>, <A CLASS="pattern" HREF="SupportingGoals.htm" TARGET="frame_pattern">Supporting Goals</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A>, <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A>, <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resources</A>, <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A>, <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Delivery.htm" TARGET="frame_pattern">Delivery</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resources</A>, <A CLASS="pattern" HREF="LimitedResources.htm" TARGET="frame_pattern">Limited Resources</A>, <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A>, <A CLASS="pattern" HREF="BalancingEffects.htm" TARGET="frame_pattern">Balancing Effects</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

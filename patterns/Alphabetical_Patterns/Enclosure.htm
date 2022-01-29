@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Enclosure</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Enclosure">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Enclosure</H2>
+<I>Enclosure is the surrounding of game elements by a continuous line or wall.</I>
+<P CLASS="text">The oldest, and perhaps best known, example of <A CLASS="pattern" HREF="Enclosure.htm" TARGET="frame_pattern">Enclosure</A> is <I>Go</I>, the classic oriental board game, where the opponent's enclosed stones are removed from the board. Digital games also use <A CLASS="pattern" HREF="Enclosure.htm" TARGET="frame_pattern">Enclosure</A> for capturing: in Taito's <I>Qix</I> game elements are captured and removed from play by enclosing them in the smaller of the two subdivisions that are created whenever the player completes a line between two parts of the game edge.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The goal can be also be to avoid being enclosed. Classic examples of this the lightcycle game in <I>Tron</I>, where the players try to enclose the other player while not getting enclosed themselves. <I>Nibbler</I> and <I>Snake</I> are examples where avoiding the <A CLASS="pattern" HREF="Enclosure.htm" TARGET="frame_pattern">Enclosure</A> lets players survive to pursue the primary goal of eating.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Loop</I>, by gameLab, is an example of how <A CLASS="pattern" HREF="Enclosure.htm" TARGET="frame_pattern">Enclosure</A> can be a visually very strong element. In this game there are several butterflies of different color fluttering around the screen. The player's task is to enclose butterflies of the same color by drawing a loop with a mouse around two or more butterflies of the same color. The player can also enclose three or more butterflies if each of them is of a different color.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The board game <I>Carcassonne</I> (Klaus-Jürgen Wrede 2000) is a clear example of using <A CLASS="pattern" HREF="Enclosure.htm" TARGET="frame_pattern">Enclosure</A> in a couple of different ways: the building of towns where rewards are not given until the town walls enclose the area inside; cloisters that have to be surrounding by tiles to give points; and fields that may be enclosed to guarantee control.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Enclosure.htm" TARGET="frame_pattern">Enclosure</A> is a pattern that offers clear visual indications that can be used to signify the completion of <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A> goals. As <A CLASS="pattern" HREF="Enclosure.htm" TARGET="frame_pattern">Enclosures</A> require that the parts constituting the enclosure are connected, the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> of a game with the pattern must be design to support <A CLASS="pattern" HREF="Connection.htm" TARGET="frame_pattern">Connections</A> between the parts.</P>
+<P CLASS="text"></P>
+<P CLASS="text">If the reward for completing an <A CLASS="pattern" HREF="Enclosure.htm" TARGET="frame_pattern">Enclosure</A> is dynamic, i. e. defined by other parts of the game state besides those that decide if the <A CLASS="pattern" HREF="Enclosure.htm" TARGET="frame_pattern">Enclosure</A> is complete, the reward can provide <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A> patterns as players move from wanting to finish the <A CLASS="pattern" HREF="Enclosure.htm" TARGET="frame_pattern">Enclosure</A> to wishing to delay or prevent the completion of the <A CLASS="pattern" HREF="Enclosure.htm" TARGET="frame_pattern">Enclosure</A>. An example of this can be found in <I>Qix</I> where players may want to close a small area if one of the enemies is within the small area, even if the actual enclosing of small areas is ineffective compared to completing large areas regarding the raising ones <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Enclosure.htm" TARGET="frame_pattern">Enclosure</A> is a spatially continuous <A CLASS="pattern" HREF="https://tecfa.unige.ch/tecfa/maltt/VIP/Ressources/Articles/Game%20Design%20Patterns/collection/Alphabetical_Patterns/Configuration.htm" TARGET="frame_pattern">Configuration</A> of game elements. As it makes use of the gestalt law with the same name as the pattern, <A CLASS="pattern" HREF="Enclosure.htm" TARGET="frame_pattern">Enclosure</A> allow for very strong forms of closures, especially if the visual appearance of the tokens used to enclose the area creates cases comparable with real-life examples, i. e. following a <A CLASS="pattern" HREF="ConsistentRealityLogic.htm" TARGET="frame_pattern">Consistent Reality Logic</A>. The ease of perceiving a completed <A CLASS="pattern" HREF="Enclosure.htm" TARGET="frame_pattern">Enclosure</A> from a partial one lets <A CLASS="pattern" HREF="Enclosure.htm" TARGET="frame_pattern">Enclosure</A> be used to create a <A CLASS="pattern" HREF="HoveringClosures.htm" TARGET="frame_pattern">Hovering Closure</A> to heighten <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Connection.htm" TARGET="frame_pattern">Connection</A>, <A CLASS="pattern" HREF="https://tecfa.unige.ch/tecfa/maltt/VIP/Ressources/Articles/Game%20Design%20Patterns/collection/Alphabetical_Patterns/Configuration.htm" TARGET="frame_pattern">Configuration</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A>, <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: </P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Analysis Paralysis</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Analysis Paralysis">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Analysis Paralysis</H2>
+<I>The players can spend considerable amounts of time planning their actions, because the consequences of the actions are at least somewhat predictable, and the number of possible outcomes grows exponentially the further in game time the players plan ahead.</I>
+<P CLASS="text">The classic case of <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A> is that the players are unable to make any useful decisions regarding future actions because they attempt to think too far ahead, and the possible game state space is far too large for proper min-max analysis. <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A> depends also on the players' play style; some players are more prone to <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A> than the others.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Chess</I> and <I>Go</I> have been used as prime examples of games where there is a possibility to almost endlessly analyze the possible actions for the future. Both have decision trees, which grow exponentially over game time.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Diplomacy</I>, even though the possible actions are quite limited, can cause <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A> when the players start to think recursively about what the other players are trying to do and how the other players would perceive the players' actions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A> can be achieved by letting players have <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A> between several actions with <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A>, even if these are <A CLASS="pattern" HREF="LimitedSetofActions.htm" TARGET="frame_pattern">Limited Set of Actions</A> or players have <A CLASS="pattern" HREF="LimitedResources.htm" TARGET="frame_pattern">Limited Resources</A>. This forces players to consider <A CLASS="pattern" HREF="Tradeoffs.htm" TARGET="frame_pattern">Tradeoffs</A> and the more difficult the values of the actions are to judge, the more likely <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A> is to occur. The likelihood can also be modulated by <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A>, as well as <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A> in games where the players have <A CLASS="pattern" HREF="PerfectInformation.htm" TARGET="frame_pattern">Perfect Information</A> and <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A> about the discrete game states. This allows the players to plan the consequences of their current and future actions. <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A> guarantee that consequences of the chosen action will be effective also in the future, and this makes it possible to plan several actions ahead while at the same time decreasing the chances to perform <A CLASS="pattern" HREF="Experimenting.htm" TARGET="frame_pattern">Experimenting.</A> <A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A> provide means of expanding the number of decisions the players have to make in each decision point, in effect, broadening the scope of <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A>, as are open <A CLASS="pattern" HREF="DiscardPiles.htm" TARGET="frame_pattern">Discard Piles</A> in card games, which allow the players to have <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overviews</A> and may cause <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">It is possible to lessen the possibility for <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A> by introducing <A CLASS="pattern" HREF="Randomness.htm" TARGET="frame_pattern">Randomness</A> to the consequences of the actions and thereby giving players <A CLASS="pattern" HREF="LimitedForesight.htm" TARGET="frame_pattern">Limited Foresight</A> and <A CLASS="pattern" HREF="LimitedPlanningAbility.htm" TARGET="frame_pattern">Limited Planning Abilities</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A> is caused by <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A> and <A CLASS="pattern" HREF="CognitiveImmersion.htm" TARGET="frame_pattern">Cognitive Immersion</A>, and is usually a feature game designers try to avoid. That players have <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A> can be a sign that the game does not have the <A CLASS="pattern" HREF="RightLevelofComplexity.htm" TARGET="frame_pattern">Right Level of Complexity</A> for those players.</P>
+<P CLASS="text"></P>
+<P CLASS="text">In games with <A CLASS="pattern" HREF="TurnTaking.htm" TARGET="frame_pattern">Turn Taking</A>, the presence of <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A> leads to excessive <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A> for the other players in case some of the players get stuck in planning their turns. The nature of <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A> situations has a somewhat adverse effect on the <A CLASS="pattern" HREF="Anticipation.htm" TARGET="frame_pattern">Anticipation</A> of the uncertain outcome during the play.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The negative effects of <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A> for other players can easily be avoided by having <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A></P>
+
+<P CLASS="italic">Modulates: </P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="CognitiveImmersion.htm" TARGET="frame_pattern">Cognitive Immersion</A>, <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A>, <A CLASS="pattern" HREF="LimitedSetofActions.htm" TARGET="frame_pattern">Limited Set of Actions</A>, <A CLASS="pattern" HREF="IrreversibleActions.htm" TARGET="frame_pattern">Irreversible Actions</A>, <A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A>, <A CLASS="pattern" HREF="Tradeoffs.htm" TARGET="frame_pattern">Tradeoffs</A>, <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A>, <A CLASS="pattern" HREF="TurnTaking.htm" TARGET="frame_pattern">Turn Taking</A>, <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A>, <A CLASS="pattern" HREF="RightLevelofComplexity.htm" TARGET="frame_pattern">Right Level of Complexity</A>, <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A>, <A CLASS="pattern" HREF="DiscardPiles.htm" TARGET="frame_pattern">Discard Piles</A>, <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A>, <A CLASS="pattern" HREF="PerfectInformation.htm" TARGET="frame_pattern">Perfect Information</A>, <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="LimitedForesight.htm" TARGET="frame_pattern">Limited Foresight</A>, <A CLASS="pattern" HREF="Anticipation.htm" TARGET="frame_pattern">Anticipation</A>, <A CLASS="pattern" HREF="LimitedResources.htm" TARGET="frame_pattern">Limited Resources</A>, <A CLASS="pattern" HREF="Randomness.htm" TARGET="frame_pattern">Randomness</A>, <A CLASS="pattern" HREF="LimitedPlanningAbility.htm" TARGET="frame_pattern">Limited Planning Ability</A></P>
+
+
+</html>
+

@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Resource Locations</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Resource Locations">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Resource Locations</H2>
+<I>Resource Locations are the locations where resources are found in the game world.</I>
+<P CLASS="text">Nearly all games with a game world use <A CLASS="pattern" HREF="ResourceLocations.htm" TARGET="frame_pattern">Resource Locations</A> in one form or another. These are locations that are known to have resources, although this may vary over gameplay as resources are used or new resources appear.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>all the places where the pills are located in <I>Pac-Man</I> levels. The more special <A CLASS="pattern" HREF="ResourceLocations.htm" TARGET="frame_pattern">Resource Locations</A> are where the power pills are placed and also the location where the bonus items appear.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>the places where trees, bushes, and mines are located in <I>Age of Empires</I> are <A CLASS="pattern" HREF="ResourceLocations.htm" TARGET="frame_pattern">Resource Locations</A> for the basic resources of the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="ResourceLocations.htm" TARGET="frame_pattern">Resource Locations</A> are required for all <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> that are not purely abstract. The nature of the <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A>, together with the <A CLASS="pattern" HREF="ConsistentRealityLogic.htm" TARGET="frame_pattern">Consistent Reality Logic</A> of the game, usually limits the possible <A CLASS="pattern" HREF="ResourceLocations.htm" TARGET="frame_pattern">Resource Locations</A> for a given <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resource</A>. For example, normal burning torches are not found under water nor do ammunition boxes usually lie around in public places.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> that are not represented by game elements can still be collected from <A CLASS="pattern" HREF="ResourceLocations.htm" TARGET="frame_pattern">Resource Locations</A>, typically represented by <A CLASS="pattern" HREF="Chargers.htm" TARGET="frame_pattern">Chargers</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="ResourceLocations.htm" TARGET="frame_pattern">Resource Locations</A> are usually marked by <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A> and <A CLASS="pattern" HREF="OutstandingFeatures.htm" TARGET="frame_pattern">Outstanding Features</A> to help the players identify the exact spot where the <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> can be found or will appear. The location of the <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> can be used to guide the players towards certain areas in the game, functioning as <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A>, or lure players into <A CLASS="pattern" HREF="DeadlyTraps.htm" TARGET="frame_pattern">Deadly Traps</A>. Similarly, letting players identify <A CLASS="pattern" HREF="ResourceLocations.htm" TARGET="frame_pattern">Resource Locations</A> within <A CLASS="pattern" HREF="InaccessibleAreas.htm" TARGET="frame_pattern">Inaccessible Areas</A> provides them with <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A> goals.</P>
+<P CLASS="text"></P>
+<P CLASS="text">For <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> that are introduced during the gameplay, i. e. <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resources</A>, the <A CLASS="pattern" HREF="ResourceLocations.htm" TARGET="frame_pattern">Resource Location</A> can either be determined by <A CLASS="pattern" HREF="Randomness.htm" TARGET="frame_pattern">Randomness</A> (or <A CLASS="pattern" HREF="Randomness.htm" TARGET="frame_pattern">Randomness</A> can be used to select one of several <A CLASS="pattern" HREF="ResourceLocations.htm" TARGET="frame_pattern">Resource Locations</A>), or by placing them in such way that they have a <A CLASS="pattern" HREF="BalancingEffects.htm" TARGET="frame_pattern">Balancing Effect</A>. <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A> define more permanent <A CLASS="pattern" HREF="ResourceLocations.htm" TARGET="frame_pattern">Resource Locations</A>, since they very seldom can be moved, although they may be destroyed.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="ResourceLocations.htm" TARGET="frame_pattern">Resource Locations</A> typically are <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A>, their value depending on the value of the resource and the ease with which the location can be reached. By placing some <A CLASS="pattern" HREF="ResourceLocations.htm" TARGET="frame_pattern">Resource Locations</A> at places difficult to get to and some at places easy to get to, it is possible to steer the unfolding of the gameplay.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="InaccessibleAreas.htm" TARGET="frame_pattern">Inaccessible Areas</A>, <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Pick-Ups.htm" TARGET="frame_pattern">Pick-Ups</A>, <A CLASS="pattern" HREF="Chargers.htm" TARGET="frame_pattern">Chargers</A>, <A CLASS="pattern" HREF="Controllers.htm" TARGET="frame_pattern">Controllers</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="OutstandingFeatures.htm" TARGET="frame_pattern">Outstanding Features</A>, <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

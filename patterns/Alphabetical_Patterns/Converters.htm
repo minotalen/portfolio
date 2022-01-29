@@ -1,0 +1,45 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Converters</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Converters">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Converters</H2>
+<I>Converter produces different types of game elements from other game elements, typically from other resources. In essence, a Converter transforms game elements into other game elements.</I>
+<P CLASS="text"><A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converters</A> often appear in strategy games as factories, cities, or special units, which can produce more units, such as tanks and fighter planes, from more basic resources. Some of the more complex games even have several levels of resource refinement. <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converters</A>, however, can also appear in games where there are no resource flows to be managed as in the case of <I>Chess</I>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>real-time strategy game <I>StarCraft</I> has factories, which require basic resources, metal, energy etc. to build units for the player.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>the opposing end of the <I>Chess</I> board is a <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converter</A> that converts pawns to queens.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">As the <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converter</A> is a direct application of <A CLASS="pattern" HREF="Producer-Consumer.htm" TARGET="frame_pattern">Producer-Consumer</A>, the <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converter</A> in fact being both a <A CLASS="pattern" HREF="Consumers.htm" TARGET="frame_pattern">Consumer</A> and a <A CLASS="pattern" HREF="Producers.htm" TARGET="frame_pattern">Producer</A>, the principles of these patterns also apply to using <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converter</A>. <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converters</A> are used to create <A CLASS="pattern" HREF="Producer-Consumer.htm" TARGET="frame_pattern">Producer-Consumer</A> chains that create more complex resource flows within the game and can thereby be used to modulate the <A CLASS="pattern" HREF="RightLevelofComplexity.htm" TARGET="frame_pattern">Right Level of Complexity</A> in games. In these cases the <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converters</A> are usually associated with a <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A> to store the intermediate resources before actual use. The use of <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converters</A> to provide <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resources</A> allows the availability of the renewed <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resource</A> to be limited by the availability of the consumed <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resource</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">In games with a <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game Worlds</A> the <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converter</A> is often represented as a game element of its own such as a <A CLASS="pattern" HREF="Tools.htm" TARGET="frame_pattern">Tool</A> or a <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generator</A>, or as a place through a <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Location</A>. <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converter</A>, however, can also appear as an abstract rule based entity in the game without being instantiated by specific game elements; <A CLASS="pattern" HREF="Bidding.htm" TARGET="frame_pattern">Bidding</A> and the act of playing <A CLASS="pattern" HREF="Cards.htm" TARGET="frame_pattern">Cards</A> are examples of such abstract <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converters</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">Physical <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converters</A> create entities in <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game Worlds</A> that act as <A CLASS="pattern" HREF="Consumers.htm" TARGET="frame_pattern">Consumers</A> of one type of <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> and <A CLASS="pattern" HREF="Producers.htm" TARGET="frame_pattern">Producers</A> of another, thereby making the produced <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resource</A> into a form of <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resource</A>. The introduction of a <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converter</A> into a game almost inevitably increases the complexity of the game play and in most cases also creates subgoals and alternative strategies for players, thus promoting <A CLASS="pattern" HREF="VariedGameplay.htm" TARGET="frame_pattern">Varied Gameplay</A>. If players have a way to control the <A CLASS="pattern" HREF="Converters.htm" TARGET="frame_pattern">Converter</A>, this leads to <A CLASS="pattern" HREF="Empowerment.htm" TARGET="frame_pattern">Empowerment</A> and an enhanced <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A> and at the same time allow more complex strategies. Further, players may have to make <A CLASS="pattern" HREF="Tradeoffs.htm" TARGET="frame_pattern">Tradeoffs</A> and this can encourage <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Producer-Consumer.htm" TARGET="frame_pattern">Producer-Consumer</A>, <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A>, <A CLASS="pattern" HREF="VariedGameplay.htm" TARGET="frame_pattern">Varied Gameplay</A>, <A CLASS="pattern" HREF="Empowerment.htm" TARGET="frame_pattern">Empowerment</A>, <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A>, <A CLASS="pattern" HREF="Tradeoffs.htm" TARGET="frame_pattern">Tradeoffs</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Cards.htm" TARGET="frame_pattern">Cards</A>, <A CLASS="pattern" HREF="ResourceManagement.htm" TARGET="frame_pattern">Resource Management</A>, <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>, <A CLASS="pattern" HREF="RenewableResources.htm" TARGET="frame_pattern">Renewable Resources</A>, <A CLASS="pattern" HREF="Tools.htm" TARGET="frame_pattern">Tools</A>, <A CLASS="pattern" HREF="RightLevelofComplexity.htm" TARGET="frame_pattern">Right Level of Complexity</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Bidding.htm" TARGET="frame_pattern">Bidding</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Container.htm" TARGET="frame_pattern">Container</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

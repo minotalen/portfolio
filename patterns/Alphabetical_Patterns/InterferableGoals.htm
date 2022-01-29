@@ -1,0 +1,43 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Interferable Goals</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Interferable Goals">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Interferable Goals</H2>
+<I>The game system or other players can directly influence the player's progress towards the goal.</I>
+<P CLASS="text">Many goals of the player can be influenced by other players or the game system. Such goals, defined as <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goals</A>, have an end condition or an evaluation function depending on variables in the game state that can be directly affected by others. The pattern is commonly used together with a high-level goal that does not allow the players to have an effect on other players' game elements, in order to create more complex gameplay. Games of direct <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A>, such as <I>Chess</I> and <I>Tennis</I>, always have <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goals</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Backgammon</I> has the goal of moving your pieces to your own inner table (to be able to start the larger goal of "bearing" them off the board). However, the opponent can interfere with the low-level goals of moving each individual piece to the inner table by "ousting" the vulnerable pieces. <I>Backgammon</I> without ousting is not using <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goals</A> even though the player can block opponent's progress as the player's actions do not have direct effect on the opponent's game state.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">Making a goal interferable consists of choosing in what way the system or other player's actions can affect the game state related to the evaluation function of the outcome. The simplest way is to give other players possible actions that have a direct effect on those attributes that govern the evaluation function of the outcome. The previous example of ousting in <I>Backgammon</I> is about having a direct effect on the attribute of how near to the completion the pieces are. It is also an example of using <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> to make the higher level <A CLASS="pattern" HREF="Race.htm" TARGET="frame_pattern">Race</A> goal interferable. When using <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goals</A>, the players have to know something about the other players' game situation, making excessive use of <A CLASS="pattern" HREF="UncertaintyofInformation.htm" TARGET="frame_pattern">Uncertainty of Information</A> and <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A> unsuitable and <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A> suitable.</P>
+<P CLASS="text"></P>
+<P CLASS="text">If one wants to promote <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A> by using <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goals</A>, the possibility to interfere can be encouraged in the form of a <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goal</A>. Common examples of <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goals</A> are <A CLASS="pattern" HREF="Guard.htm" TARGET="frame_pattern">Guard</A>, <A CLASS="pattern" HREF="Overcome.htm" TARGET="frame_pattern">Overcome</A>,<A CLASS="pattern" HREF="LastManStanding.htm" TARGET="frame_pattern">Last Man Standing</A>,<A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A>, and maintaining <A CLASS="pattern" HREF="AreaControl.htm" TARGET="frame_pattern">Area Control</A>. Choosing to view the completion of <A CLASS="pattern" HREF="InterruptibleActions.htm" TARGET="frame_pattern">Interruptible Action</A> as goals allows players to create their own <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goals</A> of interrupting those actions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goals</A> allow players to be aggressive towards one another, in essence, letting them decide if they want to have a <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A> or not. This makes the gameplay more complex and varied as the players have to also take into account other players' intentions and possible actions. These characteristics also make <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goals</A> suitable for games with the possibility of <A CLASS="pattern" HREF="Alliances.htm" TARGET="frame_pattern">Alliances</A> between players.<A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goals</A> are often also <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goals</A> to offer players a wide range of tactics.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Alliances.htm" TARGET="frame_pattern">Alliances</A>, <A CLASS="pattern" HREF="Race.htm" TARGET="frame_pattern">Race</A>, <A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goals</A>, <A CLASS="pattern" HREF="AreaControl.htm" TARGET="frame_pattern">Area Control</A>, <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="LastManStanding.htm" TARGET="frame_pattern">Last Man Standing</A>, <A CLASS="pattern" HREF="InterruptibleActions.htm" TARGET="frame_pattern">Interruptible Actions</A>, <A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A>, <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goals</A></P>
+
+<P CLASS="italic">Modulated by: </P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="UncertaintyofInformation.htm" TARGET="frame_pattern">Uncertainty of Information</A>, <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A></P>
+
+
+</html>
+

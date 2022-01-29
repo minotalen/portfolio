@@ -1,0 +1,57 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Aim & Shoot</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Aim & Shoot">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Aim & Shoot</H2>
+<I>The act of taking aim at something and then shooting at it.</I>
+<P CLASS="text">One of the most natural ways of showing attention to something is to look or point at it. Real-time games usually provide some action that can be done to the game element pointed at. Generalized, this action can be described as <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A> regardless of if anything is aimed or actually shot.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Shooting in all first-person shooters consists of taking aim on the opponents, with possible compensations for their movement, and shooting.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>In <I>Zelda: Ocarina of Time</I>, the player must aim and shoot a grappling hook to be able to swing <I>Link</I> between chasms.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Pokemon Snap!</I> gives players a camera and lets them move along a track trying to take as good pictures as possible of Pokemons.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">Making <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A> actions possible primarily depend on enabling players to complete <A CLASS="pattern" HREF="Alignment.htm" TARGET="frame_pattern">Alignment</A> goals of two points by a straight line. For <A CLASS="pattern" HREF="First-PersonViews.htm" TARGET="frame_pattern">First-Person Views</A> this is trivial, as one point is the player's view point unless either of the two points is moving. Somewhat more difficult are <A CLASS="pattern" HREF="Third-PersonViews.htm" TARGET="frame_pattern">Third-Person Views</A>, as more movement of the player's <A CLASS="pattern" HREF="FocusLoci.htm" TARGET="frame_pattern">Focus Loci</A> is usually necessary. <A CLASS="pattern" HREF="GodViews.htm" TARGET="frame_pattern">God Views</A> are in most cases too difficult, as it is too hard to get the <A CLASS="pattern" HREF="SpatialImmersion.htm" TARGET="frame_pattern">Spatial Immersion</A> required in order to line up the two points accurately.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The difficulty of <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A> actions can be due to the <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> either of the game elements aimed at or the game element aiming. For <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> or <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A>, the intentional <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> due to <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A> or <A CLASS="pattern" HREF="Evade.htm" TARGET="frame_pattern">Evade</A> goals can make aiming at them more difficult. For <A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A> or other game elements, the mechanical <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> due to <A CLASS="pattern" HREF="TheShowMustGoOn.htm" TARGET="frame_pattern">The Show Must Go On</A> can likewise make aiming more difficult. The aiming can be further complicated by the players' own <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> of their <A CLASS="pattern" HREF="FocusLoci.htm" TARGET="frame_pattern">Focus Loci</A> or by a swaying of the aim to simulate the difficulty of real-world aiming.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Design of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> that makes players have a bad overview of the game state, for example the inclusions of <A CLASS="pattern" HREF="Obstacles.htm" TARGET="frame_pattern">Obstacles</A>, makes it difficult to prepare for shooting. This means that potential targets likely are <A CLASS="pattern" HREF="Surprises.htm" TARGET="frame_pattern">Surprises</A>, and any shots will not be well aimed. Similarly, other forms of <A CLASS="pattern" HREF="Surprises.htm" TARGET="frame_pattern">Surprises</A> likely cause <A CLASS="pattern" HREF="DisruptionofFocusedAttention.htm" TARGET="frame_pattern">Disruption of Focused Attention</A> events and make players lose their aim. Aiming can also be made more difficult by introducing <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A>, for example through <A CLASS="pattern" HREF="Competition.htm" TARGET="frame_pattern">Competition</A> or <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The possibility of <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A> actions can be restricted by requiring <A CLASS="pattern" HREF="Tools.htm" TARGET="frame_pattern">Tools</A> or the use of <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A>. The latter can introduce <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> to the activity and require <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A> choices between shooting now or waiting for a possible better situation to shoot.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Although <A CLASS="pattern" HREF="Combat.htm" TARGET="frame_pattern">Combat</A> with the goals of <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> or <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> is the activity that most often creates <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A> actions, other goals and reasons are possible. <A CLASS="pattern" HREF="Delivery.htm" TARGET="frame_pattern">Delivery</A> of game elements can be done by throwing or shooting the game elements to the receiver and <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> can be the capturing of information rather than game elements. Shooting spider webs, throwing grappling hooks, or even firing cannons with oneself inside it can give explanations for how <A CLASS="pattern" HREF="PrivilegedMovement.htm" TARGET="frame_pattern">Privileged Movement</A> can be performed by <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A> is a <A CLASS="pattern" HREF="Dexterity-BasedActions.htm" TARGET="frame_pattern">Dexterity-Based Action</A> that is possible in <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>. Often requiring <A CLASS="pattern" HREF="ExtendedActions.htm" TARGET="frame_pattern">Extended Actions</A> and <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A> from a game element's point of view, <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A> promotes <A CLASS="pattern" HREF="SpatialImmersion.htm" TARGET="frame_pattern">Spatial Immersion</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Interestingly enough, most sports games due not make use of <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A> even though this is one of the primary activities in sports they simulate. The cause for this is probably the lack of overview of the game statethat players would have if they had perspectives that allowed <A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Aim&amp;Shoot.htm" TARGET="frame_pattern">Aim &amp; Shoot</A> actions from other players or <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A> naturally increase and present <A CLASS="pattern" HREF="Evade.htm" TARGET="frame_pattern">Evade</A> goals.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="SpatialImmersion.htm" TARGET="frame_pattern">Spatial Immersion</A>, <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A>, <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A>, <A CLASS="pattern" HREF="Dexterity-BasedActions.htm" TARGET="frame_pattern">Dexterity-Based Actions</A>, <A CLASS="pattern" HREF="ExtendedActions.htm" TARGET="frame_pattern">Extended Actions</A>, <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A>, <A CLASS="pattern" HREF="Evade.htm" TARGET="frame_pattern">Evade</A>, <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Tools.htm" TARGET="frame_pattern">Tools</A>, <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A>, <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A>, <A CLASS="pattern" HREF="Delivery.htm" TARGET="frame_pattern">Delivery</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Combat.htm" TARGET="frame_pattern">Combat</A>, <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A>, <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A>, <A CLASS="pattern" HREF="PrivilegedMovement.htm" TARGET="frame_pattern">Privileged Movement</A>, <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A>, <A CLASS="pattern" HREF="Alignment.htm" TARGET="frame_pattern">Alignment</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="First-PersonViews.htm" TARGET="frame_pattern">First-Person Views</A>, <A CLASS="pattern" HREF="Third-PersonViews.htm" TARGET="frame_pattern">Third-Person Views</A>, <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A>, <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A>, <A CLASS="pattern" HREF="TheShowMustGoOn.htm" TARGET="frame_pattern">The Show Must Go On</A>, <A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A>, <A CLASS="pattern" HREF="Evade.htm" TARGET="frame_pattern">Evade</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="GodViews.htm" TARGET="frame_pattern">God Views</A>, <A CLASS="pattern" HREF="Obstacles.htm" TARGET="frame_pattern">Obstacles</A>, <A CLASS="pattern" HREF="DisruptionofFocusedAttention.htm" TARGET="frame_pattern">Disruption of Focused Attention</A>, <A CLASS="pattern" HREF="Surprises.htm" TARGET="frame_pattern">Surprises</A></P>
+
+
+</html>
+

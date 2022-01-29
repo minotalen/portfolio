@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Tiles</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Tiles">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Tiles</H2>
+<I>Tiles are areas within the game world that partition it into separate parts, usually filling the whole game world.</I>
+<P CLASS="text"><B>Example: </B>The board game <I>Othello</I> (aka <I>Annex</I>, aka <I>Annexation</I>) consists of playing tiles and flipping them, trying to make one's color dominant on the board.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>In the board game <I>Dog eat Dog</I> tiles are used to show that the nature on a part of the board has been polluted; they cover the board and show the same scenery, albeit more polluted, dirty and depressing.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>NetHack</I> uses <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A> to represent corridors, walls, dungeon, and cavern floors and so on. These <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A> are used to generate an almost limitless number of different dungeons.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A> can either be passive game elements in a game design or actively used by players. In the former case they are usually arranged before gameplay begins while in the latter case they allow <A CLASS="pattern" HREF="Tile-Laying.htm" TARGET="frame_pattern">Tile-Laying</A> and can be held by players in what functionally are <A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hands</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A> can be used either to define the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> or to be put on an area defined by the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>. They may be designed in such a manner that every tile may be put next to any other tile (regarding form and appearance), or not (implying rules that a tile may only be put where it fits). In board games the game areas that are constructed by <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A> can make use of the two sides of a tile to represent different modes of the game area defined by the tile. In computer games the <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A> may have any number of different modes. <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A> can also have a semi-permanent nature, for example, they can start to deteriorate when an <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatar</A> or one of a player's <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> has been placed on the tile, creating a <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limit</A> for long the tile can be used.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A> can either be uniform in form, as the squares in <I>Chess</I>, or have irregular shapes, e. g. shaped to fit an illustrative game map as in <I>Diplomacy</I>. Irregularly shaped tiles can be used to make tiles have different properties regarding connections to other areas of the game board, creating <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A>. Regardless of the shape, <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A> can also become <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A> by having different characteristics enabling, for example, <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A>. <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A> that are placed differently in different game instances can be created so that the distribution of different tiles can make certain tiles more valuable.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A> can be used to define how and how fast the game elements can move through the connections to the neighboring <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A>. They can also be used to define the size of the game elements, i. e. that a game element may, regardless of its actual physically size, be said to occupy one or several tiles fully if placed within them.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A> allow the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> to be separated into clearly distinguishable areas, making the position and possibilities of actions easier to judge. <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A> also allow easier construction of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> and in many cases are a prerequisite for <A CLASS="pattern" HREF="ReconfigurableGameWorld.htm" TARGET="frame_pattern">Reconfigurable Game Worlds</A>, as for example to control how <A CLASS="pattern" HREF="ShrinkingGameWorld.htm" TARGET="frame_pattern">Shrinking Game Worlds</A> are instantiated in many games.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A>, <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>, <A CLASS="pattern" HREF="ReconfigurableGameWorld.htm" TARGET="frame_pattern">Reconfigurable Game World</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="ShrinkingGameWorld.htm" TARGET="frame_pattern">Shrinking Game World</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A>, <A CLASS="pattern" HREF="DrawingStacks.htm" TARGET="frame_pattern">Drawing Stacks</A>, <A CLASS="pattern" HREF="Tile-Laying.htm" TARGET="frame_pattern">Tile-Laying</A>, <A CLASS="pattern" HREF="DiscardPiles.htm" TARGET="frame_pattern">Discard Piles</A>, <A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hands</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

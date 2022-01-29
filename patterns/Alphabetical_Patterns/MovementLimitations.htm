@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Movement Limitations</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Movement Limitations">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Movement Limitations</H2>
+<I>The movement of game elements is limited in some way.</I>
+<P CLASS="text">In games where movement is an important aspect of game play, limitations to the movement ability are common. These may be part of the game environment and effect all players that enter an area, part of what defines the game element, or effects of being hit by enemies.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>icy areas in <I>Super Mario 64</I> and <I>Return to Castle Wolfenstein: Enemy Territory</I> make steering difficult and affect acceleration and deceleration.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>the banana peel, polygon ball, and ice cube power-ups in the <I>Monkey Race 2</I> party game in <I>Super Monkey Ball 2</I> all let players shoot or drop objects that negatively affect other players movement if hit.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>many racing games make the leading vehicle have a little lower maximum speed than the others vehicles in order to increase the chance of the other vehicles catching up.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="MovementLimitations.htm" TARGET="frame_pattern">Movement Limitations</A> can occur in both <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A> and <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A>. In <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A> they typically take the form of making <A CLASS="pattern" HREF="Maneuvering.htm" TARGET="frame_pattern">Maneuvering</A> more difficult or decreasing speed but can also make areas of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> into <A CLASS="pattern" HREF="Obstacles.htm" TARGET="frame_pattern">Obstacles</A> or <A CLASS="pattern" HREF="InaccessibleAreas.htm" TARGET="frame_pattern">Inaccessible Areas</A> (typically marked with Outstanding Features). In <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A> movement is nearly always limited by <A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A> but the cost for movement can be different for different kinds of movement to signify specific <A CLASS="pattern" HREF="MovementLimitations.htm" TARGET="frame_pattern">Movement Limitations</A>. When the action points can be used for other actions as well this further imposes limitations and forces players to do <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A> choices.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="AreaControl.htm" TARGET="frame_pattern">Area Control</A> by other players can cause <A CLASS="pattern" HREF="MovementLimitations.htm" TARGET="frame_pattern">Movement Limitations</A>. In <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A> this is typically explicitly governed by rules forbidding movement, increasing movement costs, or making <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> moving into the area under control stop their movement. In <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A> the <A CLASS="pattern" HREF="MovementLimitations.htm" TARGET="frame_pattern">Movement Limitations</A> is implicit and enforced by threats of <A CLASS="pattern" HREF="Combat.htm" TARGET="frame_pattern">Combat</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="MovementLimitations.htm" TARGET="frame_pattern">Movement Limitations</A> is a way to modulate <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> and make <A CLASS="pattern" HREF="GameWorldNavigation.htm" TARGET="frame_pattern">Game World Navigation</A> more difficult. When linked to individual game elements they can be <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A> of failing <A CLASS="pattern" HREF="Evade.htm" TARGET="frame_pattern">Evade</A> goals, <A CLASS="pattern" HREF="BalancingEffects.htm" TARGET="frame_pattern">Balancing Effects</A> to make <A CLASS="pattern" HREF="Race.htm" TARGET="frame_pattern">Races</A> more even, or make parts of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> into <A CLASS="pattern" HREF="Obstacles.htm" TARGET="frame_pattern">Obstacles</A>, <A CLASS="pattern" HREF="InaccessibleAreas.htm" TARGET="frame_pattern">Inaccessible Areas</A>, or <A CLASS="pattern" HREF="DeadlyTraps.htm" TARGET="frame_pattern">Deadly Traps</A>. When common to all players and linked to the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> they can also make areas into <A CLASS="pattern" HREF="InaccessibleAreas.htm" TARGET="frame_pattern">Inaccessible Areas</A> or <A CLASS="pattern" HREF="DeadlyTraps.htm" TARGET="frame_pattern">Deadly Traps</A> but let players make <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A> choices between trying to <A CLASS="pattern" HREF="Evade.htm" TARGET="frame_pattern">Evade</A> the areas or taking risks to gain benefits, possible by <A CLASS="pattern" HREF="LeapsofFaith.htm" TARGET="frame_pattern">Leaps of Faith</A> actions. <A CLASS="pattern" HREF="ShrinkingGameWorld.htm" TARGET="frame_pattern">Shrinking Game World</A> is an example of a way to achieve this form of <A CLASS="pattern" HREF="MovementLimitations.htm" TARGET="frame_pattern">Movement Limitations</A> although no benefits can be gained by being in the area which is removed.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> can be the consequence of any <A CLASS="pattern" HREF="MovementLimitations.htm" TARGET="frame_pattern">Movement Limitations</A> while <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A> and limited <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A> are effects commonly created by temporary limitations on movement abilities when the limitation become an <A CLASS="pattern" HREF="AbilityLosses.htm" TARGET="frame_pattern">Ability Loss</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A>, <A CLASS="pattern" HREF="InaccessibleAreas.htm" TARGET="frame_pattern">Inaccessible Areas</A>, <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A>, <A CLASS="pattern" HREF="Downtime.htm" TARGET="frame_pattern">Downtime</A>, <A CLASS="pattern" HREF="BalancingEffects.htm" TARGET="frame_pattern">Balancing Effects</A>, <A CLASS="pattern" HREF="OutstandingFeatures.htm" TARGET="frame_pattern">Outstanding Features</A>, <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A>, <A CLASS="pattern" HREF="AbilityLosses.htm" TARGET="frame_pattern">Ability Losses</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="GameWorldNavigation.htm" TARGET="frame_pattern">Game World Navigation</A>, <A CLASS="pattern" HREF="LeapsofFaith.htm" TARGET="frame_pattern">Leaps of Faith</A>, <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A>, <A CLASS="pattern" HREF="Evade.htm" TARGET="frame_pattern">Evade</A>, <A CLASS="pattern" HREF="Race.htm" TARGET="frame_pattern">Race</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="DeadlyTraps.htm" TARGET="frame_pattern">Deadly Traps</A>, <A CLASS="pattern" HREF="Obstacles.htm" TARGET="frame_pattern">Obstacles</A>, <A CLASS="pattern" HREF="BudgetedActionPoints.htm" TARGET="frame_pattern">Budgeted Action Points</A>, <A CLASS="pattern" HREF="ShrinkingGameWorld.htm" TARGET="frame_pattern">Shrinking Game World</A>, <A CLASS="pattern" HREF="AreaControl.htm" TARGET="frame_pattern">Area Control</A></P>
+
+<P CLASS="italic">Modulated by: </P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A></P>
+
+
+</html>
+

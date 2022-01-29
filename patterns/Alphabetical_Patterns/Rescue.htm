@@ -1,0 +1,45 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Rescue</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Rescue">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Rescue</H2>
+<I>Rescue is the goal of freeing someone or something that is guarded.</I>
+<P CLASS="text">A common plot in games is that an opponent has captured or imprisoned a character that players' characters know or care about. This gives the players a <A CLASS="pattern" HREF="Rescue.htm" TARGET="frame_pattern">Rescue</A> goal, which may consist of finding the location of the kidnapped character as well as <I>Overcoming</I> or avoiding the obstacles and enemies on the way there. Games using <A CLASS="pattern" HREF="Rescue.htm" TARGET="frame_pattern">Rescue</A> as the main goal often have the opponent as the final enemy that has to be defeated before completing the goal.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Donkey Kong</I> has as an over-arching goal for Marioto <A CLASS="pattern" HREF="Rescue.htm" TARGET="frame_pattern">Rescue</A> the girl that has been kidnapped by the gorilla with the same name as the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Some missions in <I>Counter-Strike</I> involve scientists that the terrorists have to <A CLASS="pattern" HREF="Guard.htm" TARGET="frame_pattern">Guard</A> and the counter-terrorist <I>Team</I> tries to free and lead to a safe zone.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">A <A CLASS="pattern" HREF="Rescue.htm" TARGET="frame_pattern">Rescue</A> goal can be designed as either explicit goals to <A CLASS="pattern" HREF="Overcome.htm" TARGET="frame_pattern">Overcome</A> some <A CLASS="pattern" HREF="Guard.htm" TARGET="frame_pattern">Guards</A> or to use <A CLASS="pattern" HREF="Stealth.htm" TARGET="frame_pattern">Stealth</A> to avoid being detected, or a combination of both, possibly allowing players the <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A> between the two. In the latter case, <A CLASS="pattern" HREF="Rescue.htm" TARGET="frame_pattern">Rescue</A> goals provide the possibility of several subgoals: <A CLASS="pattern" HREF="Stealth.htm" TARGET="frame_pattern">Stealth</A> goals to enter areas without detection and <A CLASS="pattern" HREF="GainInformation.htm" TARGET="frame_pattern">Gain Information</A> goals to learn the layout and positions of <A CLASS="pattern" HREF="Guard.htm" TARGET="frame_pattern">Guards</A>, <A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarms</A>, and <A CLASS="pattern" HREF="DeadlyTraps.htm" TARGET="frame_pattern">Deadly Traps</A>. Games using <A CLASS="pattern" HREF="Rescue.htm" TARGET="frame_pattern">Rescue</A> as the main goal often have the character responsible for the kidnapping as a <A CLASS="pattern" HREF="BossMonsters.htm" TARGET="frame_pattern">Boss Monster</A> that has to be defeated before completing the goal.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="Rescue.htm" TARGET="frame_pattern">Rescue</A> s can be constructed so that they are completed as soon as the <A CLASS="pattern" HREF="Guard.htm" TARGET="frame_pattern">Guards</A> and <A CLASS="pattern" HREF="Obstacles.htm" TARGET="frame_pattern">Obstacles</A> are <A CLASS="pattern" HREF="Overcome.htm" TARGET="frame_pattern">Overcome</A> but may also be constructed so that the rescued people have to be moved into a safe area, i. e., places in the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> that are both <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Points</A> and <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Havens</A>. The latter ones allow for opposing <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> goals and provides gameplay where the goals may change several times before reaching a final conclusion.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">As a <A CLASS="pattern" HREF="Rescue.htm" TARGET="frame_pattern">Rescue</A> goal is defined by overcoming a <A CLASS="pattern" HREF="Guard.htm" TARGET="frame_pattern">Guard</A> goal, it is a <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goal</A> and automatically creates <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A>. Although the goal object of a <A CLASS="pattern" HREF="Rescue.htm" TARGET="frame_pattern">Rescue</A> may be a <A CLASS="pattern" HREF="Characters.htm" TARGET="frame_pattern">Character</A> or <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Unit</A>, possibly controlled by another player, the structure of <A CLASS="pattern" HREF="Rescue.htm" TARGET="frame_pattern">Rescue</A> goals are often struggles over <A CLASS="pattern" HREF="Ownership.htm" TARGET="frame_pattern">Ownership</A>. <A CLASS="pattern" HREF="Rescue.htm" TARGET="frame_pattern">Rescue</A> goals are often used to provide a <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structure</A> in a game; the person to be rescued can have vital information or be someone that is loved by the player's character.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A>, <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goals</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Guard.htm" TARGET="frame_pattern">Guard</A>, <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Points</A>, <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Havens</A>, <A CLASS="pattern" HREF="Overcome.htm" TARGET="frame_pattern">Overcome</A>, <A CLASS="pattern" HREF="Alarms.htm" TARGET="frame_pattern">Alarms</A>, <A CLASS="pattern" HREF="DeadlyTraps.htm" TARGET="frame_pattern">Deadly Traps</A>, <A CLASS="pattern" HREF="Obstacles.htm" TARGET="frame_pattern">Obstacles</A>, <A CLASS="pattern" HREF="BossMonsters.htm" TARGET="frame_pattern">Boss Monsters</A>, <A CLASS="pattern" HREF="Stealth.htm" TARGET="frame_pattern">Stealth</A>, <A CLASS="pattern" HREF="Ownership.htm" TARGET="frame_pattern">Ownership</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

@@ -1,0 +1,43 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Save Points</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Save Points">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Save Points</H2>
+<I>Save Points are the points in gameplay where the players can choose to save the game state so that they can return to it later.</I>
+<P CLASS="text"><A CLASS="pattern" HREF="SavePoints.htm" TARGET="frame_pattern">Save Points</A> do not need to be physical places as a game may only provide players with the option to save game position between levels, i. e. in pauses in gameplay. <A CLASS="pattern" HREF="SavePoints.htm" TARGET="frame_pattern">Save Points</A> have typically been most common in games for consoles as the storage capacity for the consoles has been more limited than in personal computers.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Final Fantasy VII</I> has specific locations where the player can save the current game state.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="SavePoints.htm" TARGET="frame_pattern">Save Points</A> are the locations in games where players can save the game, and they thereby control how players can perform <A CLASS="pattern" HREF="Save-LoadCycles.htm" TARGET="frame_pattern">Save-Load Cycles</A>. The <A CLASS="pattern" HREF="SavePoints.htm" TARGET="frame_pattern">Save Points</A> can be used to achieve the <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A>. For example, if a more difficult game is required, place <A CLASS="pattern" HREF="SavePoints.htm" TARGET="frame_pattern">Save Points</A> in such way that it demands the players to complete a <I>Hierarchy of goals</I> or a long sequence of actions before saving. This spreading out of the available <A CLASS="pattern" HREF="SavePoints.htm" TARGET="frame_pattern">Save Points</A> can increase the <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> as the players have larger investments in time and effort before reaching a <A CLASS="pattern" HREF="SavePoints.htm" TARGET="frame_pattern">Save Point</A> and, in some cases, can also frustrate the player if the difficulty level for reaching a <A CLASS="pattern" HREF="SavePoints.htm" TARGET="frame_pattern">Save Point</A> is too high. Locating the <A CLASS="pattern" HREF="SavePoints.htm" TARGET="frame_pattern">Save Points</A> in the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> automatically creates <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A> goals.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Older computer games used a form of <A CLASS="pattern" HREF="SavePoints.htm" TARGET="frame_pattern">Save Points</A> where level codes were given to the player after completing a <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Level</A> so that one did not have to replay those <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Levels</A> in later game sessions. However, this did not allow the players to maintain any other information about the previous game sessions, thereby making the use of <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A> more difficult.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="SavePoints.htm" TARGET="frame_pattern">Save Points</A> are nearly always <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Havens</A>, i. e. once the <A CLASS="pattern" HREF="SavePoints.htm" TARGET="frame_pattern">Save Points</A> have been reached the player does not have to face any immediate threats and can relax. Even if they are not explicitly created as <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Havens</A>, they at least allow players to save the current game state and let them have infinitely many tries to continue playing from that location. Depending on how savingis done, <A CLASS="pattern" HREF="SavePoints.htm" TARGET="frame_pattern">Save Points</A> can be <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Points</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A>, <A CLASS="pattern" HREF="ClosurePoints.htm" TARGET="frame_pattern">Closure Points</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Collection.htm" TARGET="frame_pattern">Collection</A>, <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Levels</A>, <A CLASS="pattern" HREF="Save-LoadCycles.htm" TARGET="frame_pattern">Save-Load Cycles</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="HierarchyofGoals.htm" TARGET="frame_pattern">Hierarchy of Goals</A>, <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Havens</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A></P>
+
+
+</html>
+

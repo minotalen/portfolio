@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Spawn Points</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Spawn Points">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Spawn Points</H2>
+<I>Positions in the game where Units, Avatars, or Enemies appear.</I>
+<P CLASS="text">All game elements that appear in a gamehave a first initial location, their <A CLASS="pattern" HREF="SpawnPoints.htm" TARGET="frame_pattern">Spawn Point</A>. The <A CLASS="pattern" HREF="SpawnPoints.htm" TARGET="frame_pattern">Spawn Points</A> are most noticeable in multi-player games since their effect is most apparent to the players already in the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><A CLASS="pattern" HREF="SpawnPoints.htm" TARGET="frame_pattern">Spawn Points</A> are explicitly used in both single player and multiplayer first-person shooters such as <I>Quake</I> and <I>Return to Castle Wolfenstein: Enemy Territory</I>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>the classic arcade game <I>Gauntlet</I> has <A CLASS="pattern" HREF="SpawnPoints.htm" TARGET="frame_pattern">Spawn Points</A>, which will pour out monsters until the players destroy the monster generators.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>many roleplaying games and massively multiplayer online games use <A CLASS="pattern" HREF="SpawnPoints.htm" TARGET="frame_pattern">Spawn Points</A> for the player <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatars</A> but also have spawn points for <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Battlefield Vietnam</I> offers some novel variations in S<I>pawn Points</I>: vehicles that can be steered around the game area and tunnel exits that can be created by player actions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">Almost all games that use <A CLASS="pattern" HREF="Spawning.htm" TARGET="frame_pattern">Spawning</A> in <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game Worlds</A> or <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Levels</A> make use of <A CLASS="pattern" HREF="SpawnPoints.htm" TARGET="frame_pattern">Spawn Points</A>. The main design choice to be made about <A CLASS="pattern" HREF="SpawnPoints.htm" TARGET="frame_pattern">Spawn Points</A> is where to locate them. The suitable locations are usually restricted by a number of factors: what is being spawned, what is the intended <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A>, and what should be chance for <A CLASS="pattern" HREF="Surprises.htm" TARGET="frame_pattern">Surprises</A> be. It may be of consequences whether the game uses <A CLASS="pattern" HREF="Lives.htm" TARGET="frame_pattern">Lives</A>, and how many <A CLASS="pattern" HREF="Lives.htm" TARGET="frame_pattern">Lives</A> a player has left, when determining what <A CLASS="pattern" HREF="SpawnPoints.htm" TARGET="frame_pattern">Spawn Point</A> will be used. Further, the effect of being able to do <A CLASS="pattern" HREF="https://tecfa.unige.ch/tecfa/maltt/VIP/Ressources/Articles/Game%20Design%20Patterns/collection/Alphabetical_Patterns/Camping.htm" TARGET="frame_pattern">Camping</A> close to <A CLASS="pattern" HREF="SpawnPoints.htm" TARGET="frame_pattern">Spawn Points</A> should be considered when placing <A CLASS="pattern" HREF="SpawnPoints.htm" TARGET="frame_pattern">Spawn Points</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Coordinated placement of <A CLASS="pattern" HREF="SpawnPoints.htm" TARGET="frame_pattern">Spawn Points</A> belonging to opposing sides in team-based games can be used as <A CLASS="pattern" HREF="BalancingEffects.htm" TARGET="frame_pattern">Balancing Effects</A> by placing them in equal relations to other <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A>, often by using <A CLASS="pattern" HREF="Symmetry.htm" TARGET="frame_pattern">Symmetry</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="SpawnPoints.htm" TARGET="frame_pattern">Spawn Points</A> are a form of <A CLASS="pattern" HREF="Producers.htm" TARGET="frame_pattern">Producers</A> that define where <A CLASS="pattern" HREF="Spawning.htm" TARGET="frame_pattern">Spawning</A> occurs in <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game Worlds</A>. <A CLASS="pattern" HREF="SpawnPoints.htm" TARGET="frame_pattern">Spawn Points</A> are in themselves <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A> as the introduction of new units appears there. They can challenge the <A CLASS="pattern" HREF="ConsistentRealityLogic.htm" TARGET="frame_pattern">Consistent Reality Logic</A> as there may be no real world equivalents for such locations, an exception being <A CLASS="pattern" HREF="SpawnPoints.htm" TARGET="frame_pattern">Spawn Points</A> located near the edge of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>, which can represent access points to an expanded <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="ResourceGenerators.htm" TARGET="frame_pattern">Resource Generators</A>, <A CLASS="pattern" HREF="Producers.htm" TARGET="frame_pattern">Producers</A>, <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>, <A CLASS="pattern" HREF="Spawning.htm" TARGET="frame_pattern">Spawning</A>, <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Levels</A>, <A CLASS="pattern" HREF="Lives.htm" TARGET="frame_pattern">Lives</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="SafeHavens.htm" TARGET="frame_pattern">Safe Havens</A>, <A CLASS="pattern" HREF="InaccessibleAreas.htm" TARGET="frame_pattern">Inaccessible Areas</A>, <A CLASS="pattern" HREF="https://tecfa.unige.ch/tecfa/maltt/VIP/Ressources/Articles/Game%20Design%20Patterns/collection/Alphabetical_Patterns/Camping.htm" TARGET="frame_pattern">Camping</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

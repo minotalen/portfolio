@@ -1,0 +1,43 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Paper-Rock-Scissors</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Paper-Rock-Scissors">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Paper-Rock-Scissors</H2>
+<I>Sets of three or more actions form cycles where every action has an advantage over another action.</I>
+<P CLASS="text">This pattern is based on the children's game with the same name in which players try to outwit each other by guessing what the other ones will do and by tricking other players into take a wrong guess on one's own action. The original game is very simple; after a count to three, both players make one out of three gestures, depicting rock, paper, or scissors. Rock beats ("smashes") scissors, scissors beat ("cut") paper and paper beats ("covers") rock. That there is no winning strategy is the essence of the pattern: players have to somehow figure out what choice is the best at each moment. In general, this may be detectable through variations in the game state or through knowledge about players' tactics and plans.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The relations between monsters and weapons in <I>Quake</I> form a <A CLASS="pattern" HREF="Paper-Rock-Scissors.htm" TARGET="frame_pattern">Paper-Rock-Scissors</A> relationship, so no weapon was best against all monsters, and players had to switch between weapons to make maximum use of the weapons.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">Games with immediate consequences of choices related to <A CLASS="pattern" HREF="Paper-Rock-Scissors.htm" TARGET="frame_pattern">Paper-Rock-Scissor</A> usually have these kinds of choices often in the game to allow people to keep records over other players' behavior. <A CLASS="pattern" HREF="QuickGames.htm" TARGET="frame_pattern">Quick Games</A> using the pattern, such as the game that lent its name to the pattern, usually are played repeatedly so some form of <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Game</A> can be used to allow players to gain knowledge of their opponents' strategies.</P>
+<P CLASS="text"></P>
+<P CLASS="text">A common way to implement the pattern for having long-term effects is through <A CLASS="pattern" HREF="Investments.htm" TARGET="frame_pattern">Investments</A> to gain <A CLASS="pattern" HREF="AsymmetricAbilities.htm" TARGET="frame_pattern">Asymmetric Abilities</A>, either through <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> or <A CLASS="pattern" HREF="CharacterDevelopment.htm" TARGET="frame_pattern">Character Development</A>. For this kind of use of the pattern, players can be given knowledge about other players through <A CLASS="pattern" HREF="PublicInformation.htm" TARGET="frame_pattern">Public Information</A> or, in the case of games with <A CLASS="pattern" HREF="FogofWar.htm" TARGET="frame_pattern">Fog of War</A>, through sending <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Paper-Rock-Scissors.htm" TARGET="frame_pattern">Paper-Rock-Scissor</A> introduces <A CLASS="pattern" HREF="Symmetry.htm" TARGET="frame_pattern">Symmetry</A> between actions or tactics in a game. It can be implemented either so its choices have immediate consequences (as in the game that gave the pattern its name) or so it has long-term effects. In both cases, it promotes <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A>, either until the moment when the choices are revealed or until the success of the chosen strategies is evident. A <A CLASS="pattern" HREF="Paper-Rock-Scissors.htm" TARGET="frame_pattern">Paper-Rock-Scissor</A> pattern introduces a form of <A CLASS="pattern" HREF="Randomness.htm" TARGET="frame_pattern">Randomness</A> and limited <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A> unless players can either gain knowledge about the other players' current activities or keep record over other players' behavior, as otherwise a player has no way of foreseeing what tactics are advantageous. If the game supports knowledge collection, the correct use of the strategies allows for <A CLASS="pattern" HREF="GameMastery.htm" TARGET="frame_pattern">Game Mastery</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Games</A>, <A CLASS="pattern" HREF="Symmetry.htm" TARGET="frame_pattern">Symmetry</A>, <A CLASS="pattern" HREF="PlayerBalance.htm" TARGET="frame_pattern">Player Balance</A>, <A CLASS="pattern" HREF="GameMastery.htm" TARGET="frame_pattern">Game Mastery</A>, <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A>, <A CLASS="pattern" HREF="Randomness.htm" TARGET="frame_pattern">Randomness</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Investments.htm" TARGET="frame_pattern">Investments</A>, <A CLASS="pattern" HREF="AsymmetricGoals.htm" TARGET="frame_pattern">Asymmetric Goals</A>, <A CLASS="pattern" HREF="AsymmetricAbilities.htm" TARGET="frame_pattern">Asymmetric Abilities</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="CharacterDevelopment.htm" TARGET="frame_pattern">Character Development</A>, <A CLASS="pattern" HREF="AsymmetricAbilities.htm" TARGET="frame_pattern">Asymmetric Abilities</A>, <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="PublicInformation.htm" TARGET="frame_pattern">Public Information</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A></P>
+
+
+</html>
+

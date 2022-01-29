@@ -1,0 +1,53 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Symmetric Information</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Symmetric Information">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Symmetric Information</H2>
+<I>All players have the same information about the game state, or part of the game state, available to them</I>
+<P CLASS="text">In some games, all players have the same information, so the mastery of the game does not rely on having specific information. The simplest and most often used case is having the whole game state known to the players, as in many traditional board games.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Trick-taking card games have <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A> about the cards that have been played. Typically, this means that players start with no shared information about who has which cards, but this knowledge grows until the last trick has been played and all players know the exact distribution of cards.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Chess</I> and <I>Go</I>, as well as nearly all other traditional board games, have all information public, making the distribution symmetric by default. In most cases, the information is simply where all pieces are and what strengths they have.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>In the tile-laying game <I>Carcassonne</I>, all players have the same amount of information: the configuration of placed tiles and where players have placed their tiles. No players know the order in which the remaining tile will come into play.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">Game designers can implement enforced or potential <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A>. Enforced <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A> means that the action and events in the game are designed so that all players are presented with the same information openly. Potential <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A> occurs when several players have some information, not necessarily the same, but can deduce the same additional information from the information that is known. The use of enforced <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A> on players' information makes it less risky to have that information as <A CLASS="pattern" HREF="PublicInformation.htm" TARGET="frame_pattern">Public Information</A>, as the possibility of passing sensitive information is avoided.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Enforced <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A> can be present at the start of a game due to the nature of the setup phase, but in order to maintain <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A>, actions and events of a game need to be public. An example of how to enforce <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A> in a card game can be to only allow players to take cards through draftingand not to take cards upside down from a <A CLASS="pattern" HREF="DrawingStacks.htm" TARGET="frame_pattern">Drawing Stack</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">One way of creating potential <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A> is to let all players know what individual elements of a certain game element type exist but not to know their distribution. If actions and events during play reveal information about the distribution so that all players get this information, they can start to figure out which distributions are impossible or unlikely, typically combining the pattern with <A CLASS="pattern" HREF="UncertaintyofInformation.htm" TARGET="frame_pattern">Uncertainty of Information</A>. As all players have received the same information, they can all potentially reach the same conclusions. The <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A> for achieving information can be modulated by limiting how long the players have access to the information of public actions and events. Games that support <A CLASS="pattern" HREF="Memorizing.htm" TARGET="frame_pattern">Memorizing</A> only let the players have the information for a short while, for example, only letting the players look at the cards played in a trick until the next trick is started in the trick-taking card games. Games that support <A CLASS="pattern" HREF="PuzzleSolving.htm" TARGET="frame_pattern">Puzzle Solving</A>, such as <I>Cluedo</I>, have special game elements to allow players to record what information has been revealed by actions and events. The game <I>Mastermind</I> is a further example of the latter, and shows how achieving <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A> with the other player can be used as a winning condition for a player, while maintaining <A CLASS="pattern" HREF="AsymmetricInformation.htm" TARGET="frame_pattern">Asymmetric Information</A> distribution is the goal for the other player.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A> gives all players the same amount of information to decide their actions and strategies. Thus, even if the information is imperfect, games using <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A> lead to more strategically oriented game play, removing the direct possibilities for <A CLASS="pattern" HREF="Bluffing.htm" TARGET="frame_pattern">Bluffing</A> in <A CLASS="pattern" HREF="Negotiation.htm" TARGET="frame_pattern">Negotiation</A> situations such as <A CLASS="pattern" HREF="Bidding.htm" TARGET="frame_pattern">Bidding</A> or <A CLASS="pattern" HREF="Trading.htm" TARGET="frame_pattern">Trading</A>, limiting secret tactics, and limiting deceit based on the information about the game state. This typically leads to <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A>, especially when <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A> are used and known to all. However, since players are aware that other players have the same information that they do, they need to take this into consideration when planning. As this requires trying to guess what the other players are planning and what, in their turn, they are guessing the player is planning, this can significantly affect the <A CLASS="pattern" HREF="RightLevelofComplexity.htm" TARGET="frame_pattern">Right Level of Complexity</A> and cause <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Games with <A CLASS="pattern" HREF="SocialInteraction.htm" TARGET="frame_pattern">Social Interaction</A> and <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A> may become somewhat self-balancing if <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A> is present. In these cases, players may form <A CLASS="pattern" HREF="Alliances.htm" TARGET="frame_pattern">Alliances</A> and perform actions such as blockadesin order to counter any lead an individual player has.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Symmetry of information and the quality of the information are loosely connected. Games with total <A CLASS="pattern" HREF="PerfectInformation.htm" TARGET="frame_pattern">Perfect Information</A> automatically have <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A>, but in all other cases, <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A> can be available irrespective of <A CLASS="pattern" HREF="PerfectInformation.htm" TARGET="frame_pattern">Perfect Information</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="StimulatedPlanning.htm" TARGET="frame_pattern">Stimulated Planning</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A>, <A CLASS="pattern" HREF="Bidding.htm" TARGET="frame_pattern">Bidding</A>, <A CLASS="pattern" HREF="Trading.htm" TARGET="frame_pattern">Trading</A>, <A CLASS="pattern" HREF="AnalysisParalysis.htm" TARGET="frame_pattern">Analysis Paralysis</A>, <A CLASS="pattern" HREF="PublicInformation.htm" TARGET="frame_pattern">Public Information</A>, <A CLASS="pattern" HREF="Negotiation.htm" TARGET="frame_pattern">Negotiation</A>, <A CLASS="pattern" HREF="Bluffing.htm" TARGET="frame_pattern">Bluffing</A>, <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="PerfectInformation.htm" TARGET="frame_pattern">Perfect Information</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goals</A>, <A CLASS="pattern" HREF="PerfectInformation.htm" TARGET="frame_pattern">Perfect Information</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="Bluffing.htm" TARGET="frame_pattern">Bluffing</A></P>
+
+
+</html>
+

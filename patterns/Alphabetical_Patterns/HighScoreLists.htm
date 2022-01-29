@@ -1,0 +1,41 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>High Score Lists</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of High Score Lists">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>High Score Lists</H2>
+<I>High Score lists give players the chance to rank themselves against other players who have previously played the game.</I>
+<P CLASS="text"><B>Example: </B>The first arcade game to have <A CLASS="pattern" HREF="HighScoreLists.htm" TARGET="frame_pattern">High Score Lists</A> was <I>Asteroids</I>. The player who achieves a high enough score compared to the other players of the same machine is allowed to enter his initials to be displayed in the <A CLASS="pattern" HREF="HighScoreLists.htm" TARGET="frame_pattern">High Score List</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The use of <A CLASS="pattern" HREF="HighScoreLists.htm" TARGET="frame_pattern">High Score Lists</A> is fairly standardized, with the main design choices being the number of <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Scores</A> saved in the <A CLASS="pattern" HREF="HighScoreLists.htm" TARGET="frame_pattern">High Score List</A> and how <A CLASS="pattern" HREF="Handles.htm" TARGET="frame_pattern">Handles</A> are supported. Most <A CLASS="pattern" HREF="HighScoreLists.htm" TARGET="frame_pattern">High Score Lists</A> make use of <A CLASS="pattern" HREF="Handles.htm" TARGET="frame_pattern">Handles</A> so that the players can identify their own scores and know that other players can recognize them. Since <A CLASS="pattern" HREF="HighScoreLists.htm" TARGET="frame_pattern">High Score Lists</A> typically are ordered, they need <A CLASS="pattern" HREF="Tiebreakers.htm" TARGET="frame_pattern">Tiebreakers</A> or have to be explicitly designed to allow several players with <A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A> to be displayed as completely equal.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The use of <A CLASS="pattern" HREF="Ghosts.htm" TARGET="frame_pattern">Ghosts</A> can be seen as a form of <A CLASS="pattern" HREF="HighScoreLists.htm" TARGET="frame_pattern">High Score List</A> that allows players to judge their progress against other performances, as well as their own individual performances, in previous game sessions while playing the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="HighScoreLists.htm" TARGET="frame_pattern">High Score Lists</A> create a <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Game</A> out of the game by using <A CLASS="pattern" HREF="Trans-GameInformation.htm" TARGET="frame_pattern">Trans-Game Information</A>, allowing players to have <A CLASS="pattern" HREF="PlayerDefinedGoals.htm" TARGET="frame_pattern">Player Defined Goals</A> such as to rank themselves against previous achievements, and thereby encouraging <A CLASS="pattern" HREF="GameMastery.htm" TARGET="frame_pattern">Game Mastery</A>. Doing so adds <A CLASS="pattern" HREF="Replayability.htm" TARGET="frame_pattern">Replayability</A> to the game, as the players have the additional goal of simply performing slightly better than in the previous game sessions. <A CLASS="pattern" HREF="HighScoreLists.htm" TARGET="frame_pattern">High Score Lists</A> are also a simple way to introduce <A CLASS="pattern" HREF="Competition.htm" TARGET="frame_pattern">Competition</A> to otherwise <A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A> and are also a way for players to compare and display their <A CLASS="pattern" HREF="SocialStatuses.htm" TARGET="frame_pattern">Social Statuses</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="PlayerDefinedGoals.htm" TARGET="frame_pattern">Player Defined Goals</A>, <A CLASS="pattern" HREF="MetaGames.htm" TARGET="frame_pattern">Meta Games</A>, <A CLASS="pattern" HREF="Replayability.htm" TARGET="frame_pattern">Replayability</A>, <A CLASS="pattern" HREF="Trans-GameInformation.htm" TARGET="frame_pattern">Trans-Game Information</A>, <A CLASS="pattern" HREF="SocialStatuses.htm" TARGET="frame_pattern">Social Statuses</A>, <A CLASS="pattern" HREF="TiedResults.htm" TARGET="frame_pattern">Tied Results</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="GameMastery.htm" TARGET="frame_pattern">Game Mastery</A></P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Tiebreakers.htm" TARGET="frame_pattern">Tiebreakers</A>, <A CLASS="pattern" HREF="Single-PlayerGames.htm" TARGET="frame_pattern">Single-Player Games</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

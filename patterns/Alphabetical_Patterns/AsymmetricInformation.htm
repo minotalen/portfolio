@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Asymmetric Information</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Asymmetric Information">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Asymmetric Information</H2>
+<I>Players have different information available to them, i.e., some players know more than other players</I>
+<P CLASS="text">Asymmetries of information are very widespread in all kinds of multiplayer games. The most common situation is that every player has private information that is hidden from the other players. This kind of private information is often related to ownership, for example, the player "owns" his card hand in <I>Poker</I>. This kind of private information, however, can also be used on game components where there is no sense of ownership, such as game events and specific locations.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="AsymmetricInformation.htm" TARGET="frame_pattern">Asymmetric Information</A> does not have to be balanced between the players as in Poker and other card games with private information. One of the simplest examples of this kind of asymmetry is <I>MasterMind</I>, the classic family game by Pressman Toy Corp., where one of the players, the codemaker, sets up a secret code, which the other player tries to break. The codemaker has <A CLASS="pattern" HREF="PerfectInformation.htm" TARGET="frame_pattern">Perfect Information</A> of the game state while the player trying to break the code has only access to the codemaker's clues given during gameplay. The same principle is used in popular quiz and guessing games, such as <I>Alias</I>, where one of the players knows the answer and the other players try to guess it from the clues provided by the player. These games are often based also on<A CLASS="pattern" HREF="IndirectInformation.htm" TARGET="frame_pattern">Indirect Information</A> in such a way that the player cannot reveal the information directly but has to apply some other means of communication.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="AsymmetricInformation.htm" TARGET="frame_pattern">Asymmetric Information</A> can, like other information patterns, govern not only information available about game elements but also about other players' goals, abilities, and even end conditions and evaluation functions of the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>In <I>Pictionary</I>, players take turns drawing pictures and the other player tries to guess the word or concept correctly without verbal communication from the player drawing. <I>Alias</I> uses the same principle, but the player tries to explain the word in other words and is forbidden to use the word itself or direct synonyms in the explanation.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>In <I>Illuminati</I>, it is possible that one player has hidden goals that the other players do not know. This forces the other players to try to guess the hidden goals from the player's actions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="AsymmetricInformation.htm" TARGET="frame_pattern">Asymmetric Information</A> requires that at least one of the players has <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A> about the game state. Common examples of this are <A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hands</A> in card games. Another typical example of this can be when goals in the game are known to some of the players but are <A CLASS="pattern" HREF="UnknownGoals.htm" TARGET="frame_pattern">Unknown Goals</A> to others. This is possible even for <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A>, if the goals are randomly or secretly distributed to the individual players. <A CLASS="pattern" HREF="AsymmetricInformation.htm" TARGET="frame_pattern">Asymmetric Information</A> can make <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resources</A> into <A CLASS="pattern" HREF="SecretResources.htm" TARGET="frame_pattern">Secret Resources</A>, and as <A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hands</A> show, this does not have to depend on information about where the <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resource</A> is physically but can also be about the information contained in the <A CLASS="pattern" HREF="Resources.htm" TARGET="frame_pattern">Resource</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="AsymmetricInformation.htm" TARGET="frame_pattern">Asymmetric Information</A> can be combined with <A CLASS="pattern" HREF="SymmetricInformation.htm" TARGET="frame_pattern">Symmetric Information</A> in team-based games so that one whole team has the same information but the other team does not. This is, for example, found in online multiplayer first-person shooters where not only the positions of one's team may be shown but also the location of the traps the team has placed. Another way of using <A CLASS="pattern" HREF="AsymmetricInformation.htm" TARGET="frame_pattern">Asymmetric Information</A> in team-based games is to provide the player chosen as team leader or strategist the overview of the whole situation, typically by some form of <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A>. The other team members have more specific information about their situation but not about the larger game state. These types of games require some kind communication at least between the team members and the team leader, be it normal conversation or by direct game actions.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The kinds of asymmetries where one player has access to more information than the others can lead to the use of <A CLASS="pattern" HREF="AsymmetricAbilities.htm" TARGET="frame_pattern">Asymmetric Abilities</A> to balance the gameplay. In these cases, information---or the means of gaining information other players cannot get themselves---is often designed as one of the <A CLASS="pattern" HREF="AsymmetricAbilities.htm" TARGET="frame_pattern">Asymmetric Abilities</A> available. Unless this is the case, players who have more information can make more informed choices during gameplay and can disrupt <A CLASS="pattern" HREF="PlayerBalance.htm" TARGET="frame_pattern">Player Balance</A>. <A CLASS="pattern" HREF="AsymmetricInformation.htm" TARGET="frame_pattern">Asymmetric Information</A> can be used for game components other than game elements, for example, using <A CLASS="pattern" HREF="AsymmetricInformation.htm" TARGET="frame_pattern">Asymmetric Information</A> for player composition of <A CLASS="pattern" HREF="Alliances.htm" TARGET="frame_pattern">Alliances</A> leads to <A CLASS="pattern" HREF="SecretAlliances.htm" TARGET="frame_pattern">Secret Alliances</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="AsymmetricInformation.htm" TARGET="frame_pattern">Asymmetric Information</A> often leads to gameplay based on <A CLASS="pattern" HREF="Bluffing.htm" TARGET="frame_pattern">Bluffing</A>, <A CLASS="pattern" HREF="Betrayal.htm" TARGET="frame_pattern">Betrayal</A>, and guessing, features that quite well describe many of the card games based on unequal information distribution, such as <I>Poker</I>, as well as other games with <A CLASS="pattern" HREF="Bidding.htm" TARGET="frame_pattern">Bidding</A> and <A CLASS="pattern" HREF="Negotiation.htm" TARGET="frame_pattern">Negotiation</A>. As it offers players advantages to know the tactics of other players, or know if they are trustworthy, the presence of <A CLASS="pattern" HREF="AsymmetricInformation.htm" TARGET="frame_pattern">Asymmetric Information</A> gives natural rise to <A CLASS="pattern" HREF="GainInformation.htm" TARGET="frame_pattern">Gain Information</A> goals.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="GainInformation.htm" TARGET="frame_pattern">Gain Information</A>, <A CLASS="pattern" HREF="Conceal.htm" TARGET="frame_pattern">Conceal</A>, <A CLASS="pattern" HREF="Betrayal.htm" TARGET="frame_pattern">Betrayal</A>, <A CLASS="pattern" HREF="SecretAlliances.htm" TARGET="frame_pattern">Secret Alliances</A>, <A CLASS="pattern" HREF="SecretResources.htm" TARGET="frame_pattern">Secret Resources</A>, <A CLASS="pattern" HREF="Bluffing.htm" TARGET="frame_pattern">Bluffing</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Bidding.htm" TARGET="frame_pattern">Bidding</A>, <A CLASS="pattern" HREF="AsymmetricAbilities.htm" TARGET="frame_pattern">Asymmetric Abilities</A>, <A CLASS="pattern" HREF="UnknownGoals.htm" TARGET="frame_pattern">Unknown Goals</A>, <A CLASS="pattern" HREF="Negotiation.htm" TARGET="frame_pattern">Negotiation</A>, <A CLASS="pattern" HREF="PredefinedGoals.htm" TARGET="frame_pattern">Predefined Goals</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="CardHands.htm" TARGET="frame_pattern">Card Hands</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="PerfectInformation.htm" TARGET="frame_pattern">Perfect Information</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="PerfectInformation.htm" TARGET="frame_pattern">Perfect Information</A></P>
+
+
+</html>
+

@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>No-Ops</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of No-Ops">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>No-Ops</H2>
+<I>The action of doing nothing.</I>
+<P CLASS="text">Sometimes the best action in a game is to do nothing and wait for the environment to change. These actions are called No-Ops from the instructions from programming with the same name. No-Ops can also be forced on players as punishments for other players or as effects of the player's own actions.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>trying to avoid guards in the <I>Thief</I> series of games requires that one combines silent and careful movement with periods of inactivity to not be noticed.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>powering down in the board game <I>RoboRally</I> to repair damage requires that a player is prepared to spend one turn doing a <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Op</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The prime design choice for <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Ops</A> is if they are voluntary or not. <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A> can enforce players to do actions every turn in order for the game to continue and may have <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Ops</A> as <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A>. <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Ops</A> are also used in these games as a form of <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalty</A> for performing <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A>. <A CLASS="pattern" HREF="Tick-BasedGames.htm" TARGET="frame_pattern">Tick-Based Games</A> and <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A> cannot require players to do actions all the time so they support voluntary <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Ops</A>. But this is a matter of perspective, in <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A> where the player's <A CLASS="pattern" HREF="Avatars.htm" TARGET="frame_pattern">Avatar</A> or <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> move continuously, which can be described as applying <A CLASS="pattern" HREF="TheShowMustGoOn.htm" TARGET="frame_pattern">The Show Must Go On</A> on players' game elements, this can be seen as an action and players only have the choice between doing the pre-chosen action or another from a set of possible actions.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The possibility of doing <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Ops</A>, or actions with little consequence to the overall game state, is a requirement for <A CLASS="pattern" HREF="https://tecfa.unige.ch/tecfa/maltt/VIP/Ressources/Articles/Game%20Design%20Patterns/collection/Alphabetical_Patterns/Camping.htm" TARGET="frame_pattern">Camping</A>. Similarly it is often used to allow <A CLASS="pattern" HREF="Stealth.htm" TARGET="frame_pattern">Stealth</A> goals.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">Having the possibility of <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Ops</A> widens players' <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A> and allows <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A> of actions, for example to wait for other players to do actions before acting themselves. As <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Ops</A> can be perceived as being force to wait, having too many of them consecutively may hinder reasonable waiting times. <A CLASS="pattern" HREF="ExtendedActions.htm" TARGET="frame_pattern">Extended Actions</A> that do not have an effect on the game state before they are completed can be seen as consisting of an initiating action, several <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Ops</A>, and a finishing action where the game state is updated.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Forcing players to do <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Ops</A> while noticing the action of <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A> can increase <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> but so can doing voluntary <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Ops</A> to wait for <A CLASS="pattern" HREF="Enemies.htm" TARGET="frame_pattern">Enemies</A> to appear. Extensive amount of <A CLASS="pattern" HREF="No-Ops.htm" TARGET="frame_pattern">No-Ops</A> in games of course negatively affects <A CLASS="pattern" HREF="VariedGameplay.htm" TARGET="frame_pattern">Varied Gameplay</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="Penalties.htm" TARGET="frame_pattern">Penalties</A>, <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A>, <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A>, <A CLASS="pattern" HREF="ExtendedActions.htm" TARGET="frame_pattern">Extended Actions</A>, <A CLASS="pattern" HREF="PrivilegedAbilities.htm" TARGET="frame_pattern">Privileged Abilities</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Stealth.htm" TARGET="frame_pattern">Stealth</A>, <A CLASS="pattern" HREF="Turn-BasedGames.htm" TARGET="frame_pattern">Turn-Based Games</A>, <A CLASS="pattern" HREF="https://tecfa.unige.ch/tecfa/maltt/VIP/Ressources/Articles/Game%20Design%20Patterns/collection/Alphabetical_Patterns/Camping.htm" TARGET="frame_pattern">Camping</A>, <A CLASS="pattern" HREF="Timing.htm" TARGET="frame_pattern">Timing</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Tick-BasedGames.htm" TARGET="frame_pattern">Tick-Based Games</A>, <A CLASS="pattern" HREF="Real-TimeGames.htm" TARGET="frame_pattern">Real-Time Games</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="TheShowMustGoOn.htm" TARGET="frame_pattern">The Show Must Go On</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="VariedGameplay.htm" TARGET="frame_pattern">Varied Gameplay</A></P>
+
+
+</html>
+

@@ -1,0 +1,53 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Indirect Information</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Indirect Information">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Indirect Information</H2>
+<I>Players obtain information about the game situation in an indirect way, usually from other players.</I>
+<P CLASS="text">Information transmitted to, or between, players in a game does not have to be in the same format as information stored in the game state. In this case, information can be said to be indirect in that the sender of the information has had to translate it from one format to another before being able to send it. This translation may be intentional by the sender to clarify or obfuscate the meaning to the receiver or other listeners, or may be a requirement of the medium used to communicate. The children's game of <I>Telephone</I> is the easiest example of a game using <A CLASS="pattern" HREF="IndirectInformation.htm" TARGET="frame_pattern">Indirect Information</A>, where the goal of the game is simply to notice the errors that occur when one person is whispering a sentence to another person.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Bidding in <I>Bridge</I> can be used, when following certain conventions, to send <A CLASS="pattern" HREF="IndirectInformation.htm" TARGET="frame_pattern">Indirect Information</A> to one's partner about what cards one has. Disregarding the aspects of bluffing, the bidding in <I>Poker</I> can be seen as a form for players to intentionally use <A CLASS="pattern" HREF="IndirectInformation.htm" TARGET="frame_pattern">Indirect Information</A> to state how good a hand they hold.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B><I>Poker</I> players unintentionally send out signals through their body language when betting. Other players can use this <A CLASS="pattern" HREF="IndirectInformation.htm" TARGET="frame_pattern">Indirect Information</A> to, for example, detect bluffing.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Chats in multiplayer online games allow players to freely communicate about the game state with each other. As natural language is easily misunderstood and players may not know the format the game state is expressed in, the information spread is indirect.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Pre-generated messages to other players in <I>Return to Castle Wolfenstein</I> are based on templates that are used to express intentions and situations in the game. As the templates are generic they fail to express the exact game state in all but the simplest situations.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The difference between the format in which the information is stored and the possible ways of expressing the information in the available medium is the prime design choice when supporting <A CLASS="pattern" HREF="IndirectInformation.htm" TARGET="frame_pattern">Indirect Information</A>. The two mediums readily available to game designers are body language and natural language. In games with <A CLASS="pattern" HREF="GameMasters.htm" TARGET="frame_pattern">Game Masters</A>, these are unavoidable mediums and especially body language may be used for <A CLASS="pattern" HREF="Bluffing.htm" TARGET="frame_pattern">Bluffing</A> but may also reveal what the <A CLASS="pattern" HREF="GameMasters.htm" TARGET="frame_pattern">Game Masters</A> have planned. In other games, natural language or formalized languages have to be supported by <A CLASS="pattern" HREF="CommunicationChannels.htm" TARGET="frame_pattern">Communication Channels</A> to ensure that the information is not directly expressed. Other common ways to give <A CLASS="pattern" HREF="IndirectInformation.htm" TARGET="frame_pattern">Indirect Information</A> in games include <I>Helpers, Clues</I>, and <A CLASS="pattern" HREF="RedHerrings.htm" TARGET="frame_pattern">Red Herrings.</A></P>
+<P CLASS="text"></P>
+<P CLASS="text">Formalized languages for <A CLASS="pattern" HREF="IndirectInformation.htm" TARGET="frame_pattern">Indirect Information</A> can be designed to either let players choose exactly what to say but due to limitations in choices make the comments generic and thereby indirect, or let the player choose what part of the game state to send information about, but automatically format the message and thereby making it indirect.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">If there is not a perfect, unambiguous one-to-one mapping between the way the information is stored and how it is transmitted, and vice versa, <A CLASS="pattern" HREF="IndirectInformation.htm" TARGET="frame_pattern">Indirect Information</A> always gives rise to <A CLASS="pattern" HREF="UncertaintyofInformation.htm" TARGET="frame_pattern">Uncertainty of Information</A> or <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A> and naturally provides at least a small level of <A CLASS="pattern" HREF="PuzzleSolving.htm" TARGET="frame_pattern">Puzzle Solving</A> to evaluate the contents. When players are the senders of information and do not have to be truthful, this allows for <A CLASS="pattern" HREF="Bluffing.htm" TARGET="frame_pattern">Bluffing</A> and <A CLASS="pattern" HREF="Betrayal.htm" TARGET="frame_pattern">Betrayal</A>, making <A CLASS="pattern" HREF="Trading.htm" TARGET="frame_pattern">Trading</A> and other activities based on agreements less predictable.</P>
+<P CLASS="text"></P>
+<P CLASS="text">However, <A CLASS="pattern" HREF="IndirectInformation.htm" TARGET="frame_pattern">Indirect Information</A> allows players to be given information within the <A CLASS="pattern" HREF="ConsistentRealityLogic.htm" TARGET="frame_pattern">Consistent Reality Logic</A> of an <A CLASS="pattern" HREF="AlternativeReality.htm" TARGET="frame_pattern">Alternative Reality</A>. By doing so, it can give information about the game state while supporting the <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structure</A> and maintaining <A CLASS="pattern" HREF="EmotionalImmersion.htm" TARGET="frame_pattern">Emotional Immersion</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="IndirectInformation.htm" TARGET="frame_pattern">Indirect Information</A> often supports <A CLASS="pattern" HREF="SocialInteraction.htm" TARGET="frame_pattern">Social Interaction</A>, especially when the communication is face to face. If the passing of information can be observed by other players but the message not understood, this allows <A CLASS="pattern" HREF="SecretAlliances.htm" TARGET="frame_pattern">Secret Alliances</A> to communicate.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="UncertaintyofInformation.htm" TARGET="frame_pattern">Uncertainty of Information</A>, <A CLASS="pattern" HREF="PuzzleSolving.htm" TARGET="frame_pattern">Puzzle Solving</A>, <A CLASS="pattern" HREF="Bluffing.htm" TARGET="frame_pattern">Bluffing</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="GainInformation.htm" TARGET="frame_pattern">Gain Information</A>, <A CLASS="pattern" HREF="SocialInteraction.htm" TARGET="frame_pattern">Social Interaction</A>, <A CLASS="pattern" HREF="EmotionalImmersion.htm" TARGET="frame_pattern">Emotional Immersion</A>, <A CLASS="pattern" HREF="NarrativeStructures.htm" TARGET="frame_pattern">Narrative Structures</A>, <A CLASS="pattern" HREF="Betrayal.htm" TARGET="frame_pattern">Betrayal</A>, <A CLASS="pattern" HREF="Trading.htm" TARGET="frame_pattern">Trading</A>, <A CLASS="pattern" HREF="SecretAlliances.htm" TARGET="frame_pattern">Secret Alliances</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Clues.htm" TARGET="frame_pattern">Clues</A>, <A CLASS="pattern" HREF="Helpers.htm" TARGET="frame_pattern">Helpers</A>, <A CLASS="pattern" HREF="RedHerrings.htm" TARGET="frame_pattern">Red Herrings</A>, <A CLASS="pattern" HREF="CommunicationChannels.htm" TARGET="frame_pattern">Communication Channels</A>, <A CLASS="pattern" HREF="GameMasters.htm" TARGET="frame_pattern">Game Masters</A>, <A CLASS="pattern" HREF="ImperfectInformation.htm" TARGET="frame_pattern">Imperfect Information</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="ConsistentRealityLogic.htm" TARGET="frame_pattern">Consistent Reality Logic</A>, <A CLASS="pattern" HREF="AlternativeReality.htm" TARGET="frame_pattern">Alternative Reality</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="DirectInformation.htm" TARGET="frame_pattern">Direct Information</A>, <A CLASS="pattern" HREF="PerfectInformation.htm" TARGET="frame_pattern">Perfect Information</A></P>
+
+
+</html>
+

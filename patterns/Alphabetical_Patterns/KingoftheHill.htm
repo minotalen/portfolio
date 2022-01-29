@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>King of the Hill</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of King of the Hill">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>King of the Hill</H2>
+<I>Reaching and keeping a sought for game state that other players are trying to reach and keep.</I>
+<P CLASS="text">Some games not only have all players competing against each other towards a goal, but let the other players continue to try and achieve that goal after the first player has reached it, and making the completion of the goal by another player make the first player lose an advantage associated with reaching the goal. <A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A> is the goal where players strive towards goals consisting of reaching and maintaining an achieved position in relation to the other players. The goal can either be to keep the game state for a certain amount of time or to simply keep it as long as possible.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Some game variants of <I>Battlefield 1942</I> have positions on the maps that when held for a certain period of time depletes "ticks" from the other team.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The board game <I>Junta</I> lets the president control how foreign aid money is distributed to the players. This position, although dangerous, is often sought for by all players since the ownership of money is the prerequisite for winning the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">Defining a <A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A> goal consist of choosing an <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goal</A> that is also a <A CLASS="pattern" HREF="ContinuousGoals.htm" TARGET="frame_pattern">Continuous Goal</A>, and how to <A CLASS="pattern" HREF="Rewards.htm" TARGET="frame_pattern">Reward</A> the player that maintains the goal. The <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goal</A> in the archetypical <A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A> is <A CLASS="pattern" HREF="Guard.htm" TARGET="frame_pattern">Guard</A> but one can also make use of <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A>, <A CLASS="pattern" HREF="Alignment.htm" TARGET="frame_pattern">Alignment</A>, <A CLASS="pattern" HREF="Enclosure.htm" TARGET="frame_pattern">Enclosure</A>, or <A CLASS="pattern" HREF="Connection.htm" TARGET="frame_pattern">Connection</A>. The players who do not have achieved the goal state should have <A CLASS="pattern" HREF="PreventingGoals.htm" TARGET="frame_pattern">Preventing Goals</A>. The start of the competition between players with <A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A> goals usual have no player holding the game state, but one way of giving <A CLASS="pattern" HREF="Handicaps.htm" TARGET="frame_pattern">Handicap</A> is to let one player start with the desired state. The typical winning condition of <A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A> goals is determined by comparing <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Scores</A> but <A CLASS="pattern" HREF="Lives.htm" TARGET="frame_pattern">Lives</A> can also be used, especially if all players except one runs out of them.</P>
+<P CLASS="text"></P>
+<P CLASS="text">For choosing the <A CLASS="pattern" HREF="Rewards.htm" TARGET="frame_pattern">Reward</A>, two main alternatives exist: either continuously rewarding the player, usually through raising the player's <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A> or <A CLASS="pattern" HREF="Damage.htm" TARGET="frame_pattern">Damage</A> to the other players, or by giving the other players a <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limit</A> before changing a value in a game state. The latter case typically takes longer time to fulfill and represents a large closure but also a larger <A CLASS="pattern" HREF="Investments.htm" TARGET="frame_pattern">Investment</A>. The choice between the two typically modulates the <A CLASS="pattern" HREF="RiskReward.htm" TARGET="frame_pattern">Risk/Reward</A> of the <A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A> goal.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A> gives players <A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goal</A> and <A CLASS="pattern" HREF="IncompatibleGoals.htm" TARGET="frame_pattern">Incompatible Goals</A>, and as gameplay is built around the changes between defending a position and challenging it, the goal is a <A CLASS="pattern" HREF="ContinuousGoals.htm" TARGET="frame_pattern">Continuous Goal</A> that naturally supports <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A>. When the goal is defined in such a way that a minority of the players, typically one, can have the position while a majority cannot, <A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A> has a <A CLASS="pattern" HREF="BalancingEffects.htm" TARGET="frame_pattern">Balancing Effect</A> and typically promotes <A CLASS="pattern" HREF="DynamicAlliances.htm" TARGET="frame_pattern">Dynamic Alliances</A>. <A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A> can be used for <A CLASS="pattern" HREF="TeamPlay.htm" TARGET="frame_pattern">Team Play</A> by allowing several players to have the sought after goal and by making the completion of the goal depend on game state states that refer to a team rather than an individual player, e. g. marking flags in <I>Battlefield 1942</I> with the team's color and letting the color remain until a member of the enemy team has been near the flag for a certain amount of time.</P>
+<P CLASS="text"></P>
+<P CLASS="text">As <A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A> puts one player in a position where other players either are disadvantaged or seek to replace the player to gain the advantage of the position themselves, having <A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A> creates <A CLASS="pattern" HREF="Competition.htm" TARGET="frame_pattern">Competition</A> and <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A> between the players. Further, as the <A CLASS="pattern" HREF="KingoftheHill.htm" TARGET="frame_pattern">King of the Hill</A> benefits as long as the state is maintained, it puts the other players under <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A> to change the state as quickly as possible.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="ContinuousGoals.htm" TARGET="frame_pattern">Continuous Goals</A>, <A CLASS="pattern" HREF="Conflict.htm" TARGET="frame_pattern">Conflict</A>, <A CLASS="pattern" HREF="Competition.htm" TARGET="frame_pattern">Competition</A>, <A CLASS="pattern" HREF="InterferableGoals.htm" TARGET="frame_pattern">Interferable Goals</A>, <A CLASS="pattern" HREF="DynamicAlliances.htm" TARGET="frame_pattern">Dynamic Alliances</A>, <A CLASS="pattern" HREF="BalancingEffects.htm" TARGET="frame_pattern">Balancing Effects</A>, <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A>, <A CLASS="pattern" HREF="SymmetricGoals.htm" TARGET="frame_pattern">Symmetric Goals</A>, <A CLASS="pattern" HREF="Tension.htm" TARGET="frame_pattern">Tension</A></P>
+
+<P CLASS="italic">Modulates: </P>
+
+<P CLASS="italic">Instantiated by: </P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Damage.htm" TARGET="frame_pattern">Damage</A>, <A CLASS="pattern" HREF="TimeLimits.htm" TARGET="frame_pattern">Time Limits</A>, <A CLASS="pattern" HREF="Alignment.htm" TARGET="frame_pattern">Alignment</A>, <A CLASS="pattern" HREF="TeamPlay.htm" TARGET="frame_pattern">Team Play</A>, <A CLASS="pattern" HREF="Lives.htm" TARGET="frame_pattern">Lives</A>, <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A>, <A CLASS="pattern" HREF="Guard.htm" TARGET="frame_pattern">Guard</A>, <A CLASS="pattern" HREF="Score.htm" TARGET="frame_pattern">Score</A></P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

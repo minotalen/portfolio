@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Contact</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Contact">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Contact</H2>
+<I>The goal of having two or more elements have physical contact with each other.</I>
+<P CLASS="text">This is the goal to make one game element touch or occupy the same place as another game element. The goal is very common as it is typically used to indicate the success of goal to <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A>, <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A> or <A CLASS="pattern" HREF="GainInformation.htm" TARGET="frame_pattern">Gain Information</A>. Taking the power pills in Pac-Man, capturing pieces in <I>Chess</I>, picking up items in adventure games, crossing the end line in a racing game, hitting an opponent in a fighting game, and shooting an enemy in a first-person shooter can all be seen as examples of fulfilling the <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A> goal.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Chasing games, such as <I>Tag</I>, are probably the best known games employing <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A> as a basic goal.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A> by itself is not normally used as a stand-alone goal. Instead, <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A> is often used to define the end condition of another goal patterns or to activate <A CLASS="pattern" HREF="AreaControl.htm" TARGET="frame_pattern">Area Control</A> actions. Examples of patterns used in combination with <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A> include <A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A>, <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A>, <A CLASS="pattern" HREF="Evade.htm" TARGET="frame_pattern">Evade</A>, <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A> and <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A>. The presence or absence of <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A> is a basic way to formulate a Boolean condition for collections of <A CLASS="pattern" HREF="IncompatibleGoals.htm" TARGET="frame_pattern">Incompatible Goals</A>, as for example in the <A CLASS="pattern" HREF="RoleReversal.htm" TARGET="frame_pattern">Role Reversal</A> of the <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A> and <A CLASS="pattern" HREF="Evade.htm" TARGET="frame_pattern">Evade</A> goals in <I>Tag</I>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">What actually defines <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A> does not have to be interpreted literally; <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A> can have the requirement that being under a certain distance from a game element, i. e. being in the proximity of it, can be seen as a use of <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A>. As this may be more difficult to judge, this may make the game have less <A CLASS="pattern" HREF="PredictableConsequences.htm" TARGET="frame_pattern">Predictable Consequences</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A> implies the use of a game space topology with concepts of nearness, direction and occupying a place. The space does not have to be continuous or what the player experiences as continuous; it can also be discrete as in the case of a <I>Chess</I> board. The actions or moves to achieve <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A> do not have to be continuous either but can consist of leaps, such as moving the knight in <I>Chess</I>. When <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A> is achieved through movement, it can be seen as being instantiated by <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The direction of <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A> may dictate the consequences: in the Mario series of games jumping on turtles from above immobilizes them for awhile while coming in direct horizontal <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A> makes Mario loses energy or a life.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The fulfillment of a <A CLASS="pattern" HREF="Contact.htm" TARGET="frame_pattern">Contact</A> goal is usually its own <A CLASS="pattern" HREF="StatusIndicators.htm" TARGET="frame_pattern">Status Indicator</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="IncompatibleGoals.htm" TARGET="frame_pattern">Incompatible Goals</A>, <A CLASS="pattern" HREF="GainOwnership.htm" TARGET="frame_pattern">Gain Ownership</A>, <A CLASS="pattern" HREF="AreaControl.htm" TARGET="frame_pattern">Area Control</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="Herd.htm" TARGET="frame_pattern">Herd</A>, <A CLASS="pattern" HREF="Capture.htm" TARGET="frame_pattern">Capture</A>, <A CLASS="pattern" HREF="Eliminate.htm" TARGET="frame_pattern">Eliminate</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Traverse.htm" TARGET="frame_pattern">Traverse</A></P>
+
+<P CLASS="italic">Modulated by: </P>
+
+<P CLASS="italic">Potentially conflicting with: </P>
+
+
+</html>
+

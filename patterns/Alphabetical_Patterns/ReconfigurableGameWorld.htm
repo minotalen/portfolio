@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Reconfigurable Game World</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Reconfigurable Game World">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Reconfigurable Game World</H2>
+<I>The player can reconfigure the game world itself, including the basic relationships and attributes of the game elements and the rules governing the dynamics of these relationships.</I>
+<P CLASS="text">The reconfiguration may happen between game instances to create variation from instance to instance or within a game instance as part of the events and actions the players have to consider. Three main ways of reconfiguring the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> are possible: changing the spatial setting, modifying basic attributes of the game elements, and modifying the rules and equations that govern the changes in game element relationships. The last one, modifying the rules of the game, usually concerns changes of the rules, which resemble the laws of nature in the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>, such as making changes to the gravitational pull in flight simulators.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The board game <I>Space Hulk</I> contains a number of corridors and rooms that are set up in different configurations to allow a number of different scenarios.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The mods that can be added in different combinations to <I>Unreal Tournament</I> allow the players to select how the laws of nature function in particular game instances.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>Games that allow the players to select different difficulty levels for each game instance.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text">The first requirement is that the game have a <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> that can be configured. The next main design choice is whether the world will be reconfigurable between or within game instances, or in a combination of both. In some cases, the reconfigurations might be different for different players, for example, the more inexperienced players in strategy games can be given <A CLASS="pattern" HREF="Handicaps.htm" TARGET="frame_pattern">Handicaps</A> by having units with better attack and defense powers than the opponents. The third design choice is if the reconfiguration is done by game rules or if the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> is a <A CLASS="pattern" HREF="PlayerConstructedWorlds.htm" TARGET="frame_pattern">Player Constructed World</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">Reconfiguration of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> itself is often done using <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A> to define the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> and then letting the players perform <A CLASS="pattern" HREF="Tile-Laying.htm" TARGET="frame_pattern">Tile-Laying</A> either during the setup phase of the game or during the gameplay itself. The <A CLASS="pattern" HREF="Tile-Laying.htm" TARGET="frame_pattern">Tile-Laying</A> can also be accompanied with the use of player controlled <A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles.</A> The use of a <A CLASS="pattern" HREF="ReconfigurableGameWorld.htm" TARGET="frame_pattern">Reconfigurable Game World</A> is usually combined with flexible game element setupto speed up the initial gameplay and to provide possibilities for skillful setups.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The changes in the laws of nature within the game may be universal or applied to only certain game elements, e. g., those under the control of the players or of a particular player. This can be used as a player-decided <A CLASS="pattern" HREF="BalancingEffects.htm" TARGET="frame_pattern">Balancing Effect</A> to create <A CLASS="pattern" HREF="PlayerBalance.htm" TARGET="frame_pattern">Player Balance</A> or <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A>. For example, changing the difficulty level in a flight simulator can change the flight characteristics of the planes drastically. Changing the relative strengths and weaknesses of different <A CLASS="pattern" HREF="Units.htm" TARGET="frame_pattern">Units</A> of the game, such as modifying attack and defense strengths in strategy games, is another common way to allow <A CLASS="pattern" HREF="ReconfigurableGameWorld.htm" TARGET="frame_pattern">Reconfigurable Game Worlds</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text">A <A CLASS="pattern" HREF="ReconfigurableGameWorld.htm" TARGET="frame_pattern">Reconfigurable Game World</A> provides <A CLASS="pattern" HREF="VariedGameplay.htm" TARGET="frame_pattern">Varied Gameplay</A> and <A CLASS="pattern" HREF="Replayability.htm" TARGET="frame_pattern">Replayability</A> as the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> changes for each game instance but may lessen <A CLASS="pattern" HREF="Immersion.htm" TARGET="frame_pattern">Immersion</A> as players act both within and outside the <A CLASS="pattern" HREF="ConsistentRealityLogic.htm" TARGET="frame_pattern">Consistent Reality Logic</A> of the game. Games with <A CLASS="pattern" HREF="ReconfigurableGameWorld.htm" TARGET="frame_pattern">Reconfigurable Game Worlds</A> that have <A CLASS="pattern" HREF="StrategicLocations.htm" TARGET="frame_pattern">Strategic Locations</A> and temporarily let players observe the layout of the world support <A CLASS="pattern" HREF="Memorizing.htm" TARGET="frame_pattern">Memorizing</A>, but it may prove to be difficult to have <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A> in the game.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="VariedGameplay.htm" TARGET="frame_pattern">Varied Gameplay</A>, <A CLASS="pattern" HREF="Replayability.htm" TARGET="frame_pattern">Replayability</A>, <A CLASS="pattern" HREF="Handicaps.htm" TARGET="frame_pattern">Handicaps</A>, <A CLASS="pattern" HREF="Memorizing.htm" TARGET="frame_pattern">Memorizing</A>, <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A></P>
+
+<P CLASS="italic">Modulates: <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A>, <A CLASS="pattern" HREF="PlayerBalance.htm" TARGET="frame_pattern">Player Balance</A></P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Tiles.htm" TARGET="frame_pattern">Tiles</A>, <A CLASS="pattern" HREF="Tile-Laying.htm" TARGET="frame_pattern">Tile-Laying</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="MoveableTiles.htm" TARGET="frame_pattern">Moveable Tiles</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A></P>
+
+
+</html>
+

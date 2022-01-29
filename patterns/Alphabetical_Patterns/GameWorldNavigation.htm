@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang=en>
+<head>
+<title>Game World Navigation</title>
+<meta name="author" content="Jussi Kuittinen">
+<meta name="copyright" content="&copy; Staffan Björk and Jussi Holopainen: Patterns in Game Design. Charles River Media 2004">
+<meta name="description" content="A description of Game World Navigation">
+<LINK REL=StyleSheet HREF="../patterns.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<H2>Game World Navigation</H2>
+<I>The action of trying to move from one place in the game to another when the correct way is not obviously apparent.</I>
+<P CLASS="text"><B>Example: </B>The text-based adventure game <I>Zork</I> made navigation difficult by having non-symmetric routes between locations: Moving north from a place to another did not means that one returned by going south, rather one might have to go west instead.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><B>Example: </B>The maze-like levels in <I>Doom</I> and <I>Quake</I> required player to navigate within the environments to move efficiently between all parts of the levels.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Using the pattern</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="GameWorldNavigation.htm" TARGET="frame_pattern">Game World Navigation</A> is most common in games with large <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game Worlds</A> and which support <A CLASS="pattern" HREF="SpatialImmersion.htm" TARGET="frame_pattern">Spatial Immersion</A>. However, games relying on text-based descriptions can have <A CLASS="pattern" HREF="GameWorldNavigation.htm" TARGET="frame_pattern">Game World Navigation</A> and make the action into a <A CLASS="pattern" HREF="PuzzleSolving.htm" TARGET="frame_pattern">Puzzle Solving</A> one by consciously breaking the <A CLASS="pattern" HREF="ConsistentRealityLogic.htm" TARGET="frame_pattern">Consistent Reality Logic</A> that moving in one direction and then in the opposite direction brings one back to the starting position.</P>
+<P CLASS="text"></P>
+<P CLASS="text">The layout of <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game Worlds</A> modulate the<A CLASS="pattern" HREF="RightLevelofDifficulty.htm" TARGET="frame_pattern">Right Level of Difficulty</A> of navigating and can be made more difficult by <A CLASS="pattern" HREF="MovementLimitations.htm" TARGET="frame_pattern">Movement Limitations</A>, <A CLASS="pattern" HREF="Obstacles.htm" TARGET="frame_pattern">Obstacles</A>,<A CLASS="pattern" HREF="InaccessibleAreas.htm" TARGET="frame_pattern">Inaccessible Areas</A>, and other possibilities for <A CLASS="pattern" HREF="LeapsofFaith.htm" TARGET="frame_pattern">Leaps of Faith</A>, especially if they block players' views to other areas of a <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A>. The navigation can be made easier by the use of <A CLASS="pattern" HREF="OutstandingFeatures.htm" TARGET="frame_pattern">Outstanding Features</A>, <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A>, <A CLASS="pattern" HREF="Clues.htm" TARGET="frame_pattern">Clues</A>, and <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A> in the forms of maps. The division of <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game Worlds</A> into <A CLASS="pattern" HREF="Levels.htm" TARGET="frame_pattern">Levels</A> makes <A CLASS="pattern" HREF="GameWorldNavigation.htm" TARGET="frame_pattern">Game World Navigation</A> easier as smaller areas have to be navigated. <A CLASS="pattern" HREF="PrivilegedMovement.htm" TARGET="frame_pattern">Privileged Movement</A> forms such as flying also makes the navigation easier as players can have better <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A> through different perspectives and may remove problems with <A CLASS="pattern" HREF="Obstacles.htm" TARGET="frame_pattern">Obstacles</A> and <A CLASS="pattern" HREF="InaccessibleAreas.htm" TARGET="frame_pattern">Inaccessible Areas</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Consequences</H3>
+<P CLASS="text"><A CLASS="pattern" HREF="GameWorldNavigation.htm" TARGET="frame_pattern">Game World Navigation</A> is an activity based upon <A CLASS="pattern" HREF="Exploration.htm" TARGET="frame_pattern">Exploration</A> goals in <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game Worlds</A> done when performing <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A> where only reaching the <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Point</A> is the only point of interest. However, learning the layout of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> can be used if the route has to be navigated again and can thus be <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A>.</P>
+<P CLASS="text"></P>
+<P CLASS="text">A certain amount of <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A> is necessary for <A CLASS="pattern" HREF="GameWorldNavigation.htm" TARGET="frame_pattern">Game World Navigation</A> to be possible; that is, players must be able to choose wrong directions to move in and have the possibility to get lost for <A CLASS="pattern" HREF="GameWorldNavigation.htm" TARGET="frame_pattern">Game World Navigation</A> to be a purposeful activity. Since <A CLASS="pattern" HREF="GodViews.htm" TARGET="frame_pattern">God Views</A> let players move their view of the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> regardless of game elements it makes <A CLASS="pattern" HREF="GameWorldNavigation.htm" TARGET="frame_pattern">Game World Navigation</A> a trivial problem.</P>
+<P CLASS="text"></P>
+<P CLASS="text"><A CLASS="pattern" HREF="GameWorldNavigation.htm" TARGET="frame_pattern">Game World Navigation</A> encourages <A CLASS="pattern" HREF="CognitiveImmersion.htm" TARGET="frame_pattern">Cognitive Immersion</A> and can actually lessen <A CLASS="pattern" HREF="SpatialImmersion.htm" TARGET="frame_pattern">Spatial Immersion</A> as it encourages players to perceive the <A CLASS="pattern" HREF="GameWorld.htm" TARGET="frame_pattern">Game World</A> from an abstract perspective rather than through a game element.</P>
+<P CLASS="text"></P>
+<P CLASS="text"></P>
+<H3>Relations</H3>
+
+<P CLASS="italic">Instantiates: <A CLASS="pattern" HREF="CognitiveImmersion.htm" TARGET="frame_pattern">Cognitive Immersion</A>, <A CLASS="pattern" HREF="StrategicKnowledge.htm" TARGET="frame_pattern">Strategic Knowledge</A></P>
+
+<P CLASS="italic">Modulates: </P>
+
+<P CLASS="italic">Instantiated by: <A CLASS="pattern" HREF="Movement.htm" TARGET="frame_pattern">Movement</A>, <A CLASS="pattern" HREF="SpatialImmersion.htm" TARGET="frame_pattern">Spatial Immersion</A>, <A CLASS="pattern" HREF="Exploration.htm" TARGET="frame_pattern">Exploration</A>, <A CLASS="pattern" HREF="GoalPoints.htm" TARGET="frame_pattern">Goal Points</A>, <A CLASS="pattern" HREF="FreedomofChoice.htm" TARGET="frame_pattern">Freedom of Choice</A></P>
+
+<P CLASS="italic">Modulated by: <A CLASS="pattern" HREF="Traces.htm" TARGET="frame_pattern">Traces</A>, <A CLASS="pattern" HREF="Obstacles.htm" TARGET="frame_pattern">Obstacles</A>, <A CLASS="pattern" HREF="InaccessibleAreas.htm" TARGET="frame_pattern">Inaccessible Areas</A>, <A CLASS="pattern" HREF="OutstandingFeatures.htm" TARGET="frame_pattern">Outstanding Features</A>, <A CLASS="pattern" HREF="Clues.htm" TARGET="frame_pattern">Clues</A>, <A CLASS="pattern" HREF="ConsistentRealityLogic.htm" TARGET="frame_pattern">Consistent Reality Logic</A>, <A CLASS="pattern" HREF="GameStateOverview.htm" TARGET="frame_pattern">Game State Overview</A>, <A CLASS="pattern" HREF="PrivilegedMovement.htm" TARGET="frame_pattern">Privileged Movement</A>, <A CLASS="pattern" HREF="MovementLimitations.htm" TARGET="frame_pattern">Movement Limitations</A></P>
+
+<P CLASS="italic">Potentially conflicting with: <A CLASS="pattern" HREF="SpatialImmersion.htm" TARGET="frame_pattern">Spatial Immersion</A>, <A CLASS="pattern" HREF="LeapsofFaith.htm" TARGET="frame_pattern">Leaps of Faith</A></P>
+
+
+</html>
+
