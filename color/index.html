@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .color-preview {
+            width: 100%; /* Adjusted width to fill the cell */
+            height: 20px;
+            background-color: var(--color); /* Use CSS variable to set background color */
+            border: 1px solid #000;
+        }
+    </style>
+    </head>
+    <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Hex</th>
+          <th>Preview</th>
+        </tr>
+      </thead>
+      <tbody>
+    
+        <tr>
+          <td>aliceblue</td>
+          <td>#f0f8ff</td>
+          <td><div class="color-preview" style="--color: #f0f8ff;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>antiquewhite</td>
+          <td>#faebd7</td>
+          <td><div class="color-preview" style="--color: #faebd7;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>aqua</td>
+          <td>#00ffff</td>
+          <td><div class="color-preview" style="--color: #00ffff;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>aquamarine</td>
+          <td>#7fffd4</td>
+          <td><div class="color-preview" style="--color: #7fffd4;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>azure</td>
+          <td>#f0ffff</td>
+          <td><div class="color-preview" style="--color: #f0ffff;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>beige</td>
+          <td>#f5f5dc</td>
+          <td><div class="color-preview" style="--color: #f5f5dc;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>bisque</td>
+          <td>#ffe4c4</td>
+          <td><div class="color-preview" style="--color: #ffe4c4;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>black</td>
+          <td>#000000</td>
+          <td><div class="color-preview" style="--color: #000000;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>blanchedalmond</td>
+          <td>#ffebcd</td>
+          <td><div class="color-preview" style="--color: #ffebcd;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>blue</td>
+          <td>#0000ff</td>
+          <td><div class="color-preview" style="--color: #0000ff;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>blueviolet</td>
+          <td>#8a2be2</td>
+          <td><div class="color-preview" style="--color: #8a2be2;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>brown</td>
+          <td>#a52a2a</td>
+          <td><div class="color-preview" style="--color: #a52a2a;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>burlywood</td>
+          <td>#deb887</td>
+          <td><div class="color-preview" style="--color: #deb887;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>cadetblue</td>
+          <td>#5f9ea0</td>
+          <td><div class="color-preview" style="--color: #5f9ea0;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>chartreuse</td>
+          <td>#7fff00</td>
+          <td><div class="color-preview" style="--color: #7fff00;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>chocolate</td>
+          <td>#d2691e</td>
+          <td><div class="color-preview" style="--color: #d2691e;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>coral</td>
+          <td>#ff7f50</td>
+          <td><div class="color-preview" style="--color: #ff7f50;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>cornflowerblue</td>
+          <td>#6495ed</td>
+          <td><div class="color-preview" style="--color: #6495ed;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>cornsilk</td>
+          <td>#fff8dc</td>
+          <td><div class="color-preview" style="--color: #fff8dc;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>crimson</td>
+          <td>#dc143c</td>
+          <td><div class="color-preview" style="--color: #dc143c;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>cyan</td>
+          <td>#00ffff</td>
+          <td><div class="color-preview" style="--color: #00ffff;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>darkblue</td>
+          <td>#00008b</td>
+          <td><div class="color-preview" style="--color: #00008b;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>darkcyan</td>
+          <td>#008b8b</td>
+          <td><div class="color-preview" style="--color: #008b8b;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>darkgoldenrod</td>
+          <td>#b8860b</td>
+          <td><div class="color-preview" style="--color: #b8860b;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>darkgray</td>
+          <td>#a9a9a9</td>
+          <td><div class="color-preview" style="--color: #a9a9a9;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>darkgreen</td>
+          <td>#006400</td>
+          <td><div class="color-preview" style="--color: #006400;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>darkgrey</td>
+          <td>#a9a9a9</td>
+          <td><div class="color-preview" style="--color: #a9a9a9;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>darkkhaki</td>
+          <td>#bdb76b</td>
+          <td><div class="color-preview" style="--color: #bdb76b;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>darkmagenta</td>
+          <td>#8b008b</td>
+          <td><div class="color-preview" style="--color: #8b008b;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>darkolivegreen</td>
+          <td>#556b2f</td>
+          <td><div class="color-preview" style="--color: #556b2f;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>darkorange</td>
+          <td>#ff8c00</td>
+          <td><div class="color-preview" style="--color: #ff8c00;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>darkorchid</td>
+          <td>#9932cc</td>
+          <td><div class="color-preview" style="--color: #9932cc;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>darkred</td>
+          <td>#8b0000</td>
+          <td><div class="color-preview" style="--color: #8b0000;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>darksalmon</td>
+          <td>#e9967a</td>
+          <td><div class="color-preview" style="--color: #e9967a;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>darkseagreen</td>
+          <td>#8fbc8f</td>
+          <td><div class="color-preview" style="--color: #8fbc8f;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>darkslateblue</td>
+          <td>#483d8b</td>
+          <td><div class="color-preview" style="--color: #483d8b;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>darkslategray</td>
+          <td>#2f4f4f</td>
+          <td><div class="color-preview" style="--color: #2f4f4f;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>darkturquoise</td>
+          <td>#00ced1</td>
+          <td><div class="color-preview" style="--color: #00ced1;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>darkviolet</td>
+          <td>#9400d3</td>
+          <td><div class="color-preview" style="--color: #9400d3;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>deeppink</td>
+          <td>#ff1493</td>
+          <td><div class="color-preview" style="--color: #ff1493;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>deepskyblue</td>
+          <td>#00bfff</td>
+          <td><div class="color-preview" style="--color: #00bfff;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>dimgray</td>
+          <td>#696969</td>
+          <td><div class="color-preview" style="--color: #696969;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>dodgerblue</td>
+          <td>#1e90ff</td>
+          <td><div class="color-preview" style="--color: #1e90ff;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>firebrick</td>
+          <td>#b22222</td>
+          <td><div class="color-preview" style="--color: #b22222;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>floralwhite</td>
+          <td>#fffaf0</td>
+          <td><div class="color-preview" style="--color: #fffaf0;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>forestgreen</td>
+          <td>#228b22</td>
+          <td><div class="color-preview" style="--color: #228b22;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>fuchsia</td>
+          <td>#ff00ff</td>
+          <td><div class="color-preview" style="--color: #ff00ff;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>gainsboro</td>
+          <td>#dcdcdc</td>
+          <td><div class="color-preview" style="--color: #dcdcdc;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>ghostwhite</td>
+          <td>#f8f8ff</td>
+          <td><div class="color-preview" style="--color: #f8f8ff;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>gold</td>
+          <td>#ffd700</td>
+          <td><div class="color-preview" style="--color: #ffd700;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>goldenrod</td>
+          <td>#daa520</td>
+          <td><div class="color-preview" style="--color: #daa520;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>gray</td>
+          <td>#808080</td>
+          <td><div class="color-preview" style="--color: #808080;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>green</td>
+          <td>#008000</td>
+          <td><div class="color-preview" style="--color: #008000;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>greenyellow</td>
+          <td>#adff2f</td>
+          <td><div class="color-preview" style="--color: #adff2f;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>grey</td>
+          <td>#808080</td>
+          <td><div class="color-preview" style="--color: #808080;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>honeydew</td>
+          <td>#f0fff0</td>
+          <td><div class="color-preview" style="--color: #f0fff0;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>hotpink</td>
+          <td>#ff69b4</td>
+          <td><div class="color-preview" style="--color: #ff69b4;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>indianred</td>
+          <td>#cd5c5c</td>
+          <td><div class="color-preview" style="--color: #cd5c5c;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>indigo</td>
+          <td>#4b0082</td>
+          <td><div class="color-preview" style="--color: #4b0082;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>ivory</td>
+          <td>#fffff0</td>
+          <td><div class="color-preview" style="--color: #fffff0;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>khaki</td>
+          <td>#f0e68c</td>
+          <td><div class="color-preview" style="--color: #f0e68c;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>lavender</td>
+          <td>#e6e6fa</td>
+          <td><div class="color-preview" style="--color: #e6e6fa;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>lavenderblush</td>
+          <td>#fff0f5</td>
+          <td><div class="color-preview" style="--color: #fff0f5;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>lawngreen</td>
+          <td>#7cfc00</td>
+          <td><div class="color-preview" style="--color: #7cfc00;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>lemonchiffon</td>
+          <td>#fffacd</td>
+          <td><div class="color-preview" style="--color: #fffacd;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>lightblue</td>
+          <td>#add8e6</td>
+          <td><div class="color-preview" style="--color: #add8e6;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>lightcoral</td>
+          <td>#f08080</td>
+          <td><div class="color-preview" style="--color: #f08080;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>lightcyan</td>
+          <td>#e0ffff</td>
+          <td><div class="color-preview" style="--color: #e0ffff;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>lightgoldenrodyellow</td>
+          <td>#fafad2</td>
+          <td><div class="color-preview" style="--color: #fafad2;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>lightgray</td>
+          <td>#d3d3d3</td>
+          <td><div class="color-preview" style="--color: #d3d3d3;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>lightgreen</td>
+          <td>#90ee90</td>
+          <td><div class="color-preview" style="--color: #90ee90;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>lightgrey</td>
+          <td>#d3d3d3</td>
+          <td><div class="color-preview" style="--color: #d3d3d3;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>lightpink</td>
+          <td>#ffb6c1</td>
+          <td><div class="color-preview" style="--color: #ffb6c1;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>lightsalmon</td>
+          <td>#ffa07a</td>
+          <td><div class="color-preview" style="--color: #ffa07a;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>lightseagreen</td>
+          <td>#20b2aa</td>
+          <td><div class="color-preview" style="--color: #20b2aa;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>lightskyblue</td>
+          <td>#87cefa</td>
+          <td><div class="color-preview" style="--color: #87cefa;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>lightslategray</td>
+          <td>#778899</td>
+          <td><div class="color-preview" style="--color: #778899;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>lightsteelblue</td>
+          <td>#b0c4de</td>
+          <td><div class="color-preview" style="--color: #b0c4de;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>lightyellow</td>
+          <td>#ffffe0</td>
+          <td><div class="color-preview" style="--color: #ffffe0;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>lime</td>
+          <td>#00ff00</td>
+          <td><div class="color-preview" style="--color: #00ff00;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>limegreen</td>
+          <td>#32cd32</td>
+          <td><div class="color-preview" style="--color: #32cd32;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>linen</td>
+          <td>#faf0e6</td>
+          <td><div class="color-preview" style="--color: #faf0e6;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>magenta</td>
+          <td>#ff00ff</td>
+          <td><div class="color-preview" style="--color: #ff00ff;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>maroon</td>
+          <td>#800000</td>
+          <td><div class="color-preview" style="--color: #800000;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>mediumaquamarine</td>
+          <td>#66cdaa</td>
+          <td><div class="color-preview" style="--color: #66cdaa;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>mediumblue</td>
+          <td>#0000cd</td>
+          <td><div class="color-preview" style="--color: #0000cd;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>mediumorchid</td>
+          <td>#ba55d3</td>
+          <td><div class="color-preview" style="--color: #ba55d3;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>mediumpurple</td>
+          <td>#9370db</td>
+          <td><div class="color-preview" style="--color: #9370db;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>mediumseagreen</td>
+          <td>#3cb371</td>
+          <td><div class="color-preview" style="--color: #3cb371;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>mediumslateblue</td>
+          <td>#7b68ee</td>
+          <td><div class="color-preview" style="--color: #7b68ee;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>mediumspringgreen</td>
+          <td>#00fa9a</td>
+          <td><div class="color-preview" style="--color: #00fa9a;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>mediumturquoise</td>
+          <td>#48d1cc</td>
+          <td><div class="color-preview" style="--color: #48d1cc;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>mediumvioletred</td>
+          <td>#c71585</td>
+          <td><div class="color-preview" style="--color: #c71585;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>midnightblue</td>
+          <td>#191970</td>
+          <td><div class="color-preview" style="--color: #191970;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>mintcream</td>
+          <td>#f5fffa</td>
+          <td><div class="color-preview" style="--color: #f5fffa;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>mistyrose</td>
+          <td>#ffe4e1</td>
+          <td><div class="color-preview" style="--color: #ffe4e1;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>moccasin</td>
+          <td>#ffe4b5</td>
+          <td><div class="color-preview" style="--color: #ffe4b5;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>navajowhite</td>
+          <td>#ffdead</td>
+          <td><div class="color-preview" style="--color: #ffdead;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>navy</td>
+          <td>#000080</td>
+          <td><div class="color-preview" style="--color: #000080;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>oldlace</td>
+          <td>#fdf5e6</td>
+          <td><div class="color-preview" style="--color: #fdf5e6;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>olive</td>
+          <td>#808000</td>
+          <td><div class="color-preview" style="--color: #808000;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>olivedrab</td>
+          <td>#6b8e23</td>
+          <td><div class="color-preview" style="--color: #6b8e23;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>orange</td>
+          <td>#ffa500</td>
+          <td><div class="color-preview" style="--color: #ffa500;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>orangered</td>
+          <td>#ff4500</td>
+          <td><div class="color-preview" style="--color: #ff4500;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>orchid</td>
+          <td>#da70d6</td>
+          <td><div class="color-preview" style="--color: #da70d6;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>palegoldenrod</td>
+          <td>#eee8aa</td>
+          <td><div class="color-preview" style="--color: #eee8aa;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>palegreen</td>
+          <td>#98fb98</td>
+          <td><div class="color-preview" style="--color: #98fb98;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>paleturquoise</td>
+          <td>#afeeee</td>
+          <td><div class="color-preview" style="--color: #afeeee;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>palevioletred</td>
+          <td>#db7093</td>
+          <td><div class="color-preview" style="--color: #db7093;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>papayawhip</td>
+          <td>#ffefd5</td>
+          <td><div class="color-preview" style="--color: #ffefd5;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>peachpuff</td>
+          <td>#ffdab9</td>
+          <td><div class="color-preview" style="--color: #ffdab9;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>peru</td>
+          <td>#cd853f</td>
+          <td><div class="color-preview" style="--color: #cd853f;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>pink</td>
+          <td>#ffc0cb</td>
+          <td><div class="color-preview" style="--color: #ffc0cb;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>plum</td>
+          <td>#dda0dd</td>
+          <td><div class="color-preview" style="--color: #dda0dd;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>powderblue</td>
+          <td>#b0e0e6</td>
+          <td><div class="color-preview" style="--color: #b0e0e6;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>purple</td>
+          <td>#800080</td>
+          <td><div class="color-preview" style="--color: #800080;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>red</td>
+          <td>#ff0000</td>
+          <td><div class="color-preview" style="--color: #ff0000;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>rosybrown</td>
+          <td>#bc8f8f</td>
+          <td><div class="color-preview" style="--color: #bc8f8f;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>royalblue</td>
+          <td>#4169e1</td>
+          <td><div class="color-preview" style="--color: #4169e1;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>saddlebrown</td>
+          <td>#8b4513</td>
+          <td><div class="color-preview" style="--color: #8b4513;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>salmon</td>
+          <td>#fa8072</td>
+          <td><div class="color-preview" style="--color: #fa8072;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>sandybrown</td>
+          <td>#f4a460</td>
+          <td><div class="color-preview" style="--color: #f4a460;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>seagreen</td>
+          <td>#2e8b57</td>
+          <td><div class="color-preview" style="--color: #2e8b57;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>seashell</td>
+          <td>#fff5ee</td>
+          <td><div class="color-preview" style="--color: #fff5ee;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>sienna</td>
+          <td>#a0522d</td>
+          <td><div class="color-preview" style="--color: #a0522d;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>silver</td>
+          <td>#c0c0c0</td>
+          <td><div class="color-preview" style="--color: #c0c0c0;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>skyblue</td>
+          <td>#87ceeb</td>
+          <td><div class="color-preview" style="--color: #87ceeb;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>slateblue</td>
+          <td>#6a5acd</td>
+          <td><div class="color-preview" style="--color: #6a5acd;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>slategray</td>
+          <td>#708090</td>
+          <td><div class="color-preview" style="--color: #708090;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>snow</td>
+          <td>#fffafa</td>
+          <td><div class="color-preview" style="--color: #fffafa;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>springgreen</td>
+          <td>#00ff7f</td>
+          <td><div class="color-preview" style="--color: #00ff7f;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>steelblue</td>
+          <td>#4682b4</td>
+          <td><div class="color-preview" style="--color: #4682b4;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>tan</td>
+          <td>#d2b48c</td>
+          <td><div class="color-preview" style="--color: #d2b48c;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>teal</td>
+          <td>#008080</td>
+          <td><div class="color-preview" style="--color: #008080;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>thistle</td>
+          <td>#d8bfd8</td>
+          <td><div class="color-preview" style="--color: #d8bfd8;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>tomato</td>
+          <td>#ff6347</td>
+          <td><div class="color-preview" style="--color: #ff6347;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>turquoise</td>
+          <td>#40e0d0</td>
+          <td><div class="color-preview" style="--color: #40e0d0;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>violet</td>
+          <td>#ee82ee</td>
+          <td><div class="color-preview" style="--color: #ee82ee;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>wheat</td>
+          <td>#f5deb3</td>
+          <td><div class="color-preview" style="--color: #f5deb3;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>white</td>
+          <td>#ffffff</td>
+          <td><div class="color-preview" style="--color: #ffffff;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>whitesmoke</td>
+          <td>#f5f5f5</td>
+          <td><div class="color-preview" style="--color: #f5f5f5;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>yellow</td>
+          <td>#ffff00</td>
+          <td><div class="color-preview" style="--color: #ffff00;"></div></td>
+        </tr>
+        
+        <tr>
+          <td>yellowgreen</td>
+          <td>#9acd32</td>
+          <td><div class="color-preview" style="--color: #9acd32;"></div></td>
+        </tr>
+        
+      </tbody>
+    </table>
+    </body>
+    </html>
+    
